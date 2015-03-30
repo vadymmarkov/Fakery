@@ -7,7 +7,7 @@
 
 ## Usage
 
-```objc
+```swift
 <API>
 ```
 
