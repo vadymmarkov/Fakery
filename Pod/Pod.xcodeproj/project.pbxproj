@@ -60,8 +60,8 @@
 		146D72AF1AB782920058798C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				146D72B21AB782920058798C /* Tests.m */,
 				146D72B01AB782920058798C /* Supporting Files */,
+				146D72B21AB782920058798C /* Tests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
