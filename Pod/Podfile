@@ -7,3 +7,4 @@ inhibit_all_warnings!
 
 pod 'Quick', '~> 0.2.2'
 pod 'Nimble', '~> 0.3.0'
+pod 'SwiftyJSON', '~> 2.1.3'
