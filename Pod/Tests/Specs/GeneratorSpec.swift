@@ -1,8 +1,9 @@
 import Foundation
 import Quick
 import Nimble
+import SwiftyJSON
 
-class DefinitionSpec: QuickSpec
+class GeneratorSpec: QuickSpec
 {
     override func spec()
     {
@@ -33,7 +34,8 @@ class DefinitionSpec: QuickSpec
                 }
 
                 it("sets default values") {
-                    expect(generator.locale).to(equal("en"))
+                    expect(generator.locale).to(equal(Config.defaultLocale))
+                    expect(generator.dataProvider).notTo(beNil())
                 }
             }
         }
