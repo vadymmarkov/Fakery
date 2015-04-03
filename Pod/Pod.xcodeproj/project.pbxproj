@@ -16,6 +16,8 @@
 		D56F59311AC9E65D000D2794 /* GeneratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F59301AC9E65D000D2794 /* GeneratorSpec.swift */; };
 		D56F59331AC9E885000D2794 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F59321AC9E885000D2794 /* Generator.swift */; };
 		D58D6FB61ACC723E006DBD0B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FB51ACC723E006DBD0B /* StringExtension.swift */; };
+		D58D6FBC1ACEE54D006DBD0B /* AddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FBB1ACEE54D006DBD0B /* AddressSpec.swift */; };
+		D58D6FBE1ACEE611006DBD0B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FBD1ACEE611006DBD0B /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D56F59301AC9E65D000D2794 /* GeneratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorSpec.swift; sourceTree = "<group>"; };
 		D56F59321AC9E885000D2794 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		D58D6FB51ACC723E006DBD0B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D58D6FBB1ACEE54D006DBD0B /* AddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSpec.swift; sourceTree = "<group>"; };
+		D58D6FBD1ACEE611006DBD0B /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		D89F5291001233A403C41710 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,7 @@
 		14C1365B1AB784BC00B7B07A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D58D6FB91ACEE4A4006DBD0B /* Generators */,
 				D58D6FB41ACC7232006DBD0B /* Extensions */,
 				14C1365C1AB784BC00B7B07A /* .gitkeep */,
 				D5118F7A1ACB3AAC003B426F /* Config.swift */,
@@ -133,6 +138,7 @@
 		D56F592F1AC9DC9F000D2794 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				D58D6FBA1ACEE535006DBD0B /* Generators */,
 				D5118F7C1ACB3ADE003B426F /* ConfigSpec.swift */,
 				D55194131ACA9C4200B6B2B5 /* DataProviderSpec.swift */,
 				D56F59301AC9E65D000D2794 /* GeneratorSpec.swift */,
@@ -146,6 +152,22 @@
 				D58D6FB51ACC723E006DBD0B /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D58D6FB91ACEE4A4006DBD0B /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				D58D6FBD1ACEE611006DBD0B /* Address.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		D58D6FBA1ACEE535006DBD0B /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				D58D6FBB1ACEE54D006DBD0B /* AddressSpec.swift */,
+			);
+			path = Generators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,11 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58D6FBE1ACEE611006DBD0B /* Address.swift in Sources */,
 				D55194161ACA9CD600B6B2B5 /* DataProvider.swift in Sources */,
 				D58D6FB61ACC723E006DBD0B /* StringExtension.swift in Sources */,
 				D56F59311AC9E65D000D2794 /* GeneratorSpec.swift in Sources */,
 				D5118F7D1ACB3ADE003B426F /* ConfigSpec.swift in Sources */,
 				D5118F7B1ACB3AAC003B426F /* Config.swift in Sources */,
+				D58D6FBC1ACEE54D006DBD0B /* AddressSpec.swift in Sources */,
 				D56F59331AC9E885000D2794 /* Generator.swift in Sources */,
 				D55194141ACA9C4200B6B2B5 /* DataProviderSpec.swift in Sources */,
 			);
