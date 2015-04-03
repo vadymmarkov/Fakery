@@ -23,6 +23,13 @@ class AddressSpec: QuickSpec
                     expect(streetName).to(equal("Vadym Avenue"))
                 }
             }
+
+            describe(".secondaryAddress") {
+                it("returns the correct text") {
+                    let secondaryAddress = Address.secondaryAddress()
+                    expect(secondaryAddress).to(match("^Apt. \\d{3}$"))
+                }
+            }
         }
     }
 }

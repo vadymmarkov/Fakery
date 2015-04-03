@@ -9,4 +9,9 @@ class Address: Generator
     {
         return generate("address.street_name")
     }
+
+    class func secondaryAddress() -> String
+    {
+        return numerify(generate("address.secondary_address"))
+    }
 }

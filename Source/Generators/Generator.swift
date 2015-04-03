@@ -5,7 +5,7 @@ public class Generator
     public struct Constants {
         public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
         public static let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-        public static let numbers = Array(arrayLiteral: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+        public static let numbers = Array("0123456789")
     }
 
     public class var parser: Parser {
@@ -21,10 +21,18 @@ public class Generator
 
     public class func numerify(string: String) -> String
     {
+        let count = UInt32(Constants.numbers.count)
         var replaced = String(map(string.generate()) {
-            $0 == "#" ? string["\(arc4random_uniform(10))".startIndex] : $0
+            let char = Constants.numbers[Int(arc4random_uniform(count))]
+            return $0 == "#" ? char : $0
         })
-        return "\(arc4random_uniform(9) + 1)\(dropFirst(replaced))"
+        var result = replaced
+        if replaced[replaced.startIndex] == "0" {
+            let char = Constants.numbers[Int(arc4random_uniform(count - 1) + 1)]
+            result = "\(char)\(dropFirst(replaced))"
+        }
+
+        return result
     }
 
     public class func letterify(string: String) -> String
