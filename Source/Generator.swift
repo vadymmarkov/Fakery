@@ -120,7 +120,7 @@ public class Generator
                 }
 
                 if methodRange.length > 0 {
-                    let key = subject + string.substringWithRange(methodRange)
+                    let key = subject.lowercaseString + string.substringWithRange(methodRange)
                     text += parseKey(key)
                 }
 

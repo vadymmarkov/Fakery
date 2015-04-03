@@ -63,6 +63,53 @@ class GeneratorSpec: QuickSpec
                     }
                 }
             }
+
+            describe("parsing") {
+                beforeEach {
+                    generator.locale = "en-TEST"
+                }
+
+                describe("#parseKey") {
+                    context("when the key is correct") {
+                        it("returns the correct text") {
+                            let city = generator.parseKey("address.city")
+                            expect(city).to(equal("North Vadymtown"))
+
+                            let name = generator.parseKey("name.name")
+                            expect(name).to(equal("Mr. Vadym Markov"))
+
+                            let team = generator.parseKey("team.name")
+                            expect(team).to(equal("California owls"))
+                        }
+                    }
+
+                    context("when the key is incorrect") {
+                        it("returns the empty text") {
+                            let dummy = generator.parseKey("dummy")
+                            expect(dummy).to(equal(""))
+                        }
+                    }
+                }
+
+                describe("parseTemplate:withCurrentSubject") {
+                    context("when the subject are correct") {
+                        it("returns the correct text") {
+                            let text = generator.parseTemplate("#{Name.first_name} #{street_suffix} Test", withCurrentSubject: "address")
+                            expect(text).to(equal("Vadym Avenue Test"))
+                        }
+                    }
+
+                    context("when the subject is incorrect") {
+                        it("returns the passed text") {
+                            let text = generator.parseTemplate("test", withCurrentSubject: "test")
+                            expect(text).to(equal("test"))
+
+                            let text1 = generator.parseTemplate("test", withCurrentSubject: "address")
+                            expect(text1).to(equal("test"))
+                        }
+                    }
+                }
+            }
         }
     }
 }
