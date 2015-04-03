@@ -17,6 +17,13 @@ class AddressSpec: QuickSpec
                     expect(city).to(equal("North Vadymtown"))
                 }
             }
+
+            describe("#streetName") {
+                it("returns the correct text") {
+                    let streetName = Address.streetName()
+                    expect(streetName).to(equal("Vadym Avenue"))
+                }
+            }
         }
     }
 }
