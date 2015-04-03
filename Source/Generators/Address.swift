@@ -1,17 +1,26 @@
-class Address: Generator
+public class Address: Generator
 {
-    class func city() -> String
+    public class func city() -> String
     {
         return generate("address.city")
     }
 
-    class func streetName() -> String
+    public class func streetName() -> String
     {
         return generate("address.street_name")
     }
 
-    class func secondaryAddress() -> String
+    public class func secondaryAddress() -> String
     {
         return numerify(generate("address.secondary_address"))
+    }
+
+    public class func streetAddress(includeSecondary: Bool = false) -> String
+    {
+        var streetAddress = numerify(generate("address.street_address"))
+        if includeSecondary {
+            streetAddress += " " + secondaryAddress()
+        }
+        return streetAddress
     }
 }

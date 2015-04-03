@@ -30,6 +30,22 @@ class AddressSpec: QuickSpec
                     expect(secondaryAddress).to(match("^Apt. \\d{3}$"))
                 }
             }
+
+            describe(".streetAddress") {
+                context("without secondary") {
+                    it("returns the correct text") {
+                        let streetAddress = Address.streetAddress()
+                        expect(streetAddress).to(match("^\\d{5} Vadym Avenue$"))
+                    }
+                }
+
+                context("include secondary") {
+                    it("returns the correct text") {
+                        let streetAddress = Address.streetAddress(includeSecondary: true)
+                        expect(streetAddress).to(match("^\\d{5} Vadym Avenue Apt. \\d{3}$"))
+                    }
+                }
+            }
         }
     }
 }
