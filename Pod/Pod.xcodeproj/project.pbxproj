@@ -16,6 +16,7 @@
 		D56F59311AC9E65D000D2794 /* GeneratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F59301AC9E65D000D2794 /* GeneratorSpec.swift */; };
 		D56F59331AC9E885000D2794 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F59321AC9E885000D2794 /* Generator.swift */; };
 		D58D6FB61ACC723E006DBD0B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FB51ACC723E006DBD0B /* StringExtension.swift */; };
+		D58D6FB81ACECD14006DBD0B /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = D58D6FB71ACECD14006DBD0B /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D56F59301AC9E65D000D2794 /* GeneratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorSpec.swift; sourceTree = "<group>"; };
 		D56F59321AC9E885000D2794 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		D58D6FB51ACC723E006DBD0B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D58D6FB71ACECD14006DBD0B /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		D89F5291001233A403C41710 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		146D72AF1AB782920058798C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D58D6FB71ACECD14006DBD0B /* Resources */,
 				D56F592F1AC9DC9F000D2794 /* Specs */,
 				146D72B01AB782920058798C /* Supporting Files */,
 			);
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58D6FB81ACECD14006DBD0B /* Resources in Resources */,
 				D5118F791ACAD3CD003B426F /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

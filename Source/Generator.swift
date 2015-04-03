@@ -32,7 +32,7 @@ public class Generator
         dataProvider = DataProvider()
     }
 
-    // MARK: - Parsing
+    // MARK: - Filling
 
     public func numerify(string: String) -> String
     {
@@ -56,6 +56,8 @@ public class Generator
     {
         return letterify(numerify(string))
     }
+
+    // MARK: - Parsing
 
     public func parseKey(key: String) -> String
     {
