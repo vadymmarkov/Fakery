@@ -83,6 +83,55 @@ class AddressSpec: QuickSpec
                     expect(timeZone).to(equal("America/Los_Angeles"))
                 }
             }
+
+            describe(".streetSuffix") {
+                it("returns the correct text") {
+                    let streetSuffix = Address.streetSuffix()
+                    expect(streetSuffix).to(equal("Avenue"))
+                }
+            }
+
+            describe(".citySuffix") {
+                it("returns the correct text") {
+                    let citySuffix = Address.citySuffix()
+                    expect(citySuffix).to(equal("town"))
+                }
+            }
+
+            describe(".cityPrefix") {
+                it("returns the correct text") {
+                    let cityPrefix = Address.cityPrefix()
+                    expect(cityPrefix).to(equal("North"))
+                }
+            }
+
+            describe(".stateAbbreviation") {
+                it("returns the correct text") {
+                    let stateAbbreviation = Address.stateAbbreviation()
+                    expect(stateAbbreviation).to(equal("CA"))
+                }
+            }
+
+            describe(".state") {
+                it("returns the correct text") {
+                    let state = Address.state()
+                    expect(state).to(equal("California"))
+                }
+            }
+
+            describe(".country") {
+                it("returns the correct text") {
+                    let country = Address.country()
+                    expect(country).to(equal("United States of America"))
+                }
+            }
+
+            describe(".countryCode") {
+                it("returns the correct text") {
+                    let countryCode = Address.countryCode()
+                    expect(countryCode).to(equal("US"))
+                }
+            }
         }
     }
 }

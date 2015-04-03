@@ -41,4 +41,39 @@ public class Address: Generator
     {
         return generate("address.time_zone")
     }
+
+    public class func streetSuffix() -> String
+    {
+        return generate("address.street_suffix")
+    }
+
+    public class func citySuffix() -> String
+    {
+        return generate("address.city_suffix")
+    }
+
+    public class func cityPrefix() -> String
+    {
+        return generate("address.city_prefix")
+    }
+
+    public class func stateAbbreviation() -> String
+    {
+        return generate("address.state_abbr")
+    }
+
+    public class func state() -> String
+    {
+        return generate("address.state")
+    }
+
+    public class func country() -> String
+    {
+        return generate("address.country")
+    }
+
+    public class func countryCode() -> String
+    {
+        return generate("address.country_code")
+    }
 }
