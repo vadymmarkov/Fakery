@@ -1,4 +1,3 @@
-import Foundation
 import SwiftyJSON
 
 public class Generator
@@ -36,7 +35,6 @@ public class Generator
 
     public func numerify(string: String) -> String
     {
-        println(string)
         var replaced = String(map(string.generate()) {
             $0 == "#" ? string["\(arc4random_uniform(10))".startIndex] : $0
         })
