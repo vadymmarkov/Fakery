@@ -23,4 +23,9 @@ public class Address: Generator
         }
         return streetAddress
     }
+
+    public class func buildingNumber() -> String
+    {
+        return bothify(generate("address.building_number"))
+    }
 }

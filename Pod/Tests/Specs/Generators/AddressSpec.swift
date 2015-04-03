@@ -46,6 +46,13 @@ class AddressSpec: QuickSpec
                     }
                 }
             }
+
+            describe(".buildingNumber") {
+                it("returns the correct text") {
+                    let buildingNumber = Address.buildingNumber()
+                    expect(buildingNumber).to(match("^\\d{5}$"))
+                }
+            }
         }
     }
 }
