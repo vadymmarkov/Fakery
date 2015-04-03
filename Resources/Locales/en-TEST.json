@@ -1,0 +1,109 @@
+{
+  "en-TEST": {
+    "faker": {
+      "separator": " & ",
+      "address": {
+        "city_prefix": ["North"],
+        "city_suffix": ["town"],
+        "country": ["United States of America"],
+        "country_code": ["US"],
+        "building_number": ["#####"],
+        "street_suffix": ["Avenue"],
+        "secondary_address": ["Apt. ###"],
+        "postcode": ["#####-####"],
+        "postcode_by_state": ["#####-####"],
+        "state": ["California"],
+        "state_abbr": ["CA"],
+        "time_zone": ["America/Los_Angeles"],
+        "city": ["#{city_prefix} #{Name.first_name}#{city_suffix}"],
+        "street_name": ["#{Name.first_name} #{street_suffix}"],
+        "street_address": ["#{building_number} #{street_name}"],
+        "default_country": ["United States of America"]
+      },
+      "credit_card": {
+        "visa": ["/4###########L/"],
+        "mastercard": ["/5[1-5]##-####-####-###L/"],
+        "discover": ["/6011-####-####-###L/"],
+        "american_express": ["/34##-######-####L/"],
+        "diners_club": ["/30[0-5]#-######-###L/"],
+        "jcb": ["/3528-####-####-###L/"],
+        "switch": ["/6759-####-####-###L/"],
+        "solo": ["/6767-####-####-###L/"],
+        "dankort": "/5019-####-####-###L/",
+        "maestro": ["/50#{9,16}L/"],
+        "forbrugsforeningen": "/6007-22##-####-###L/",
+        "laser": ["/6304###########L/"]
+      },
+      "company": {
+        "suffix": ["Inc"],
+        "buzzwords": [
+          ["Universal"],
+          ["24 hour"],
+          ["software"]
+        ],
+        "bs": [
+          ["implement"],
+          ["innovative"],
+          ["methodologies"]
+        ],
+        "name": ["#{Name.last_name} #{suffix}"]
+      },
+      "internet": {
+        "free_email": ["gmail.com"],
+        "domain_suffix": ["com"]
+      },
+      "lorem": {
+        "words": ["alias"],
+        "supplemental": ["abbas"]
+      },
+      "name": {
+        "first_name": ["Vadym"],
+        "last_name": ["Markov"],
+        "prefix": ["Mr."],
+        "suffix": ["I"],
+        "title": {
+          "descriptor": ["Lead"],
+          "level": ["Mobility"],
+          "job": ["Engineer"]
+        },
+        "name": ["#{prefix} #{first_name} #{last_name}"]
+      },
+      "phone_number": {
+        "formats": ["###-###-####"]
+      },
+      "cell_phone": {
+        "formats": ["(###) ###-####"]
+      },
+      "business": {
+        "credit_card_numbers": ["1234-2121-1221-1211"],
+        "credit_card_expiry_dates": ["2020-10-12"],
+        "credit_card_types": ["visa"]
+      },
+      "commerce": {
+        "color": ["black"],
+        "department": ["Music"],
+        "product_name": {
+          "adjective": ["Awesome"],
+          "material": ["Wooden"],
+          "product": ["Hat"]
+        }
+      },
+      "team": {
+        "creature": ["owls"],
+        "name": ["#{Address.state} #{creature}"]
+      },
+      "hacker": {
+        "abbreviation": ["TCP"],
+        "adjective": ["open-source"],
+        "noun": ["matrix"],
+        "verb": ["hack"],
+        "ingverb": ["bypassing"]
+      },
+      "app": {
+        "name": ["Namfix"],
+        "version": ["0.#.#"],
+        "author": ["#{Name.name}"]
+      }
+    }
+  }
+}
