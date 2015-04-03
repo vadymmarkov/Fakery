@@ -53,6 +53,29 @@ class AddressSpec: QuickSpec
                     expect(buildingNumber).to(match("^\\d{5}$"))
                 }
             }
+
+            describe(".postcode") {
+                context("without the state abbreviation") {
+                    it("returns the correct text") {
+                        let postcode = Address.postcode()
+                        expect(postcode).to(match("^\\d{5}-\\d{4}$"))
+                    }
+                }
+
+                context("with the state abbreviation") {
+                    it("returns the correct text") {
+                        let postcode = Address.postcode(stateAbbreviation: "CA")
+                        expect(postcode).to(match("^900\\d{2}$"))
+                    }
+                }
+
+                context("with the wrong state abbreviation") {
+                    it("returns the correct text") {
+                        let postcode = Address.postcode(stateAbbreviation: "TE")
+                        expect(postcode).to(beEmpty())
+                    }
+                }
+            }
         }
     }
 }

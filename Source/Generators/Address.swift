@@ -28,4 +28,12 @@ public class Address: Generator
     {
         return bothify(generate("address.building_number"))
     }
+
+    public class func postcode(stateAbbreviation: String = "") -> String
+    {
+        if stateAbbreviation.isEmpty {
+            return bothify(generate("address.postcode"))
+        }
+        return bothify(generate("address.postcode_by_state.\(stateAbbreviation)"))
+    }
 }

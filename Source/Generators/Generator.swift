@@ -27,9 +27,11 @@ public class Generator
             return $0 == "#" ? char : $0
         })
         var result = replaced
-        if replaced[replaced.startIndex] == "0" {
-            let char = Constants.numbers[Int(arc4random_uniform(count - 1) + 1)]
-            result = "\(char)\(dropFirst(replaced))"
+        if countElements(result) > 0 {
+            if result[result.startIndex] == "0" {
+                let char = Constants.numbers[Int(arc4random_uniform(count - 1) + 1)]
+                result = "\(char)\(dropFirst(result))"
+            }
         }
 
         return result
