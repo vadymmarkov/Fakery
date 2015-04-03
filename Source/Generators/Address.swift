@@ -1,3 +1,5 @@
+import Foundation
+
 public class Address: Generator
 {
     public class func city() -> String
@@ -75,5 +77,15 @@ public class Address: Generator
     public class func countryCode() -> String
     {
         return generate("address.country_code")
+    }
+
+    public class func latitude() -> String
+    {
+        return "\(arc4random() * 180 - 90)"
+    }
+
+    public class func longitude() -> String
+    {
+        return "\(arc4random() * 360 - 180)"
     }
 }
