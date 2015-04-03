@@ -36,4 +36,9 @@ public class Address: Generator
         }
         return bothify(generate("address.postcode_by_state.\(stateAbbreviation)"))
     }
+
+    public class func timeZone() -> String
+    {
+        return generate("address.time_zone")
+    }
 }

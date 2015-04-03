@@ -76,6 +76,13 @@ class AddressSpec: QuickSpec
                     }
                 }
             }
+
+            describe(".timeZone") {
+                it("returns the correct text") {
+                    let timeZone = Address.timeZone()
+                    expect(timeZone).to(equal("America/Los_Angeles"))
+                }
+            }
         }
     }
 }
