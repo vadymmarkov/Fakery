@@ -10,14 +10,14 @@ class AddressSpec: QuickSpec
                 Parser.sharedInstance.locale = "en-TEST"
             }
 
-            describe("#city") {
+            describe(".city") {
                 it("returns the correct text") {
                     let city = Address.city()
                     expect(city).to(equal("North Vadymtown"))
                 }
             }
 
-            describe("#streetName") {
+            describe(".streetName") {
                 it("returns the correct text") {
                     let streetName = Address.streetName()
                     expect(streetName).to(equal("Vadym Avenue"))

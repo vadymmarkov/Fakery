@@ -6,8 +6,13 @@ class GeneratorSpec: QuickSpec
     override func spec()
     {
         describe("Generator") {
+
+            it("has parser") {
+                expect(Generator.parser).notTo(beNil())
+            }
+
             describe("filling") {
-                describe("#numerify") {
+                describe(".numerify") {
                     it("replaces # with random numbers") {
                         let numerified = Generator.numerify("12####")
                         expect(numerified.toInt()).notTo(beNil())
@@ -16,7 +21,7 @@ class GeneratorSpec: QuickSpec
                     }
                 }
 
-                describe("letterify") {
+                describe(".letterify") {
                     it("replaces ? with random letters") {
                         let letterified = Generator.letterify("This is awes?me")
                         expect(find(letterified, "?")).to(beNil())
@@ -24,7 +29,7 @@ class GeneratorSpec: QuickSpec
                     }
                 }
 
-                describe("bothify") {
+                describe(".bothify") {
                     it("replaces # with random numbers and ? with random letters") {
                         let bothified = Generator.bothify("#th of ?pril")
                         expect(find(bothified, "#")).to(beNil())
