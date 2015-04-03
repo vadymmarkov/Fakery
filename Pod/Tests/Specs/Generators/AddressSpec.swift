@@ -1,4 +1,3 @@
-import Foundation
 import Quick
 import Nimble
 
@@ -8,7 +7,7 @@ class AddressSpec: QuickSpec
     {
         describe("Address") {
             beforeEach {
-                Generator.sharedInstance.locale = "en-TEST"
+                Parser.sharedInstance.locale = "en-TEST"
             }
 
             describe("#city") {
