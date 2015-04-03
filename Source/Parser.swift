@@ -1,11 +1,7 @@
 import SwiftyJSON
 
-public class Generator
+public class Parser
 {
-    let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    let numbers = Array(arrayLiteral: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-
     public var locale: String {
         didSet {
             if locale != oldValue {
@@ -17,10 +13,10 @@ public class Generator
     var data: JSON = []
     var dataProvider: DataProvider
 
-    public class var sharedInstance: Generator
+    public class var sharedInstance: Parser
     {
         struct Static {
-            static let instance: Generator = Generator()
+            static let instance: Parser = Parser()
         }
         return Static.instance
     }
@@ -29,30 +25,6 @@ public class Generator
     {
         locale = Config.defaultLocale
         dataProvider = DataProvider()
-    }
-
-    // MARK: - Filling
-
-    public func numerify(string: String) -> String
-    {
-        var replaced = String(map(string.generate()) {
-            $0 == "#" ? string["\(arc4random_uniform(10))".startIndex] : $0
-        })
-        return "\(arc4random_uniform(9) + 1)\(dropFirst(replaced))"
-    }
-
-    public func letterify(string: String) -> String
-    {
-        return String(map(string.generate()) {
-            let count = UInt32(self.uppercaseLetters.count)
-            let char = self.uppercaseLetters[Int(arc4random_uniform(count))]
-            return $0 == "?" ? char : $0
-        })
-    }
-
-    public func bothify(string: String) -> String
-    {
-        return letterify(numerify(string))
     }
 
     // MARK: - Parsing

@@ -1,4 +1,3 @@
-import Foundation
 import SwiftyJSON
 
 public class DataProvider

@@ -11,7 +11,9 @@
         "street_suffix": ["Avenue"],
         "secondary_address": ["Apt. ###"],
         "postcode": ["#####-####"],
-        "postcode_by_state": ["#####-####"],
+        "postcode_by_state": {
+            "CA": "900##",
+        },
         "state": ["California"],
         "state_abbr": ["CA"],
         "time_zone": ["America/Los_Angeles"],
