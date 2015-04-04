@@ -10,10 +10,14 @@ public class Generator
     }
 
     let parser: Parser
+    let dateFormatter: NSDateFormatter
 
     public init(parser: Parser)
     {
         self.parser = parser
+
+        dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
     }
 
     public func generate(key: String) -> String
