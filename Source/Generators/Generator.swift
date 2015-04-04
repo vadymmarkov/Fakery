@@ -17,7 +17,7 @@ public class Generator
         self.parser = parser
 
         dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-DD"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
     }
 
     public func generate(key: String) -> String

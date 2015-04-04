@@ -26,6 +26,17 @@ class BusinessSpec: QuickSpec
                     expect(creditCardType).to(equal("visa"))
                 }
             }
+
+            describe("#creditCardExpiryDate") {
+                it("returns the correct text") {
+                    let creditCardExpiryDate = business.creditCardExpiryDate()
+                    expect(creditCardExpiryDate).notTo(beNil())
+                    if let date = creditCardExpiryDate {
+                        let dateString = business.dateFormatter.stringFromDate(date)
+                        expect(dateString).to(equal("2020-10-12"))
+                    }
+                }
+            }
         }
     }
 }
