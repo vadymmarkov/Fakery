@@ -1,11 +1,18 @@
 public class Faker
 {
+    public var locale: String {
+        didSet {
+            if locale != oldValue {
+                parser.locale = locale
+            }
+        }
+    }
+
     public let address: Address
 
-    private let locale: String
-    private let parser: Parser
+    let parser: Parser
 
-    public init(locale: String)
+    public init(locale: String = Config.defaultLocale)
     {
         self.locale = locale
         parser = Parser(locale: self.locale)

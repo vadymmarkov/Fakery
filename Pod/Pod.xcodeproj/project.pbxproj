@@ -20,6 +20,7 @@
 		D58D6FC01ACEF36F006DBD0B /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FBF1ACEF36F006DBD0B /* Generator.swift */; };
 		D58D6FC21ACEF424006DBD0B /* GeneratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FC11ACEF424006DBD0B /* GeneratorSpec.swift */; };
 		D58D6FC41ACF5E04006DBD0B /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FC31ACF5E04006DBD0B /* Faker.swift */; };
+		D5E199FE1ACF738700BD1A40 /* FakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E199FD1ACF738700BD1A40 /* FakerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		D58D6FBF1ACEF36F006DBD0B /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		D58D6FC11ACEF424006DBD0B /* GeneratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorSpec.swift; sourceTree = "<group>"; };
 		D58D6FC31ACF5E04006DBD0B /* Faker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
+		D5E199FD1ACF738700BD1A40 /* FakerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakerSpec.swift; sourceTree = "<group>"; };
 		D89F5291001233A403C41710 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 				D54C05081ACF68F700B72977 /* Data */,
 				D58D6FBA1ACEE535006DBD0B /* Generators */,
 				D5118F7C1ACB3ADE003B426F /* ConfigSpec.swift */,
+				D5E199FD1ACF738700BD1A40 /* FakerSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				D54C050B1ACF691F00B72977 /* ParserSpec.swift in Sources */,
 				D58D6FC41ACF5E04006DBD0B /* Faker.swift in Sources */,
 				D58D6FBC1ACEE54D006DBD0B /* AddressSpec.swift in Sources */,
+				D5E199FE1ACF738700BD1A40 /* FakerSpec.swift in Sources */,
 				D54C050C1ACF691F00B72977 /* ProviderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

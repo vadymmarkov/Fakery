@@ -6,7 +6,6 @@ class ParserSpec: QuickSpec
 {
     override func spec()
     {
-        /*
         describe("Parser") {
             var parser: Parser!
 
@@ -68,6 +67,5 @@ class ParserSpec: QuickSpec
                 }
             }
         }
-        */
     }
 }
