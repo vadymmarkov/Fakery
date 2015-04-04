@@ -13,28 +13,28 @@ class AddressSpec: QuickSpec
                 address = Address(parser: parser)
             }
 
-            describe(".city") {
+            describe("#city") {
                 it("returns the correct text") {
                     let city = address.city()
                     expect(city).to(equal("North Vadymtown"))
                 }
             }
 
-            describe(".streetName") {
+            describe("#streetName") {
                 it("returns the correct text") {
                     let streetName = address.streetName()
                     expect(streetName).to(equal("Vadym Avenue"))
                 }
             }
 
-            describe(".secondaryAddress") {
+            describe("#secondaryAddress") {
                 it("returns the correct text") {
                     let secondaryAddress = address.secondaryAddress()
                     expect(secondaryAddress).to(match("^Apt. \\d{3}$"))
                 }
             }
 
-            describe(".streetAddress") {
+            describe("#streetAddress") {
                 context("without secondary") {
                     it("returns the correct text") {
                         let streetAddress = address.streetAddress()
@@ -50,14 +50,14 @@ class AddressSpec: QuickSpec
                 }
             }
 
-            describe(".buildingNumber") {
+            describe("#buildingNumber") {
                 it("returns the correct text") {
                     let buildingNumber = address.buildingNumber()
                     expect(buildingNumber).to(match("^\\d{5}$"))
                 }
             }
 
-            describe(".postcode") {
+            describe("#postcode") {
                 context("without the state abbreviation") {
                     it("returns the correct text") {
                         let postcode = address.postcode()
@@ -80,56 +80,56 @@ class AddressSpec: QuickSpec
                 }
             }
 
-            describe(".timeZone") {
+            describe("#timeZone") {
                 it("returns the correct text") {
                     let timeZone = address.timeZone()
                     expect(timeZone).to(equal("America/Los_Angeles"))
                 }
             }
 
-            describe(".streetSuffix") {
+            describe("#streetSuffix") {
                 it("returns the correct text") {
                     let streetSuffix = address.streetSuffix()
                     expect(streetSuffix).to(equal("Avenue"))
                 }
             }
 
-            describe(".citySuffix") {
+            describe("#citySuffix") {
                 it("returns the correct text") {
                     let citySuffix = address.citySuffix()
                     expect(citySuffix).to(equal("town"))
                 }
             }
 
-            describe(".cityPrefix") {
+            describe("#cityPrefix") {
                 it("returns the correct text") {
                     let cityPrefix = address.cityPrefix()
                     expect(cityPrefix).to(equal("North"))
                 }
             }
 
-            describe(".stateAbbreviation") {
+            describe("#stateAbbreviation") {
                 it("returns the correct text") {
                     let stateAbbreviation = address.stateAbbreviation()
                     expect(stateAbbreviation).to(equal("CA"))
                 }
             }
 
-            describe(".state") {
+            describe("#state") {
                 it("returns the correct text") {
                     let state = address.state()
                     expect(state).to(equal("California"))
                 }
             }
 
-            describe(".country") {
+            describe("#country") {
                 it("returns the correct text") {
                     let country = address.country()
                     expect(country).to(equal("United States of America"))
                 }
             }
 
-            describe(".countryCode") {
+            describe("#countryCode") {
                 it("returns the correct text") {
                     let countryCode = address.countryCode()
                     expect(countryCode).to(equal("US"))
