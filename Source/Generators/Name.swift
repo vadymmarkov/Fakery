@@ -24,4 +24,9 @@ public class Name: Generator
     {
         return generate("name.suffix")
     }
+
+    public func title() -> String
+    {
+        return generate("name.title.descriptor") + " " + generate("name.title.level") + " " + generate("name.title.job")
+    }
 }

@@ -41,10 +41,17 @@ class NameSpec: QuickSpec
                 }
             }
 
-            describe("#psuffix") {
+            describe("#suffix") {
                 it("returns the correct text") {
                     let suffix = name.suffix()
                     expect(suffix).to(equal("I"))
+                }
+            }
+
+            describe("#title") {
+                it("returns the correct text") {
+                    let title = name.title()
+                    expect(title).to(equal("Lead Mobility Engineer"))
                 }
             }
         }
