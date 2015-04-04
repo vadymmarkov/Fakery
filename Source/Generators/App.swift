@@ -9,4 +9,9 @@ public class App: Generator
     {
         return numerify(generate("app.version"))
     }
+
+    public func author() -> String
+    {
+        return generate("app.author")
+    }
 }

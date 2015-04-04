@@ -26,6 +26,13 @@ class AppSpec: QuickSpec
                     expect(version).to(match("^0.\\d.\\d$"))
                 }
             }
+
+            describe("#author") {
+                it("returns the correct text") {
+                    let author = app.author()
+                    expect(author).to(equal("Mr. Vadym Markov"))
+                }
+            }
         }
     }
 }
