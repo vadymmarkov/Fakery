@@ -4,4 +4,9 @@ public class App: Generator
     {
         return generate("app.name")
     }
+
+    public func version() -> String
+    {
+        return numerify(generate("app.version"))
+    }
 }
