@@ -4,4 +4,9 @@ public class Business: Generator
     {
         return generate("business.credit_card_numbers")
     }
+
+    public func creditCardType() -> String
+    {
+        return generate("business.credit_card_types")
+    }
 }

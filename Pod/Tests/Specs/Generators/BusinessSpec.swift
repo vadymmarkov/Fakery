@@ -19,6 +19,13 @@ class BusinessSpec: QuickSpec
                     expect(creditCardNumber).to(equal("1234-2121-1221-1211"))
                 }
             }
+
+            describe("#creditCardType") {
+                it("returns the correct text") {
+                    let creditCardType = business.creditCardType()
+                    expect(creditCardType).to(equal("visa"))
+                }
+            }
         }
     }
 }
