@@ -19,6 +19,20 @@ class TeamSpec: QuickSpec
                     expect(name).to(equal("California owls"))
                 }
             }
+
+            describe("#creature") {
+                it("returns the correct text") {
+                    let creature = team.creature()
+                    expect(creature).to(equal("owls"))
+                }
+            }
+
+            describe("#state") {
+                it("returns the correct text") {
+                    let state = team.state()
+                    expect(state).to(equal("California"))
+                }
+            }
         }
     }
 }

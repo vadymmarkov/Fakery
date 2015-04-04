@@ -4,4 +4,14 @@ public class Team: Generator
     {
         return generate("team.name")
     }
+
+    public func creature() -> String
+    {
+        return generate("team.creature")
+    }
+
+    public func state() -> String
+    {
+        return generate("address.state").capitalizedString
+    }
 }
