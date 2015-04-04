@@ -25,6 +25,8 @@
 		D5E19A021ACF764E00BD1A40 /* AppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E19A011ACF764E00BD1A40 /* AppSpec.swift */; };
 		D5E19A081AD0329200BD1A40 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E19A071AD0329200BD1A40 /* Name.swift */; };
 		D5E19A0A1AD032A600BD1A40 /* NameSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E19A091AD032A600BD1A40 /* NameSpec.swift */; };
+		D5E19A0C1AD0376500BD1A40 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E19A0B1AD0376500BD1A40 /* Team.swift */; };
+		D5E19A0E1AD037A400BD1A40 /* TeamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E19A0D1AD037A400BD1A40 /* TeamSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		D5E19A011ACF764E00BD1A40 /* AppSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSpec.swift; sourceTree = "<group>"; };
 		D5E19A071AD0329200BD1A40 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		D5E19A091AD032A600BD1A40 /* NameSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameSpec.swift; sourceTree = "<group>"; };
+		D5E19A0B1AD0376500BD1A40 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		D5E19A0D1AD037A400BD1A40 /* TeamSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSpec.swift; sourceTree = "<group>"; };
 		D89F5291001233A403C41710 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +186,7 @@
 				D58D6FBD1ACEE611006DBD0B /* Address.swift */,
 				D5E199FF1ACF75C500BD1A40 /* App.swift */,
 				D5E19A071AD0329200BD1A40 /* Name.swift */,
+				D5E19A0B1AD0376500BD1A40 /* Team.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				D58D6FBB1ACEE54D006DBD0B /* AddressSpec.swift */,
 				D5E19A011ACF764E00BD1A40 /* AppSpec.swift */,
 				D5E19A091AD032A600BD1A40 /* NameSpec.swift */,
+				D5E19A0D1AD037A400BD1A40 /* TeamSpec.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E19A0E1AD037A400BD1A40 /* TeamSpec.swift in Sources */,
 				D5E19A001ACF75C500BD1A40 /* App.swift in Sources */,
 				D58D6FBE1ACEE611006DBD0B /* Address.swift in Sources */,
 				D58D6FC01ACEF36F006DBD0B /* Generator.swift in Sources */,
@@ -324,6 +331,7 @@
 				D5E19A0A1AD032A600BD1A40 /* NameSpec.swift in Sources */,
 				D5118F7D1ACB3ADE003B426F /* ConfigSpec.swift in Sources */,
 				D58D6FC21ACEF424006DBD0B /* GeneratorSpec.swift in Sources */,
+				D5E19A0C1AD0376500BD1A40 /* Team.swift in Sources */,
 				D5118F7B1ACB3AAC003B426F /* Config.swift in Sources */,
 				D54C05071ACF68C900B72977 /* Provider.swift in Sources */,
 				D5E19A081AD0329200BD1A40 /* Name.swift in Sources */,
