@@ -1,6 +1,6 @@
-import SwiftyJSON
+import Foundation
 
-public class DataProvider
+public class Provider
 {
     var translations: [String: NSData] = [:]
 
@@ -11,7 +11,7 @@ public class DataProvider
         if let translationData = translations[locale] {
             translation = translationData
         } else {
-            let bundle = NSBundle(forClass: DataProvider.self)
+            let bundle = NSBundle(forClass: Provider.self)
             if let path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath) {
                 if let fileURL: NSURL = NSURL(fileURLWithPath: path) {
                     if let data = NSData(contentsOfURL: fileURL) {

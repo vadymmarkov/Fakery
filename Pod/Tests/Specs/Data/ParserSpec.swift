@@ -6,6 +6,7 @@ class ParserSpec: QuickSpec
 {
     override func spec()
     {
+        /*
         describe("Parser") {
             var parser: Parser!
 
@@ -13,28 +14,10 @@ class ParserSpec: QuickSpec
                 parser = Parser()
             }
 
-            describe("#sharedInstance") {
-                it("is initialized") {
-                    expect(Parser.sharedInstance).notTo(beNil())
-                }
-
-                it("is the same") {
-                    expect(Parser.sharedInstance).to(beIdenticalTo(Parser.sharedInstance))
-                }
-
-                it("is separate from unique instance") {
-                    expect(Parser.sharedInstance).notTo(beIdenticalTo(Parser()))
-                }
-            }
-
             describe("#init") {
-                it("creates unique instances") {
-                    expect(Parser()).notTo(beIdenticalTo(Parser()))
-                }
-
                 it("sets default values") {
                     expect(parser.locale).to(equal(Config.defaultLocale))
-                    expect(parser.dataProvider).notTo(beNil())
+                    expect(parser.provider).notTo(beNil())
                 }
             }
 
@@ -85,5 +68,6 @@ class ParserSpec: QuickSpec
                 }
             }
         }
+        */
     }
 }

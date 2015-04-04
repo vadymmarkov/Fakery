@@ -12,7 +12,7 @@
         "secondary_address": ["Apt. ###"],
         "postcode": ["#####-####"],
         "postcode_by_state": {
-            "CA": "900##",
+            "CA": "900##"
         },
         "state": ["California"],
         "state_abbr": ["CA"],

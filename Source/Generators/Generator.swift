@@ -2,24 +2,28 @@ import Foundation
 
 public class Generator
 {
-    public struct Constants {
+    public struct Constants
+    {
         public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
         public static let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
         public static let numbers = Array("0123456789")
     }
 
-    public class var parser: Parser {
-        return Parser.sharedInstance
+    let parser: Parser
+
+    public init(parser: Parser)
+    {
+        self.parser = parser
     }
 
-    public class func generate(key: String) -> String
+    public func generate(key: String) -> String
     {
         return parser.parseKey(key)
     }
 
     // MARK: - Filling
 
-    public class func numerify(string: String) -> String
+    public func numerify(string: String) -> String
     {
         let count = UInt32(Constants.numbers.count)
         var replaced = String(map(string.generate()) {
@@ -37,7 +41,7 @@ public class Generator
         return result
     }
 
-    public class func letterify(string: String) -> String
+    public func letterify(string: String) -> String
     {
         return String(map(string.generate()) {
             let count = UInt32(Constants.uppercaseLetters.count)
@@ -46,7 +50,7 @@ public class Generator
         })
     }
 
-    public class func bothify(string: String) -> String
+    public func bothify(string: String) -> String
     {
         return letterify(numerify(string))
     }
