@@ -26,19 +26,13 @@ public class Generator
     public func numerify(string: String) -> String
     {
         let count = UInt32(Constants.numbers.count)
-        var replaced = String(map(string.generate()) {
-            let char = Constants.numbers[Int(arc4random_uniform(count))]
-            return $0 == "#" ? char : $0
+        return String(map(enumerate(string)) {
+            (index, item) in
+            let numberIndex = index == 0 ? arc4random_uniform(count - 1) + 1 :
+                arc4random_uniform(count)
+            let char = Constants.numbers[Int(numberIndex)]
+            return item == "#" ? char : item
         })
-        var result = replaced
-        if countElements(result) > 0 {
-            if result[result.startIndex] == "0" {
-                let char = Constants.numbers[Int(arc4random_uniform(count - 1) + 1)]
-                result = "\(char)\(dropFirst(result))"
-            }
-        }
-
-        return result
     }
 
     public func letterify(string: String) -> String
