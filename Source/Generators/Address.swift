@@ -2,22 +2,22 @@ import Foundation
 
 public class Address: Generator
 {
-    public class func city() -> String
+    public func city() -> String
     {
         return generate("address.city")
     }
 
-    public class func streetName() -> String
+    public func streetName() -> String
     {
         return generate("address.street_name")
     }
 
-    public class func secondaryAddress() -> String
+    public func secondaryAddress() -> String
     {
         return numerify(generate("address.secondary_address"))
     }
 
-    public class func streetAddress(includeSecondary: Bool = false) -> String
+    public func streetAddress(includeSecondary: Bool = false) -> String
     {
         var streetAddress = numerify(generate("address.street_address"))
         if includeSecondary {
@@ -26,12 +26,12 @@ public class Address: Generator
         return streetAddress
     }
 
-    public class func buildingNumber() -> String
+    public func buildingNumber() -> String
     {
         return bothify(generate("address.building_number"))
     }
 
-    public class func postcode(stateAbbreviation: String = "") -> String
+    public func postcode(stateAbbreviation: String = "") -> String
     {
         if stateAbbreviation.isEmpty {
             return bothify(generate("address.postcode"))
@@ -39,52 +39,52 @@ public class Address: Generator
         return bothify(generate("address.postcode_by_state.\(stateAbbreviation)"))
     }
 
-    public class func timeZone() -> String
+    public func timeZone() -> String
     {
         return generate("address.time_zone")
     }
 
-    public class func streetSuffix() -> String
+    public func streetSuffix() -> String
     {
         return generate("address.street_suffix")
     }
 
-    public class func citySuffix() -> String
+    public func citySuffix() -> String
     {
         return generate("address.city_suffix")
     }
 
-    public class func cityPrefix() -> String
+    public func cityPrefix() -> String
     {
         return generate("address.city_prefix")
     }
 
-    public class func stateAbbreviation() -> String
+    public func stateAbbreviation() -> String
     {
         return generate("address.state_abbr")
     }
 
-    public class func state() -> String
+    public func state() -> String
     {
         return generate("address.state")
     }
 
-    public class func country() -> String
+    public func country() -> String
     {
         return generate("address.country")
     }
 
-    public class func countryCode() -> String
+    public func countryCode() -> String
     {
         return generate("address.country_code")
     }
 
-    public class func latitude() -> String
+    public func latitude() -> String
     {
         return "\(arc4random() * 180 - 90)"
     }
 
-    public class func longitude() -> String
+    public func longitude() -> String
     {
         return "\(arc4random() * 360 - 180)"
     }

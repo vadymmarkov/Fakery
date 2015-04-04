@@ -11,20 +11,13 @@ public class Parser
     }
 
     var data: JSON = []
-    var dataProvider: DataProvider
+    var provider: Provider
 
-    public class var sharedInstance: Parser
+    public init(locale: String = Config.defaultLocale)
     {
-        struct Static {
-            static let instance: Parser = Parser()
-        }
-        return Static.instance
-    }
-
-    public init()
-    {
-        locale = Config.defaultLocale
-        dataProvider = DataProvider()
+        self.provider = Provider()
+        self.locale = locale
+        loadData()
     }
 
     // MARK: - Parsing
@@ -109,7 +102,7 @@ public class Parser
 
     func loadData()
     {
-        if let localeData = dataProvider.dataForLocale(locale) {
+        if let localeData = provider.dataForLocale(locale) {
             data = JSON(data: localeData, options: NSJSONReadingOptions.AllowFragments, error: nil)
         } else if locale != Config.defaultLocale {
             locale = Config.defaultLocale
