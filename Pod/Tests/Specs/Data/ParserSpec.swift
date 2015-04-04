@@ -47,7 +47,7 @@ class ParserSpec: QuickSpec
                     }
                 }
 
-                describe("parseTemplate:withCurrentSubject") {
+                describe("#parseTemplate:withCurrentSubject") {
                     context("when the subject are correct") {
                         it("returns the correct text") {
                             let text = parser.parseTemplate("#{Name.first_name} #{street_suffix} Test", withCurrentSubject: "address")

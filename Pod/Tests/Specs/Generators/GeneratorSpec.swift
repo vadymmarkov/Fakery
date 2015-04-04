@@ -18,7 +18,7 @@ class GeneratorSpec: QuickSpec
             }
 
             describe("filling") {
-                describe(".numerify") {
+                describe("#numerify") {
                     it("replaces # with random numbers") {
                         let numerified = generator.numerify("12####")
                         expect(numerified.toInt()).notTo(beNil())
@@ -27,7 +27,7 @@ class GeneratorSpec: QuickSpec
                     }
                 }
 
-                describe(".letterify") {
+                describe("#letterify") {
                     it("replaces ? with random letters") {
                         let letterified = generator.letterify("This is awes?me")
                         expect(find(letterified, "?")).to(beNil())
@@ -35,7 +35,7 @@ class GeneratorSpec: QuickSpec
                     }
                 }
 
-                describe(".bothify") {
+                describe("#bothify") {
                     it("replaces # with random numbers and ? with random letters") {
                         let bothified = generator.bothify("#th of ?pril")
                         expect(find(bothified, "#")).to(beNil())
