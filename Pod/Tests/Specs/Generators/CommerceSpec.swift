@@ -31,6 +31,13 @@ class CommerceSpec: QuickSpec
                 }
             }
 
+            describe("#productName") {
+                it("generates the correct text") {
+                    let productName = commerce.productName()
+                    expect(productName).to(equal("Awesome Wooden Hat"))
+                }
+            }
+
             describe("#categories") {
                 it("returns the correct amount of categories") {
                     var categories = commerce.categories(3)

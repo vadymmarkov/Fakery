@@ -24,6 +24,11 @@ public class Commerce: Generator
         return department
     }
 
+    public func productName() -> String
+    {
+        return generate("commerce.product_name.adjective") + " " + generate("commerce.product_name.material") + " " + generate("commerce.product_name.product")
+    }
+
     // MARK: - Private
 
     func categories(amount: Int) -> [String]
