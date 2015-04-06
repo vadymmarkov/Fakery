@@ -38,6 +38,14 @@ class CommerceSpec: QuickSpec
                 }
             }
 
+            describe("#price") {
+                it("generates the correct number") {
+                    let price = commerce.price()
+                    expect(price > 0.0).to(beTrue())
+                    expect(price <= 100.0).to(beTrue())
+                }
+            }
+
             describe("#categories") {
                 it("returns the correct amount of categories") {
                     var categories = commerce.categories(3)

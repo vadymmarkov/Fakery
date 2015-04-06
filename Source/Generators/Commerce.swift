@@ -29,6 +29,12 @@ public class Commerce: Generator
         return generate("commerce.product_name.adjective") + " " + generate("commerce.product_name.material") + " " + generate("commerce.product_name.product")
     }
 
+    public func price() -> Double
+    {
+        let arc4randoMax:Double = 0x100000000
+        return floor(Double((Double(arc4random()) / arc4randoMax) * 100.0) * 100) / 100.0
+    }
+
     // MARK: - Private
 
     func categories(amount: Int) -> [String]
