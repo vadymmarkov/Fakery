@@ -27,7 +27,7 @@ public class Parser
         var parsed: String = ""
 
         var parts = split(key) {$0 == "."}
-        if parts.count > 1 {
+        if parts.count > 0 {
             var keyData = data[locale]["faker"]
             let subject = parts[0]
 

@@ -83,7 +83,7 @@
       },
       "commerce": {
         "color": ["black"],
-        "department": ["Music"],
+        "department": ["Music", "Video", "Development"],
         "product_name": {
           "adjective": ["Awesome"],
           "material": ["Wooden"],
