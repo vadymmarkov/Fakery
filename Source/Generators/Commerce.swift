@@ -31,7 +31,7 @@ public class Commerce: Generator {
         return floor(Double((Double(arc4random()) / arc4randoMax) * 100.0) * 100) / 100.0
     }
 
-    // MARK: - Private
+    // MARK: - Helpers
 
     func categories(amount: Int) -> [String] {
         var categories: [String] = []

@@ -19,7 +19,7 @@ public class Generator {
     }
 
     public func generate(key: String) -> String {
-        return parser.parseKey(key)
+        return parser.fetch(key)
     }
 
     // MARK: - Filling
