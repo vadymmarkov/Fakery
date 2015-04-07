@@ -1,7 +1,7 @@
 import SwiftyJSON
 
-public class Parser
-{
+public class Parser {
+
     public var locale: String {
         didSet {
             if locale != oldValue {
@@ -13,8 +13,7 @@ public class Parser
     var data: JSON = []
     var provider: Provider
 
-    public init(locale: String = Config.defaultLocale)
-    {
+    public init(locale: String = Config.defaultLocale) {
         self.provider = Provider()
         self.locale = locale
         loadData()
@@ -22,8 +21,7 @@ public class Parser
 
     // MARK: - Parsing
 
-    public func parseKey(key: String) -> String
-    {
+    public func fetch(key: String) -> String {
         var parsed: String = ""
 
         var parts = split(key) {$0 == "."}
@@ -44,16 +42,15 @@ public class Parser
                 }
             }
 
-            if find(parsed, "#") != nil {
-                parsed = parseTemplate(parsed, withCurrentSubject: subject)
+            if parsed.rangeOfString("#{") != nil {
+                parsed = parse(parsed, forSubject: subject)
             }
         }
 
         return parsed
     }
 
-    func parseTemplate(template: String, withCurrentSubject currentSubject: String) -> String
-    {
+    func parse(template: String, forSubject subject: String) -> String {
         var text = ""
         let string = template as NSString
         let regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?",
@@ -77,14 +74,14 @@ public class Parser
                     text += string.substringWithRange(prefixRange)
                 }
 
-                var subject = currentSubject + "."
+                var subjectWithDot = subject + "."
                 if subjectRange.length > 0 {
-                    subject = string.substringWithRange(subjectRange)
+                    subjectWithDot = string.substringWithRange(subjectRange)
                 }
 
                 if methodRange.length > 0 {
-                    let key = subject.lowercaseString + string.substringWithRange(methodRange)
-                    text += parseKey(key)
+                    let key = subjectWithDot.lowercaseString + string.substringWithRange(methodRange)
+                    text += fetch(key)
                 }
 
                 if otherRange.length > 0 {
@@ -100,8 +97,7 @@ public class Parser
 
     // MARK: - Data loading
 
-    func loadData()
-    {
+    func loadData() {
         if let localeData = provider.dataForLocale(locale) {
             data = JSON(data: localeData, options: NSJSONReadingOptions.AllowFragments, error: nil)
         } else if locale != Config.defaultLocale {

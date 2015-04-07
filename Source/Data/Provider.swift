@@ -1,11 +1,10 @@
 import Foundation
 
-public class Provider
-{
+public class Provider {
+
     var translations: [String: NSData] = [:]
 
-    public func dataForLocale(locale: String) -> NSData?
-    {
+    public func dataForLocale(locale: String) -> NSData? {
         var translation: NSData?
 
         if let translationData = translations[locale] {

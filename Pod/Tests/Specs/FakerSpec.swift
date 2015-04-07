@@ -1,10 +1,9 @@
 import Quick
 import Nimble
 
-class FakerSpec: QuickSpec
-{
-    override func spec()
-    {
+class FakerSpec: QuickSpec {
+
+    override func spec() {
         describe("Faker") {
             var faker: Faker!
 

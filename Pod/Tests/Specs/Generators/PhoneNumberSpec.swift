@@ -1,10 +1,9 @@
 import Quick
 import Nimble
 
-class PhoneNumberSpec: QuickSpec
-{
-    override func spec()
-    {
+class PhoneNumberSpec: QuickSpec {
+
+    override func spec() {
         describe("PhoneNumber") {
             var phoneNumber: PhoneNumber!
 

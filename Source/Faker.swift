@@ -1,5 +1,5 @@
-public class Faker
-{
+public class Faker {
+
     public var locale: String {
         didSet {
             if locale != oldValue {
@@ -12,8 +12,7 @@ public class Faker
 
     let parser: Parser
 
-    public init(locale: String = Config.defaultLocale)
-    {
+    public init(locale: String = Config.defaultLocale) {
         self.locale = locale
         parser = Parser(locale: self.locale)
 

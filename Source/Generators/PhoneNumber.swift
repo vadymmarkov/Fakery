@@ -1,35 +1,29 @@
-public class PhoneNumber: Generator
-{
-    public func phoneNumber() -> String
-    {
+public class PhoneNumber: Generator {
+
+    public func phoneNumber() -> String {
         return numerify(generate("phone_number.formats"))
     }
 
-    public func cellPhone() -> String
-    {
+    public func cellPhone() -> String {
         return numerify(generate("cell_phone.formats"))
     }
 
     // US only
-    public func areaCode() -> String
-    {
+    public func areaCode() -> String {
         return generate("phone_number.area_code")
     }
 
     // US only
-    public func exchangeCode() -> String
-    {
+    public func exchangeCode() -> String {
         return generate("phone_number.exchange_code")
     }
 
     // US only
-    public func subscriberNumber() -> String
-    {
+    public func subscriberNumber() -> String {
         return numerify("####")
     }
 
-    public func numberExtension(length: Int) -> String
-    {
+    public func numberExtension(length: Int) -> String {
         var template = ""
         for i in 1...length {
             template += "#"

@@ -1,10 +1,9 @@
 import Quick
 import Nimble
 
-class AppSpec: QuickSpec
-{
-    override func spec()
-    {
+class AppSpec: QuickSpec {
+
+    override func spec() {
         describe("App") {
             var app: App!
 
