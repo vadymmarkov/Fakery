@@ -46,4 +46,15 @@ public class Generator {
     public func bothify(string: String) -> String {
         return letterify(numerify(string))
     }
+
+    public func latinify(string: String) -> String {
+        var result = ""
+        for char in string {
+            let charString = "\(char)".lowercaseString
+            if contains(Constants.letters, charString[charString.startIndex]) {
+                result.append(char)
+            }
+        }
+        return result
+    }
 }
