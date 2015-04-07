@@ -9,4 +9,16 @@ public class PhoneNumber: Generator
     {
         return numerify(generate("cell_phone.formats"))
     }
+
+    // US only
+    public func areaCode() -> String
+    {
+        return generate("phone_number.area_code")
+    }
+
+    // US only
+    public func exchangeCode() -> String
+    {
+        return generate("phone_number.exchange_code")
+    }
 }

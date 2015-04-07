@@ -26,6 +26,20 @@ class PhoneNumberSpec: QuickSpec
                     expect(phone).to(match("^\\(\\d{3}\\) \\d{3}-\\d{4}$"))
                 }
             }
+
+            describe("#areaCode") {
+                it("generates the correct text") {
+                    let areaCode = phoneNumber.areaCode()
+                    expect(areaCode).to(equal("201"))
+                }
+            }
+
+            describe("#exchangeCode") {
+                it("generates the correct text") {
+                    let exchangeCode = phoneNumber.exchangeCode()
+                    expect(exchangeCode).to(equal("201"))
+                }
+            }
         }
     }
 }

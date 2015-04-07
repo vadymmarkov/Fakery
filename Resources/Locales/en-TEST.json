@@ -71,6 +71,8 @@
         "name": ["#{prefix} #{first_name} #{last_name}"]
       },
       "phone_number": {
+        "area_code": ["201"],
+        "exchange_code": ["201"],
         "formats": ["###-###-####"]
       },
       "cell_phone": {
