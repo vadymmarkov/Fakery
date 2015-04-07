@@ -21,4 +21,20 @@ public class PhoneNumber: Generator
     {
         return generate("phone_number.exchange_code")
     }
+
+    // US only
+    public func subscriberNumber() -> String
+    {
+        return numerify("####")
+    }
+
+    public func numberExtension(length: Int) -> String
+    {
+        var template = ""
+        for i in 1...length {
+            template += "#"
+        }
+
+        return numerify(template)
+    }
 }

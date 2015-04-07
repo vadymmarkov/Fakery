@@ -53,8 +53,6 @@ public class Commerce: Generator
     func mergeCategories(categories: [String]) -> String
     {
         let separator = generate("separator")
-
-
         let commaSeparated = ", ".join(categories[0..<categories.count - 1])
         return commaSeparated + separator + categories.last!
     }

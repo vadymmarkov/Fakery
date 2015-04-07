@@ -40,6 +40,20 @@ class PhoneNumberSpec: QuickSpec
                     expect(exchangeCode).to(equal("201"))
                 }
             }
+
+            describe("#subscriberNumber") {
+                it("generates the correct number with 4 digits") {
+                    let subscriberNumber = phoneNumber.subscriberNumber()
+                    expect(subscriberNumber).to(match("^\\d{4}$"))
+                }
+            }
+
+            describe("#numberExtension") {
+                it("generates the correct text with specified number of digits") {
+                    let numberExtension = phoneNumber.numberExtension(5)
+                    expect(numberExtension).to(match("^\\d{5}$"))
+                }
+            }
         }
     }
 }
