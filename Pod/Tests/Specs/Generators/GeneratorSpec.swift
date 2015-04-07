@@ -1,12 +1,10 @@
 import Quick
 import Nimble
 
-class GeneratorSpec: QuickSpec
-{
-    override func spec()
-    {
-        describe("Generator") {
+class GeneratorSpec: QuickSpec {
 
+    override func spec() {
+        describe("Generator") {
             var generator: Generator!
 
             beforeEach {

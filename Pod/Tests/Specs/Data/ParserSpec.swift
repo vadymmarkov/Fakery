@@ -2,10 +2,9 @@ import Quick
 import Nimble
 import SwiftyJSON
 
-class ParserSpec: QuickSpec
-{
-    override func spec()
-    {
+class ParserSpec: QuickSpec {
+
+    override func spec() {
         describe("Parser") {
             var parser: Parser!
 

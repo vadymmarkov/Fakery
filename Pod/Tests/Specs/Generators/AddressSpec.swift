@@ -1,10 +1,9 @@
 import Quick
 import Nimble
 
-class AddressSpec: QuickSpec
-{
-    override func spec()
-    {
+class AddressSpec: QuickSpec {
+
+    override func spec() {
         describe("Address") {
             var address: Address!
 
