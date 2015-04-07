@@ -1,9 +1,8 @@
 import Foundation
 
-public class Generator
-{
-    public struct Constants
-    {
+public class Generator {
+
+    public struct Constants {
         public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
         public static let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
         public static let numbers = Array("0123456789")
@@ -12,23 +11,20 @@ public class Generator
     let parser: Parser
     let dateFormatter: NSDateFormatter
 
-    public init(parser: Parser)
-    {
+    public init(parser: Parser) {
         self.parser = parser
 
         dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
     }
 
-    public func generate(key: String) -> String
-    {
+    public func generate(key: String) -> String {
         return parser.parseKey(key)
     }
 
     // MARK: - Filling
 
-    public func numerify(string: String) -> String
-    {
+    public func numerify(string: String) -> String {
         let count = UInt32(Constants.numbers.count)
         return String(map(enumerate(string)) {
             (index, item) in
@@ -39,8 +35,7 @@ public class Generator
         })
     }
 
-    public func letterify(string: String) -> String
-    {
+    public func letterify(string: String) -> String {
         return String(map(string.generate()) {
             let count = UInt32(Constants.uppercaseLetters.count)
             let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
@@ -48,8 +43,7 @@ public class Generator
         })
     }
 
-    public func bothify(string: String) -> String
-    {
+    public func bothify(string: String) -> String {
         return letterify(numerify(string))
     }
 }

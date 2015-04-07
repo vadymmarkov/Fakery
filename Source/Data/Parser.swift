@@ -1,7 +1,7 @@
 import SwiftyJSON
 
-public class Parser
-{
+public class Parser {
+
     public var locale: String {
         didSet {
             if locale != oldValue {
@@ -13,8 +13,7 @@ public class Parser
     var data: JSON = []
     var provider: Provider
 
-    public init(locale: String = Config.defaultLocale)
-    {
+    public init(locale: String = Config.defaultLocale) {
         self.provider = Provider()
         self.locale = locale
         loadData()
@@ -22,8 +21,7 @@ public class Parser
 
     // MARK: - Parsing
 
-    public func parseKey(key: String) -> String
-    {
+    public func parseKey(key: String) -> String {
         var parsed: String = ""
 
         var parts = split(key) {$0 == "."}
@@ -52,8 +50,7 @@ public class Parser
         return parsed
     }
 
-    func parseTemplate(template: String, withCurrentSubject currentSubject: String) -> String
-    {
+    func parseTemplate(template: String, withCurrentSubject currentSubject: String) -> String {
         var text = ""
         let string = template as NSString
         let regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?",
@@ -100,8 +97,7 @@ public class Parser
 
     // MARK: - Data loading
 
-    func loadData()
-    {
+    func loadData() {
         if let localeData = provider.dataForLocale(locale) {
             data = JSON(data: localeData, options: NSJSONReadingOptions.AllowFragments, error: nil)
         } else if locale != Config.defaultLocale {
