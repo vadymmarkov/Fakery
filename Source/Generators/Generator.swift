@@ -46,4 +46,8 @@ public class Generator {
     public func bothify(string: String) -> String {
         return letterify(numerify(string))
     }
+
+    public func removeNonWordCharacters(string: String) -> String {
+        return string.stringByReplacingOccurrencesOfString("[^A-Za-z0-9_]", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
+    }
 }

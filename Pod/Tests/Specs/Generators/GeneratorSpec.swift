@@ -41,6 +41,13 @@ class GeneratorSpec: QuickSpec {
                         expect(bothified).to(match("^\\dth of [A-Za-z]pril$"))
                     }
                 }
+
+                describe("#removeNonWordCharacters") {
+                    it("removes special characters") {
+                        let latin = generator.removeNonWordCharacters("Øghdasæå!y_=a")
+                        expect(latin).to(equal("ghdasy_a"))
+                    }
+                }
             }
         }
     }
