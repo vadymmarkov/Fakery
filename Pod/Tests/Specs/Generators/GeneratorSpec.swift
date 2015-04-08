@@ -41,13 +41,6 @@ class GeneratorSpec: QuickSpec {
                         expect(bothified).to(match("^\\dth of [A-Za-z]pril$"))
                     }
                 }
-
-                describe("#latinify") {
-                    it("removes unsafe characters") {
-                        let latin = generator.latinify("Øghdasæå!y_=a")
-                        expect(latin).to(equal("ghdasya"))
-                    }
-                }
             }
         }
     }
