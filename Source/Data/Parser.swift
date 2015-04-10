@@ -57,7 +57,7 @@ public class Parser {
             options: nil, error: nil)!
 
         let matches = regex.matchesInString(string as String, options: nil,
-            range: NSMakeRange(0, string.length)) as [NSTextCheckingResult]
+            range: NSMakeRange(0, string.length)) as! [NSTextCheckingResult]
 
         if matches.count > 0 {
             for match in matches {

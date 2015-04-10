@@ -23,7 +23,7 @@ class InternetSpec: QuickSpec {
                 context("with provided separator") {
                     it("returns the correct text") {
                         let username = internet.username(separator: "_")
-                        if countElements(username) > 5 {
+                        if count(username) > 5 {
                             expect(find(username, "_")).notTo(beNil())
                         } else {
                             expect(find(username, "_")).to(beNil())

@@ -38,7 +38,5 @@ public class Internet: Generator {
 
     public func domainSuffix() -> String {
         return generate("internet.domain_suffix")
-    }
-    
-    public func email
+    }    
 }
