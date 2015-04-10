@@ -10,7 +10,7 @@ public class Internet: Generator {
         ]
 
         let randomCount = UInt32(components.count) - 1
-        let count = 3//Int(arc4random_uniform(randomCount) + randomCount)
+        let count = Int(arc4random_uniform(randomCount) + randomCount)
 
         var gap = ""
         if let sep = separator {
@@ -18,4 +18,27 @@ public class Internet: Generator {
         }
         return gap.join(components[0..<count]).stringByReplacingOccurrencesOfString("'", withString: "").lowercaseString
     }
+
+    public func domainName(alphaNumericOnly: Bool = true) -> String {
+        return domainWord(alphaNumericOnly: alphaNumericOnly) + "." + domainSuffix()
+    }
+
+    public func domainWord(alphaNumericOnly: Bool = true) -> String {
+        var nameParts = split(generate("company.name")) {$0 == " "}
+        var name = ""
+        if let first = nameParts.first {
+            name = first
+        } else {
+            name = letterify("?????")
+        }
+
+        let result = alphaNumericOnly ? alphaNumerify(name) : name
+        return result.lowercaseString
+    }
+
+    public func domainSuffix() -> String {
+        return generate("internet.domain_suffix")
+    }
+    
+    public func email
 }

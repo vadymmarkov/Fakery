@@ -42,9 +42,9 @@ class GeneratorSpec: QuickSpec {
                     }
                 }
 
-                describe("#removeNonWordCharacters") {
+                describe("#AlphaNumerify") {
                     it("removes special characters") {
-                        let latin = generator.removeNonWordCharacters("Øghdasæå!y_=a")
+                        let latin = generator.alphaNumerify("Øghdasæå!y_=a")
                         expect(latin).to(equal("ghdasy_a"))
                     }
                 }

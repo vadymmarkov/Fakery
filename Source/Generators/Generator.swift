@@ -47,7 +47,7 @@ public class Generator {
         return letterify(numerify(string))
     }
 
-    public func removeNonWordCharacters(string: String) -> String {
+    public func alphaNumerify(string: String) -> String {
         return string.stringByReplacingOccurrencesOfString("[^A-Za-z0-9_]", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
     }
 }
