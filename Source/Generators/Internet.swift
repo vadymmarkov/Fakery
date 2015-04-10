@@ -38,5 +38,21 @@ public class Internet: Generator {
 
     public func domainSuffix() -> String {
         return generate("internet.domain_suffix")
-    }    
+    }
+
+    public func email() -> String {
+        return "@".join([username(), domainName()])
+    }
+
+    public func freeEmail() -> String {
+        return "@".join([username(), generate("internet.free_email")])
+    }
+
+    public func safeEmail() -> String {
+        let topLevelDomains = ["org", "com", "net"]
+        let count = UInt32(topLevelDomains.count)
+        let topLevelDomain = topLevelDomains[Int(arc4random_uniform(count))]
+
+        return "@".join([username(), "example." + topLevelDomain])
+    }
 }

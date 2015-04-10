@@ -5,6 +5,7 @@ class InternetSpec: QuickSpec {
 
     override func spec() {
         describe("Internet") {
+            let emailFormat = "[\\w._%+-]+@[\\w.-]+\\.\\w{2,}"
             var internet: Internet!
 
             beforeEach {
@@ -55,6 +56,29 @@ class InternetSpec: QuickSpec {
                 it("returns the correct text") {
                     let domainSuffix = internet.domainSuffix()
                     expect(domainSuffix).to(equal("com"))
+                }
+            }
+
+            describe("#email") {
+                it("returns the correct email address") {
+                    let email = internet.email()
+                    expect(email).to(match(emailFormat))
+                }
+            }
+
+            describe("#freeEmail") {
+                it("returns the correct email address") {
+                    let freeEmail = internet.freeEmail()
+                    expect(freeEmail).to(match(emailFormat))
+                    expect(freeEmail).to(match("^[\\w._%+-]+@gmail.com$"))
+                }
+            }
+
+            describe("#safeEmail") {
+                it("returns the correct email address") {
+                    let safeEmail = internet.safeEmail()
+                    expect(safeEmail).to(match(emailFormat))
+                    expect(safeEmail).to(match("^[\\w._%+-]+@example.(org|com|net)$"))
                 }
             }
         }
