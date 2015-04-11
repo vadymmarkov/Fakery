@@ -55,4 +55,27 @@ public class Internet: Generator {
 
         return "@".join([username(), "example." + topLevelDomain])
     }
+
+    // @ToDo
+    public func password(minimumLength: Int = 8, maximumLength: Int = 16) -> String {
+        return ""
+    }
+
+    public func ipV4Address() -> String {
+        let ipRand = {
+            2 + arc4random() % 253
+        }
+
+        return String(format: "%d.%d.%d.%d", ipRand(), ipRand(), ipRand(), ipRand())
+    }
+
+    public func ipV6Address() -> String {
+        var components: [String] = []
+
+        for _ in 1..<8 {
+            components.append(String(format: "%X", arc4random() % 65535))
+        }
+
+        return ":".join(components)
+    }
 }

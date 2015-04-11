@@ -81,6 +81,20 @@ class InternetSpec: QuickSpec {
                     expect(safeEmail).to(match("^[\\w._%+-]+@example.(org|com|net)$"))
                 }
             }
+
+            describe("#ipV4Address") {
+                it("returns the correct text") {
+                    let ipV4Address = internet.ipV4Address()
+                    expect(ipV4Address).to(match("((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])"))
+                }
+            }
+
+            describe("#ipV6Address") {
+                it("returns the correct text") {
+                    let ipV6Address = internet.ipV6Address()
+                    expect(ipV6Address).to(match("^([0-9A-Fa-f]{0,4}:){2,7}([0-9A-Fa-f]{1,4}$|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.|$)){4})"))
+                }
+            }
         }
     }
 }
