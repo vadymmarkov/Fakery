@@ -41,6 +41,13 @@ class GeneratorSpec: QuickSpec {
                         expect(bothified).to(match("^\\dth of [A-Za-z]pril$"))
                     }
                 }
+
+                describe("#AlphaNumerify") {
+                    it("removes special characters") {
+                        let latin = generator.alphaNumerify("Øghdasæå!y_=a")
+                        expect(latin).to(equal("ghdasy_a"))
+                    }
+                }
             }
         }
     }
