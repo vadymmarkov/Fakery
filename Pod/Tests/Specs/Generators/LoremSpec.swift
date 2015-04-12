@@ -34,6 +34,62 @@ class LoremSpec: QuickSpec {
                     }
                 }
             }
+
+            describe("#character") {
+                it("returns the correct character") {
+                    let char = lorem.character()
+                    expect(char).to(match("^[A-Za-z]$"))
+                }
+            }
+
+            describe("#characters") {
+                context("without the amount - 255 chars by default") {
+                    it("returns the expected amount of characters") {
+                        let chars = lorem.characters()
+                        expect(chars).to(match("^[A-Za-z]{255}"))
+                    }
+                }
+
+                context("with the amount of chars") {
+                    it("returns the expected amount of characters") {
+                        let chars = lorem.characters(amount: 7)
+                        expect(chars).to(match("^[A-Za-z]{7}"))
+                    }
+                }
+            }
+
+            describe("#sentence") {
+                context("without the amount - 4 words by default") {
+                    it("returns the expected amount of words") {
+                        let sentence = lorem.sentence()
+                        expect(sentence).to(match("^[A-Z][A-Za-z]+ [A-Za-z]+ [A-Za-z]+ [A-Za-z]+.$"))
+                    }
+                }
+
+                context("with the amount of words") {
+                    it("returns the expected amount of words") {
+                        let sentence = lorem.sentence(wordsAmount: 2)
+                        expect(sentence).to(match("^[A-Z][A-Za-z]+ [A-Za-z]+.$"))
+                    }
+                }
+            }
+
+            describe("#sentences") {
+                context("without the amount - 3 sentences by default") {
+                    it("returns the expected amount of sentences") {
+                        let sentences = lorem.sentences()
+                        expect(sentences).to(match("^[A-Za-z ]+. [A-Za-z ]+. [A-Za-z ]+.$"))
+                    }
+                }
+
+                context("with the amount of sentences") {
+                    it("returns the expected amount of sentences") {
+                        let sentences = lorem.sentences(amount: 2)
+                        expect(sentences).to(match("^[A-Za-z ]+. [A-Za-z ]+.$"))
+                    }
+                }
+            }
+
         }
     }
 }
