@@ -47,4 +47,17 @@ public class Lorem: Generator {
 
         return " ".join(sentences)
     }
+
+    public func paragraph(sentencesAmount: Int = 3) -> String {
+        return sentences(amount: sentencesAmount)
+    }
+
+    public func paragraphs(amount: Int = 3) -> String {
+        var paragraphs: [String] = []
+        for _ in 0..<amount {
+            paragraphs.append(paragraph())
+        }
+
+        return "\n".join(paragraphs)
+    }
 }

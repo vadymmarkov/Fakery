@@ -90,6 +90,38 @@ class LoremSpec: QuickSpec {
                 }
             }
 
+            describe("#paragraph") {
+                context("without the amount - 3 sentence by default") {
+                    it("returns the expected amount of sentences") {
+                        let paragraph = lorem.paragraph()
+                        expect(paragraph).to(match("^[A-Za-z ]+. [A-Za-z ]+. [A-Za-z ]+.$"))
+                    }
+                }
+
+                context("with the amount of words") {
+                    it("returns the expected amount of sentences") {
+                        let sentence = lorem.paragraph(sentencesAmount: 2)
+                        expect(sentence).to(match("^[A-Za-z ]+. [A-Za-z ]+.$"))
+                    }
+                }
+            }
+
+            describe("#paragraphs") {
+                context("without the amount - 3 paragraphs by default") {
+                    it("returns the expected amount of paragraphs") {
+                        let paragraphs = lorem.paragraphs()
+                        expect(paragraphs).to(match("^[A-Za-z .]+\\n[A-Za-z .]+\\n[A-Za-z .]+$"))
+                    }
+                }
+
+                context("with the amount of paragraphs") {
+                    it("returns the expected amount of paragraphs") {
+                        let paragraphs = lorem.paragraphs(amount: 2)
+                        expect(paragraphs).to(match("^[A-Za-z .]+\\n[A-Za-z .]+$"))
+                    }
+                }
+            }
+
         }
     }
 }
