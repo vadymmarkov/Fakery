@@ -78,4 +78,10 @@ public class Internet: Generator {
 
         return ":".join(components)
     }
+
+    public func url() -> String {
+        return "http://\(domainName())/\(username())"
+    }
+
+    // @ToDo - slug
 }

@@ -95,6 +95,13 @@ class InternetSpec: QuickSpec {
                     expect(ipV6Address).to(match("^([0-9A-Fa-f]{0,4}:){2,7}([0-9A-Fa-f]{1,4}$|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.|$)){4})"))
                 }
             }
+
+            describe("#url") {
+                it("returns the correct URL") {
+                    let url = internet.url()
+                    expect(url).to(match("^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"))
+                }
+            }
         }
     }
 }
