@@ -82,6 +82,36 @@ class InternetSpec: QuickSpec {
                 }
             }
 
+            describe("#password") {
+                context("without min and max - 8...16 by default") {
+                    it("returns the correct password") {
+                        let password = internet.password()
+                        let length = count(password)
+                        expect(length >= 8 && length <= 16).to(beTrue())
+                    }
+                }
+
+                context("with provided min length and max length") {
+                    it("returns the correct password when min = max") {
+                        let password = internet.password(minimumLength: 3, maximumLength: 3)
+                        let length = count(password)
+                        expect(length == 3).to(beTrue())
+                    }
+
+                    it("returns the correct password when min > max") {
+                        let password = internet.password(minimumLength: 3, maximumLength: 4)
+                        let length = count(password)
+                        expect(length >= 3 && length <= 4).to(beTrue())
+                    }
+
+                    it("returns the correct password when min < max") {
+                        let password = internet.password(minimumLength: 4, maximumLength: 3)
+                        let length = count(password)
+                        expect(length == 4).to(beTrue())
+                    }
+                }
+            }
+
             describe("#ipV4Address") {
                 it("returns the correct text") {
                     let ipV4Address = internet.ipV4Address()
