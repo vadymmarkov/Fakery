@@ -2,6 +2,13 @@ import Foundation
 
 public class Internet: Generator {
 
+    let lorem: Lorem
+
+    public required init(parser: Parser) {
+        self.lorem = Lorem(parser: parser)
+        super.init(parser: parser)
+    }
+
     public func username(separator: String? = nil) -> String {
         var components: [String] = [
             generate("name.first_name"),
@@ -56,9 +63,14 @@ public class Internet: Generator {
         return "@".join([username(), "example." + topLevelDomain])
     }
 
-    // @ToDo
     public func password(minimumLength: Int = 8, maximumLength: Int = 16) -> String {
-        return ""
+        var temp = lorem.characters(amount: minimumLength)
+        let diffLength = maximumLength - minimumLength
+        if diffLength > 0 {
+            let diffRandom = Int(arc4random_uniform(UInt32(diffLength + 1)))
+            temp += lorem.characters(amount: diffRandom)
+        }
+        return temp
     }
 
     public func ipV4Address() -> String {

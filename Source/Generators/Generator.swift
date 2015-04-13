@@ -11,7 +11,7 @@ public class Generator {
     let parser: Parser
     let dateFormatter: NSDateFormatter
 
-    public init(parser: Parser) {
+    public required init(parser: Parser) {
         self.parser = parser
 
         dateFormatter = NSDateFormatter()
