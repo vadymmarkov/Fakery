@@ -2,52 +2,52 @@ import Foundation
 
 public class Commerce: Generator {
 
-    public func color() -> String {
-        return generate("commerce.color")
+  public func color() -> String {
+    return generate("commerce.color")
+  }
+
+  public func department(maximum: Int = 3, fixedAmount: Bool = false) -> String {
+    var amount = fixedAmount ? maximum : 1 + Int(arc4random_uniform(UInt32(maximum)))
+
+    let fetchedCategories = categories(amount)
+    let count = fetchedCategories.count
+
+    var department = ""
+    if count > 1 {
+      department = mergeCategories(fetchedCategories)
+    } else if count == 1 {
+      department = fetchedCategories[0]
     }
 
-    public func department(maximum: Int = 3, fixedAmount: Bool = false) -> String {
-        var amount = fixedAmount ? maximum : 1 + Int(arc4random_uniform(UInt32(maximum)))
+    return department
+  }
 
-        let fetchedCategories = categories(amount)
-        let count = fetchedCategories.count
+  public func productName() -> String {
+    return generate("commerce.product_name.adjective") + " " + generate("commerce.product_name.material") + " " + generate("commerce.product_name.product")
+  }
 
-        var department = ""
-        if count > 1 {
-            department = mergeCategories(fetchedCategories)
-        } else if count == 1 {
-            department = fetchedCategories[0]
-        }
+  public func price() -> Double {
+    let arc4randoMax:Double = 0x100000000
+    return floor(Double((Double(arc4random()) / arc4randoMax) * 100.0) * 100) / 100.0
+  }
 
-        return department
+  // MARK: - Helpers
+
+  func categories(amount: Int) -> [String] {
+    var categories: [String] = []
+    while categories.count < amount {
+      let category = generate("commerce.department")
+      if !contains(categories, category) {
+        categories.append(category)
+      }
     }
 
-    public func productName() -> String {
-        return generate("commerce.product_name.adjective") + " " + generate("commerce.product_name.material") + " " + generate("commerce.product_name.product")
-    }
+    return categories
+  }
 
-    public func price() -> Double {
-        let arc4randoMax:Double = 0x100000000
-        return floor(Double((Double(arc4random()) / arc4randoMax) * 100.0) * 100) / 100.0
-    }
-
-    // MARK: - Helpers
-
-    func categories(amount: Int) -> [String] {
-        var categories: [String] = []
-        while categories.count < amount {
-            let category = generate("commerce.department")
-            if !contains(categories, category) {
-                categories.append(category)
-            }
-        }
-
-        return categories
-    }
-
-    func mergeCategories(categories: [String]) -> String {
-        let separator = generate("separator")
-        let commaSeparated = ", ".join(categories[0..<categories.count - 1])
-        return commaSeparated + separator + categories.last!
-    }
+  func mergeCategories(categories: [String]) -> String {
+    let separator = generate("separator")
+    let commaSeparated = ", ".join(categories[0..<categories.count - 1])
+    return commaSeparated + separator + categories.last!
+  }
 }
