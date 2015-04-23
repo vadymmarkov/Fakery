@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Source/**/*'
-
+  s.dependency 'SwiftyJSON', '~> 2.2.0'
   s.frameworks = 'Foundation'
 end
