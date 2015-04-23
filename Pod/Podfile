@@ -7,4 +7,4 @@ inhibit_all_warnings!
 
 pod 'Quick', '~> 0.3.1'
 pod 'Nimble', '~> 0.4.2'
-pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branch => 'xcode6.3'
+pod 'SwiftyJSON', '2.2.0'
