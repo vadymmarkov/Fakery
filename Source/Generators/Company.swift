@@ -1,3 +1,5 @@
+import Foundation
+
 public class Company: Generator {
 
   public func name() -> String {
@@ -14,5 +16,10 @@ public class Company: Generator {
 
   public func bs() -> String {
     return randomWordsFromKey("company.bs")
+  }
+
+  public func logo() -> String {
+    let number = Int(arc4random_uniform(13)) + 1
+    return "http://pigment.github.io/fake-logos/logos/medium/color/\(number).png"
   }
 }

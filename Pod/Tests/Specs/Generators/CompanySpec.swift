@@ -39,6 +39,13 @@ class CompanySpec: QuickSpec {
           expect(bs).to(equal("implement innovative methodologies"))
         }
       }
+
+      describe("#logo") {
+        it("generates random logo") {
+          let logo = company.logo()
+          expect(logo).to(match("^http://pigment.github.io/fake-logos/logos/medium/color/\\d+.png$"))
+        }
+      }
     }
   }
 }
