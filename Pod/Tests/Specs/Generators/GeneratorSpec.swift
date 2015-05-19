@@ -8,7 +8,8 @@ class GeneratorSpec: QuickSpec {
       var generator: Generator!
 
       beforeEach {
-        generator = Generator(parser: Parser())
+        let parser = Parser(locale: "en-TEST")
+        generator = Generator(parser: parser)
       }
 
       it("has parser") {
@@ -42,10 +43,17 @@ class GeneratorSpec: QuickSpec {
           }
         }
 
-        describe("#AlphaNumerify") {
+        describe("#alphaNumerify") {
           it("removes special characters") {
             let latin = generator.alphaNumerify("Øghdasæå!y_=a")
             expect(latin).to(equal("ghdasy_a"))
+          }
+        }
+
+        describe("#randomWordsFromKey") {
+          it("generates random words") {
+            let phrase = generator.randomWordsFromKey("company.buzzwords")
+            expect(phrase).to(equal("Universal 24 hour software"))
           }
         }
       }

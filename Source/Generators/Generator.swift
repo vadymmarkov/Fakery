@@ -53,4 +53,21 @@ public class Generator {
       options: NSStringCompareOptions.RegularExpressionSearch,
       range: nil)
   }
+
+  public func randomWordsFromKey(key: String) -> String {
+    var string = ""
+
+    var list = [String]()
+    if let wordsList = parser.fetchRaw(key)?.arrayObject {
+      for words in wordsList {
+        if let item = (words as! [String]).random() {
+          list.append(item)
+        }
+      }
+
+      string = " ".join(list)
+    }
+
+    return string
+  }
 }
