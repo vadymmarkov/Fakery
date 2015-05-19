@@ -30,8 +30,7 @@ public class Parser {
       if let value = keyData.string {
         parsed = value
       } else if let array = keyData.arrayObject {
-        let count = UInt32(array.count)
-        if let item = array[Int(arc4random_uniform(count))] as? String {
+        if let item = array.random() as? String {
           parsed = item
         }
       }
