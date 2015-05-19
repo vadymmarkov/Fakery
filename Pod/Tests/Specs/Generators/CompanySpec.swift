@@ -1,9 +1,44 @@
-//
-//  CompanySpec.swift
-//  Pod
-//
-//  Created by Vadym Markov on 19/05/15.
-//  Copyright (c) 2015 Example. All rights reserved.
-//
+import Quick
+import Nimble
 
-import Foundation
+class CompanySpec: QuickSpec {
+
+  override func spec() {
+    describe("Company") {
+      var company: Company!
+
+      beforeEach {
+        let parser = Parser(locale: "en-TEST")
+        company = Company(parser: parser)
+      }
+
+      describe("#name") {
+        it("returns the correct text") {
+          let name = company.name()
+          expect(name).to(equal("Markov Inc"))
+        }
+      }
+
+      describe("#suffix") {
+        it("returns the correct text") {
+          let suffix = company.suffix()
+          expect(suffix).to(equal("Inc"))
+        }
+      }
+
+      describe("#catchPhrase") {
+        it("generates random catch phrase") {
+          let phrase = company.catchPhrase()
+          expect(phrase).to(equal("Universal 24 hour software"))
+        }
+      }
+
+      describe("#bs") {
+        it("generates random BS") {
+          let bs = company.bs()
+          expect(bs).to(equal("implement innovative methodologies"))
+        }
+      }
+    }
+  }
+}

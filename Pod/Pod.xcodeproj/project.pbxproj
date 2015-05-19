@@ -24,6 +24,8 @@
 		D54C05071ACF68C900B72977 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C05051ACF68C900B72977 /* Provider.swift */; };
 		D54C050B1ACF691F00B72977 /* ParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C05091ACF691F00B72977 /* ParserSpec.swift */; };
 		D54C050C1ACF691F00B72977 /* ProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C050A1ACF691F00B72977 /* ProviderSpec.swift */; };
+		D558CE8F1B0BE37E00506AC3 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D558CE8E1B0BE37E00506AC3 /* ArrayExtension.swift */; };
+		D558CE911B0BE88400506AC3 /* CompanySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D558CE901B0BE88400506AC3 /* CompanySpec.swift */; };
 		D58D6FBC1ACEE54D006DBD0B /* AddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FBB1ACEE54D006DBD0B /* AddressSpec.swift */; };
 		D58D6FBE1ACEE611006DBD0B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FBD1ACEE611006DBD0B /* Address.swift */; };
 		D58D6FC01ACEF36F006DBD0B /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D6FBF1ACEF36F006DBD0B /* Generator.swift */; };
@@ -65,6 +67,8 @@
 		D54C05051ACF68C900B72977 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		D54C05091ACF691F00B72977 /* ParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserSpec.swift; sourceTree = "<group>"; };
 		D54C050A1ACF691F00B72977 /* ProviderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSpec.swift; sourceTree = "<group>"; };
+		D558CE8E1B0BE37E00506AC3 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		D558CE901B0BE88400506AC3 /* CompanySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanySpec.swift; sourceTree = "<group>"; };
 		D58D6FBB1ACEE54D006DBD0B /* AddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSpec.swift; sourceTree = "<group>"; };
 		D58D6FBD1ACEE611006DBD0B /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		D58D6FBF1ACEF36F006DBD0B /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 		14C1365B1AB784BC00B7B07A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D558CE8D1B0BE37300506AC3 /* Extensions */,
 				D54C05031ACF689D00B72977 /* Data */,
 				D58D6FB91ACEE4A4006DBD0B /* Generators */,
 				D5118F7A1ACB3AAC003B426F /* Config.swift */,
@@ -192,6 +197,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		D558CE8D1B0BE37300506AC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D558CE8E1B0BE37E00506AC3 /* ArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D56F592F1AC9DC9F000D2794 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,12 +224,12 @@
 				D5E199FF1ACF75C500BD1A40 /* App.swift */,
 				D52E75871AD03DFD00A92694 /* Business.swift */,
 				D5144FA81AD30D8A0082E44E /* Commerce.swift */,
+				D503530D1B037F7300CB8C4A /* Company.swift */,
 				D5D46FEB1AD4868700D8339A /* Internet.swift */,
 				D51C7B7A1ADA6A500066F9AE /* Lorem.swift */,
 				D5E19A071AD0329200BD1A40 /* Name.swift */,
 				D500F73E1AD3DC4700B32BEC /* PhoneNumber.swift */,
 				D5E19A0B1AD0376500BD1A40 /* Team.swift */,
-				D503530D1B037F7300CB8C4A /* Company.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -234,6 +247,7 @@
 				D500F7401AD3EA4600B32BEC /* PhoneNumberSpec.swift */,
 				D5D46FED1AD493A800D8339A /* InternetSpec.swift */,
 				D51C7B7C1ADA6E320066F9AE /* LoremSpec.swift */,
+				D558CE901B0BE88400506AC3 /* CompanySpec.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -367,11 +381,13 @@
 				D54C05061ACF68C900B72977 /* Parser.swift in Sources */,
 				D51C7B7B1ADA6A500066F9AE /* Lorem.swift in Sources */,
 				D52E75881AD03DFD00A92694 /* Business.swift in Sources */,
+				D558CE911B0BE88400506AC3 /* CompanySpec.swift in Sources */,
 				D5E19A021ACF764E00BD1A40 /* AppSpec.swift in Sources */,
 				D5E19A0A1AD032A600BD1A40 /* NameSpec.swift in Sources */,
 				D5118F7D1ACB3ADE003B426F /* ConfigSpec.swift in Sources */,
 				D58D6FC21ACEF424006DBD0B /* GeneratorSpec.swift in Sources */,
 				D5E19A0C1AD0376500BD1A40 /* Team.swift in Sources */,
+				D558CE8F1B0BE37E00506AC3 /* ArrayExtension.swift in Sources */,
 				D5118F7B1ACB3AAC003B426F /* Config.swift in Sources */,
 				D500F7411AD3EA4600B32BEC /* PhoneNumberSpec.swift in Sources */,
 				D500F73F1AD3DC4700B32BEC /* PhoneNumber.swift in Sources */,

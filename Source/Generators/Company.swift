@@ -8,9 +8,11 @@ public class Company: Generator {
     return generate("company.suffix")
   }
 
-  /*
   public func catchPhrase() -> String {
-    let words = geenrate
+    return randomWordsFromKey("company.buzzwords")
   }
-  */
+
+  public func bs() -> String {
+    return randomWordsFromKey("company.bs")
+  }
 }
