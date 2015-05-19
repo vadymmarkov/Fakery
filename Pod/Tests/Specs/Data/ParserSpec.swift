@@ -46,6 +46,32 @@ class ParserSpec: QuickSpec {
           }
         }
 
+        describe("#fetchRaw") {
+          context("when the key is correct") {
+            it("returns the correct text") {
+              if let city = parser.fetchRaw("address.city")?.arrayObject![0].string {
+                expect(city).to(equal("#{city_prefix} #{Name.first_name}#{city_suffix}"))
+              }
+
+              if let name = parser.fetchRaw("name.name")?.arrayObject![0].string {
+                expect(name).to(equal("#{prefix} #{first_name} #{last_name}"))
+              }
+
+              if let team = parser.fetchRaw("team.name")?.arrayObject![0].string {
+                expect(team).to(equal("#{Address.state} #{creature}"))
+              }
+            }
+          }
+
+          context("when the key is incorrect") {
+            it("returns the empty text") {
+              if let dummy = parser.fetchRaw("dummy")?.string {
+                expect(dummy).to(beNil())
+              }
+            }
+          }
+        }
+
         describe("#parse:forSubject") {
           context("when the subject is correct") {
             it("returns the correct text") {
