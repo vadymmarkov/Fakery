@@ -22,22 +22,15 @@ public class Parser {
   // MARK: - Parsing
 
   public func fetch(key: String) -> String {
-    var parsed: String = ""
-    var parts = split(key) {$0 == "."}
+    var parsed = ""
 
-    if parts.count > 0 {
-      var keyData = data[locale]["faker"]
-      let subject = parts[0]
-
-      for part in parts {
-        keyData = keyData[part]
-      }
+    if let keyData = fetchRaw(key) {
+      let subject = getSubject(key)
 
       if let value = keyData.string {
         parsed = value
       } else if let array = keyData.arrayObject {
-        let count = UInt32(array.count)
-        if let item = array[Int(arc4random_uniform(count))] as? String {
+        if let item = array.random() as? String {
           parsed = item
         }
       }
@@ -48,6 +41,23 @@ public class Parser {
     }
 
     return parsed
+  }
+
+  public func fetchRaw(key: String) -> JSON? {
+    var keyData: JSON?
+    var parts = split(key) {$0 == "."}
+
+    if parts.count > 0 {
+      var parsed = data[locale]["faker"]
+
+      for part in parts {
+        parsed = parsed[part]
+      }
+
+      keyData = parsed
+    }
+
+    return keyData
   }
 
   func parse(template: String, forSubject subject: String) -> String {
@@ -95,6 +105,17 @@ public class Parser {
     }
 
     return text
+  }
+
+  func getSubject(key: String) -> String {
+    var subject: String = ""
+    var parts = split(key) {$0 == "."}
+
+    if parts.count > 0 {
+      subject = parts[0]
+    }
+
+    return subject
   }
 
   // MARK: - Data loading
