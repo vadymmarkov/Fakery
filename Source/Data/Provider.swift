@@ -10,14 +10,16 @@ public class Provider {
     if let translationData = translations[locale] {
       translation = translationData
     } else {
-      var bundle = NSBundle(forClass: Provider.self)
+      let bundle = NSBundle(forClass: Provider.self)
+      var path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
+
       if let bundlePath = NSBundle(forClass: Provider.self).resourcePath?.stringByAppendingPathComponent("Faker.bundle") {
-        if let fakerBundle = NSBundle(path: bundlePath) {
-          bundle = fakerBundle
+        if let bundle = NSBundle(path: bundlePath) {
+          path = bundle.pathForResource(locale, ofType: Config.pathExtension)
         }
       }
 
-      if let path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath),
+      if let path = path,
         fileURL: NSURL = NSURL(fileURLWithPath: path),
         data = NSData(contentsOfURL: fileURL){
           translation = data
