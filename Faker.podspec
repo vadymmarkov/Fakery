@@ -20,6 +20,9 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.requires_arc = true
 
+  s.resource_bundles = {
+    'Locales' => ['Resources/Locales/*.{json}']
+  }
   s.source_files = 'Source/**/*'
   s.dependency 'SwiftyJSON', '~> 2.2.0'
   s.frameworks = 'Foundation'
