@@ -136,14 +136,14 @@ class AddressSpec: QuickSpec {
       }
 
       describe("#latitude") {
-        it("returns a double value") {
+        it("returns non-zero value") {
           let latitude = address.latitude()
           expect(latitude).notTo(equal(0))
         }
       }
 
       describe("#longitude") {
-        it("returns a double value") {
+        it("returns non-zero value") {
           let longitude = address.longitude()
           expect(longitude).notTo(equal(0))
         }
