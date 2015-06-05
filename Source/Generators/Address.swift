@@ -65,11 +65,11 @@ public class Address: Generator {
     return generate("address.country_code")
   }
 
-  public func latitude() -> String {
-    return "\(arc4random() * 180 - 90)"
+  public func latitude() -> Double {
+    return Double(arc4random()) * 180.0 - 90.0
   }
 
-  public func longitude() -> String {
-    return "\(arc4random() * 360 - 180)"
+  public func longitude() -> Double {
+    return Double(arc4random()) * 360.0 - 180.0
   }
 }
