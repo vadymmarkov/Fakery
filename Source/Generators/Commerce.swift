@@ -6,8 +6,8 @@ public class Commerce: Generator {
     return generate("commerce.color")
   }
 
-  public func department(maximum: Int = 3, fixedAmount: Bool = false) -> String {
-    var amount = fixedAmount ? maximum : 1 + Int(arc4random_uniform(UInt32(maximum)))
+  public func department(maximum maximum: Int = 3, fixedAmount: Bool = false) -> String {
+    let amount = fixedAmount ? maximum : 1 + Int(arc4random_uniform(UInt32(maximum)))
 
     let fetchedCategories = categories(amount)
     let count = fetchedCategories.count
@@ -37,7 +37,7 @@ public class Commerce: Generator {
     var categories: [String] = []
     while categories.count < amount {
       let category = generate("commerce.department")
-      if !contains(categories, category) {
+      if !categories.contains(category) {
         categories.append(category)
       }
     }
@@ -47,7 +47,8 @@ public class Commerce: Generator {
 
   func mergeCategories(categories: [String]) -> String {
     let separator = generate("separator")
-    let commaSeparated = ", ".join(categories[0..<categories.count - 1])
+    let commaSeparated = categories[0..<categories.count - 1].joinWithSeparator(", ")
+    
     return commaSeparated + separator + categories.last!
   }
 }

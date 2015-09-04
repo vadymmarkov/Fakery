@@ -6,21 +6,21 @@ public class Lorem: Generator {
     return generate("lorem.words")
   }
 
-  public func words(amount: Int = 3) -> String {
+  public func words(amount amount: Int = 3) -> String {
 
     var words: [String] = []
     for _ in 0..<amount {
       words.append(word())
     }
 
-    return " ".join(words)
+    return words.joinWithSeparator(" ")
   }
 
   public func character() -> String {
     return characters(amount: 1)
   }
 
-  public func characters(amount: Int = 255) -> String {
+  public func characters(amount amount: Int = 255) -> String {
     var chars = ""
 
     if amount > 0 {
@@ -33,31 +33,31 @@ public class Lorem: Generator {
     return chars
   }
 
-  public func sentence(wordsAmount: Int = 4) -> String {
+  public func sentence(wordsAmount wordsAmount: Int = 4) -> String {
     var sentence = words(amount: wordsAmount) + "."
     sentence.replaceRange(sentence.startIndex...sentence.startIndex, with: String(sentence[sentence.startIndex]).capitalizedString)
     return sentence
   }
 
-  public func sentences(amount: Int = 3) -> String {
+  public func sentences(amount amount: Int = 3) -> String {
     var sentences: [String] = []
     for _ in 0..<amount {
       sentences.append(sentence())
     }
 
-    return " ".join(sentences)
+    return sentences.joinWithSeparator(" ")
   }
 
-  public func paragraph(sentencesAmount: Int = 3) -> String {
+  public func paragraph(sentencesAmount sentencesAmount: Int = 3) -> String {
     return sentences(amount: sentencesAmount)
   }
 
-  public func paragraphs(amount: Int = 3) -> String {
+  public func paragraphs(amount amount: Int = 3) -> String {
     var paragraphs: [String] = []
     for _ in 0..<amount {
       paragraphs.append(paragraph())
     }
 
-    return "\n".join(paragraphs)
+    return paragraphs.joinWithSeparator("\n")
   }
 }

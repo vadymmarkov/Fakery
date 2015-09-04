@@ -13,11 +13,14 @@ public class Provider {
       let bundle = NSBundle(forClass: Provider.self)
       var path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
 
-      if let bundlePath = NSBundle(forClass: Provider.self).resourcePath?.stringByAppendingPathComponent("Faker.bundle") {
+      if let resourcePath = NSBundle(forClass: Provider.self).resourcePath {
+        let bundlePath = resourcePath + "Faker.bundle"
+
         if let bundle = NSBundle(path: bundlePath) {
           path = bundle.pathForResource(locale, ofType: Config.pathExtension)
         }
       }
+
 
       if let path = path,
         fileURL: NSURL = NSURL(fileURLWithPath: path),

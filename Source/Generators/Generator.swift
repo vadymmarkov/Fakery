@@ -3,9 +3,9 @@ import Foundation
 public class Generator {
 
   public struct Constants {
-    public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    public static let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    public static let numbers = Array("0123456789")
+    public static let uppercaseLetters = Array(arrayLiteral: "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    public static let letters = Array(arrayLiteral: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    public static let numbers = Array(arrayLiteral: "0123456789")
   }
 
   let parser: Parser
@@ -26,20 +26,22 @@ public class Generator {
 
   public func numerify(string: String) -> String {
     let count = UInt32(Constants.numbers.count)
-    return String(map(enumerate(string)) {
+
+    return String(string.characters.enumerate().map {
       (index, item) in
-      let numberIndex = index == 0 ? arc4random_uniform(count - 1) + 1 :
+      let numberIndex = index == 0 ? arc4random_uniform(count - 1) :
         arc4random_uniform(count)
-      let char = Constants.numbers[Int(numberIndex)]
-      return item == "#" ? char : item
+      let char = Constants.numbers[Int(numberIndex)].characters.first!
+      return String(item) == "#" ? char : item
       })
   }
 
   public func letterify(string: String) -> String {
-    return String(map(string.generate()) {
+    return String(string.characters.enumerate().map {
+      (index, item) in
       let count = UInt32(Constants.uppercaseLetters.count)
-      let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
-      return $0 == "?" ? char : $0
+      let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))].characters.first!
+      return String(item) == "?" ? char : item
       })
   }
 
@@ -65,7 +67,7 @@ public class Generator {
         }
       }
 
-      string = " ".join(list)
+      string = list.joinWithSeparator(" ")
     }
 
     return string
