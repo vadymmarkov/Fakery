@@ -14,7 +14,7 @@ public class Provider {
       var path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
 
       if let resourcePath = NSBundle(forClass: Provider.self).resourcePath {
-        let bundlePath = resourcePath + "Faker.bundle"
+        let bundlePath = resourcePath + "/Faker.bundle"
 
         if let bundle = NSBundle(path: bundlePath) {
           path = bundle.pathForResource(locale, ofType: Config.pathExtension)
