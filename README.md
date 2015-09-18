@@ -52,9 +52,9 @@ let city = faker.address.city()         //=> "Oslo"
 faker.address.city() //=> "Oslo"
 faker.address.streetName() //=> "North Avenue"
 faker.address.secondaryAddress() //=> "Apt. 123"
-faker.address.streetAddress() //=> "12 North Avenue"
+faker.address.streetAddress(includeSecondary: Bool) //=> "12 North Avenue"
 faker.address.buildingNumber() //=> "123"
-faker.address.postcode() //=> "0884"
+faker.address.postcode(stateAbbreviation: String) //=> "0884"
 faker.address.timeZone() //=> "America/Los_Angeles"
 faker.address.streetSuffix() //=> "Avenue"
 faker.address.citySuffix() //=> "town"
@@ -90,7 +90,7 @@ faker.business.creditCardExpiryDate() //=> "2020-10-12"
 ```swift
 
 faker.commerce.color() //=> "black"
-faker.commerce.department() //=> "Music"
+faker.commerce.department(maximum: Int, fixedAmount: Bool) //=> "Music"
 faker.commerce.productName() //=> "Awesome Wooden Hat"
 faker.commerce.price() // 90.5
 ```
@@ -110,14 +110,14 @@ faker.company.logo() // "http://pigment.github.io/fake-logos/logos/medium/color/
 
 ```swift
 
-faker.internet.username() //=> "ida4"       
-faker.internet.domainName() //=> "example.com"        
-faker.internet.domainWord() //=> "domainword"        
+faker.internet.username(separator: String?) //=> "ida4"       
+faker.internet.domainName(alphaNumericOnly: Bool) //=> "example.com"        
+faker.internet.domainWord(alphaNumericOnly: Bool) //=> "domainword"        
 faker.internet.domainSuffix() //=> "com"
 faker.internet.email() // => "ida4@some.info"
 faker.internet.freeEmail() //=> "gmail.com"
 faker.internet.safeEmail() //=> "adams@example.org"
-faker.internet.password() //=> "e2dddhwd1g5qhvhgfi"
+faker.internet.password(minimumLength: Int, maximumLength: Int) //=> "e2dddhwd1g5qhvhgfi"
 faker.internet.ipV4Address() //=> "24.29.18.175"
 faker.internet.ipV6Address() //=> "ac5f:d696:3807:1d72:2eb5:4e81:7d2b:e1df"
 faker.internet.url() //=> "http://example.com/ida4"
@@ -158,7 +158,7 @@ faker.phoneNumber.cellPhone() //=> "333-333-3333"
 faker.phoneNumber.areaCode() //=> "201"
 faker.phoneNumber.exchangeCode() //=> "201"
 faker.phoneNumber.subscriberNumber() //=> "1234"
-faker.phoneNumber.numberExtension() // "123"
+faker.phoneNumber.numberExtension(length: Int) // "123"
 ```
 
 ### Team
