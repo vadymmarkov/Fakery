@@ -1,38 +1,16 @@
 PODS:
   - Nimble (2.0.0-rc.3)
   - Quick (0.6.0)
-  - SwiftyJSON (2.2.1)
+  - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
-  - Nimble (from `https://github.com/Quick/Nimble`, branch `swift-2.0`)
-  - Quick (from `https://github.com/Quick/Quick`, branch `swift-2.0`)
-  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, branch `xcode7`)
-
-EXTERNAL SOURCES:
-  Nimble:
-    :branch: swift-2.0
-    :git: https://github.com/Quick/Nimble
-  Quick:
-    :branch: swift-2.0
-    :git: https://github.com/Quick/Quick
-  SwiftyJSON:
-    :branch: xcode7
-    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
-
-CHECKOUT OPTIONS:
-  Nimble:
-    :commit: 703a7ae786b4dcb00c6eaa65156cc2da9ab4be8f
-    :git: https://github.com/Quick/Nimble
-  Quick:
-    :commit: 503f1515427d0cd2eaa19830694dcde60c46d945
-    :git: https://github.com/Quick/Quick
-  SwiftyJSON:
-    :commit: f269523ac572979245baa99c8475eab73caf1e9b
-    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+  - Nimble (= 2.0.0-rc.3)
+  - Quick (= 0.6.0)
+  - SwiftyJSON (= 2.3.0)
 
 SPEC CHECKSUMS:
   Nimble: 9dff98ee195ffe7351d3b2fb01d3a1420fd97948
-  Quick: aaa961333f0bec39bfefa4b759128e4eb39f0d0e
-  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
+  Quick: 563686dbcf0ae0f9f7401ac9cd2d786ee1b7f3d7
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
 
 COCOAPODS: 0.39.0.beta.4
