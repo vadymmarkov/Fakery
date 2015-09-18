@@ -25,7 +25,7 @@ public class PhoneNumber: Generator {
 
   public func numberExtension(length: Int) -> String {
     var template = ""
-    for i in 1...length {
+    for _ in 1...length {
       template += "#"
     }
 

@@ -24,17 +24,17 @@ class InternetSpec: QuickSpec {
         context("with provided separator") {
           it("returns the correct text") {
             let username = internet.username(separator: "_")
-            if count(username) > 5 {
-              expect(find(username, "_")).notTo(beNil())
+            if username.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 5 {
+              expect(username.containsString("_")).notTo(beNil())
             } else {
-              expect(find(username, "_")).to(beNil())
+              expect(username.containsString("_")).to(beNil())
             }
           }
         }
 
         it("doesn't have the ' symbol in the result") {
           let username = internet.username(separator: "'_'")
-          expect(find(username, "'")).to(beNil())
+          expect(username.containsString("'")).to(beFalse())
         }
       }
 
@@ -86,7 +86,7 @@ class InternetSpec: QuickSpec {
         context("without min and max - 8...16 by default") {
           it("returns the correct password") {
             let password = internet.password()
-            let length = count(password)
+            let length = password.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
             expect(length >= 8 && length <= 16).to(beTrue())
           }
         }
@@ -94,19 +94,19 @@ class InternetSpec: QuickSpec {
         context("with provided min length and max length") {
           it("returns the correct password when min = max") {
             let password = internet.password(minimumLength: 3, maximumLength: 3)
-            let length = count(password)
+            let length = password.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
             expect(length == 3).to(beTrue())
           }
 
           it("returns the correct password when min > max") {
             let password = internet.password(minimumLength: 3, maximumLength: 4)
-            let length = count(password)
+            let length = password.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
             expect(length >= 3 && length <= 4).to(beTrue())
           }
 
           it("returns the correct password when min < max") {
             let password = internet.password(minimumLength: 4, maximumLength: 3)
-            let length = count(password)
+            let length = password.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
             expect(length == 4).to(beTrue())
           }
         }

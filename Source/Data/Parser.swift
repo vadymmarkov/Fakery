@@ -45,7 +45,7 @@ public class Parser {
 
   public func fetchRaw(key: String) -> JSON? {
     var keyData: JSON?
-    var parts = split(key) {$0 == "."}
+    let parts = key.componentsSeparatedByString(".")
 
     if parts.count > 0 {
       var parsed = data[locale]["faker"]
@@ -63,53 +63,54 @@ public class Parser {
   func parse(template: String, forSubject subject: String) -> String {
     var text = ""
     let string = template as NSString
-    let regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?",
-      options: nil,
-      error: nil)!
+    var regex: NSRegularExpression
+    do {
+      try regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?", options: .CaseInsensitive)
+      let matches = regex.matchesInString(string as String,
+        options: .ReportCompletion,
+        range: NSMakeRange(0, string.length))
 
-    let matches = regex.matchesInString(string as String,
-      options: nil,
-      range: NSMakeRange(0, string.length)) as! [NSTextCheckingResult]
+      if matches.count > 0 {
+        for match in matches {
+          if match.numberOfRanges < 4 {
+            continue
+          }
 
-    if matches.count > 0 {
-      for match in matches {
-        if match.numberOfRanges < 4 {
-          continue
+          let prefixRange = match.rangeAtIndex(1)
+          let subjectRange = match.rangeAtIndex(2)
+          let methodRange = match.rangeAtIndex(3)
+          let otherRange = match.rangeAtIndex(4)
+
+          if prefixRange.length > 0 {
+            text += string.substringWithRange(prefixRange)
+          }
+
+          var subjectWithDot = subject + "."
+          if subjectRange.length > 0 {
+            subjectWithDot = string.substringWithRange(subjectRange)
+          }
+
+          if methodRange.length > 0 {
+            let key = subjectWithDot.lowercaseString + string.substringWithRange(methodRange)
+            text += fetch(key)
+          }
+
+          if otherRange.length > 0 {
+            text += string.substringWithRange(otherRange)
+          }
         }
-
-        let prefixRange = match.rangeAtIndex(1)
-        let subjectRange = match.rangeAtIndex(2)
-        let methodRange = match.rangeAtIndex(3)
-        let otherRange = match.rangeAtIndex(4)
-
-        if prefixRange.length > 0 {
-          text += string.substringWithRange(prefixRange)
-        }
-
-        var subjectWithDot = subject + "."
-        if subjectRange.length > 0 {
-          subjectWithDot = string.substringWithRange(subjectRange)
-        }
-
-        if methodRange.length > 0 {
-          let key = subjectWithDot.lowercaseString + string.substringWithRange(methodRange)
-          text += fetch(key)
-        }
-
-        if otherRange.length > 0 {
-          text += string.substringWithRange(otherRange)
-        }
+      } else {
+        text = template
       }
-    } else {
-      text = template
-    }
+    } catch {}
+
 
     return text
   }
 
   func getSubject(key: String) -> String {
     var subject: String = ""
-    var parts = split(key) {$0 == "."}
+    var parts = key.componentsSeparatedByString(".")
 
     if parts.count > 0 {
       subject = parts[0]

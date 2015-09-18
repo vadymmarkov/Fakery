@@ -21,7 +21,7 @@ class CommerceSpec: QuickSpec {
 
       describe("#department") {
         it("generates the correct text") {
-          var department = commerce.department(maximum: 3, fixedAmount: true)
+          let department = commerce.department(maximum: 3, fixedAmount: true)
           expect(department.rangeOfString("Music")).notTo(beNil())
           expect(department.rangeOfString("Video")).notTo(beNil())
           expect(department.rangeOfString("Development")).notTo(beNil())
@@ -47,17 +47,15 @@ class CommerceSpec: QuickSpec {
 
       describe("#categories") {
         it("returns the correct amount of categories") {
-          var categories = commerce.categories(3)
+          let categories = commerce.categories(3)
           expect(categories.count == 3).to(beTrue())
         }
 
         it("returns the array of unique categories") {
-          var categories = commerce.categories(3)
+          let categories = commerce.categories(3)
           var checked: [String] = []
           for category in categories {
-            if contains(checked, category) {
-              break
-            }
+            if checked.contains(category) { break }
             checked.append(category)
           }
 
@@ -67,7 +65,7 @@ class CommerceSpec: QuickSpec {
 
       describe("#mergeCategories") {
         it("returns the correct text") {
-          var text = commerce.mergeCategories(["One", "Two", "Three", "Four"])
+          let text = commerce.mergeCategories(["One", "Two", "Three", "Four"])
           expect(text).to(equal("One, Two, Three & Four"))
         }
       }

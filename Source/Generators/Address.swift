@@ -14,7 +14,7 @@ public class Address: Generator {
     return numerify(generate("address.secondary_address"))
   }
 
-  public func streetAddress(includeSecondary: Bool = false) -> String {
+  public func streetAddress(includeSecondary includeSecondary: Bool = false) -> String {
     var streetAddress = numerify(generate("address.street_address"))
     if includeSecondary {
       streetAddress += " " + secondaryAddress()
@@ -26,7 +26,7 @@ public class Address: Generator {
     return bothify(generate("address.building_number"))
   }
 
-  public func postcode(stateAbbreviation: String = "") -> String {
+  public func postcode(stateAbbreviation stateAbbreviation: String = "") -> String {
     if stateAbbreviation.isEmpty {
       return bothify(generate("address.postcode"))
     }
