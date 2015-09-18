@@ -1,6 +1,6 @@
 language: swift
 before_install:
-- gem install cocoapods -v '0.36'
+- gem install cocoapods -v '0.38.2'
 
 # Use when you have third party dependencies (CocoaPods generates a workspace)
 podfile: Pod/Podfile
