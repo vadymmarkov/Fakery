@@ -135,11 +135,11 @@ faker.internet.url() //=> "http://example.com/ida4"
 faker.lorem.word() //=> "repellendus"         
 faker.lorem.words(amount: Int) //=> ["dolores", "adipisci", "nesciunt"]      
 faker.lorem.character() //=> "a"        
-faker.lorem.characters(amount: Int) // String with specified amount of characters (default = 255)
-faker.lorem.sentence(wordsAmount: Int) // String with specified amount of words (default = 4)
-faker.lorem.sentences(amount: Int) // String with specified amount of sentences (default = 3)
-faker.lorem.paragraph(sentencesAmount: Int) // String with specified amount of sentences (default = 3)
-faker.lorem.paragraphs(amount: Int) // String with specified amount of paragraphs (default = 3)
+faker.lorem.characters(amount: Int) // Default = 255
+faker.lorem.sentence(wordsAmount: Int) // Default = 4
+faker.lorem.sentences(amount: Int) // Default = 3
+faker.lorem.paragraph(sentencesAmount: Int) // Default = 3
+faker.lorem.paragraphs(amount: Int) // Default = 3
 ```
 
 ### Name
