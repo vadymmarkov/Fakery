@@ -7,7 +7,7 @@
 This is a Swift port of Ruby's [Faker](https://github.com/stympy/faker) library that generates fake data.
 
 Are you still bothered with meaningless randomly character strings? Just relax and leave this job to **Fakery**.
-It's useful in all the cases when you need to use some dummy data for testing, population of database during development, etc. pretty realistic.
+It's useful in all the cases when you need to use some dummy data for testing, population of database during development, etc.
 
 **NOTE**: Generated data is pretty realistic, supports a range of locales, but returned values are not guaranteed to be unique.
 
