@@ -181,7 +181,7 @@ faker.team.state() // => "Alabama"
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Faker'
+pod 'Fakery'
 ```
 
 ## Contributing
