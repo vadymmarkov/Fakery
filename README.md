@@ -194,4 +194,4 @@ Vadym Markov, markov.vadym@gmail.com
 
 ## License
 
-**Faker** is available under the MIT license. See the LICENSE file for more info.
+**Fakery** is available under the MIT license. See the LICENSE file for more info.
