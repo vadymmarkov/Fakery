@@ -1,14 +1,15 @@
-# Faker
+# Fakery
 
-[![CI Status](http://img.shields.io/travis/markvaldy/Faker.svg?style=flat)](https://travis-ci.org/markvaldy/Faker)
-[![Version](https://img.shields.io/cocoapods/v/Faker.svg?style=flat)](http://cocoadocs.org/docsets/Faker)
-[![License](https://img.shields.io/cocoapods/l/Faker.svg?style=flat)](http://cocoadocs.org/docsets/Faker)
-[![Platform](https://img.shields.io/cocoapods/p/Faker.svg?style=flat)](http://cocoadocs.org/docsets/Faker)
+![Fakery logo](https://raw.githubusercontent.com/vadymmarkov/Fakery/master/Images/logo.png)
+[![CI Status](http://img.shields.io/travis/vadymmarkov/Fakery.svg?style=flat)](https://travis-ci.org/vadymmarkov/Fakery)
+[![Version](https://img.shields.io/cocoapods/v/Fakery.svg?style=flat)](http://cocoadocs.org/docsets/Fakery)
+[![License](https://img.shields.io/cocoapods/l/Fakery.svg?style=flat)](http://cocoadocs.org/docsets/Fakery)
+[![Platform](https://img.shields.io/cocoapods/p/Fakery.svg?style=flat)](http://cocoadocs.org/docsets/Fakery)
 
 =====
 This is a Swift port of Ruby's [Faker](https://github.com/stympy/faker) library that generates fake data.
 
-Are you still bothered with meaningless randomly character strings? Just relax and leave this job to **Faker**.
+Are you still bothered with meaningless randomly character strings? Just relax and leave this job to **Fakery**.
 It's useful in all the cases when you need to use some dummy data for testing, population of database during development, etc. pretty realistic.
 
 **NOTE**: Generated data is pretty realistic, supports a range of locales, but returned values are not guaranteed to be unique.
@@ -16,6 +17,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
 ## Table of Contents
 
 * [Usage](#usage)
+* [Localization](#localization)
 * [Generators](#generators)
   * [Address](#address)
   * [App](#app)
@@ -42,6 +44,12 @@ let firstName = faker.name.firstName()  //=> "Emilie"
 let lastName = faker.name.lastName()    //=> "Hansen"
 let city = faker.address.city()         //=> "Oslo"
 ```
+
+## Localization
+
+**Fakery** is quite powerful when it comes to generation of locale-specific data.
+In `Resources/Locales` you can find JSON files for more than 20 locales, and, of course, it's not a limit.
+Feel free to contribute and add more!  
 
 ## Generators
 

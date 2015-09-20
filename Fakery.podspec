@@ -1,17 +1,17 @@
 Pod::Spec.new do |s|
-  s.name             = "Faker"
+  s.name             = "Fakery"
   s.version          = "1.0.0"
   s.summary          = "Swift fake data generator"
-  s.homepage         = "https://github.com/vadymmarkov/Faker"
+  s.homepage         = "https://github.com/vadymmarkov/Fakery"
   s.license          = {
     :type => 'MIT',
     :file => 'LICENSE.md'
   }
   s.author           = {
-    "Vadym Markov" => "impressionwave@gmail.com"
+    "Vadym Markov" => "markov.vadym@gmail.com"
   }
   s.source           = {
-    :git => "https://github.com/markvaldy/Faker.git",
+    :git => "https://github.com/vadymmarkov/Fakery.git",
     :tag => s.version.to_s
   }
   s.social_media_url = 'https://twitter.com/vadymmarkov'
