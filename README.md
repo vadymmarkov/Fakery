@@ -177,7 +177,7 @@ faker.team.state() // => "Alabama"
 
 ## Installation
 
-**Faker** is available through [CocoaPods](http://cocoapods.org). To install
+**Fakery** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
