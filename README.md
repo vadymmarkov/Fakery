@@ -1,12 +1,9 @@
-# Fakery
-
 ![Fakery logo](https://raw.githubusercontent.com/vadymmarkov/Fakery/master/Images/logo.png)
 [![CI Status](http://img.shields.io/travis/vadymmarkov/Fakery.svg?style=flat)](https://travis-ci.org/vadymmarkov/Fakery)
 [![Version](https://img.shields.io/cocoapods/v/Fakery.svg?style=flat)](http://cocoadocs.org/docsets/Fakery)
 [![License](https://img.shields.io/cocoapods/l/Fakery.svg?style=flat)](http://cocoadocs.org/docsets/Fakery)
 [![Platform](https://img.shields.io/cocoapods/p/Fakery.svg?style=flat)](http://cocoadocs.org/docsets/Fakery)
 
-=====
 This is a Swift port of Ruby's [Faker](https://github.com/stympy/faker) library that generates fake data.
 
 Are you still bothered with meaningless randomly character strings? Just relax and leave this job to **Fakery**.
