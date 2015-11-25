@@ -97,7 +97,7 @@ public class Internet: Generator {
     return "http://\(domainName())/\(username())"
   }
 
-  public func image(width: Int, height: Int) -> String {
+  public func image(width: Int = 320, _ height: Int = 200) -> String {
     return "http://lorempixel.com/\(width)/\(height)"
   }
 
