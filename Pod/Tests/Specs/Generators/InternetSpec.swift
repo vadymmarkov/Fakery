@@ -132,6 +132,18 @@ class InternetSpec: QuickSpec {
           expect(url).to(match("^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"))
         }
       }
+
+      describe("#image") {
+        it("returns the correct Image URL with default size") {
+          let url = internet.image()
+          expect(url).to(equal("http://lorempixel.com/320/200"))
+        }
+
+        it("returns the correct Image URL with specified size") {
+          let url = internet.image(200, 150)
+          expect(url).to(equal("http://lorempixel.com/200/150"))
+        }
+      }
     }
   }
 }
