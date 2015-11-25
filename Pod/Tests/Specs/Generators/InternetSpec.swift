@@ -144,6 +144,8 @@ class InternetSpec: QuickSpec {
           expect(url).to(equal("http://lorempixel.com/200/150"))
         }
       }
+
+      
     }
   }
 }
