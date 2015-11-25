@@ -132,6 +132,31 @@ class InternetSpec: QuickSpec {
           expect(url).to(match("^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"))
         }
       }
+
+      describe("#image") {
+        it("returns the correct Image URL with default size") {
+          let url = internet.image()
+          expect(url).to(equal("http://lorempixel.com/320/200"))
+        }
+
+        it("returns the correct Image URL with a specified size") {
+          let url = internet.image(width: 200, height: 150)
+          expect(url).to(equal("http://lorempixel.com/200/150"))
+        }
+      }
+
+      describe("#templateImage") {
+        it("returns the correct Image URL with defaults") {
+          let url = internet.templateImage()
+          expect(url).to(equal("http://dummyimage.com/320x200/000000/ffffff"))
+        }
+
+        it("returns the correct Image URL with a specified size") {
+          let url = internet.templateImage(width: 200, height: 150,
+            backColorHex: "2e4bc2", frontColorHex: "ccdb28")
+          expect(url).to(equal("http://dummyimage.com/200x150/2e4bc2/ccdb28"))
+        }
+      }
     }
   }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BF43A0A261F2E4DFCDC3068 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B17328A25E1B0324F1A502 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6BF43A0A261F2E4DFCDC3068 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B17328A25E1B0324F1A502 /* Pods.framework */; };
 		D500F73F1AD3DC4700B32BEC /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500F73E1AD3DC4700B32BEC /* PhoneNumber.swift */; };
 		D500F7411AD3EA4600B32BEC /* PhoneNumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500F7401AD3EA4600B32BEC /* PhoneNumberSpec.swift */; };
 		D503530E1B037F7300CB8C4A /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = D503530D1B037F7300CB8C4A /* Company.swift */; };
@@ -282,7 +282,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Example;
 				TargetAttributes = {
 					146D72AB1AB782920058798C = {
@@ -429,6 +429,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -500,6 +501,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -516,6 +518,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

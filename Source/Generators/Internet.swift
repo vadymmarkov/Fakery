@@ -97,5 +97,14 @@ public class Internet: Generator {
     return "http://\(domainName())/\(username())"
   }
 
+  public func image(width width: Int = 320, height: Int = 200) -> String {
+    return "http://lorempixel.com/\(width)/\(height)"
+  }
+
+  public func templateImage(width width: Int = 320, height: Int = 200,
+    backColorHex: String = "000000", frontColorHex: String = "ffffff") -> String {
+      return "http://dummyimage.com/\(width)x\(height)/\(backColorHex)/\(frontColorHex)"
+  }
+
   // @ToDo - slug
 }

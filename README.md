@@ -126,6 +126,9 @@ faker.internet.password(minimumLength: Int, maximumLength: Int) //=> "e2dddhwd1g
 faker.internet.ipV4Address() //=> "24.29.18.175"
 faker.internet.ipV6Address() //=> "ac5f:d696:3807:1d72:2eb5:4e81:7d2b:e1df"
 faker.internet.url() //=> "http://example.com/ida4"
+faker.internet.image() //=> "http://lorempixel.com/320/200"
+faker.internet.templateImage() //=> "http://dummyimage.com/320x200/000000/ffffff"
+
 ```
 
 ### Lorem
