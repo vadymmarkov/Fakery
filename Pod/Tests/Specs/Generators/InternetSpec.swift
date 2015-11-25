@@ -140,12 +140,23 @@ class InternetSpec: QuickSpec {
         }
 
         it("returns the correct Image URL with specified size") {
-          let url = internet.image(200, 150)
+          let url = internet.image(width: 200, height: 150)
           expect(url).to(equal("http://lorempixel.com/200/150"))
         }
       }
 
-      
+      describe("#templateImage") {
+        it("returns the correct Image URL with defaults") {
+          let url = internet.templateImage()
+          expect(url).to(equal("http://dummyimage.com/320x200/000000/ffffff"))
+        }
+
+        it("returns the correct Image URL with specified size") {
+          let url = internet.templateImage(width: 200, height: 150,
+            backColorHex: "2e4bc2", frontColorHex: "ccdb28")
+          expect(url).to(equal("http://dummyimage.com/200x150/2e4bc2/ccdb28"))
+        }
+      }
     }
   }
 }
