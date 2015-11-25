@@ -97,5 +97,9 @@ public class Internet: Generator {
     return "http://\(domainName())/\(username())"
   }
 
+  public func image(width: Int, height: Int) -> String {
+    return "http://lorempixel.com/\(width)/\(height)"
+  }
+
   // @ToDo - slug
 }
