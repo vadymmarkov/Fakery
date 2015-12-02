@@ -66,10 +66,10 @@ public class Address: Generator {
   }
 
   public func latitude() -> Double {
-    return Double(arc4random()) * 180.0 - 90.0
+    return drand48() * 180.0 - 90.0
   }
 
   public func longitude() -> Double {
-    return Double(arc4random()) * 360.0 - 180.0
+    return drand48() * 360.0 - 180.0
   }
 }
