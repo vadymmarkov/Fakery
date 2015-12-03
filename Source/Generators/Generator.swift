@@ -3,9 +3,9 @@ import Foundation
 public class Generator {
 
   public struct Constants {
-    public static let uppercaseLetters = Array(arrayLiteral: "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    public static let letters = Array(arrayLiteral: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    public static let numbers = Array(arrayLiteral: "0123456789")
+    public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
+    public static let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
+    public static let numbers = Array("0123456789".characters)
   }
 
   let parser: Parser
@@ -31,7 +31,7 @@ public class Generator {
       (index, item) in
       let numberIndex = index == 0 ? arc4random_uniform(count - 1) :
         arc4random_uniform(count)
-      let char = Constants.numbers[Int(numberIndex)].characters.first!
+      let char = Constants.numbers[Int(numberIndex)]
       return String(item) == "#" ? char : item
       })
   }
@@ -40,7 +40,7 @@ public class Generator {
     return String(string.characters.enumerate().map {
       (index, item) in
       let count = UInt32(Constants.uppercaseLetters.count)
-      let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))].characters.first!
+      let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
       return String(item) == "?" ? char : item
       })
   }
