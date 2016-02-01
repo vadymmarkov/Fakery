@@ -11,6 +11,7 @@ public class Faker {
   public let address: Address
   public let app: App
   public let business: Business
+  public let company: Company
   public let commerce: Commerce
   public let internet: Internet
   public let lorem: Lorem
@@ -27,6 +28,7 @@ public class Faker {
     address = Address(parser: parser)
     app = App(parser: parser)
     business = Business(parser: parser)
+    company = Company(parser: parser)
     commerce = Commerce(parser: parser)
     internet = Internet(parser: parser)
     lorem = Lorem(parser: parser)
