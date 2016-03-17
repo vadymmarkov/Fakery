@@ -12,23 +12,23 @@
           "Allée",
           "Avenue",		  
           "Boulevard",		  
-		  "Chemin",
-		  "Cour",
+		      "Chemin",
+		      "Cour",
           "Impasse",		  
           "Passage",		  
           "Place",		  
           "Quai",
-		  "Rond-point",
-		  "Route",
+		      "Rond-point",
+		      "Route",
           "Rue",
-		  "Ruelle",
-		  "Sentier",		  
-		  "Voie"
+		      "Ruelle",
+		      "Sentier",		  
+		      "Voie"
         ],
         "secondary_address": [
           "Apt. ###",
           "# étage",
-		  "Entrée #"
+		      "Entrée #"
         ],
         "postcode": [
           "#####"
@@ -46,12 +46,12 @@
           "Franche-Comté",
           "Haute-Normandie",
           "Île-de-France",
-		  "La Réunion",
+		      "La Réunion",
           "Languedoc-Roussillon",
           "Limousin",
           "Lorraine",
-		  "Martinique",
-		  "Mayotte",
+		      "Martinique",
+		      "Mayotte",
           "Midi-Pyrénées",
           "Nord-Pas-de-Calais",
           "Pays de la Loire",
@@ -161,14 +161,14 @@
           "Hyères",
           "Beauvais",
           "Cholet",
-		  "Illkirch-Graffenstaden"
+		      "Illkirch-Graffenstaden"
         ],
         "city": [
           "#{city_name}"
         ],
         "street_suffix": [
-		  "du 11 Novembre",
-		  "du 25 Août 1944",
+		      "du 11 Novembre",
+		      "du 25 Août 1944",
           "de l'Abbaye",
           "Adolphe Mille",
           "d'Alésia",
@@ -766,8 +766,8 @@
           "name",
           "net",
           "org",
-		  "gouv",
-		  "bzh"
+		      "gouv.fr",
+		      "bzh"
         ]
       },
       "lorem": {
@@ -1956,8 +1956,8 @@
           "Maëlle",
           "Alicia",
           "Mélissa",
-		  "Jean-Claude",
-		  "Jean-Pierre"
+		      "Jean-Claude",
+		      "Jean-Pierre"
         ],
         "last_name": [
           "Martin",
@@ -2110,9 +2110,9 @@
           "Barre",
           "Marty",
           "Cousin",
-		  "Dumont d'Urville",
-		  "Tixier-Vignancour",
-		  "Saint-Saëns"
+		      "Dumont d'Urville",
+		      "Tixier-Vignancour",
+		      "Saint-Saëns"
         ],
         "prefix": [
           "M",
