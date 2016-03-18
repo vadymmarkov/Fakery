@@ -9,18 +9,26 @@
           "#"
         ],
         "street_prefix": [
-          "Allée, Voie",
-          "Rue",
-          "Avenue",
-          "Boulevard",
+          "Allée",
+          "Avenue",		  
+          "Boulevard",		  
+          "Chemin",
+          "Cour",
+          "Impasse",		  
+          "Passage",		  
+          "Place",		  
           "Quai",
-          "Passage",
-          "Impasse",
-          "Place"
+          "Rond-point",
+          "Route",
+          "Rue",
+          "Ruelle",
+          "Sentier",		  
+          "Voie"
         ],
         "secondary_address": [
           "Apt. ###",
-          "# étage"
+          "# étage",
+          "Entrée #"
         ],
         "postcode": [
           "#####"
@@ -38,9 +46,12 @@
           "Franche-Comté",
           "Haute-Normandie",
           "Île-de-France",
+          "La Réunion",
           "Languedoc-Roussillon",
           "Limousin",
           "Lorraine",
+          "Martinique",
+          "Mayotte",
           "Midi-Pyrénées",
           "Nord-Pas-de-Calais",
           "Pays de la Loire",
@@ -59,7 +70,7 @@
           "Strasbourg",
           "Montpellier",
           "Bordeaux",
-          "Lille13",
+          "Lille",
           "Rennes",
           "Reims",
           "Le Havre",
@@ -92,7 +103,7 @@
           "Montreuil",
           "Argenteuil",
           "Roubaix",
-          "Dunkerque14",
+          "Dunkerque",
           "Tourcoing",
           "Nanterre",
           "Avignon",
@@ -149,12 +160,15 @@
           "Villejuif",
           "Hyères",
           "Beauvais",
-          "Cholet"
+          "Cholet",
+          "Illkirch-Graffenstaden"
         ],
         "city": [
           "#{city_name}"
         ],
         "street_suffix": [
+          "du 11 Novembre",
+          "du 25 Août 1944",
           "de l'Abbaye",
           "Adolphe Mille",
           "d'Alésia",
@@ -751,7 +765,9 @@
           "info",
           "name",
           "net",
-          "org"
+          "org",
+          "gouv.fr",
+          "bzh"
         ]
       },
       "lorem": {
@@ -1939,7 +1955,9 @@
           "Carla",
           "Maëlle",
           "Alicia",
-          "Mélissa"
+          "Mélissa",
+          "Jean-Claude",
+          "Jean-Pierre"
         ],
         "last_name": [
           "Martin",
@@ -2091,22 +2109,24 @@
           "Guyot",
           "Barre",
           "Marty",
-          "Cousin"
+          "Cousin",
+          "Dumont d'Urville",
+          "Tixier-Vignancour",
+          "Saint-Saëns"
         ],
         "prefix": [
           "M",
           "Mme",
-          "Mlle",
           "Dr",
           "Prof"
         ],
         "title": {
           "job": [
             "Superviseur",
-            "Executif",
+            "Exécutif",
             "Manager",
-            "Ingenieur",
-            "Specialiste",
+            "Ingénieur",
+            "Spécialiste",
             "Directeur",
             "Coordinateur",
             "Administrateur",
@@ -2114,7 +2134,7 @@
             "Analyste",
             "Designer",
             "Technicien",
-            "Developpeur",
+            "Développeur",
             "Producteur",
             "Consultant",
             "Assistant",
@@ -2137,13 +2157,15 @@
           "05########",
           "06########",
           "07########",
+          "08########",		  
           "+33 1########",
           "+33 2########",
           "+33 3########",
           "+33 4########",
           "+33 5########",
           "+33 6########",
-          "+33 7########"
+          "+33 7########",
+          "+33 8########"		  
         ]
       }
     }
