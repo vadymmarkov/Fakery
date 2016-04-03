@@ -18,6 +18,7 @@ public class Faker {
   public let name: Name
   public let phoneNumber: PhoneNumber
   public let team: Team
+  public let number: Number
 
   let parser: Parser
 
@@ -35,5 +36,6 @@ public class Faker {
     name = Name(parser: parser)
     phoneNumber = PhoneNumber(parser: parser)
     team = Team(parser: parser)
+    number = Number()
   }
 }

@@ -24,6 +24,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Internet](#internet)
   * [Lorem](#lorem)
   * [Name](#name)
+  * [Number](#number)
   * [Phone number](#phone-number)
   * [Team](#team)
 * [Installation](#installation)
@@ -155,6 +156,22 @@ faker.name.lastName() //=> "Adams"
 faker.name.prefix() //=> "Mrs."
 faker.name.suffix() //=> "PhD"
 faker.name.title() //=> "Lead"
+```
+
+### Number
+
+```swift
+
+faker.number.randomBool() //=> true or false
+faker.number.randomInt() //=> some Int between 0 and 1000
+faker.number.randomInt(min: -100, max:50) //=> some Int between -100 and 50
+faker.number.randomFloat() //=> some Float between 0 and 1000
+faker.number.randomFloat(min: -10.4, max:50) //=> some Float between -10.4 and 50
+faker.number.randomCGFloat() //=> some CGFloat between 0 and 1000
+faker.number.randomCGFloat(min: 42.42, max:86) //=> some CGFloat between -42.42 and 86
+faker.number.randomDouble() //=> some Double between 0 and 1000
+faker.number.randomDouble(min: 0, max:1) //=> some Double between 0 and 1
+faker.number.increasingUniqueId() //=> every call returns an unique int
 ```
 
 ### Phone number
