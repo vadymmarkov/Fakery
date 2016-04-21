@@ -1,9 +1,9 @@
 import Foundation
 import CoreGraphics
 
-private var lastUsedId: Int64 = 0
-
 public class Number {
+
+  private var lastUsedId: Int64 = 0
 
   public func randomBool() -> Bool {
     return randomInt() % 2 == 0
@@ -29,5 +29,4 @@ public class Number {
     OSAtomicIncrement64(&lastUsedId)
     return Int(lastUsedId)
   }
-
 }
