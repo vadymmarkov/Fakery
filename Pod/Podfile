@@ -8,3 +8,5 @@ inhibit_all_warnings!
 pod 'SwiftyJSON'
 pod 'Nimble'
 pod 'Quick'
+
+target 'Tests'
