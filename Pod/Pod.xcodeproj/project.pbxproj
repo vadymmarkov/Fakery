@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09F65D721CA30560006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D711CA30560006C87C5 /* Number.swift */; };
+		09F65D741CA30B46006C87C5 /* NumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D731CA30B46006C87C5 /* NumberSpec.swift */; };
 		6BF43A0A261F2E4DFCDC3068 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B17328A25E1B0324F1A502 /* Pods.framework */; };
 		D500F73F1AD3DC4700B32BEC /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500F73E1AD3DC4700B32BEC /* PhoneNumber.swift */; };
 		D500F7411AD3EA4600B32BEC /* PhoneNumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500F7401AD3EA4600B32BEC /* PhoneNumberSpec.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09F65D711CA30560006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		09F65D731CA30B46006C87C5 /* NumberSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSpec.swift; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C136511AB784B200B7B07A /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 				D5D46FEB1AD4868700D8339A /* Internet.swift */,
 				D51C7B7A1ADA6A500066F9AE /* Lorem.swift */,
 				D5E19A071AD0329200BD1A40 /* Name.swift */,
+				09F65D711CA30560006C87C5 /* Number.swift */,
 				D500F73E1AD3DC4700B32BEC /* PhoneNumber.swift */,
 				D5E19A0B1AD0376500BD1A40 /* Team.swift */,
 			);
@@ -248,6 +253,7 @@
 				D5D46FED1AD493A800D8339A /* InternetSpec.swift */,
 				D51C7B7C1ADA6E320066F9AE /* LoremSpec.swift */,
 				D558CE901B0BE88400506AC3 /* CompanySpec.swift */,
+				09F65D731CA30B46006C87C5 /* NumberSpec.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 				D5E19A001ACF75C500BD1A40 /* App.swift in Sources */,
 				D58D6FBE1ACEE611006DBD0B /* Address.swift in Sources */,
 				D51C7B7D1ADA6E320066F9AE /* LoremSpec.swift in Sources */,
+				09F65D741CA30B46006C87C5 /* NumberSpec.swift in Sources */,
 				D58D6FC01ACEF36F006DBD0B /* Generator.swift in Sources */,
 				D5144FA91AD30D8A0082E44E /* Commerce.swift in Sources */,
 				D54C05061ACF68C900B72977 /* Parser.swift in Sources */,
@@ -388,6 +395,7 @@
 				D5118F7D1ACB3ADE003B426F /* ConfigSpec.swift in Sources */,
 				D58D6FC21ACEF424006DBD0B /* GeneratorSpec.swift in Sources */,
 				D5E19A0C1AD0376500BD1A40 /* Team.swift in Sources */,
+				09F65D721CA30560006C87C5 /* Number.swift in Sources */,
 				D558CE8F1B0BE37E00506AC3 /* ArrayExtension.swift in Sources */,
 				D5118F7B1ACB3AAC003B426F /* Config.swift in Sources */,
 				D500F7411AD3EA4600B32BEC /* PhoneNumberSpec.swift in Sources */,

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09F65D6F1CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
+		09F65D701CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1681BF9F912005A3BC1 /* Faker.swift */; };
 		BC4477921BFA451400E8FB15 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16A1BF9F912005A3BC1 /* Address.swift */; };
 		BC4477931BFA451600E8FB15 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16B1BF9F912005A3BC1 /* App.swift */; };
@@ -111,6 +113,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F65D6E1CA30351006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		BC4477BF1BFA4E4200E8FB15 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		BC4477C11BFA4E9A00E8FB15 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,6 +348,7 @@
 				BCFFA1701BF9F912005A3BC1 /* Internet.swift */,
 				BCFFA1711BF9F912005A3BC1 /* Lorem.swift */,
 				BCFFA1721BF9F912005A3BC1 /* Name.swift */,
+				09F65D6E1CA30351006C87C5 /* Number.swift */,
 				BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */,
 				BCFFA1741BF9F912005A3BC1 /* Team.swift */,
 			);
@@ -605,6 +609,7 @@
 				BC4477951BFA451C00E8FB15 /* Commerce.swift in Sources */,
 				BC44779E1BFA453C00E8FB15 /* Parser.swift in Sources */,
 				BC44779A1BFA452900E8FB15 /* Name.swift in Sources */,
+				09F65D701CA30351006C87C5 /* Number.swift in Sources */,
 				BC4477921BFA451400E8FB15 /* Address.swift in Sources */,
 				BC4477971BFA452100E8FB15 /* Generator.swift in Sources */,
 				BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */,
@@ -635,6 +640,7 @@
 				BCFFA1931BF9F912005A3BC1 /* Provider.swift in Sources */,
 				BCFFA1911BF9F912005A3BC1 /* Config.swift in Sources */,
 				BCFFA19C1BF9F912005A3BC1 /* Internet.swift in Sources */,
+				09F65D6F1CA30351006C87C5 /* Number.swift in Sources */,
 				BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */,
 				BCFFA19B1BF9F912005A3BC1 /* Generator.swift in Sources */,
 				BCFFA1981BF9F912005A3BC1 /* Business.swift in Sources */,
