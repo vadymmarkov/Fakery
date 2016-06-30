@@ -120,6 +120,13 @@ class AddressSpec: QuickSpec {
           expect(state).to(equal("California"))
         }
       }
+      
+      describe("#county") {
+        it("returns the correct text") {
+          let country = address.county()
+          expect(country).to(equal("Autauga County"))
+        }
+      }
 
       describe("#country") {
         it("returns the correct text") {

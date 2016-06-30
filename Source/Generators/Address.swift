@@ -56,6 +56,10 @@ public class Address: Generator {
   public func state() -> String {
     return generate("address.state")
   }
+  
+  public func county() -> String {
+    return generate("address.county")
+  }
 
   public func country() -> String {
     return generate("address.country")
