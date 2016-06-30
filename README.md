@@ -67,6 +67,7 @@ faker.address.citySuffix() //=> "town"
 faker.address.cityPrefix() //=> "North"
 faker.address.stateAbbreviation() //=> "CA"
 faker.address.state() //=> "California"
+faker.address.county() //=> "Autauga County"
 faker.address.country() //=> "United States of America"
 faker.address.countryCode() //=> "US"
 faker.address.latitude() //=> -58.17256227443719

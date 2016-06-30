@@ -124,7 +124,7 @@ class AddressSpec: QuickSpec {
       describe("#county") {
         it("returns the correct text") {
           let country = address.county()
-          expect(country).to(equal("Gironde"))
+          expect(country).to(equal("Autauga County"))
         }
       }
 
