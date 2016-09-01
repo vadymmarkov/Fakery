@@ -468,15 +468,19 @@
 				TargetAttributes = {
 					BC827FA71BFA3CE1005F09A4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 					};
 					BC827FB01BFA3CE1005F09A4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 					};
 					BCF0DF391BF9F77E00427DB4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 					};
 					BCF0DF431BF9F77E00427DB4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -697,6 +701,7 @@
 				PRODUCT_NAME = Fakery;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -722,6 +727,7 @@
 				PRODUCT_NAME = Fakery;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -736,6 +742,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -750,6 +757,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -861,6 +869,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -881,6 +890,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -891,6 +901,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -901,6 +912,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
