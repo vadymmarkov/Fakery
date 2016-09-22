@@ -93,6 +93,8 @@
 		BCFFA19E1BF9F912005A3BC1 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1721BF9F912005A3BC1 /* Name.swift */; };
 		BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */; };
 		BCFFA1A01BF9F912005A3BC1 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1741BF9F912005A3BC1 /* Team.swift */; };
+		BDC291351D9442E0007DA2FC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC291341D9442E0007DA2FC /* SwiftyJSON.framework */; };
+		BDC2913F1D94432C007DA2FC /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC291281D9441F2007DA2FC /* Fakery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BCF0DF391BF9F77E00427DB4;
 			remoteInfo = Fakery;
+		};
+		BDC291401D94432C007DA2FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF0DF311BF9F77E00427DB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDC291271D9441F2007DA2FC;
+			remoteInfo = "Fakery tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -164,6 +173,11 @@
 		BCFFA1721BF9F912005A3BC1 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		BCFFA1741BF9F912005A3BC1 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		BDC291281D9441F2007DA2FC /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC291321D9442C1007DA2FC /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
+		BDC291341D9442E0007DA2FC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		BDC2913A1D94432C007DA2FC /* Fakery tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC291451D94434B007DA2FC /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDC291241D9441F2007DA2FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC291351D9442E0007DA2FC /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC291371D94432C007DA2FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC2913F1D94432C007DA2FC /* Fakery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -221,6 +251,7 @@
 		BC96A82E1BFA3FFA00C07A53 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				BDC291321D9442C1007DA2FC /* tvOS-Info.plist */,
 				BC96A83E1BFA432000C07A53 /* iOS-Info.plist */,
 				BC96A8301BFA3FFA00C07A53 /* OSX-Info.plist */,
 			);
@@ -230,6 +261,7 @@
 		BC96A8351BFA401800C07A53 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				BDC291451D94434B007DA2FC /* tvOS-Info.plist */,
 				BC96A8401BFA435900C07A53 /* iOS-Info.plist */,
 				BC96A8371BFA401800C07A53 /* OSX-Info.plist */,
 			);
@@ -239,6 +271,7 @@
 		BCD9BCD91BFA217700FB9886 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDC291331D9442D0007DA2FC /* tvOS */,
 				BC4477BC1BFA479E00E8FB15 /* OSX */,
 				BC4477BB1BFA479500E8FB15 /* iOS */,
 			);
@@ -263,6 +296,8 @@
 				BCF0DF441BF9F77E00427DB4 /* Fakery iOSTests.xctest */,
 				BC827FA81BFA3CE1005F09A4 /* Fakery.framework */,
 				BC827FB11BFA3CE1005F09A4 /* Fakery OSXTests.xctest */,
+				BDC291281D9441F2007DA2FC /* Fakery.framework */,
+				BDC2913A1D94432C007DA2FC /* Fakery tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,6 +398,14 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		BDC291331D9442D0007DA2FC /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDC291341D9442E0007DA2FC /* SwiftyJSON.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -374,6 +417,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BCF0DF371BF9F77E00427DB4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC291251D9441F2007DA2FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -456,13 +506,49 @@
 			productReference = BCF0DF441BF9F77E00427DB4 /* Fakery iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BDC291271D9441F2007DA2FC /* Fakery tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDC2912D1D9441F2007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOS" */;
+			buildPhases = (
+				BDC291231D9441F2007DA2FC /* Sources */,
+				BDC291241D9441F2007DA2FC /* Frameworks */,
+				BDC291251D9441F2007DA2FC /* Headers */,
+				BDC291261D9441F2007DA2FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fakery tvOS";
+			productName = "Fakery tvOS";
+			productReference = BDC291281D9441F2007DA2FC /* Fakery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BDC291391D94432C007DA2FC /* Fakery tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDC291421D94432C007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOSTests" */;
+			buildPhases = (
+				BDC291361D94432C007DA2FC /* Sources */,
+				BDC291371D94432C007DA2FC /* Frameworks */,
+				BDC291381D94432C007DA2FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDC291411D94432C007DA2FC /* PBXTargetDependency */,
+			);
+			name = "Fakery tvOSTests";
+			productName = "Fakery tvOSTests";
+			productReference = BDC2913A1D94432C007DA2FC /* Fakery tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BCF0DF311BF9F77E00427DB4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Vadym Markov";
 				TargetAttributes = {
@@ -477,6 +563,12 @@
 					};
 					BCF0DF431BF9F77E00427DB4 = {
 						CreatedOnToolsVersion = 7.1.1;
+					};
+					BDC291271D9441F2007DA2FC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BDC291391D94432C007DA2FC = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -496,6 +588,8 @@
 				BCF0DF431BF9F77E00427DB4 /* Fakery iOSTests */,
 				BC827FA71BFA3CE1005F09A4 /* Fakery OSX */,
 				BC827FB01BFA3CE1005F09A4 /* Fakery OSXTests */,
+				BDC291271D9441F2007DA2FC /* Fakery tvOS */,
+				BDC291391D94432C007DA2FC /* Fakery tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -571,6 +665,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BCF0DF421BF9F77E00427DB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC291261D9441F2007DA2FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC291381D94432C007DA2FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -659,6 +767,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDC291231D9441F2007DA2FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC291361D94432C007DA2FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -671,6 +793,11 @@
 			isa = PBXTargetDependency;
 			target = BCF0DF391BF9F77E00427DB4 /* Fakery iOS */;
 			targetProxy = BCF0DF461BF9F77E00427DB4 /* PBXContainerItemProxy */;
+		};
+		BDC291411D94432C007DA2FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDC291271D9441F2007DA2FC /* Fakery tvOS */;
+			targetProxy = BDC291401D94432C007DA2FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -904,6 +1031,80 @@
 			};
 			name = Release;
 		};
+		BDC2912E1D9441F2007DA2FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOS";
+				PRODUCT_NAME = Fakery;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		BDC2912F1D9441F2007DA2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOS";
+				PRODUCT_NAME = Fakery;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		BDC291431D94432C007DA2FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Tests/Support Files/tvOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		BDC291441D94432C007DA2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Tests/Support Files/tvOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -951,6 +1152,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BDC2912D1D9441F2007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC2912E1D9441F2007DA2FC /* Debug */,
+				BDC2912F1D9441F2007DA2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDC291421D94432C007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC291431D94432C007DA2FC /* Debug */,
+				BDC291441D94432C007DA2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

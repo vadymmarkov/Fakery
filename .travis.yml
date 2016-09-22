@@ -1,7 +1,12 @@
-language: swift
+osx_image: xcode7.3
+language: objective-c
+
 before_install:
-- gem install cocoapods -v '0.38.2'
+- brew update
+- if brew outdated | grep -qx carthage; then brew upgrade carthage; fi
+- travis_wait 35 carthage bootstrap --platform iOS,Mac,tvOS
 
 # Use when you have third party dependencies (CocoaPods generates a workspace)
-podfile: Pod/Podfile
-script: xctool -workspace Pod/Pod.xcworkspace -scheme Tests -sdk iphonesimulator build test
+- xcodebuild clean build -project Fakery.xcodeproj -scheme "Fakery iOS" -sdk iphonesimulator
+- xcodebuild clean build -project Fakery.xcodeproj -scheme "Fakery OSX" -sdk macosx
+- xcodebuild clean build -project Fakery.xcodeproj -scheme "Fakery tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=9.2'
