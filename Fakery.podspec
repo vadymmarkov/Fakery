@@ -24,6 +24,5 @@ Pod::Spec.new do |s|
     'Faker' => ['Resources/Locales/*.{json}']
   }
   s.source_files = 'Source/**/*'
-  s.dependency 'SwiftyJSON', '< 3.0.0'
   s.frameworks = 'Foundation'
 end

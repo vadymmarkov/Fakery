@@ -1,4 +1,4 @@
-import SwiftyJSON
+import Foundation
 
 public class Parser {
 

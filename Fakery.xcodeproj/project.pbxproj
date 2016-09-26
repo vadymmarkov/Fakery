@@ -49,8 +49,6 @@
 		BC4477B71BFA459400E8FB15 /* uk.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15E1BF9F912005A3BC1 /* uk.json */; };
 		BC4477B81BFA459700E8FB15 /* zh-CN.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15F1BF9F912005A3BC1 /* zh-CN.json */; };
 		BC4477B91BFA459A00E8FB15 /* zh-TW.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1601BF9F912005A3BC1 /* zh-TW.json */; };
-		BC4477C01BFA4E4200E8FB15 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4477BF1BFA4E4200E8FB15 /* SwiftyJSON.framework */; };
-		BC4477C21BFA4E9A00E8FB15 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4477C11BFA4E9A00E8FB15 /* SwiftyJSON.framework */; };
 		BC827FB21BFA3CE1005F09A4 /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC827FA81BFA3CE1005F09A4 /* Fakery.framework */; };
 		BCF0DF451BF9F77E00427DB4 /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */; };
 		BCFFA1791BF9F912005A3BC1 /* de-AT.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1491BF9F912005A3BC1 /* de-AT.json */; };
@@ -93,7 +91,6 @@
 		BCFFA19E1BF9F912005A3BC1 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1721BF9F912005A3BC1 /* Name.swift */; };
 		BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */; };
 		BCFFA1A01BF9F912005A3BC1 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1741BF9F912005A3BC1 /* Team.swift */; };
-		BDC291351D9442E0007DA2FC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC291341D9442E0007DA2FC /* SwiftyJSON.framework */; };
 		BDC2913F1D94432C007DA2FC /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC291281D9441F2007DA2FC /* Fakery.framework */; };
 /* End PBXBuildFile section */
 
@@ -185,7 +182,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4477C01BFA4E4200E8FB15 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +197,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4477C21BFA4E9A00E8FB15 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +212,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDC291351D9442E0007DA2FC /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +471,6 @@
 				BCF0DF361BF9F77E00427DB4 /* Frameworks */,
 				BCF0DF371BF9F77E00427DB4 /* Headers */,
 				BCF0DF381BF9F77E00427DB4 /* Resources */,
-				BCD9BCE21BFA262F00FB9886 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -687,23 +680,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		BCD9BCE21BFA262F00FB9886 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BC827FA31BFA3CE1005F09A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -811,10 +787,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/OSX-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -836,10 +809,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/OSX-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -978,10 +948,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -998,10 +965,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1039,10 +1003,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1063,10 +1024,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1160,6 +1118,7 @@
 				BDC2912F1D9441F2007DA2FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDC291421D94432C007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1168,6 +1127,7 @@
 				BDC291441D94432C007DA2FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
