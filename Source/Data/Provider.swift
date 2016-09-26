@@ -1,8 +1,10 @@
 import Foundation
 
-public class Provider {
+public final class Provider {
 
   var translations: [String: NSData] = [:]
+
+  // MARK: - Locale data
 
   public func dataForLocale(locale: String) -> NSData? {
     var translation: NSData?
@@ -12,11 +14,11 @@ public class Provider {
     } else {
       let bundle = NSBundle(forClass: Provider.self)
       var path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
-        
+
       if path == nil {
         path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirFrameworkPath)
       }
-        
+
       if let resourcePath = NSBundle(forClass: Provider.self).resourcePath {
         let bundlePath = resourcePath + "/Faker.bundle"
 

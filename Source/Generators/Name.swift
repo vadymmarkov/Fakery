@@ -21,6 +21,8 @@ public class Name: Generator {
   }
 
   public func title() -> String {
-    return generate("name.title.descriptor") + " " + generate("name.title.level") + " " + generate("name.title.job")
+    return generate("name.title.descriptor") + " "
+      + generate("name.title.level") + " "
+      + generate("name.title.job")
   }
 }

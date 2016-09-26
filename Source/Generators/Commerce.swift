@@ -13,6 +13,7 @@ public class Commerce: Generator {
     let count = fetchedCategories.count
 
     var department = ""
+
     if count > 1 {
       department = mergeCategories(fetchedCategories)
     } else if count == 1 {
@@ -23,7 +24,9 @@ public class Commerce: Generator {
   }
 
   public func productName() -> String {
-    return generate("commerce.product_name.adjective") + " " + generate("commerce.product_name.material") + " " + generate("commerce.product_name.product")
+    return generate("commerce.product_name.adjective") + " "
+      + generate("commerce.product_name.material") + " "
+      + generate("commerce.product_name.product")
   }
 
   public func price() -> Double {
@@ -35,8 +38,10 @@ public class Commerce: Generator {
 
   func categories(amount: Int) -> [String] {
     var categories: [String] = []
+
     while categories.count < amount {
       let category = generate("commerce.department")
+
       if !categories.contains(category) {
         categories.append(category)
       }
@@ -48,7 +53,7 @@ public class Commerce: Generator {
   func mergeCategories(categories: [String]) -> String {
     let separator = generate("separator")
     let commaSeparated = categories[0..<categories.count - 1].joinWithSeparator(", ")
-    
+
     return commaSeparated + separator + categories.last!
   }
 }

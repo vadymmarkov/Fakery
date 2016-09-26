@@ -24,7 +24,9 @@ public class Internet: Generator {
       gap = sep
     }
 
-    return components[0..<count].joinWithSeparator(gap).stringByReplacingOccurrencesOfString("'", withString: "").lowercaseString
+    return components[0..<count].joinWithSeparator(gap)
+      .stringByReplacingOccurrencesOfString("'", withString: "")
+      .lowercaseString
   }
 
   public func domainName(alphaNumericOnly: Bool = true) -> String {
@@ -34,6 +36,7 @@ public class Internet: Generator {
   public func domainWord(alphaNumericOnly alphaNumericOnly: Bool = true) -> String {
     let nameParts = generate("company.name").componentsSeparatedByString(" ")
     var name = ""
+
     if let first = nameParts.first {
       name = first
     } else {
@@ -41,6 +44,7 @@ public class Internet: Generator {
     }
 
     let result = alphaNumericOnly ? alphaNumerify(name) : name
+
     return result.lowercaseString
   }
 
@@ -53,7 +57,6 @@ public class Internet: Generator {
   }
 
   public func freeEmail() -> String {
-
     return [username(), generate("internet.free_email")].joinWithSeparator("@")
   }
 
@@ -68,10 +71,12 @@ public class Internet: Generator {
   public func password(minimumLength minimumLength: Int = 8, maximumLength: Int = 16) -> String {
     var temp = lorem.characters(amount: minimumLength)
     let diffLength = maximumLength - minimumLength
+
     if diffLength > 0 {
       let diffRandom = Int(arc4random_uniform(UInt32(diffLength + 1)))
       temp += lorem.characters(amount: diffRandom)
     }
+
     return temp
   }
 

@@ -7,8 +7,8 @@ public class Lorem: Generator {
   }
 
   public func words(amount amount: Int = 3) -> String {
-
     var words: [String] = []
+
     for _ in 0..<amount {
       words.append(word())
     }
@@ -35,12 +35,14 @@ public class Lorem: Generator {
 
   public func sentence(wordsAmount wordsAmount: Int = 4) -> String {
     var sentence = words(amount: wordsAmount) + "."
-    sentence.replaceRange(sentence.startIndex...sentence.startIndex, with: String(sentence[sentence.startIndex]).capitalizedString)
+    sentence.replaceRange(sentence.startIndex...sentence.startIndex,
+                          with: String(sentence[sentence.startIndex]).capitalizedString)
     return sentence
   }
 
   public func sentences(amount amount: Int = 3) -> String {
     var sentences: [String] = []
+
     for _ in 0..<amount {
       sentences.append(sentence())
     }
@@ -54,6 +56,7 @@ public class Lorem: Generator {
 
   public func paragraphs(amount amount: Int = 3) -> String {
     var paragraphs: [String] = []
+
     for _ in 0..<amount {
       paragraphs.append(paragraph())
     }

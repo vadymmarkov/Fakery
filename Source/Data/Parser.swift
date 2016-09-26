@@ -1,6 +1,6 @@
 import Foundation
 
-public class Parser {
+public final class Parser {
 
   public var locale: String {
     didSet {
@@ -14,8 +14,8 @@ public class Parser {
   var provider: Provider
 
   public init(locale: String = Config.defaultLocale) {
-    self.provider = Provider()
     self.locale = locale
+    provider = Provider()
     loadData()
   }
 
@@ -24,20 +24,20 @@ public class Parser {
   public func fetch(key: String) -> String {
     var parsed = ""
 
-    if let keyData = fetchRaw(key) {
-      let subject = getSubject(key)
+    guard let keyData = fetchRaw(key) else {
+      return parsed
+    }
 
-      if let value = keyData as? String {
-        parsed = value
-      } else if let array = keyData as? [String] {
-        if let item = array.random() {
-          parsed = item
-        }
-      }
+    let subject = getSubject(key)
 
-      if parsed.rangeOfString("#{") != nil {
-        parsed = parse(parsed, forSubject: subject)
-      }
+    if let value = keyData as? String {
+      parsed = value
+    } else if let array = keyData as? [String], item = array.random() {
+      parsed = item
+    }
+
+    if parsed.rangeOfString("#{") != nil {
+      parsed = parse(parsed, forSubject: subject)
     }
 
     return parsed
@@ -62,46 +62,48 @@ public class Parser {
     var text = ""
     let string = template as NSString
     var regex: NSRegularExpression
+
     do {
-      try regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?", options: .CaseInsensitive)
+      try regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?",
+                                      options: .CaseInsensitive)
       let matches = regex.matchesInString(string as String,
         options: .ReportCompletion,
         range: NSMakeRange(0, string.length))
 
-      if matches.count > 0 {
-        for match in matches {
-          if match.numberOfRanges < 4 {
-            continue
-          }
+      guard !matches.isEmpty else {
+        return template
+      }
 
-          let prefixRange = match.rangeAtIndex(1)
-          let subjectRange = match.rangeAtIndex(2)
-          let methodRange = match.rangeAtIndex(3)
-          let otherRange = match.rangeAtIndex(4)
-
-          if prefixRange.length > 0 {
-            text += string.substringWithRange(prefixRange)
-          }
-
-          var subjectWithDot = subject + "."
-          if subjectRange.length > 0 {
-            subjectWithDot = string.substringWithRange(subjectRange)
-          }
-
-          if methodRange.length > 0 {
-            let key = subjectWithDot.lowercaseString + string.substringWithRange(methodRange)
-            text += fetch(key)
-          }
-
-          if otherRange.length > 0 {
-            text += string.substringWithRange(otherRange)
-          }
+      for match in matches {
+        if match.numberOfRanges < 4 {
+          continue
         }
-      } else {
-        text = template
+
+        let prefixRange = match.rangeAtIndex(1)
+        let subjectRange = match.rangeAtIndex(2)
+        let methodRange = match.rangeAtIndex(3)
+        let otherRange = match.rangeAtIndex(4)
+
+        if prefixRange.length > 0 {
+          text += string.substringWithRange(prefixRange)
+        }
+
+        var subjectWithDot = subject + "."
+
+        if subjectRange.length > 0 {
+          subjectWithDot = string.substringWithRange(subjectRange)
+        }
+
+        if methodRange.length > 0 {
+          let key = subjectWithDot.lowercaseString + string.substringWithRange(methodRange)
+          text += fetch(key)
+        }
+
+        if otherRange.length > 0 {
+          text += string.substringWithRange(otherRange)
+        }
       }
     } catch {}
-
 
     return text
   }
