@@ -10,7 +10,7 @@ public class Parser {
     }
   }
 
-  var data: JSON = []
+  var data = [String: AnyObject]()
   var provider: Provider
 
   public init(locale: String = Config.defaultLocale) {
@@ -27,10 +27,10 @@ public class Parser {
     if let keyData = fetchRaw(key) {
       let subject = getSubject(key)
 
-      if let value = keyData.string {
+      if let value = keyData as? String {
         parsed = value
-      } else if let array = keyData.arrayObject {
-        if let item = array.random() as? String {
+      } else if let array = keyData as? [String] {
+        if let item = array.random() {
           parsed = item
         }
       }
@@ -43,21 +43,19 @@ public class Parser {
     return parsed
   }
 
-  public func fetchRaw(key: String) -> JSON? {
-    var keyData: JSON?
+  public func fetchRaw(key: String) -> AnyObject? {
     let parts = key.componentsSeparatedByString(".")
 
-    if parts.count > 0 {
-      var parsed = data[locale]["faker"]
-
-      for part in parts {
-        parsed = parsed[part]
-      }
-
-      keyData = parsed
+    guard let localeData = data[locale], var parsed = localeData["faker"] where !parts.isEmpty else {
+      return nil
     }
 
-    return keyData
+    for part in parts {
+      guard let parsedPart = parsed?[part] else { continue }
+      parsed = parsedPart
+    }
+
+    return parsed
   }
 
   func parse(template: String, forSubject subject: String) -> String {
@@ -122,14 +120,17 @@ public class Parser {
   // MARK: - Data loading
 
   func loadData() {
-    if let localeData = provider.dataForLocale(locale) {
-      data = JSON(data: localeData,
-        options: NSJSONReadingOptions.AllowFragments,
-        error: nil)
-    } else if locale != Config.defaultLocale {
-      locale = Config.defaultLocale
-    } else {
-      fatalError("JSON file for '\(locale)' locale was not found.")
+    guard let localeData = provider.dataForLocale(locale),
+      parsedData = try? NSJSONSerialization.JSONObjectWithData(localeData, options: .AllowFragments),
+      json = parsedData as? [String: AnyObject] else {
+        if locale != Config.defaultLocale {
+          locale = Config.defaultLocale
+        } else {
+          fatalError("JSON file for '\(locale)' locale was not found.")
+        }
+        return
     }
+
+    data = json
   }
 }

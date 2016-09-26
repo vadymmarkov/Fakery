@@ -60,9 +60,9 @@ public class Generator {
     var string = ""
 
     var list = [String]()
-    if let wordsList = parser.fetchRaw(key)?.arrayObject {
+    if let wordsList = parser.fetchRaw(key) as? [[String]] {
       for words in wordsList {
-        if let item = (words as! [String]).random() {
+        if let item = words.random() {
           list.append(item)
         }
       }

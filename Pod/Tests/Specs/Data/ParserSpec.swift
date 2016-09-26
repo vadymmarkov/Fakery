@@ -1,6 +1,5 @@
 import Quick
 import Nimble
-import SwiftyJSON
 
 class ParserSpec: QuickSpec {
 
@@ -49,15 +48,15 @@ class ParserSpec: QuickSpec {
         describe("#fetchRaw") {
           context("when the key is correct") {
             it("returns the correct text") {
-              if let city = parser.fetchRaw("address.city")?.arrayObject![0].string {
+              if let city = (parser.fetchRaw("address.city") as? [String])?[0] {
                 expect(city).to(equal("#{city_prefix} #{Name.first_name}#{city_suffix}"))
               }
 
-              if let name = parser.fetchRaw("name.name")?.arrayObject![0].string {
+              if let name = (parser.fetchRaw("name.name") as? [String])?[0] {
                 expect(name).to(equal("#{prefix} #{first_name} #{last_name}"))
               }
 
-              if let team = parser.fetchRaw("team.name")?.arrayObject![0].string {
+              if let team = (parser.fetchRaw("team.name") as? [String])?[0] {
                 expect(team).to(equal("#{Address.state} #{creature}"))
               }
             }
