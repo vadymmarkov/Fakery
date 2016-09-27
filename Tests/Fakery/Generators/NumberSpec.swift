@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+@testable import Fakery
 
 class NumberSpec: QuickSpec {
 
