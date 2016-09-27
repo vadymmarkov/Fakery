@@ -27,8 +27,7 @@ public class Generator {
   public func numerify(string: String) -> String {
     let count = UInt32(Constants.numbers.count)
 
-    return String(string.characters.enumerate().map {
-      (index, item) in
+    return String(string.characters.enumerate().map { (index, item) in
       let numberIndex = index == 0 ? arc4random_uniform(count - 1) :
         arc4random_uniform(count)
       let char = Constants.numbers[Int(numberIndex)]
@@ -37,8 +36,7 @@ public class Generator {
   }
 
   public func letterify(string: String) -> String {
-    return String(string.characters.enumerate().map {
-      (index, item) in
+    return String(string.characters.enumerate().map { (index, item) in
       let count = UInt32(Constants.uppercaseLetters.count)
       let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
       return String(item) == "?" ? char : item
@@ -52,7 +50,7 @@ public class Generator {
   public func alphaNumerify(string: String) -> String {
     return string.stringByReplacingOccurrencesOfString("[^A-Za-z0-9_]",
       withString: "",
-      options: NSStringCompareOptions.RegularExpressionSearch,
+      options: .RegularExpressionSearch,
       range: nil)
   }
 
@@ -60,9 +58,9 @@ public class Generator {
     var string = ""
 
     var list = [String]()
-    if let wordsList = parser.fetchRaw(key)?.arrayObject {
+    if let wordsList = parser.fetchRaw(key) as? [[String]] {
       for words in wordsList {
-        if let item = (words as! [String]).random() {
+        if let item = words.random() {
           list.append(item)
         }
       }

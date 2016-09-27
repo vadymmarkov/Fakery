@@ -16,9 +16,11 @@ public class Address: Generator {
 
   public func streetAddress(includeSecondary includeSecondary: Bool = false) -> String {
     var streetAddress = numerify(generate("address.street_address"))
+
     if includeSecondary {
       streetAddress += " " + secondaryAddress()
     }
+
     return streetAddress
   }
 
@@ -30,6 +32,7 @@ public class Address: Generator {
     if stateAbbreviation.isEmpty {
       return bothify(generate("address.postcode"))
     }
+    
     return bothify(generate("address.postcode_by_state.\(stateAbbreviation)"))
   }
 
@@ -56,7 +59,7 @@ public class Address: Generator {
   public func state() -> String {
     return generate("address.state")
   }
-  
+
   public func county() -> String {
     return generate("address.county")
   }

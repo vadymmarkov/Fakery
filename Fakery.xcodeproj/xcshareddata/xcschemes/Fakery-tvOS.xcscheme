@@ -16,21 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BDC291271D9441F2007DA2FC"
                BuildableName = "Fakery.framework"
-               BlueprintName = "Fakery tvOS"
-               ReferencedContainer = "container:Fakery.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDC291391D94432C007DA2FC"
-               BuildableName = "Fakery tvOSTests.xctest"
-               BlueprintName = "Fakery tvOSTests"
+               BlueprintName = "Fakery-tvOS"
                ReferencedContainer = "container:Fakery.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDC291391D94432C007DA2FC"
-               BuildableName = "Fakery tvOSTests.xctest"
-               BlueprintName = "Fakery tvOSTests"
-               ReferencedContainer = "container:Fakery.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BDC291271D9441F2007DA2FC"
             BuildableName = "Fakery.framework"
-            BlueprintName = "Fakery tvOS"
+            BlueprintName = "Fakery-tvOS"
             ReferencedContainer = "container:Fakery.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,7 +56,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BDC291271D9441F2007DA2FC"
             BuildableName = "Fakery.framework"
-            BlueprintName = "Fakery tvOS"
+            BlueprintName = "Fakery-tvOS"
             ReferencedContainer = "container:Fakery.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -98,7 +74,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BDC291271D9441F2007DA2FC"
             BuildableName = "Fakery.framework"
-            BlueprintName = "Fakery tvOS"
+            BlueprintName = "Fakery-tvOS"
             ReferencedContainer = "container:Fakery.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

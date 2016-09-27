@@ -49,8 +49,6 @@
 		BC4477B71BFA459400E8FB15 /* uk.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15E1BF9F912005A3BC1 /* uk.json */; };
 		BC4477B81BFA459700E8FB15 /* zh-CN.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15F1BF9F912005A3BC1 /* zh-CN.json */; };
 		BC4477B91BFA459A00E8FB15 /* zh-TW.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1601BF9F912005A3BC1 /* zh-TW.json */; };
-		BC4477C01BFA4E4200E8FB15 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4477BF1BFA4E4200E8FB15 /* SwiftyJSON.framework */; };
-		BC4477C21BFA4E9A00E8FB15 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4477C11BFA4E9A00E8FB15 /* SwiftyJSON.framework */; };
 		BC827FB21BFA3CE1005F09A4 /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC827FA81BFA3CE1005F09A4 /* Fakery.framework */; };
 		BCF0DF451BF9F77E00427DB4 /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */; };
 		BCFFA1791BF9F912005A3BC1 /* de-AT.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1491BF9F912005A3BC1 /* de-AT.json */; };
@@ -93,8 +91,79 @@
 		BCFFA19E1BF9F912005A3BC1 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1721BF9F912005A3BC1 /* Name.swift */; };
 		BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */; };
 		BCFFA1A01BF9F912005A3BC1 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1741BF9F912005A3BC1 /* Team.swift */; };
-		BDC291351D9442E0007DA2FC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC291341D9442E0007DA2FC /* SwiftyJSON.framework */; };
-		BDC2913F1D94432C007DA2FC /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC291281D9441F2007DA2FC /* Fakery.framework */; };
+		D59B6CA01D99C45A007CB072 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1621BF9F912005A3BC1 /* Config.swift */; };
+		D59B6CA11D99C45D007CB072 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1641BF9F912005A3BC1 /* Parser.swift */; };
+		D59B6CA21D99C460007CB072 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1651BF9F912005A3BC1 /* Provider.swift */; };
+		D59B6CA31D99C464007CB072 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1671BF9F912005A3BC1 /* ArrayExtension.swift */; };
+		D59B6CA41D99C467007CB072 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1681BF9F912005A3BC1 /* Faker.swift */; };
+		D59B6CA51D99C46C007CB072 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16A1BF9F912005A3BC1 /* Address.swift */; };
+		D59B6CA61D99C46C007CB072 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16B1BF9F912005A3BC1 /* App.swift */; };
+		D59B6CA71D99C46C007CB072 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16C1BF9F912005A3BC1 /* Business.swift */; };
+		D59B6CA81D99C46C007CB072 /* Commerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16D1BF9F912005A3BC1 /* Commerce.swift */; };
+		D59B6CA91D99C46C007CB072 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16E1BF9F912005A3BC1 /* Company.swift */; };
+		D59B6CAA1D99C46C007CB072 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16F1BF9F912005A3BC1 /* Generator.swift */; };
+		D59B6CAB1D99C46C007CB072 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1701BF9F912005A3BC1 /* Internet.swift */; };
+		D59B6CAC1D99C46C007CB072 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1711BF9F912005A3BC1 /* Lorem.swift */; };
+		D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1721BF9F912005A3BC1 /* Name.swift */; };
+		D59B6CAE1D99C46C007CB072 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
+		D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */; };
+		D59B6CB01D99C46C007CB072 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1741BF9F912005A3BC1 /* Team.swift */; };
+		D59B6CB11D99C485007CB072 /* de-AT.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1491BF9F912005A3BC1 /* de-AT.json */; };
+		D59B6CB21D99C485007CB072 /* de-CH.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14A1BF9F912005A3BC1 /* de-CH.json */; };
+		D59B6CB31D99C485007CB072 /* de.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14B1BF9F912005A3BC1 /* de.json */; };
+		D59B6CB41D99C485007CB072 /* en-AU.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14C1BF9F912005A3BC1 /* en-AU.json */; };
+		D59B6CB51D99C485007CB072 /* en-CA.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14D1BF9F912005A3BC1 /* en-CA.json */; };
+		D59B6CB61D99C485007CB072 /* en-GB.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14E1BF9F912005A3BC1 /* en-GB.json */; };
+		D59B6CB71D99C485007CB072 /* en-IND.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14F1BF9F912005A3BC1 /* en-IND.json */; };
+		D59B6CB81D99C485007CB072 /* en-TEST.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1501BF9F912005A3BC1 /* en-TEST.json */; };
+		D59B6CB91D99C485007CB072 /* en-US.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1511BF9F912005A3BC1 /* en-US.json */; };
+		D59B6CBA1D99C485007CB072 /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1521BF9F912005A3BC1 /* en.json */; };
+		D59B6CBB1D99C485007CB072 /* es.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1531BF9F912005A3BC1 /* es.json */; };
+		D59B6CBC1D99C485007CB072 /* fa.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1541BF9F912005A3BC1 /* fa.json */; };
+		D59B6CBD1D99C485007CB072 /* fr.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1551BF9F912005A3BC1 /* fr.json */; };
+		D59B6CBE1D99C485007CB072 /* it.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1561BF9F912005A3BC1 /* it.json */; };
+		D59B6CBF1D99C485007CB072 /* ja.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1571BF9F912005A3BC1 /* ja.json */; };
+		D59B6CC01D99C485007CB072 /* ko.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1581BF9F912005A3BC1 /* ko.json */; };
+		D59B6CC11D99C485007CB072 /* nb-NO.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1591BF9F912005A3BC1 /* nb-NO.json */; };
+		D59B6CC21D99C485007CB072 /* pl.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15A1BF9F912005A3BC1 /* pl.json */; };
+		D59B6CC31D99C485007CB072 /* ru.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15B1BF9F912005A3BC1 /* ru.json */; };
+		D59B6CC41D99C485007CB072 /* sk.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15C1BF9F912005A3BC1 /* sk.json */; };
+		D59B6CC51D99C485007CB072 /* sv.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15D1BF9F912005A3BC1 /* sv.json */; };
+		D59B6CC61D99C485007CB072 /* uk.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15E1BF9F912005A3BC1 /* uk.json */; };
+		D59B6CC71D99C485007CB072 /* zh-CN.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA15F1BF9F912005A3BC1 /* zh-CN.json */; };
+		D59B6CC81D99C485007CB072 /* zh-TW.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1601BF9F912005A3BC1 /* zh-TW.json */; };
+		D59B6D1C1D99C82D007CB072 /* ConfigSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CED1D99C5FD007CB072 /* ConfigSpec.swift */; };
+		D59B6D1D1D99C82D007CB072 /* FakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF11D99C5FD007CB072 /* FakerSpec.swift */; };
+		D59B6D1E1D99C82D007CB072 /* ParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CEF1D99C5FD007CB072 /* ParserSpec.swift */; };
+		D59B6D1F1D99C82D007CB072 /* ProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF01D99C5FD007CB072 /* ProviderSpec.swift */; };
+		D59B6D201D99C82D007CB072 /* AddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF31D99C5FD007CB072 /* AddressSpec.swift */; };
+		D59B6D211D99C82D007CB072 /* AppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF41D99C5FD007CB072 /* AppSpec.swift */; };
+		D59B6D221D99C82D007CB072 /* BusinessSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF51D99C5FD007CB072 /* BusinessSpec.swift */; };
+		D59B6D231D99C82D007CB072 /* CommerceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF61D99C5FD007CB072 /* CommerceSpec.swift */; };
+		D59B6D241D99C82D007CB072 /* CompanySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF71D99C5FD007CB072 /* CompanySpec.swift */; };
+		D59B6D251D99C82D007CB072 /* GeneratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF81D99C5FD007CB072 /* GeneratorSpec.swift */; };
+		D59B6D261D99C82D007CB072 /* InternetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF91D99C5FD007CB072 /* InternetSpec.swift */; };
+		D59B6D271D99C82D007CB072 /* LoremSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFA1D99C5FD007CB072 /* LoremSpec.swift */; };
+		D59B6D281D99C82D007CB072 /* NameSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFB1D99C5FD007CB072 /* NameSpec.swift */; };
+		D59B6D291D99C82D007CB072 /* NumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */; };
+		D59B6D2A1D99C82D007CB072 /* PhoneNumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */; };
+		D59B6D2B1D99C82D007CB072 /* TeamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */; };
+		D59B6D2C1D99C82E007CB072 /* ConfigSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CED1D99C5FD007CB072 /* ConfigSpec.swift */; };
+		D59B6D2D1D99C82E007CB072 /* FakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF11D99C5FD007CB072 /* FakerSpec.swift */; };
+		D59B6D2E1D99C82E007CB072 /* ParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CEF1D99C5FD007CB072 /* ParserSpec.swift */; };
+		D59B6D2F1D99C82E007CB072 /* ProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF01D99C5FD007CB072 /* ProviderSpec.swift */; };
+		D59B6D301D99C82E007CB072 /* AddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF31D99C5FD007CB072 /* AddressSpec.swift */; };
+		D59B6D311D99C82E007CB072 /* AppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF41D99C5FD007CB072 /* AppSpec.swift */; };
+		D59B6D321D99C82E007CB072 /* BusinessSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF51D99C5FD007CB072 /* BusinessSpec.swift */; };
+		D59B6D331D99C82E007CB072 /* CommerceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF61D99C5FD007CB072 /* CommerceSpec.swift */; };
+		D59B6D341D99C82E007CB072 /* CompanySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF71D99C5FD007CB072 /* CompanySpec.swift */; };
+		D59B6D351D99C82E007CB072 /* GeneratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF81D99C5FD007CB072 /* GeneratorSpec.swift */; };
+		D59B6D361D99C82E007CB072 /* InternetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CF91D99C5FD007CB072 /* InternetSpec.swift */; };
+		D59B6D371D99C82E007CB072 /* LoremSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFA1D99C5FD007CB072 /* LoremSpec.swift */; };
+		D59B6D381D99C82E007CB072 /* NameSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFB1D99C5FD007CB072 /* NameSpec.swift */; };
+		D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */; };
+		D59B6D3A1D99C82E007CB072 /* PhoneNumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */; };
+		D59B6D3B1D99C82E007CB072 /* TeamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,27 +181,14 @@
 			remoteGlobalIDString = BCF0DF391BF9F77E00427DB4;
 			remoteInfo = Fakery;
 		};
-		BDC291401D94432C007DA2FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BCF0DF311BF9F77E00427DB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BDC291271D9441F2007DA2FC;
-			remoteInfo = "Fakery tvOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09F65D6E1CA30351006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
-		BC4477BF1BFA4E4200E8FB15 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
-		BC4477C11BFA4E9A00E8FB15 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC827FB11BFA3CE1005F09A4 /* Fakery OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC96A8301BFA3FFA00C07A53 /* OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OSX-Info.plist"; sourceTree = "<group>"; };
-		BC96A8371BFA401800C07A53 /* OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OSX-Info.plist"; sourceTree = "<group>"; };
-		BC96A83E1BFA432000C07A53 /* iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
-		BC96A8401BFA435900C07A53 /* iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCF0DF441BF9F77E00427DB4 /* Fakery iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF0DF441BF9F77E00427DB4 /* Fakery-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFFA1491BF9F912005A3BC1 /* de-AT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "de-AT.json"; sourceTree = "<group>"; };
 		BCFFA14A1BF9F912005A3BC1 /* de-CH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "de-CH.json"; sourceTree = "<group>"; };
 		BCFFA14B1BF9F912005A3BC1 /* de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = de.json; sourceTree = "<group>"; };
@@ -174,10 +230,28 @@
 		BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		BCFFA1741BF9F912005A3BC1 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		BDC291281D9441F2007DA2FC /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDC291321D9442C1007DA2FC /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
-		BDC291341D9442E0007DA2FC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		BDC2913A1D94432C007DA2FC /* Fakery tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDC291451D94434B007DA2FC /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
+		D59B6CED1D99C5FD007CB072 /* ConfigSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigSpec.swift; sourceTree = "<group>"; };
+		D59B6CEF1D99C5FD007CB072 /* ParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserSpec.swift; sourceTree = "<group>"; };
+		D59B6CF01D99C5FD007CB072 /* ProviderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSpec.swift; sourceTree = "<group>"; };
+		D59B6CF11D99C5FD007CB072 /* FakerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakerSpec.swift; sourceTree = "<group>"; };
+		D59B6CF31D99C5FD007CB072 /* AddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSpec.swift; sourceTree = "<group>"; };
+		D59B6CF41D99C5FD007CB072 /* AppSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSpec.swift; sourceTree = "<group>"; };
+		D59B6CF51D99C5FD007CB072 /* BusinessSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessSpec.swift; sourceTree = "<group>"; };
+		D59B6CF61D99C5FD007CB072 /* CommerceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommerceSpec.swift; sourceTree = "<group>"; };
+		D59B6CF71D99C5FD007CB072 /* CompanySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanySpec.swift; sourceTree = "<group>"; };
+		D59B6CF81D99C5FD007CB072 /* GeneratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorSpec.swift; sourceTree = "<group>"; };
+		D59B6CF91D99C5FD007CB072 /* InternetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetSpec.swift; sourceTree = "<group>"; };
+		D59B6CFA1D99C5FD007CB072 /* LoremSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoremSpec.swift; sourceTree = "<group>"; };
+		D59B6CFB1D99C5FD007CB072 /* NameSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameSpec.swift; sourceTree = "<group>"; };
+		D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSpec.swift; sourceTree = "<group>"; };
+		D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberSpec.swift; sourceTree = "<group>"; };
+		D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSpec.swift; sourceTree = "<group>"; };
+		D59B6D101D99C6C7007CB072 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D59B6D111D99C6C7007CB072 /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
+		D59B6D121D99C6C7007CB072 /* Info-Tests-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-iOS.plist"; sourceTree = "<group>"; };
+		D59B6D131D99C6C7007CB072 /* Info-Tests-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-Mac.plist"; sourceTree = "<group>"; };
+		D59B6D141D99C6C7007CB072 /* Info-Tests-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-tvOS.plist"; sourceTree = "<group>"; };
+		D59B6D151D99C6C7007CB072 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +259,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4477C01BFA4E4200E8FB15 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +274,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4477C21BFA4E9A00E8FB15 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,71 +289,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDC291351D9442E0007DA2FC /* SwiftyJSON.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BDC291371D94432C007DA2FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BDC2913F1D94432C007DA2FC /* Fakery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC4477BB1BFA479500E8FB15 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				BC4477C11BFA4E9A00E8FB15 /* SwiftyJSON.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BC4477BC1BFA479E00E8FB15 /* OSX */ = {
-			isa = PBXGroup;
-			children = (
-				BC4477BF1BFA4E4200E8FB15 /* SwiftyJSON.framework */,
-			);
-			name = OSX;
-			sourceTree = "<group>";
-		};
-		BC96A82E1BFA3FFA00C07A53 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BDC291321D9442C1007DA2FC /* tvOS-Info.plist */,
-				BC96A83E1BFA432000C07A53 /* iOS-Info.plist */,
-				BC96A8301BFA3FFA00C07A53 /* OSX-Info.plist */,
-			);
-			path = "Support Files";
-			sourceTree = "<group>";
-		};
-		BC96A8351BFA401800C07A53 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BDC291451D94434B007DA2FC /* tvOS-Info.plist */,
-				BC96A8401BFA435900C07A53 /* iOS-Info.plist */,
-				BC96A8371BFA401800C07A53 /* OSX-Info.plist */,
-			);
-			path = "Support Files";
-			sourceTree = "<group>";
-		};
-		BCD9BCD91BFA217700FB9886 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BDC291331D9442D0007DA2FC /* tvOS */,
-				BC4477BC1BFA479E00E8FB15 /* OSX */,
-				BC4477BB1BFA479500E8FB15 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BCF0DF301BF9F77E00427DB4 = {
 			isa = PBXGroup;
 			children = (
-				BCD9BCD91BFA217700FB9886 /* Frameworks */,
+				D59B6D0F1D99C6C7007CB072 /* Project */,
 				BCFFA1471BF9F912005A3BC1 /* Resources */,
 				BCFFA1611BF9F912005A3BC1 /* Source */,
 				BCFFA1761BF9F912005A3BC1 /* Tests */,
@@ -293,11 +310,10 @@
 			isa = PBXGroup;
 			children = (
 				BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */,
-				BCF0DF441BF9F77E00427DB4 /* Fakery iOSTests.xctest */,
+				BCF0DF441BF9F77E00427DB4 /* Fakery-iOS-Tests.xctest */,
 				BC827FA81BFA3CE1005F09A4 /* Fakery.framework */,
-				BC827FB11BFA3CE1005F09A4 /* Fakery OSXTests.xctest */,
+				BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */,
 				BDC291281D9441F2007DA2FC /* Fakery.framework */,
-				BDC2913A1D94432C007DA2FC /* Fakery tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,11 +361,10 @@
 			isa = PBXGroup;
 			children = (
 				BCFFA1621BF9F912005A3BC1 /* Config.swift */,
+				BCFFA1681BF9F912005A3BC1 /* Faker.swift */,
 				BCFFA1631BF9F912005A3BC1 /* Data */,
 				BCFFA1661BF9F912005A3BC1 /* Extensions */,
-				BCFFA1681BF9F912005A3BC1 /* Faker.swift */,
 				BCFFA1691BF9F912005A3BC1 /* Generators */,
-				BC96A82E1BFA3FFA00C07A53 /* Support Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -393,17 +408,61 @@
 		BCFFA1761BF9F912005A3BC1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				BC96A8351BFA401800C07A53 /* Support Files */,
+				D59B6CEC1D99C5FD007CB072 /* Fakery */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		BDC291331D9442D0007DA2FC /* tvOS */ = {
+		D59B6CEC1D99C5FD007CB072 /* Fakery */ = {
 			isa = PBXGroup;
 			children = (
-				BDC291341D9442E0007DA2FC /* SwiftyJSON.framework */,
+				D59B6CED1D99C5FD007CB072 /* ConfigSpec.swift */,
+				D59B6CF11D99C5FD007CB072 /* FakerSpec.swift */,
+				D59B6CEE1D99C5FD007CB072 /* Data */,
+				D59B6CF21D99C5FD007CB072 /* Generators */,
 			);
-			name = tvOS;
+			path = Fakery;
+			sourceTree = "<group>";
+		};
+		D59B6CEE1D99C5FD007CB072 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D59B6CEF1D99C5FD007CB072 /* ParserSpec.swift */,
+				D59B6CF01D99C5FD007CB072 /* ProviderSpec.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D59B6CF21D99C5FD007CB072 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				D59B6CF31D99C5FD007CB072 /* AddressSpec.swift */,
+				D59B6CF41D99C5FD007CB072 /* AppSpec.swift */,
+				D59B6CF51D99C5FD007CB072 /* BusinessSpec.swift */,
+				D59B6CF61D99C5FD007CB072 /* CommerceSpec.swift */,
+				D59B6CF71D99C5FD007CB072 /* CompanySpec.swift */,
+				D59B6CF81D99C5FD007CB072 /* GeneratorSpec.swift */,
+				D59B6CF91D99C5FD007CB072 /* InternetSpec.swift */,
+				D59B6CFA1D99C5FD007CB072 /* LoremSpec.swift */,
+				D59B6CFB1D99C5FD007CB072 /* NameSpec.swift */,
+				D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */,
+				D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */,
+				D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		D59B6D0F1D99C6C7007CB072 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				D59B6D101D99C6C7007CB072 /* Info-iOS.plist */,
+				D59B6D111D99C6C7007CB072 /* Info-Mac.plist */,
+				D59B6D121D99C6C7007CB072 /* Info-Tests-iOS.plist */,
+				D59B6D131D99C6C7007CB072 /* Info-Tests-Mac.plist */,
+				D59B6D141D99C6C7007CB072 /* Info-Tests-tvOS.plist */,
+				D59B6D151D99C6C7007CB072 /* Info-tvOS.plist */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,9 +492,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BC827FA71BFA3CE1005F09A4 /* Fakery OSX */ = {
+		BC827FA71BFA3CE1005F09A4 /* Fakery-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery OSX" */;
+			buildConfigurationList = BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac" */;
 			buildPhases = (
 				BC827FA31BFA3CE1005F09A4 /* Sources */,
 				BC827FA41BFA3CE1005F09A4 /* Frameworks */,
@@ -446,69 +505,70 @@
 			);
 			dependencies = (
 			);
-			name = "Fakery OSX";
+			name = "Fakery-Mac";
 			productName = "Fakery OSX";
 			productReference = BC827FA81BFA3CE1005F09A4 /* Fakery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BC827FB01BFA3CE1005F09A4 /* Fakery OSXTests */ = {
+		BC827FB01BFA3CE1005F09A4 /* Fakery-Mac-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery OSXTests" */;
+			buildConfigurationList = BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac-Tests" */;
 			buildPhases = (
 				BC827FAD1BFA3CE1005F09A4 /* Sources */,
 				BC827FAE1BFA3CE1005F09A4 /* Frameworks */,
 				BC827FAF1BFA3CE1005F09A4 /* Resources */,
+				D5197A871D9A5E0C00029A9D /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BC827FB41BFA3CE1005F09A4 /* PBXTargetDependency */,
 			);
-			name = "Fakery OSXTests";
+			name = "Fakery-Mac-Tests";
 			productName = "Fakery OSXTests";
-			productReference = BC827FB11BFA3CE1005F09A4 /* Fakery OSXTests.xctest */;
+			productReference = BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BCF0DF391BF9F77E00427DB4 /* Fakery iOS */ = {
+		BCF0DF391BF9F77E00427DB4 /* Fakery-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCF0DF4E1BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery iOS" */;
+			buildConfigurationList = BCF0DF4E1BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery-iOS" */;
 			buildPhases = (
 				BCF0DF351BF9F77E00427DB4 /* Sources */,
 				BCF0DF361BF9F77E00427DB4 /* Frameworks */,
 				BCF0DF371BF9F77E00427DB4 /* Headers */,
 				BCF0DF381BF9F77E00427DB4 /* Resources */,
-				BCD9BCE21BFA262F00FB9886 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Fakery iOS";
+			name = "Fakery-iOS";
 			productName = Fakery;
 			productReference = BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BCF0DF431BF9F77E00427DB4 /* Fakery iOSTests */ = {
+		BCF0DF431BF9F77E00427DB4 /* Fakery-iOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCF0DF511BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery iOSTests" */;
+			buildConfigurationList = BCF0DF511BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery-iOS-Tests" */;
 			buildPhases = (
 				BCF0DF401BF9F77E00427DB4 /* Sources */,
 				BCF0DF411BF9F77E00427DB4 /* Frameworks */,
 				BCF0DF421BF9F77E00427DB4 /* Resources */,
+				D5BA6B7F1D99D429000D5F46 /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BCF0DF471BF9F77E00427DB4 /* PBXTargetDependency */,
 			);
-			name = "Fakery iOSTests";
+			name = "Fakery-iOS-Tests";
 			productName = FakeryTests;
-			productReference = BCF0DF441BF9F77E00427DB4 /* Fakery iOSTests.xctest */;
+			productReference = BCF0DF441BF9F77E00427DB4 /* Fakery-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BDC291271D9441F2007DA2FC /* Fakery tvOS */ = {
+		BDC291271D9441F2007DA2FC /* Fakery-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDC2912D1D9441F2007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOS" */;
+			buildConfigurationList = BDC2912D1D9441F2007DA2FC /* Build configuration list for PBXNativeTarget "Fakery-tvOS" */;
 			buildPhases = (
 				BDC291231D9441F2007DA2FC /* Sources */,
 				BDC291241D9441F2007DA2FC /* Frameworks */,
@@ -519,28 +579,10 @@
 			);
 			dependencies = (
 			);
-			name = "Fakery tvOS";
+			name = "Fakery-tvOS";
 			productName = "Fakery tvOS";
 			productReference = BDC291281D9441F2007DA2FC /* Fakery.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		BDC291391D94432C007DA2FC /* Fakery tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BDC291421D94432C007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOSTests" */;
-			buildPhases = (
-				BDC291361D94432C007DA2FC /* Sources */,
-				BDC291371D94432C007DA2FC /* Frameworks */,
-				BDC291381D94432C007DA2FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BDC291411D94432C007DA2FC /* PBXTargetDependency */,
-			);
-			name = "Fakery tvOSTests";
-			productName = "Fakery tvOSTests";
-			productReference = BDC2913A1D94432C007DA2FC /* Fakery tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -567,9 +609,6 @@
 					BDC291271D9441F2007DA2FC = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
-					BDC291391D94432C007DA2FC = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
 				};
 			};
 			buildConfigurationList = BCF0DF341BF9F77E00427DB4 /* Build configuration list for PBXProject "Fakery" */;
@@ -584,12 +623,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BCF0DF391BF9F77E00427DB4 /* Fakery iOS */,
-				BCF0DF431BF9F77E00427DB4 /* Fakery iOSTests */,
-				BC827FA71BFA3CE1005F09A4 /* Fakery OSX */,
-				BC827FB01BFA3CE1005F09A4 /* Fakery OSXTests */,
-				BDC291271D9441F2007DA2FC /* Fakery tvOS */,
-				BDC291391D94432C007DA2FC /* Fakery tvOSTests */,
+				BCF0DF391BF9F77E00427DB4 /* Fakery-iOS */,
+				BC827FA71BFA3CE1005F09A4 /* Fakery-Mac */,
+				BDC291271D9441F2007DA2FC /* Fakery-tvOS */,
+				BCF0DF431BF9F77E00427DB4 /* Fakery-iOS-Tests */,
+				BC827FB01BFA3CE1005F09A4 /* Fakery-Mac-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -675,27 +713,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BDC291381D94432C007DA2FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D59B6CC11D99C485007CB072 /* nb-NO.json in Resources */,
+				D59B6CBA1D99C485007CB072 /* en.json in Resources */,
+				D59B6CB41D99C485007CB072 /* en-AU.json in Resources */,
+				D59B6CC21D99C485007CB072 /* pl.json in Resources */,
+				D59B6CBE1D99C485007CB072 /* it.json in Resources */,
+				D59B6CC41D99C485007CB072 /* sk.json in Resources */,
+				D59B6CB31D99C485007CB072 /* de.json in Resources */,
+				D59B6CC61D99C485007CB072 /* uk.json in Resources */,
+				D59B6CC31D99C485007CB072 /* ru.json in Resources */,
+				D59B6CB11D99C485007CB072 /* de-AT.json in Resources */,
+				D59B6CC71D99C485007CB072 /* zh-CN.json in Resources */,
+				D59B6CB61D99C485007CB072 /* en-GB.json in Resources */,
+				D59B6CC81D99C485007CB072 /* zh-TW.json in Resources */,
+				D59B6CBF1D99C485007CB072 /* ja.json in Resources */,
+				D59B6CB81D99C485007CB072 /* en-TEST.json in Resources */,
+				D59B6CBC1D99C485007CB072 /* fa.json in Resources */,
+				D59B6CC01D99C485007CB072 /* ko.json in Resources */,
+				D59B6CB91D99C485007CB072 /* en-US.json in Resources */,
+				D59B6CC51D99C485007CB072 /* sv.json in Resources */,
+				D59B6CB21D99C485007CB072 /* de-CH.json in Resources */,
+				D59B6CB71D99C485007CB072 /* en-IND.json in Resources */,
+				D59B6CB51D99C485007CB072 /* en-CA.json in Resources */,
+				D59B6CBB1D99C485007CB072 /* es.json in Resources */,
+				D59B6CBD1D99C485007CB072 /* fr.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BCD9BCE21BFA262F00FB9886 /* ShellScript */ = {
+		D5197A871D9A5E0C00029A9D /* Copy frameworks with Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Nimble.framework",
 			);
+			name = "Copy frameworks with Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		D5BA6B7F1D99D429000D5F46 /* Copy frameworks with Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = "Copy frameworks with Carthage";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,6 +806,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59B6D361D99C82E007CB072 /* InternetSpec.swift in Sources */,
+				D59B6D351D99C82E007CB072 /* GeneratorSpec.swift in Sources */,
+				D59B6D2D1D99C82E007CB072 /* FakerSpec.swift in Sources */,
+				D59B6D301D99C82E007CB072 /* AddressSpec.swift in Sources */,
+				D59B6D371D99C82E007CB072 /* LoremSpec.swift in Sources */,
+				D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */,
+				D59B6D341D99C82E007CB072 /* CompanySpec.swift in Sources */,
+				D59B6D311D99C82E007CB072 /* AppSpec.swift in Sources */,
+				D59B6D331D99C82E007CB072 /* CommerceSpec.swift in Sources */,
+				D59B6D2E1D99C82E007CB072 /* ParserSpec.swift in Sources */,
+				D59B6D321D99C82E007CB072 /* BusinessSpec.swift in Sources */,
+				D59B6D3B1D99C82E007CB072 /* TeamSpec.swift in Sources */,
+				D59B6D3A1D99C82E007CB072 /* PhoneNumberSpec.swift in Sources */,
+				D59B6D2C1D99C82E007CB072 /* ConfigSpec.swift in Sources */,
+				D59B6D381D99C82E007CB072 /* NameSpec.swift in Sources */,
+				D59B6D2F1D99C82E007CB072 /* ProviderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +853,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59B6D261D99C82D007CB072 /* InternetSpec.swift in Sources */,
+				D59B6D251D99C82D007CB072 /* GeneratorSpec.swift in Sources */,
+				D59B6D1D1D99C82D007CB072 /* FakerSpec.swift in Sources */,
+				D59B6D201D99C82D007CB072 /* AddressSpec.swift in Sources */,
+				D59B6D271D99C82D007CB072 /* LoremSpec.swift in Sources */,
+				D59B6D291D99C82D007CB072 /* NumberSpec.swift in Sources */,
+				D59B6D241D99C82D007CB072 /* CompanySpec.swift in Sources */,
+				D59B6D211D99C82D007CB072 /* AppSpec.swift in Sources */,
+				D59B6D231D99C82D007CB072 /* CommerceSpec.swift in Sources */,
+				D59B6D1E1D99C82D007CB072 /* ParserSpec.swift in Sources */,
+				D59B6D221D99C82D007CB072 /* BusinessSpec.swift in Sources */,
+				D59B6D2B1D99C82D007CB072 /* TeamSpec.swift in Sources */,
+				D59B6D2A1D99C82D007CB072 /* PhoneNumberSpec.swift in Sources */,
+				D59B6D1C1D99C82D007CB072 /* ConfigSpec.swift in Sources */,
+				D59B6D281D99C82D007CB072 /* NameSpec.swift in Sources */,
+				D59B6D1F1D99C82D007CB072 /* ProviderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,13 +876,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BDC291361D94432C007DA2FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D59B6CA51D99C46C007CB072 /* Address.swift in Sources */,
+				D59B6CAC1D99C46C007CB072 /* Lorem.swift in Sources */,
+				D59B6CA41D99C467007CB072 /* Faker.swift in Sources */,
+				D59B6CA11D99C45D007CB072 /* Parser.swift in Sources */,
+				D59B6CA91D99C46C007CB072 /* Company.swift in Sources */,
+				D59B6CAE1D99C46C007CB072 /* Number.swift in Sources */,
+				D59B6CA21D99C460007CB072 /* Provider.swift in Sources */,
+				D59B6CA01D99C45A007CB072 /* Config.swift in Sources */,
+				D59B6CB01D99C46C007CB072 /* Team.swift in Sources */,
+				D59B6CAB1D99C46C007CB072 /* Internet.swift in Sources */,
+				D59B6CAA1D99C46C007CB072 /* Generator.swift in Sources */,
+				D59B6CA71D99C46C007CB072 /* Business.swift in Sources */,
+				D59B6CA61D99C46C007CB072 /* App.swift in Sources */,
+				D59B6CA31D99C464007CB072 /* ArrayExtension.swift in Sources */,
+				D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */,
+				D59B6CA81D99C46C007CB072 /* Commerce.swift in Sources */,
+				D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,18 +901,13 @@
 /* Begin PBXTargetDependency section */
 		BC827FB41BFA3CE1005F09A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC827FA71BFA3CE1005F09A4 /* Fakery OSX */;
+			target = BC827FA71BFA3CE1005F09A4 /* Fakery-Mac */;
 			targetProxy = BC827FB31BFA3CE1005F09A4 /* PBXContainerItemProxy */;
 		};
 		BCF0DF471BF9F77E00427DB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BCF0DF391BF9F77E00427DB4 /* Fakery iOS */;
+			target = BCF0DF391BF9F77E00427DB4 /* Fakery-iOS */;
 			targetProxy = BCF0DF461BF9F77E00427DB4 /* PBXContainerItemProxy */;
-		};
-		BDC291411D94432C007DA2FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BDC291271D9441F2007DA2FC /* Fakery tvOS */;
-			targetProxy = BDC291401D94432C007DA2FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -811,12 +921,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/OSX-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -836,12 +943,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/OSX-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -857,7 +961,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Tests/Support Files/OSX-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-Mac.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
@@ -871,7 +976,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Tests/Support Files/OSX-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-Mac.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
@@ -978,11 +1084,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/iOS-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
@@ -998,11 +1101,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/iOS-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
@@ -1014,7 +1114,8 @@
 		BCF0DF521BF9F77E00427DB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "Tests/Support Files/iOS-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1024,7 +1125,8 @@
 		BCF0DF531BF9F77E00427DB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "Tests/Support Files/iOS-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1039,11 +1141,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/tvOS-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOS";
@@ -1063,11 +1162,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Support Files/tvOS-Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOS";
@@ -1079,36 +1175,10 @@
 			};
 			name = Release;
 		};
-		BDC291431D94432C007DA2FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				INFOPLIST_FILE = "Tests/Support Files/tvOS-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		BDC291441D94432C007DA2FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				INFOPLIST_FILE = "Tests/Support Files/tvOS-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery OSX" */ = {
+		BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC827FB91BFA3CE1005F09A4 /* Debug */,
@@ -1117,7 +1187,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery OSXTests" */ = {
+		BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC827FBB1BFA3CE1005F09A4 /* Debug */,
@@ -1135,7 +1205,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCF0DF4E1BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery iOS" */ = {
+		BCF0DF4E1BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCF0DF4F1BF9F77E00427DB4 /* Debug */,
@@ -1144,7 +1214,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCF0DF511BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery iOSTests" */ = {
+		BCF0DF511BF9F77E00427DB4 /* Build configuration list for PBXNativeTarget "Fakery-iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCF0DF521BF9F77E00427DB4 /* Debug */,
@@ -1153,21 +1223,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDC2912D1D9441F2007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOS" */ = {
+		BDC2912D1D9441F2007DA2FC /* Build configuration list for PBXNativeTarget "Fakery-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDC2912E1D9441F2007DA2FC /* Debug */,
 				BDC2912F1D9441F2007DA2FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		BDC291421D94432C007DA2FC /* Build configuration list for PBXNativeTarget "Fakery tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BDC291431D94432C007DA2FC /* Debug */,
-				BDC291441D94432C007DA2FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+@testable import Fakery
 
 class AddressSpec: QuickSpec {
 
@@ -120,7 +121,7 @@ class AddressSpec: QuickSpec {
           expect(state).to(equal("California"))
         }
       }
-      
+
       describe("#county") {
         it("returns the correct text") {
           let country = address.county()
