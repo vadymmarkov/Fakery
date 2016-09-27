@@ -1,6 +1,6 @@
 import Foundation
 
-open class Generator {
+public class Generator {
 
   public struct Constants {
     public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
@@ -18,13 +18,13 @@ open class Generator {
     dateFormatter.dateFormat = "yyyy-MM-dd"
   }
 
-  open func generate(_ key: String) -> String {
+  public func generate(_ key: String) -> String {
     return parser.fetch(key)
   }
 
   // MARK: - Filling
 
-  open func numerify(_ string: String) -> String {
+  public func numerify(_ string: String) -> String {
     let count = UInt32(Constants.numbers.count)
 
     return String(string.characters.enumerated().map { (index, item) in
@@ -35,7 +35,7 @@ open class Generator {
       })
   }
 
-  open func letterify(_ string: String) -> String {
+  public func letterify(_ string: String) -> String {
     return String(string.characters.enumerated().map { (index, item) in
       let count = UInt32(Constants.uppercaseLetters.count)
       let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
@@ -43,18 +43,18 @@ open class Generator {
       })
   }
 
-  open func bothify(_ string: String) -> String {
+  public func bothify(_ string: String) -> String {
     return letterify(numerify(string))
   }
 
-  open func alphaNumerify(_ string: String) -> String {
+  public func alphaNumerify(_ string: String) -> String {
     return string.replacingOccurrences(of: "[^A-Za-z0-9_]",
       with: "",
       options: .regularExpression,
       range: nil)
   }
 
-  open func randomWordsFromKey(_ key: String) -> String {
+  public func randomWordsFromKey(_ key: String) -> String {
     var string = ""
 
     var list = [String]()

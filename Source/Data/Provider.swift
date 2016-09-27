@@ -28,11 +28,13 @@ public final class Provider {
       }
 
 
-      if let path = path,
-        let fileURL: URL = URL(fileURLWithPath: path),
-        let data = try? Data(contentsOf: fileURL){
+      if let path = path {
+        let fileURL = URL(fileURLWithPath: path)
+
+        if let data = try? Data(contentsOf: fileURL) {
           translation = data
           translations[locale] = data
+        }
       }
     }
 

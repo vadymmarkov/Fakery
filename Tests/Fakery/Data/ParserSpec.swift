@@ -65,7 +65,7 @@ class ParserSpec: QuickSpec {
 
           context("when the key is incorrect") {
             it("returns the empty text") {
-              if let dummy = parser.fetchRaw("dummy")?.string {
+              if let dummy = parser.fetchRaw("dummy") as? String {
                 expect(dummy).to(beNil())
               }
             }

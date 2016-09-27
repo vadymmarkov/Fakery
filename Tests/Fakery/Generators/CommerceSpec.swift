@@ -64,9 +64,9 @@ class CommerceSpec: QuickSpec {
         }
       }
 
-      describe("#mergeCategories") {
+      describe("#merge:categories") {
         it("returns the correct text") {
-          let text = commerce.mergeCategories(["One", "Two", "Three", "Four"])
+          let text = commerce.merge(categories: ["One", "Two", "Three", "Four"])
           expect(text).to(equal("One, Two, Three & Four"))
         }
       }

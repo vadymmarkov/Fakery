@@ -10,7 +10,7 @@ public final class Parser {
     }
   }
 
-  var data = [String: AnyObject]()
+  var data = [String: Any]()
   var provider: Provider
 
   public init(locale: String = Config.defaultLocale) {
@@ -43,19 +43,26 @@ public final class Parser {
     return parsed
   }
 
-  public func fetchRaw(_ key: String) -> AnyObject? {
+  public func fetchRaw(_ key: String) -> Any? {
     let parts = key.components(separatedBy: ".")
 
-    guard let localeData = data[locale], var parsed = localeData["faker"] , !parts.isEmpty else {
-      return nil
-    }
+    guard let localeData = data[locale] as? [String: Any],
+      var parsed = localeData["faker"] as? [String: Any],
+      !parts.isEmpty else { return nil }
+
+    var result: Any?
 
     for part in parts {
-      guard let parsedPart = parsed?[part] else { continue }
+      guard let parsedPart = parsed[part] as? [String: Any] else {
+        result = parsed[part]
+        continue
+      }
+
       parsed = parsedPart
+      result = parsedPart
     }
 
-    return parsed as AnyObject?
+    return result
   }
 
   func parse(_ template: String, forSubject subject: String) -> String {
@@ -124,7 +131,7 @@ public final class Parser {
   func loadData() {
     guard let localeData = provider.dataForLocale(locale),
       let parsedData = try? JSONSerialization.jsonObject(with: localeData, options: .allowFragments),
-      let json = parsedData as? [String: AnyObject] else {
+      let json = parsedData as? [String: Any] else {
         if locale != Config.defaultLocale {
           locale = Config.defaultLocale
         } else {

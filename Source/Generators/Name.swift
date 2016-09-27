@@ -1,26 +1,26 @@
-open class Name: Generator {
+public final class Name: Generator {
 
-  open func name() -> String {
+  public func name() -> String {
     return generate("name.name")
   }
 
-  open func firstName() -> String {
+  public func firstName() -> String {
     return generate("name.first_name")
   }
 
-  open func lastName() -> String {
+  public func lastName() -> String {
     return generate("name.last_name")
   }
 
-  open func prefix() -> String {
+  public func prefix() -> String {
     return generate("name.prefix")
   }
 
-  open func suffix() -> String {
+  public func suffix() -> String {
     return generate("name.suffix")
   }
 
-  open func title() -> String {
+  public func title() -> String {
     return generate("name.title.descriptor") + " "
       + generate("name.title.level") + " "
       + generate("name.title.job")

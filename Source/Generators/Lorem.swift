@@ -1,12 +1,12 @@
 import Foundation
 
-open class Lorem: Generator {
+public final class Lorem: Generator {
 
-  open func word() -> String {
+  public func word() -> String {
     return generate("lorem.words")
   }
 
-  open func words(amount: Int = 3) -> String {
+  public func words(amount: Int = 3) -> String {
     var words: [String] = []
 
     for _ in 0..<amount {
@@ -16,11 +16,11 @@ open class Lorem: Generator {
     return words.joined(separator: " ")
   }
 
-  open func character() -> String {
+  public func character() -> String {
     return characters(amount: 1)
   }
 
-  open func characters(amount: Int = 255) -> String {
+  public func characters(amount: Int = 255) -> String {
     var chars = ""
 
     if amount > 0 {
@@ -33,14 +33,14 @@ open class Lorem: Generator {
     return chars
   }
 
-  open func sentence(wordsAmount: Int = 4) -> String {
+  public func sentence(wordsAmount: Int = 4) -> String {
     var sentence = words(amount: wordsAmount) + "."
     sentence.replaceSubrange(sentence.startIndex...sentence.startIndex,
                           with: String(sentence[sentence.startIndex]).capitalized)
     return sentence
   }
 
-  open func sentences(amount: Int = 3) -> String {
+  public func sentences(amount: Int = 3) -> String {
     var sentences: [String] = []
 
     for _ in 0..<amount {
@@ -50,11 +50,11 @@ open class Lorem: Generator {
     return sentences.joined(separator: " ")
   }
 
-  open func paragraph(sentencesAmount: Int = 3) -> String {
+  public func paragraph(sentencesAmount: Int = 3) -> String {
     return sentences(amount: sentencesAmount)
   }
 
-  open func paragraphs(amount: Int = 3) -> String {
+  public func paragraphs(amount: Int = 3) -> String {
     var paragraphs: [String] = []
 
     for _ in 0..<amount {

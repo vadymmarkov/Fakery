@@ -1,16 +1,16 @@
 import Foundation
 
-open class Business: Generator {
+public final class Business: Generator {
 
-  open func creditCardNumber() -> String {
+  public func creditCardNumber() -> String {
     return generate("business.credit_card_numbers")
   }
 
-  open func creditCardType() -> String {
+  public func creditCardType() -> String {
     return generate("business.credit_card_types")
   }
 
-  open func creditCardExpiryDate() -> Date? {
+  public func creditCardExpiryDate() -> Date? {
     let dateString = generate("business.credit_card_expiry_dates")
     return dateFormatter.date(from: dateString)
   }

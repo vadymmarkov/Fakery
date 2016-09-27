@@ -1,6 +1,6 @@
 import Foundation
 
-open class Internet: Generator {
+public final class Internet: Generator {
 
   let lorem: Lorem
 
@@ -9,7 +9,7 @@ open class Internet: Generator {
     super.init(parser: parser)
   }
 
-  open func username(separator: String? = nil) -> String {
+  public func username(separator: String? = nil) -> String {
     var components: [String] = [
       generate("name.first_name"),
       generate("name.last_name"),
@@ -24,15 +24,16 @@ open class Internet: Generator {
       gap = sep
     }
 
-    return components[0..<count].joinWithSeparator(gap)
-      .stringByReplacingOccurrencesOfString("'", withString: "").lowercased()
+    return components[0..<count].joined(separator: gap)
+      .replacingOccurrences(of: "'", with: "")
+      .lowercased()
   }
 
-  open func domainName(_ alphaNumericOnly: Bool = true) -> String {
+  public func domainName(_ alphaNumericOnly: Bool = true) -> String {
     return domainWord(alphaNumericOnly: alphaNumericOnly) + "." + domainSuffix()
   }
 
-  open func domainWord(alphaNumericOnly: Bool = true) -> String {
+  public func domainWord(alphaNumericOnly: Bool = true) -> String {
     let nameParts = generate("company.name").components(separatedBy: " ")
     var name = ""
 
@@ -47,19 +48,19 @@ open class Internet: Generator {
     return result.lowercased()
   }
 
-  open func domainSuffix() -> String {
+  public func domainSuffix() -> String {
     return generate("internet.domain_suffix")
   }
 
-  open func email() -> String {
+  public func email() -> String {
     return [username(), domainName()].joined(separator: "@")
   }
 
-  open func freeEmail() -> String {
+  public func freeEmail() -> String {
     return [username(), generate("internet.free_email")].joined(separator: "@")
   }
 
-  open func safeEmail() -> String {
+  public func safeEmail() -> String {
     let topLevelDomains = ["org", "com", "net"]
     let count = UInt32(topLevelDomains.count)
     let topLevelDomain = topLevelDomains[Int(arc4random_uniform(count))]
@@ -67,7 +68,7 @@ open class Internet: Generator {
     return [username(), "example." + topLevelDomain].joined(separator: "@")
   }
 
-  open func password(minimumLength: Int = 8, maximumLength: Int = 16) -> String {
+  public func password(minimumLength: Int = 8, maximumLength: Int = 16) -> String {
     var temp = lorem.characters(amount: minimumLength)
     let diffLength = maximumLength - minimumLength
 
@@ -79,7 +80,7 @@ open class Internet: Generator {
     return temp
   }
 
-  open func ipV4Address() -> String {
+  public func ipV4Address() -> String {
     let ipRand = {
       2 + arc4random() % 253
     }
@@ -87,7 +88,7 @@ open class Internet: Generator {
     return String(format: "%d.%d.%d.%d", ipRand(), ipRand(), ipRand(), ipRand())
   }
 
-  open func ipV6Address() -> String {
+  public func ipV6Address() -> String {
     var components: [String] = []
 
     for _ in 1..<8 {
@@ -97,15 +98,15 @@ open class Internet: Generator {
     return components.joined(separator: ":")
   }
 
-  open func url() -> String {
+  public func url() -> String {
     return "http://\(domainName())/\(username())"
   }
 
-  open func image(width: Int = 320, height: Int = 200) -> String {
+  public func image(width: Int = 320, height: Int = 200) -> String {
     return "http://lorempixel.com/\(width)/\(height)"
   }
 
-  open func templateImage(width: Int = 320, height: Int = 200,
+  public func templateImage(width: Int = 320, height: Int = 200,
     backColorHex: String = "000000", frontColorHex: String = "ffffff") -> String {
       return "http://dummyimage.com/\(width)x\(height)/\(backColorHex)/\(frontColorHex)"
   }
