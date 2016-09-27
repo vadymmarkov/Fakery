@@ -1,0 +1,32 @@
+included:
+  - Sources
+  - Tests
+excluded:
+  - Carthage
+  - Pods
+  - Packages
+opt_in_rules:
+  - empty_count
+disabled_rules:
+  - valid_docs
+  - type_name
+force_cast: warning
+force_try:
+  severity: warning
+line_length: 120
+function_body_length:
+  - 150
+type_body_length:
+  warning: 300
+  error: 400
+file_length:
+  warning: 500
+  error: 1200
+type_name:
+  min_length: 3
+  max_length:
+    warning: 40
+    error: 50
+variable_name:
+  min_length: 2
+reporter: "xcode"
