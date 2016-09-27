@@ -22,6 +22,8 @@ public final class Faker {
 
   let parser: Parser
 
+  // MARK: - Initialization
+
   public init(locale: String = Config.defaultLocale) {
     self.locale = locale
     parser = Parser(locale: self.locale)

@@ -13,10 +13,14 @@ public final class Provider {
       translation = translationData
     } else {
       let bundle = Bundle(for: Provider.self)
-      var path = bundle.path(forResource: locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
+      var path = bundle.path(forResource: locale,
+                             ofType: Config.pathExtension,
+                             inDirectory: Config.dirPath)
 
       if path == nil {
-        path = bundle.path(forResource: locale, ofType: Config.pathExtension, inDirectory: Config.dirFrameworkPath)
+        path = bundle.path(forResource: locale,
+                           ofType: Config.pathExtension,
+                           inDirectory: Config.dirFrameworkPath)
       }
 
       if let resourcePath = Bundle(for: Provider.self).resourcePath {
@@ -26,7 +30,6 @@ public final class Provider {
           path = bundle.path(forResource: locale, ofType: Config.pathExtension)
         }
       }
-
 
       if let path = path {
         let fileURL = URL(fileURLWithPath: path)

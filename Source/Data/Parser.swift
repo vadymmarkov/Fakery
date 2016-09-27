@@ -13,6 +13,8 @@ public final class Parser {
   var data = [String: Any]()
   var provider: Provider
 
+  // MARK: - Initialization
+
   public init(locale: String = Config.defaultLocale) {
     self.locale = locale
     provider = Provider()
