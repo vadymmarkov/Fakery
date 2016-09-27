@@ -1,4 +1,4 @@
-public class PhoneNumber: Generator {
+public final class PhoneNumber: Generator {
 
   public func phoneNumber() -> String {
     return numerify(generate("phone_number.formats"))
@@ -23,7 +23,7 @@ public class PhoneNumber: Generator {
     return numerify("####")
   }
 
-  public func numberExtension(length: Int) -> String {
+  public func numberExtension(_ length: Int) -> String {
     var template = ""
 
     for _ in 1...length {

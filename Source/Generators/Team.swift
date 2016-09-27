@@ -1,4 +1,4 @@
-public class Team: Generator {
+public final class Team: Generator {
 
   public func name() -> String {
     return generate("team.name")
@@ -9,6 +9,6 @@ public class Team: Generator {
   }
 
   public func state() -> String {
-    return generate("address.state").capitalizedString
+    return generate("address.state").capitalized
   }
 }

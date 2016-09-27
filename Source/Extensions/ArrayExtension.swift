@@ -2,8 +2,8 @@ import Foundation
 
 extension Array {
 
-  func at(index: Int?) -> Element? {
-    guard let index = index where index >= 0 && index < endIndex else {
+  func at(_ index: Int?) -> Element? {
+    guard let index = index , index >= 0 && index < endIndex else {
       return nil
     }
 

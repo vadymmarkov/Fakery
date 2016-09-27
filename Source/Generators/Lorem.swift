@@ -1,31 +1,31 @@
 import Foundation
 
-public class Lorem: Generator {
+public final class Lorem: Generator {
 
   public func word() -> String {
     return generate("lorem.words")
   }
 
-  public func words(amount amount: Int = 3) -> String {
+  public func words(amount: Int = 3) -> String {
     var words: [String] = []
 
     for _ in 0..<amount {
       words.append(word())
     }
 
-    return words.joinWithSeparator(" ")
+    return words.joined(separator: " ")
   }
 
   public func character() -> String {
     return characters(amount: 1)
   }
 
-  public func characters(amount amount: Int = 255) -> String {
+  public func characters(amount: Int = 255) -> String {
     var chars = ""
 
     if amount > 0 {
       for _ in 0..<amount {
-        let char = Character(UnicodeScalar(arc4random() % (122-97) + 97))
+        let char = Character(UnicodeScalar(arc4random() % (122-97) + 97)!)
         chars.append(char)
       }
     }
@@ -33,34 +33,34 @@ public class Lorem: Generator {
     return chars
   }
 
-  public func sentence(wordsAmount wordsAmount: Int = 4) -> String {
+  public func sentence(wordsAmount: Int = 4) -> String {
     var sentence = words(amount: wordsAmount) + "."
-    sentence.replaceRange(sentence.startIndex...sentence.startIndex,
-                          with: String(sentence[sentence.startIndex]).capitalizedString)
+    sentence.replaceSubrange(sentence.startIndex...sentence.startIndex,
+                          with: String(sentence[sentence.startIndex]).capitalized)
     return sentence
   }
 
-  public func sentences(amount amount: Int = 3) -> String {
+  public func sentences(amount: Int = 3) -> String {
     var sentences: [String] = []
 
     for _ in 0..<amount {
       sentences.append(sentence())
     }
 
-    return sentences.joinWithSeparator(" ")
+    return sentences.joined(separator: " ")
   }
 
-  public func paragraph(sentencesAmount sentencesAmount: Int = 3) -> String {
+  public func paragraph(sentencesAmount: Int = 3) -> String {
     return sentences(amount: sentencesAmount)
   }
 
-  public func paragraphs(amount amount: Int = 3) -> String {
+  public func paragraphs(amount: Int = 3) -> String {
     var paragraphs: [String] = []
 
     for _ in 0..<amount {
       paragraphs.append(paragraph())
     }
 
-    return paragraphs.joinWithSeparator("\n")
+    return paragraphs.joined(separator: "\n")
   }
 }

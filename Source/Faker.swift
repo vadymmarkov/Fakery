@@ -1,4 +1,4 @@
-public class Faker {
+public final class Faker {
 
   public var locale: String {
     didSet {
@@ -21,6 +21,8 @@ public class Faker {
   public let number: Number
 
   let parser: Parser
+
+  // MARK: - Initialization
 
   public init(locale: String = Config.defaultLocale) {
     self.locale = locale

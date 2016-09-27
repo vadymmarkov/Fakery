@@ -1,6 +1,6 @@
 import Foundation
 
-public class Address: Generator {
+public final class Address: Generator {
 
   public func city() -> String {
     return generate("address.city")
@@ -14,7 +14,7 @@ public class Address: Generator {
     return numerify(generate("address.secondary_address"))
   }
 
-  public func streetAddress(includeSecondary includeSecondary: Bool = false) -> String {
+  public func streetAddress(includeSecondary: Bool = false) -> String {
     var streetAddress = numerify(generate("address.street_address"))
 
     if includeSecondary {
@@ -28,7 +28,7 @@ public class Address: Generator {
     return bothify(generate("address.building_number"))
   }
 
-  public func postcode(stateAbbreviation stateAbbreviation: String = "") -> String {
+  public func postcode(stateAbbreviation: String = "") -> String {
     if stateAbbreviation.isEmpty {
       return bothify(generate("address.postcode"))
     }

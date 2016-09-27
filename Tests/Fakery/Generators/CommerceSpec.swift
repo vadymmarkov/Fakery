@@ -23,10 +23,10 @@ class CommerceSpec: QuickSpec {
       describe("#department") {
         it("generates the correct text") {
           let department = commerce.department(maximum: 3, fixedAmount: true)
-          expect(department.rangeOfString("Music")).notTo(beNil())
-          expect(department.rangeOfString("Video")).notTo(beNil())
-          expect(department.rangeOfString("Development")).notTo(beNil())
-          expect(department.rangeOfString("&")).notTo(beNil())
+          expect(department.range(of: "Music")).notTo(beNil())
+          expect(department.range(of: "Video")).notTo(beNil())
+          expect(department.range(of: "Development")).notTo(beNil())
+          expect(department.range(of: "&")).notTo(beNil())
           expect(department).to(match("^[A-Za-z]+, [A-Za-z]+ & [A-Za-z]+$"))
         }
       }
@@ -64,9 +64,9 @@ class CommerceSpec: QuickSpec {
         }
       }
 
-      describe("#mergeCategories") {
+      describe("#merge:categories") {
         it("returns the correct text") {
-          let text = commerce.mergeCategories(["One", "Two", "Three", "Four"])
+          let text = commerce.merge(categories: ["One", "Two", "Three", "Four"])
           expect(text).to(equal("One, Two, Three & Four"))
         }
       }

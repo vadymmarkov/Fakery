@@ -9,25 +9,25 @@ public class Generator {
   }
 
   let parser: Parser
-  let dateFormatter: NSDateFormatter
+  let dateFormatter: DateFormatter
 
   public required init(parser: Parser) {
     self.parser = parser
 
-    dateFormatter = NSDateFormatter()
+    dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
   }
 
-  public func generate(key: String) -> String {
+  public func generate(_ key: String) -> String {
     return parser.fetch(key)
   }
 
   // MARK: - Filling
 
-  public func numerify(string: String) -> String {
+  public func numerify(_ string: String) -> String {
     let count = UInt32(Constants.numbers.count)
 
-    return String(string.characters.enumerate().map { (index, item) in
+    return String(string.characters.enumerated().map { (index, item) in
       let numberIndex = index == 0 ? arc4random_uniform(count - 1) :
         arc4random_uniform(count)
       let char = Constants.numbers[Int(numberIndex)]
@@ -35,26 +35,26 @@ public class Generator {
       })
   }
 
-  public func letterify(string: String) -> String {
-    return String(string.characters.enumerate().map { (index, item) in
+  public func letterify(_ string: String) -> String {
+    return String(string.characters.enumerated().map { (index, item) in
       let count = UInt32(Constants.uppercaseLetters.count)
       let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
       return String(item) == "?" ? char : item
       })
   }
 
-  public func bothify(string: String) -> String {
+  public func bothify(_ string: String) -> String {
     return letterify(numerify(string))
   }
 
-  public func alphaNumerify(string: String) -> String {
-    return string.stringByReplacingOccurrencesOfString("[^A-Za-z0-9_]",
-      withString: "",
-      options: .RegularExpressionSearch,
+  public func alphaNumerify(_ string: String) -> String {
+    return string.replacingOccurrences(of: "[^A-Za-z0-9_]",
+      with: "",
+      options: .regularExpression,
       range: nil)
   }
 
-  public func randomWordsFromKey(key: String) -> String {
+  public func randomWordsFromKey(_ key: String) -> String {
     var string = ""
 
     var list = [String]()
@@ -65,7 +65,7 @@ public class Generator {
         }
       }
 
-      string = list.joinWithSeparator(" ")
+      string = list.joined(separator: " ")
     }
 
     return string

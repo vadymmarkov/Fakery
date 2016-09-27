@@ -1,6 +1,6 @@
 import Foundation
 
-public class Company: Generator {
+public final class Company: Generator {
 
   public func name() -> String {
     return generate("company.name")
