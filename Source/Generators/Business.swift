@@ -1,17 +1,17 @@
 import Foundation
 
-public class Business: Generator {
+open class Business: Generator {
 
-  public func creditCardNumber() -> String {
+  open func creditCardNumber() -> String {
     return generate("business.credit_card_numbers")
   }
 
-  public func creditCardType() -> String {
+  open func creditCardType() -> String {
     return generate("business.credit_card_types")
   }
 
-  public func creditCardExpiryDate() -> NSDate? {
+  open func creditCardExpiryDate() -> Date? {
     let dateString = generate("business.credit_card_expiry_dates")
-    return dateFormatter.dateFromString(dateString)
+    return dateFormatter.date(from: dateString)
   }
 }

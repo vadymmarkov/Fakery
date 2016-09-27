@@ -1,14 +1,14 @@
-public class App: Generator {
+open class App: Generator {
 
-  public func name() -> String {
+  open func name() -> String {
     return generate("app.name")
   }
 
-  public func version() -> String {
+  open func version() -> String {
     return numerify(generate("app.version"))
   }
 
-  public func author() -> String {
+  open func author() -> String {
     return generate("app.author")
   }
 }

@@ -32,7 +32,7 @@ class BusinessSpec: QuickSpec {
           let creditCardExpiryDate = business.creditCardExpiryDate()
           expect(creditCardExpiryDate).notTo(beNil())
           if let date = creditCardExpiryDate {
-            let dateString = business.dateFormatter.stringFromDate(date)
+            let dateString = business.dateFormatter.string(from: date)
             expect(dateString).to(equal("2020-10-12"))
           }
         }

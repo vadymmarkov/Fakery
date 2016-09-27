@@ -1,24 +1,24 @@
 import Foundation
 
-public class Company: Generator {
+open class Company: Generator {
 
-  public func name() -> String {
+  open func name() -> String {
     return generate("company.name")
   }
 
-  public func suffix() -> String {
+  open func suffix() -> String {
     return generate("company.suffix")
   }
 
-  public func catchPhrase() -> String {
+  open func catchPhrase() -> String {
     return randomWordsFromKey("company.buzzwords")
   }
 
-  public func bs() -> String {
+  open func bs() -> String {
     return randomWordsFromKey("company.bs")
   }
 
-  public func logo() -> String {
+  open func logo() -> String {
     let number = Int(arc4random_uniform(13)) + 1
     return "http://pigment.github.io/fake-logos/logos/medium/color/\(number).png"
   }

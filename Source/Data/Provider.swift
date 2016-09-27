@@ -2,35 +2,35 @@ import Foundation
 
 public final class Provider {
 
-  var translations: [String: NSData] = [:]
+  var translations: [String: Data] = [:]
 
   // MARK: - Locale data
 
-  public func dataForLocale(locale: String) -> NSData? {
-    var translation: NSData?
+  public func dataForLocale(_ locale: String) -> Data? {
+    var translation: Data?
 
     if let translationData = translations[locale] {
       translation = translationData
     } else {
-      let bundle = NSBundle(forClass: Provider.self)
-      var path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
+      let bundle = Bundle(for: Provider.self)
+      var path = bundle.path(forResource: locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
 
       if path == nil {
-        path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirFrameworkPath)
+        path = bundle.path(forResource: locale, ofType: Config.pathExtension, inDirectory: Config.dirFrameworkPath)
       }
 
-      if let resourcePath = NSBundle(forClass: Provider.self).resourcePath {
+      if let resourcePath = Bundle(for: Provider.self).resourcePath {
         let bundlePath = resourcePath + "/Faker.bundle"
 
-        if let bundle = NSBundle(path: bundlePath) {
-          path = bundle.pathForResource(locale, ofType: Config.pathExtension)
+        if let bundle = Bundle(path: bundlePath) {
+          path = bundle.path(forResource: locale, ofType: Config.pathExtension)
         }
       }
 
 
       if let path = path,
-        fileURL: NSURL = NSURL(fileURLWithPath: path),
-        data = NSData(contentsOfURL: fileURL){
+        let fileURL: URL = URL(fileURLWithPath: path),
+        let data = try? Data(contentsOf: fileURL){
           translation = data
           translations[locale] = data
       }

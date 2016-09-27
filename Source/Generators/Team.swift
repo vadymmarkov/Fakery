@@ -1,14 +1,14 @@
-public class Team: Generator {
+open class Team: Generator {
 
-  public func name() -> String {
+  open func name() -> String {
     return generate("team.name")
   }
 
-  public func creature() -> String {
+  open func creature() -> String {
     return generate("team.creature")
   }
 
-  public func state() -> String {
-    return generate("address.state").capitalizedString
+  open func state() -> String {
+    return generate("address.state").capitalized
   }
 }

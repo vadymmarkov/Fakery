@@ -21,7 +21,7 @@ public final class Parser {
 
   // MARK: - Parsing
 
-  public func fetch(key: String) -> String {
+  public func fetch(_ key: String) -> String {
     var parsed = ""
 
     guard let keyData = fetchRaw(key) else {
@@ -32,21 +32,21 @@ public final class Parser {
 
     if let value = keyData as? String {
       parsed = value
-    } else if let array = keyData as? [String], item = array.random() {
+    } else if let array = keyData as? [String], let item = array.random() {
       parsed = item
     }
 
-    if parsed.rangeOfString("#{") != nil {
+    if parsed.range(of: "#{") != nil {
       parsed = parse(parsed, forSubject: subject)
     }
 
     return parsed
   }
 
-  public func fetchRaw(key: String) -> AnyObject? {
-    let parts = key.componentsSeparatedByString(".")
+  public func fetchRaw(_ key: String) -> AnyObject? {
+    let parts = key.components(separatedBy: ".")
 
-    guard let localeData = data[locale], var parsed = localeData["faker"] where !parts.isEmpty else {
+    guard let localeData = data[locale], var parsed = localeData["faker"] , !parts.isEmpty else {
       return nil
     }
 
@@ -55,19 +55,19 @@ public final class Parser {
       parsed = parsedPart
     }
 
-    return parsed
+    return parsed as AnyObject?
   }
 
-  func parse(template: String, forSubject subject: String) -> String {
+  func parse(_ template: String, forSubject subject: String) -> String {
     var text = ""
     let string = template as NSString
     var regex: NSRegularExpression
 
     do {
       try regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?",
-                                      options: .CaseInsensitive)
-      let matches = regex.matchesInString(string as String,
-        options: .ReportCompletion,
+                                      options: .caseInsensitive)
+      let matches = regex.matches(in: string as String,
+        options: .reportCompletion,
         range: NSMakeRange(0, string.length))
 
       guard !matches.isEmpty else {
@@ -79,28 +79,28 @@ public final class Parser {
           continue
         }
 
-        let prefixRange = match.rangeAtIndex(1)
-        let subjectRange = match.rangeAtIndex(2)
-        let methodRange = match.rangeAtIndex(3)
-        let otherRange = match.rangeAtIndex(4)
+        let prefixRange = match.rangeAt(1)
+        let subjectRange = match.rangeAt(2)
+        let methodRange = match.rangeAt(3)
+        let otherRange = match.rangeAt(4)
 
         if prefixRange.length > 0 {
-          text += string.substringWithRange(prefixRange)
+          text += string.substring(with: prefixRange)
         }
 
         var subjectWithDot = subject + "."
 
         if subjectRange.length > 0 {
-          subjectWithDot = string.substringWithRange(subjectRange)
+          subjectWithDot = string.substring(with: subjectRange)
         }
 
         if methodRange.length > 0 {
-          let key = subjectWithDot.lowercaseString + string.substringWithRange(methodRange)
+          let key = subjectWithDot.lowercased() + string.substring(with: methodRange)
           text += fetch(key)
         }
 
         if otherRange.length > 0 {
-          text += string.substringWithRange(otherRange)
+          text += string.substring(with: otherRange)
         }
       }
     } catch {}
@@ -108,9 +108,9 @@ public final class Parser {
     return text
   }
 
-  func getSubject(key: String) -> String {
+  func getSubject(_ key: String) -> String {
     var subject: String = ""
-    var parts = key.componentsSeparatedByString(".")
+    var parts = key.components(separatedBy: ".")
 
     if parts.count > 0 {
       subject = parts[0]
@@ -123,8 +123,8 @@ public final class Parser {
 
   func loadData() {
     guard let localeData = provider.dataForLocale(locale),
-      parsedData = try? NSJSONSerialization.JSONObjectWithData(localeData, options: .AllowFragments),
-      json = parsedData as? [String: AnyObject] else {
+      let parsedData = try? JSONSerialization.jsonObject(with: localeData, options: .allowFragments),
+      let json = parsedData as? [String: AnyObject] else {
         if locale != Config.defaultLocale {
           locale = Config.defaultLocale
         } else {

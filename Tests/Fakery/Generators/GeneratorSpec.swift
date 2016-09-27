@@ -22,7 +22,7 @@ class GeneratorSpec: QuickSpec {
           it("replaces # with random numbers") {
             let numerified = generator.numerify("12####")
             expect(Int(numerified)).notTo(beNil())
-            expect(numerified.containsString("#")).to(beFalse())
+            expect(numerified.contains("#")).to(beFalse())
             expect(numerified).to(match("^12\\d{4}$"))
           }
         }
@@ -30,7 +30,7 @@ class GeneratorSpec: QuickSpec {
         describe("#letterify") {
           it("replaces ? with random letters") {
             let letterified = generator.letterify("This is awes?me")
-            expect(letterified.containsString("?")).to(beFalse())
+            expect(letterified.contains("?")).to(beFalse())
             expect(letterified).to(match("^This is awes[A-Za-z]me$"))
           }
         }
@@ -38,8 +38,8 @@ class GeneratorSpec: QuickSpec {
         describe("#bothify") {
           it("replaces # with random numbers and ? with random letters") {
             let bothified = generator.bothify("#th of ?pril")
-            expect(bothified.containsString("#")).to(beFalse())
-            expect(bothified.containsString("?")).to(beFalse())
+            expect(bothified.contains("#")).to(beFalse())
+            expect(bothified.contains("?")).to(beFalse())
             expect(bothified).to(match("^\\dth of [A-Za-z]pril$"))
           }
         }

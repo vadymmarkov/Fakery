@@ -1,6 +1,6 @@
-public class Faker {
+open class Faker {
 
-  public var locale: String {
+  open var locale: String {
     didSet {
       if locale != oldValue {
         parser.locale = locale
@@ -8,17 +8,17 @@ public class Faker {
     }
   }
 
-  public let address: Address
-  public let app: App
-  public let business: Business
-  public let company: Company
-  public let commerce: Commerce
-  public let internet: Internet
-  public let lorem: Lorem
-  public let name: Name
-  public let phoneNumber: PhoneNumber
-  public let team: Team
-  public let number: Number
+  open let address: Address
+  open let app: App
+  open let business: Business
+  open let company: Company
+  open let commerce: Commerce
+  open let internet: Internet
+  open let lorem: Lorem
+  open let name: Name
+  open let phoneNumber: PhoneNumber
+  open let team: Team
+  open let number: Number
 
   let parser: Parser
 
