@@ -6,6 +6,7 @@ before_install:
 - brew update
 - if brew outdated | grep -qx carthage; then brew upgrade carthage; fi
 - travis_wait 35 carthage bootstrap --platform iOS,Mac
+
 script:
 - xcodebuild clean build -project Fakery.xcodeproj -scheme Fakery-iOS -sdk iphonesimulator
 - xcodebuild test -project Fakery.xcodeproj -scheme Fakery-iOS -sdk iphonesimulator
