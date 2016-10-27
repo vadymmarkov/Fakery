@@ -27,6 +27,9 @@ class NumberSpec: QuickSpec {
 
         expect(number.randomInt(min:5, max:7)) <= 7
         expect(number.randomInt(min:5, max:7)) >= 5
+
+        expect(number.randomInt(min: 1000000000000, max: 9999999999999)) >= 1000000000000
+        expect(number.randomInt(min: 1000000000000, max: 9999999999999)) <= 9999999999999
       }
 
       it("creates random Floats") {
