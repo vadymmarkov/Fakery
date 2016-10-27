@@ -17,6 +17,11 @@ public final class Number {
 
     i = i & Int.max // Make the number positive
 
+    if max >= 0 && max - Int.max >= min {
+        return min + i
+    }
+
+
     return min + (i % (max - min))
 
   }
