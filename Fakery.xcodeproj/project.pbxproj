@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09F65D6F1CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		09F65D701CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
+		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
 		BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1681BF9F912005A3BC1 /* Faker.swift */; };
 		BC4477921BFA451400E8FB15 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16A1BF9F912005A3BC1 /* Address.swift */; };
 		BC4477931BFA451600E8FB15 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16B1BF9F912005A3BC1 /* App.swift */; };
@@ -185,6 +186,7 @@
 
 /* Begin PBXFileReference section */
 		09F65D6E1CA30351006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +355,7 @@
 				BCFFA15E1BF9F912005A3BC1 /* uk.json */,
 				BCFFA15F1BF9F912005A3BC1 /* zh-CN.json */,
 				BCFFA1601BF9F912005A3BC1 /* zh-TW.json */,
+				2A17AB091E4E45A600011BC6 /* tr-TR.json */,
 			);
 			path = Locales;
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 			files = (
 				BCFFA1891BF9F912005A3BC1 /* nb-NO.json in Resources */,
 				BCFFA1821BF9F912005A3BC1 /* en.json in Resources */,
+				2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */,
 				BCFFA17C1BF9F912005A3BC1 /* en-AU.json in Resources */,
 				BCFFA18A1BF9F912005A3BC1 /* pl.json in Resources */,
 				BCFFA1861BF9F912005A3BC1 /* it.json in Resources */,
