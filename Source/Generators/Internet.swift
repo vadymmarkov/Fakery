@@ -111,5 +111,9 @@ public final class Internet: Generator {
       return "http://dummyimage.com/\(width)x\(height)/\(backColorHex)/\(frontColorHex)"
   }
 
+  public func hashtag() -> String {
+    return generate("internet.hashtag")
+  }
+  
   // @ToDo - slug
 }
