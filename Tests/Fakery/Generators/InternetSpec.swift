@@ -164,7 +164,7 @@ class InternetSpec: QuickSpec {
       describe("#hashtag") {
         it("returns the correct hashtag") {
           let hashtag = internet.hashtag()
-          expect(hashtag).to(match("#\\S+"))
+          expect(hashtag).to(equal("#art"))
         }
       }
     }
