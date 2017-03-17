@@ -53,7 +53,8 @@
       },
       "internet": {
         "free_email": ["gmail.com"],
-        "domain_suffix": ["com"]
+        "domain_suffix": ["com"],
+        "hashtag": ["#art"]
       },
       "lorem": {
         "words": ["alias"],

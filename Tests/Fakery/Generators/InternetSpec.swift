@@ -160,6 +160,13 @@ class InternetSpec: QuickSpec {
           expect(url).to(equal("http://dummyimage.com/200x150/2e4bc2/ccdb28"))
         }
       }
+      
+      describe("#hashtag") {
+        it("returns the correct hashtag") {
+          let hashtag = internet.hashtag()
+          expect(hashtag).to(equal("#art"))
+        }
+      }
     }
   }
 }
