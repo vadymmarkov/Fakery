@@ -11,6 +11,9 @@
 		09F65D701CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		1057479A1F6FBAA500154ECB /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747991F6FBAA500154ECB /* BankSpec.swift */; };
 		1057479B1F6FBAAA00154ECB /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747991F6FBAA500154ECB /* BankSpec.swift */; };
+		1057479D1F6FBF6C00154ECB /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057479C1F6FBF6C00154ECB /* Bank.swift */; };
+		1057479E1F6FBF7100154ECB /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057479C1F6FBF6C00154ECB /* Bank.swift */; };
+		1057479F1F6FBF7100154ECB /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057479C1F6FBF6C00154ECB /* Bank.swift */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
 		BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1681BF9F912005A3BC1 /* Faker.swift */; };
 		BC4477921BFA451400E8FB15 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16A1BF9F912005A3BC1 /* Address.swift */; };
@@ -189,6 +192,7 @@
 /* Begin PBXFileReference section */
 		09F65D6E1CA30351006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		105747991F6FBAA500154ECB /* BankSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSpec.swift; sourceTree = "<group>"; };
+		1057479C1F6FBF6C00154ECB /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -407,6 +411,7 @@
 				09F65D6E1CA30351006C87C5 /* Number.swift */,
 				BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */,
 				BCFFA1741BF9F912005A3BC1 /* Team.swift */,
+				1057479C1F6FBF6C00154ECB /* Bank.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -852,6 +857,7 @@
 				BC4477991BFA452700E8FB15 /* Lorem.swift in Sources */,
 				BC4477961BFA451F00E8FB15 /* Company.swift in Sources */,
 				BC4477A01BFA454400E8FB15 /* Config.swift in Sources */,
+				1057479E1F6FBF7100154ECB /* Bank.swift in Sources */,
 				BC44779F1BFA453F00E8FB15 /* Provider.swift in Sources */,
 				BC44779D1BFA453800E8FB15 /* ArrayExtension.swift in Sources */,
 			);
@@ -900,6 +906,7 @@
 				BCFFA1971BF9F912005A3BC1 /* App.swift in Sources */,
 				BCFFA1A01BF9F912005A3BC1 /* Team.swift in Sources */,
 				BCFFA1941BF9F912005A3BC1 /* ArrayExtension.swift in Sources */,
+				1057479D1F6FBF6C00154ECB /* Bank.swift in Sources */,
 				BCFFA19E1BF9F912005A3BC1 /* Name.swift in Sources */,
 				BCFFA1991BF9F912005A3BC1 /* Commerce.swift in Sources */,
 			);
@@ -948,6 +955,7 @@
 				D59B6CA61D99C46C007CB072 /* App.swift in Sources */,
 				D59B6CA31D99C464007CB072 /* ArrayExtension.swift in Sources */,
 				D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */,
+				1057479F1F6FBF7100154ECB /* Bank.swift in Sources */,
 				D59B6CA81D99C46C007CB072 /* Commerce.swift in Sources */,
 				D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */,
 			);
