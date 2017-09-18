@@ -112,6 +112,7 @@
       },
       "bank": {
         "name": ["ABN AMRO CORPORATE FINANCE LIMITED"],
+        "swiftBic": ["AAFMGB21"]
       }
     }
   }

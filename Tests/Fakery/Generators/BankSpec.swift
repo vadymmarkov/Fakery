@@ -19,6 +19,13 @@ class BankSpec: QuickSpec {
                     expect(name).to(equal("ABN AMRO CORPORATE FINANCE LIMITED"))
                 }
             }
+
+            describe("#swiftBic") {
+                it("returns the correct BIC") {
+                    let swiftBic = bank.swiftBic()
+                    expect(swiftBic).to(equal("AAFMGB21"))
+                }
+            }
         }
     }
 }
