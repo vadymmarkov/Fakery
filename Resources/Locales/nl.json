@@ -51,7 +51,7 @@
                 ],
                 "ibanDetails": {
                   "bankCountryCode": "NL",
-                  "ibanLetterCode": "????",
+                  "ibanLetterCode": ["RABO", "BUNQ", "ABNA"],
                   "ibanDigits": "############",
                 }
             }
