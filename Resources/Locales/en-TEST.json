@@ -112,7 +112,12 @@
       },
       "bank": {
         "name": ["ABN AMRO CORPORATE FINANCE LIMITED"],
-        "swiftBic": ["AAFMGB21"]
+        "swiftBic": ["AAFMGB21"],
+        "ibanDetails": {
+          "bankCountryCode": ["EN"],
+          "ibanLetterCode": ["????"],
+          "ibanDigits": ["############"],
+        }
       }
     }
   }
