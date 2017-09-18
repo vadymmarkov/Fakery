@@ -9903,6 +9903,18 @@
           "ABFIGB21",
           "ABMNGB21",
           "ABNAGB21VOC"
+        ],
+        "iban_details": [
+          {
+            "bankCountryCode": "GB",
+            "ibanLetterCode": 4,
+            "ibanDigits": 14,
+          }
+          {
+            "bankCountryCode": "NL",
+            "ibanLetterCode": 4,
+            "ibanDigits": 12,
+          }
         ]
       }
     }
