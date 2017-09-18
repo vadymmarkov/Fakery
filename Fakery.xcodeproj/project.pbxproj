@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		09F65D6F1CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		09F65D701CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
+		1057479A1F6FBAA500154ECB /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747991F6FBAA500154ECB /* BankSpec.swift */; };
+		1057479B1F6FBAAA00154ECB /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747991F6FBAA500154ECB /* BankSpec.swift */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
 		BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1681BF9F912005A3BC1 /* Faker.swift */; };
 		BC4477921BFA451400E8FB15 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16A1BF9F912005A3BC1 /* Address.swift */; };
@@ -186,6 +188,7 @@
 
 /* Begin PBXFileReference section */
 		09F65D6E1CA30351006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		105747991F6FBAA500154ECB /* BankSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSpec.swift; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -451,6 +454,7 @@
 				D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */,
 				D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */,
 				D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */,
+				105747991F6FBAA500154ECB /* BankSpec.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -864,6 +868,7 @@
 				D59B6D371D99C82E007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */,
 				D59B6D341D99C82E007CB072 /* CompanySpec.swift in Sources */,
+				1057479B1F6FBAAA00154ECB /* BankSpec.swift in Sources */,
 				D59B6D311D99C82E007CB072 /* AppSpec.swift in Sources */,
 				D59B6D331D99C82E007CB072 /* CommerceSpec.swift in Sources */,
 				D59B6D2E1D99C82E007CB072 /* ParserSpec.swift in Sources */,
@@ -911,6 +916,7 @@
 				D59B6D271D99C82D007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D291D99C82D007CB072 /* NumberSpec.swift in Sources */,
 				D59B6D241D99C82D007CB072 /* CompanySpec.swift in Sources */,
+				1057479A1F6FBAA500154ECB /* BankSpec.swift in Sources */,
 				D59B6D211D99C82D007CB072 /* AppSpec.swift in Sources */,
 				D59B6D231D99C82D007CB072 /* CommerceSpec.swift in Sources */,
 				D59B6D1E1D99C82D007CB072 /* ParserSpec.swift in Sources */,
