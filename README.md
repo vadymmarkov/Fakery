@@ -27,6 +27,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Number](#number)
   * [Phone number](#phone-number)
   * [Team](#team)
+  * [Bank](#bank)
 * [Installation](#installation)
 * [Contributing](#contributing)
 * [Author](#author)
@@ -195,6 +196,14 @@ faker.phoneNumber.numberExtension(length: Int) // "123"
 faker.team.name() //=> "bats"         
 faker.team.creature() //=> "Alabama bats"
 faker.team.state() // => "Alabama"
+```
+
+### Bank
+
+```swift
+faker.bank.name() //=> "ABN AMRO CORPORATE FINANCE LIMITED"         
+faker.bank.swiftBic() //=> "AAFMGB21"
+faker.bank.iban() // => "NL45BUNQ2209931378"
 ```
 
 ## Installation
