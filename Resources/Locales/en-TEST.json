@@ -109,6 +109,15 @@
         "name": ["Namfix"],
         "version": ["0.#.#"],
         "author": ["#{Name.name}"]
+      },
+      "bank": {
+        "name": ["ABN AMRO CORPORATE FINANCE LIMITED"],
+        "swiftBic": ["AAFMGB21"],
+        "ibanDetails": {
+          "bankCountryCode": ["EN"],
+          "ibanLetterCode": ["????"],
+          "ibanDigits": ["############"],
+        }
       }
     }
   }
