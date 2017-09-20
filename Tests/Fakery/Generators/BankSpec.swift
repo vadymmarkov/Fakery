@@ -30,7 +30,14 @@ class BankSpec: QuickSpec {
             describe("#iban") {
                 it("returns a valid IBAN") {
                     let iban = bank.iban()
-                    expect(iban).to(match("[A-Z]{4}\\d{10}"))
+                    expect(iban).to(match("[A-Z]{2}\\d{2}[A-Z]{4}\\d{10}"))
+                }
+            }
+
+            describe("#bban") {
+                it("returns a valid BBAN") {
+                    let bban = bank.bban()
+                    expect(bban).to(match("[A-Z]{4}\\d{10}"))
                 }
             }
         }
