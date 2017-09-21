@@ -204,6 +204,7 @@ faker.team.state() // => "Alabama"
 faker.bank.name() //=> "ABN AMRO CORPORATE FINANCE LIMITED"         
 faker.bank.swiftBic() //=> "AAFMGB21"
 faker.bank.iban() // => "NL45BUNQ2209931378"
+faker.bank.bban() //=> ABNA0136468471
 ```
 
 ## Installation
