@@ -1,5 +1,4 @@
 public final class Faker {
-
   public var locale: String {
     didSet {
       if locale != oldValue {

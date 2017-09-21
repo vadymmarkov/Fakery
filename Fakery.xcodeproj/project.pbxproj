@@ -317,7 +317,9 @@
 				BCFFA1761BF9F912005A3BC1 /* Tests */,
 				BCF0DF3B1BF9F77E00427DB4 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		BCF0DF3B1BF9F77E00427DB4 /* Products */ = {
 			isa = PBXGroup;
