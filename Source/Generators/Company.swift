@@ -1,7 +1,6 @@
 import Foundation
 
 public final class Company: Generator {
-
   public func name() -> String {
     return generate("company.name")
   }

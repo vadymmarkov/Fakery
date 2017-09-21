@@ -1,7 +1,6 @@
 import Foundation
 
 public final class Parser {
-
   public var locale: String {
     didSet {
       if locale != oldValue {
@@ -10,8 +9,8 @@ public final class Parser {
     }
   }
 
-  var data = [String: Any]()
-  var provider: Provider
+  private var data = [String: Any]()
+  let provider: Provider
 
   // MARK: - Initialization
 
@@ -117,11 +116,11 @@ public final class Parser {
     return text
   }
 
-  func getSubject(_ key: String) -> String {
+  private func getSubject(_ key: String) -> String {
     var subject: String = ""
     var parts = key.components(separatedBy: ".")
 
-    if parts.count > 0 {
+    if !parts.isEmpty {
       subject = parts[0]
     }
 
@@ -130,7 +129,7 @@ public final class Parser {
 
   // MARK: - Data loading
 
-  func loadData() {
+  private func loadData() {
     guard let localeData = provider.dataForLocale(locale),
       let parsedData = try? JSONSerialization.jsonObject(with: localeData, options: .allowFragments),
       let json = parsedData as? [String: Any] else {

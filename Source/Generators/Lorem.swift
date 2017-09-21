@@ -1,7 +1,6 @@
 import Foundation
 
 public final class Lorem: Generator {
-
   public func word() -> String {
     return generate("lorem.words")
   }

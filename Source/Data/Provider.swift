@@ -1,7 +1,6 @@
 import Foundation
 
 public final class Provider {
-
   var translations: [String: Data] = [:]
 
   // MARK: - Locale data
