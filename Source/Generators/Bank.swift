@@ -17,4 +17,11 @@ public final class Bank: Generator {
 
     return bankCountryCode + bankCountryString + ibanLetterCode + iban
   }
+
+  public func bban() -> String {
+    let ibanLetterCode: String = letterify(generate("bank.ibanDetails.ibanLetterCode"))
+    let iban: String  = numerify(generate("bank.ibanDetails.ibanDigits"))
+
+    return ibanLetterCode + iban
+  }
 }
