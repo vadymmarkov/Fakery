@@ -1,4 +1,4 @@
-osx_image: xcode8
+osx_image: xcode9
 language: objective-c
 xcode_sdk: iphonesimulator10.0
 
@@ -8,7 +8,7 @@ before_install:
 - travis_wait 35 carthage bootstrap --platform iOS,Mac
 
 script:
-- xcodebuild clean build -project Fakery.xcodeproj -scheme Fakery-iOS -sdk iphonesimulator
-- xcodebuild test -project Fakery.xcodeproj -scheme Fakery-iOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0'
-- xcodebuild clean build -project Fakery.xcodeproj -scheme Fakery-Mac -sdk macosx
-- xcodebuild test -project Fakery.xcodeproj -scheme Fakery-Mac -sdk macosx
+- set -o pipefail
+- travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-iOS" -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
+- travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-macOS" build-for-testing test | xcpretty
+- travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-tvOS" -destination "platform=tvOS Simulator,name=Apple TV 1080p" build-for-testing test | xcpretty
