@@ -11,4 +11,4 @@ script:
 - set -o pipefail
 - travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-iOS" -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
 - travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-macOS" build-for-testing test | xcpretty
-- travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-tvOS" -destination "platform=tvOS Simulator,name=Apple TV 1080p" build-for-testing test | xcpretty
+- travis_retry xcodebuild clean build -project Fakery.xcodeproj -scheme "Fakery-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.0' | xcpretty
