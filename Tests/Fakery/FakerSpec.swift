@@ -25,6 +25,67 @@ final class FakerSpec: QuickSpec {
           expect(faker.name.parser).to(beIdenticalTo(faker.parser))
           expect(faker.phoneNumber.parser).to(beIdenticalTo(faker.parser))
           expect(faker.team.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.bank.parser).to(beIdenticalTo(faker.parser))
+        }
+      }
+
+      describe("#address") {
+        it("should be accessible") {
+          expect(faker.address).to(beAKindOf(Address.self))
+        }
+      }
+
+      describe("#app") {
+        it("should be accessible") {
+          expect(faker.app).to(beAKindOf(App.self))
+        }
+      }
+
+      describe("#business") {
+        it("should be accessible") {
+          expect(faker.business).to(beAKindOf(Business.self))
+        }
+      }
+
+      describe("#commerce") {
+        it("should be accessible") {
+          expect(faker.commerce).to(beAKindOf(Commerce.self))
+        }
+      }
+
+      describe("#internet") {
+        it("should be accessible") {
+          expect(faker.internet).to(beAKindOf(Internet.self))
+        }
+      }
+
+      describe("#lorem") {
+        it("should be accessible") {
+          expect(faker.lorem).to(beAKindOf(Lorem.self))
+        }
+      }
+
+      describe("#name") {
+        it("should be accessible") {
+          expect(faker.name).to(beAKindOf(Name.self))
+        }
+      }
+
+      describe("#phoneNumber") {
+        it("should be accessible") {
+          expect(faker.phoneNumber).to(beAKindOf(PhoneNumber.self))
+        }
+      }
+
+      describe("#team") {
+        it("should be accessible") {
+          expect(faker.team).to(beAKindOf(Team.self))
+        }
+      }
+
+      describe("#bank") {
+        it("should be accessible") {
+          expect(faker.bank).to(beAKindOf(Bank.self))
         }
       }
     }
