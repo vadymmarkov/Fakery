@@ -29,9 +29,63 @@ final class FakerSpec: QuickSpec {
         }
       }
 
+      describe("#address") {
+        it("should be accessible") {
+          expect(faker.address).to(beAKindOf(Address))
+        }
+      }
+
+      describe("#app") {
+        it("should be accessible") {
+          expect(faker.app).to(beAKindOf(App))
+        }
+      }
+
+      describe("#business") {
+        it("should be accessible") {
+          expect(faker.business).to(beAKindOf(Business))
+        }
+      }
+
+      describe("#commerce") {
+        it("should be accessible") {
+          expect(faker.commerce).to(beAKindOf(Commerce))
+        }
+      }
+
+      describe("#internet") {
+        it("should be accessible") {
+          expect(faker.internet).to(beAKindOf(Internet))
+        }
+      }
+
+      describe("#lorem") {
+        it("should be accessible") {
+          expect(faker.lorem).to(beAKindOf(Lorem))
+        }
+      }
+
+      describe("#name") {
+        it("should be accessible") {
+          expect(faker.name).to(beAKindOf(Name))
+        }
+      }
+
+      describe("#phoneNumber") {
+        it("should be accessible") {
+          expect(faker.phoneNumber).to(beAKindOf(PhoneNumber))
+        }
+      }
+
+      describe("#team") {
+        it("should be accessible") {
+          expect(faker.team).to(beAKindOf(Team))
+        }
+      }
+
       describe("#bank") {
         it("should be accessible") {
-          expect(faker).to(beAKindOf(Bank))
+          expect(faker.bank).to(beAKindOf(Bank))
         }
       }
     }
