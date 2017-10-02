@@ -1,7 +1,6 @@
 import Foundation
 
 public class Generator {
-
   public struct Constants {
     public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
     public static let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
@@ -13,7 +12,6 @@ public class Generator {
 
   public required init(parser: Parser) {
     self.parser = parser
-
     dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
   }

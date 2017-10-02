@@ -1,7 +1,6 @@
 import Foundation
 
 public final class Address: Generator {
-
   public func city() -> String {
     return generate("address.city")
   }

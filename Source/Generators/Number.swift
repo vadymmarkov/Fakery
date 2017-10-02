@@ -2,7 +2,6 @@ import Foundation
 import CoreGraphics
 
 public final class Number {
-
   fileprivate var lastUsedId: Int64 = 0
 
   public func randomBool() -> Bool {
@@ -10,20 +9,15 @@ public final class Number {
   }
 
   public func randomInt(min: Int = 0, max: Int = 1000) -> Int {
-
     var i: Int = 0
-
     arc4random_buf(&i, MemoryLayout.size(ofValue: i))
-
     i = i & Int.max // Make the number positive
 
     if max >= 0 && max - Int.max >= min {
-        return min + i
+      return min + i
     }
 
-
     return min + (i % (max - min))
-
   }
 
   public func randomFloat(min: Float = 0, max: Float = 1000) -> Float {

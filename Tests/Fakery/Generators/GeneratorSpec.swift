@@ -2,8 +2,7 @@ import Quick
 import Nimble
 @testable import Fakery
 
-class GeneratorSpec: QuickSpec {
-
+final class GeneratorSpec: QuickSpec {
   override func spec() {
     describe("Generator") {
       var generator: Generator!

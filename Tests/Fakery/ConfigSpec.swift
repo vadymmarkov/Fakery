@@ -2,8 +2,7 @@ import Quick
 import Nimble
 @testable import Fakery
 
-class ConfigSpec: QuickSpec {
-
+final class ConfigSpec: QuickSpec {
   override func spec() {
     describe("Config") {
       it("has default values") {

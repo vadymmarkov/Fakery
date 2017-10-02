@@ -199,7 +199,7 @@
 		105747A01F6FFB9F00154ECB /* nl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nl.json; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC827FB11BFA3CE1005F09A4 /* Fakery-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF0DF441BF9F77E00427DB4 /* Fakery-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFFA1491BF9F912005A3BC1 /* de-AT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "de-AT.json"; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 				BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */,
 				BCF0DF441BF9F77E00427DB4 /* Fakery-iOS-Tests.xctest */,
 				BC827FA81BFA3CE1005F09A4 /* Fakery.framework */,
-				BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */,
+				BC827FB11BFA3CE1005F09A4 /* Fakery-macOS-Tests.xctest */,
 				BDC291281D9441F2007DA2FC /* Fakery.framework */,
 			);
 			name = Products;
@@ -511,9 +511,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BC827FA71BFA3CE1005F09A4 /* Fakery-Mac */ = {
+		BC827FA71BFA3CE1005F09A4 /* Fakery-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac" */;
+			buildConfigurationList = BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-macOS" */;
 			buildPhases = (
 				BC827FA31BFA3CE1005F09A4 /* Sources */,
 				BC827FA41BFA3CE1005F09A4 /* Frameworks */,
@@ -525,14 +525,14 @@
 			);
 			dependencies = (
 			);
-			name = "Fakery-Mac";
+			name = "Fakery-macOS";
 			productName = "Fakery OSX";
 			productReference = BC827FA81BFA3CE1005F09A4 /* Fakery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BC827FB01BFA3CE1005F09A4 /* Fakery-Mac-Tests */ = {
+		BC827FB01BFA3CE1005F09A4 /* Fakery-macOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac-Tests" */;
+			buildConfigurationList = BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-macOS-Tests" */;
 			buildPhases = (
 				BC827FAD1BFA3CE1005F09A4 /* Sources */,
 				BC827FAE1BFA3CE1005F09A4 /* Frameworks */,
@@ -544,9 +544,9 @@
 			dependencies = (
 				BC827FB41BFA3CE1005F09A4 /* PBXTargetDependency */,
 			);
-			name = "Fakery-Mac-Tests";
+			name = "Fakery-macOS-Tests";
 			productName = "Fakery OSXTests";
-			productReference = BC827FB11BFA3CE1005F09A4 /* Fakery-Mac-Tests.xctest */;
+			productReference = BC827FB11BFA3CE1005F09A4 /* Fakery-macOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BCF0DF391BF9F77E00427DB4 /* Fakery-iOS */ = {
@@ -613,25 +613,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Vadym Markov";
 				TargetAttributes = {
 					BC827FA71BFA3CE1005F09A4 = {
 						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					BC827FB01BFA3CE1005F09A4 = {
 						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					BCF0DF391BF9F77E00427DB4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0900;
 					};
 					BCF0DF431BF9F77E00427DB4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0900;
 					};
 					BDC291271D9441F2007DA2FC = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -648,10 +651,10 @@
 			projectRoot = "";
 			targets = (
 				BCF0DF391BF9F77E00427DB4 /* Fakery-iOS */,
-				BC827FA71BFA3CE1005F09A4 /* Fakery-Mac */,
+				BC827FA71BFA3CE1005F09A4 /* Fakery-macOS */,
 				BDC291271D9441F2007DA2FC /* Fakery-tvOS */,
 				BCF0DF431BF9F77E00427DB4 /* Fakery-iOS-Tests */,
-				BC827FB01BFA3CE1005F09A4 /* Fakery-Mac-Tests */,
+				BC827FB01BFA3CE1005F09A4 /* Fakery-macOS-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -976,7 +979,7 @@
 /* Begin PBXTargetDependency section */
 		BC827FB41BFA3CE1005F09A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC827FA71BFA3CE1005F09A4 /* Fakery-Mac */;
+			target = BC827FA71BFA3CE1005F09A4 /* Fakery-macOS */;
 			targetProxy = BC827FB31BFA3CE1005F09A4 /* PBXContainerItemProxy */;
 		};
 		BCF0DF471BF9F77E00427DB4 /* PBXTargetDependency */ = {
@@ -1002,11 +1005,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-macOS";
 				PRODUCT_NAME = Fakery;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1025,11 +1029,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-macOS";
 				PRODUCT_NAME = Fakery;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1045,7 +1050,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1061,7 +1067,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1073,14 +1080,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1124,14 +1137,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1176,7 +1195,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1195,7 +1215,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1207,7 +1228,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1219,7 +1241,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1240,7 +1263,8 @@
 				PRODUCT_NAME = Fakery;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1263,7 +1287,8 @@
 				PRODUCT_NAME = Fakery;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1272,7 +1297,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac" */ = {
+		BC827FBD1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC827FB91BFA3CE1005F09A4 /* Debug */,
@@ -1281,7 +1306,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-Mac-Tests" */ = {
+		BC827FBE1BFA3CE1005F09A4 /* Build configuration list for PBXNativeTarget "Fakery-macOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC827FBB1BFA3CE1005F09A4 /* Debug */,

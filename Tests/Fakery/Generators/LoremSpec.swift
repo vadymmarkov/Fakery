@@ -2,8 +2,7 @@ import Quick
 import Nimble
 @testable import Fakery
 
-class LoremSpec: QuickSpec {
-
+final class LoremSpec: QuickSpec {
   override func spec() {
     describe("Lorem") {
       var lorem: Lorem!

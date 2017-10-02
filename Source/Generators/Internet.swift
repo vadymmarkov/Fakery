@@ -1,8 +1,7 @@
 import Foundation
 
 public final class Internet: Generator {
-
-  let lorem: Lorem
+  private let lorem: Lorem
 
   public required init(parser: Parser) {
     self.lorem = Lorem(parser: parser)
