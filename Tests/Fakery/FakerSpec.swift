@@ -25,6 +25,13 @@ final class FakerSpec: QuickSpec {
           expect(faker.name.parser).to(beIdenticalTo(faker.parser))
           expect(faker.phoneNumber.parser).to(beIdenticalTo(faker.parser))
           expect(faker.team.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.bank.parser).to(beIdenticalTo(faker.parser))
+        }
+      }
+
+      describe("#bank") {
+        it("should be accessible") {
+          expect(faker).to(beAKindOf(Bank))
         }
       }
     }
