@@ -1,7 +1,6 @@
 import Foundation
 
 public final class Business: Generator {
-
   public func creditCardNumber() -> String {
     return generate("business.credit_card_numbers")
   }

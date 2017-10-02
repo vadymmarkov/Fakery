@@ -2,8 +2,7 @@ import Quick
 import Nimble
 @testable import Fakery
 
-class InternetSpec: QuickSpec {
-
+final class InternetSpec: QuickSpec {
   override func spec() {
     describe("Internet") {
       let emailFormat = "[\\w._%+-]+@[\\w.-]+\\.\\w{2,}"

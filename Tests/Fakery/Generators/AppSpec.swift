@@ -2,8 +2,7 @@ import Quick
 import Nimble
 @testable import Fakery
 
-class AppSpec: QuickSpec {
-
+final class AppSpec: QuickSpec {
   override func spec() {
     describe("App") {
       var app: App!

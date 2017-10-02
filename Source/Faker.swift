@@ -26,7 +26,6 @@ public final class Faker {
   public init(locale: String = Config.defaultLocale) {
     self.locale = locale
     parser = Parser(locale: self.locale)
-
     address = Address(parser: parser)
     app = App(parser: parser)
     business = Business(parser: parser)
