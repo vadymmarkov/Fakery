@@ -1196,7 +1196,7 @@
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -1216,7 +1216,7 @@
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = "";
 			};
 			name = Release;
 		};
@@ -1229,7 +1229,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -1242,7 +1242,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = "";
 			};
 			name = Release;
 		};
