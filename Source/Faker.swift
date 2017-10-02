@@ -38,6 +38,6 @@ public final class Faker {
     phoneNumber = PhoneNumber(parser: parser)
     team = Team(parser: parser)
     number = Number()
-    bank = Bank()
+    bank = Bank(parser: parser)
   }
 }
