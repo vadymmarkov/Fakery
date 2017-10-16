@@ -377,11 +377,7 @@
 		BCFFA1611BF9F912005A3BC1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BCFFA1621BF9F912005A3BC1 /* Config.swift */,
-				BCFFA1681BF9F912005A3BC1 /* Faker.swift */,
-				BCFFA1631BF9F912005A3BC1 /* Data */,
-				BCFFA1661BF9F912005A3BC1 /* Extensions */,
-				BCFFA1691BF9F912005A3BC1 /* Generators */,
+				D535B6521F954FC20023F851 /* Fakery */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -429,6 +425,18 @@
 				D59B6CEC1D99C5FD007CB072 /* Fakery */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		D535B6521F954FC20023F851 /* Fakery */ = {
+			isa = PBXGroup;
+			children = (
+				BCFFA1621BF9F912005A3BC1 /* Config.swift */,
+				BCFFA1681BF9F912005A3BC1 /* Faker.swift */,
+				BCFFA1631BF9F912005A3BC1 /* Data */,
+				BCFFA1661BF9F912005A3BC1 /* Extensions */,
+				BCFFA1691BF9F912005A3BC1 /* Generators */,
+			);
+			path = Fakery;
 			sourceTree = "<group>";
 		};
 		D59B6CEC1D99C5FD007CB072 /* Fakery */ = {

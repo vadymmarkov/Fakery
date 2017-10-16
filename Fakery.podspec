@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
     'Faker' => ['Resources/Locales/*.{json}']
   }
 
-  s.source_files = 'Source/**/*'
+  s.source_files = 'Sources/**/*'
   s.frameworks = 'Foundation'
 end
