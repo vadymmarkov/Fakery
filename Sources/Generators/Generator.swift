@@ -34,7 +34,7 @@ public class Generator {
   }
 
   public func letterify(_ string: String) -> String {
-    return String(string.characters.enumerated().map { (index, item) in
+    return String(string.characters.enumerated().map { _, item in
       let count = UInt32(Constants.uppercaseLetters.count)
       let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
       return String(item) == "?" ? char : item

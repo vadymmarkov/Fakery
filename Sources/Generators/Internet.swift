@@ -106,13 +106,13 @@ public final class Internet: Generator {
   }
 
   public func templateImage(width: Int = 320, height: Int = 200,
-    backColorHex: String = "000000", frontColorHex: String = "ffffff") -> String {
+                            backColorHex: String = "000000", frontColorHex: String = "ffffff") -> String {
       return "https://dummyimage.com/\(width)x\(height)/\(backColorHex)/\(frontColorHex)"
   }
 
   public func hashtag() -> String {
     return generate("internet.hashtag")
   }
-  
+
   // @ToDo - slug
 }

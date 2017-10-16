@@ -29,7 +29,7 @@ public final class Commerce: Generator {
   }
 
   public func price() -> Double {
-    let arc4randoMax:Double = 0x100000000
+    let arc4randoMax: Double = 0x100000000
     return floor(Double((Double(arc4random()) / arc4randoMax) * 100.0) * 100) / 100.0
   }
 

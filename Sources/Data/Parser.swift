@@ -68,7 +68,7 @@ public final class Parser {
                                       options: .caseInsensitive)
       let matches = regex.matches(in: string as String,
         options: .reportCompletion,
-        range: NSMakeRange(0, string.length))
+        range: NSRange(location: 0, length: string.length))
 
       guard !matches.isEmpty else {
         return template
