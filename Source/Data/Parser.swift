@@ -49,7 +49,13 @@ public final class Parser {
   }
 
   public func fetchRaw(_ key: String) -> Any? {
-    return fetchRaw(key, forLocale: locale) ?? fetchRaw(key, forLocale: Config.defaultLocale)
+    let result = fetchRaw(key, forLocale: locale)
+
+    guard locale != Config.defaultLocale else {
+      return result
+    }
+
+    return result ?? fetchRaw(key, forLocale: Config.defaultLocale)
   }
 
   func parse(_ template: String, forSubject subject: String) -> String {
