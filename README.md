@@ -50,6 +50,10 @@ let city = faker.address.city()         //=> "Oslo"
 In `Resources/Locales` you can find JSON files for more than 20 locales, and, of course, it's not a limit.
 Feel free to contribute and add more!  
 
+The default locale is English. When you use one of the available generators and
+the corresponding key is not found in a JSON file for the currently selected
+locale **Fakery** will also check if it exists in "en.json" file.
+
 ## Generators
 
 ### Address

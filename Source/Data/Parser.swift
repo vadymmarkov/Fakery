@@ -4,7 +4,7 @@ public final class Parser {
   public var locale: String {
     didSet {
       if locale != oldValue {
-        loadData()
+        loadData(forLocale: locale)
       }
     }
   }
@@ -17,7 +17,11 @@ public final class Parser {
   public init(locale: String = Config.defaultLocale) {
     self.locale = locale
     provider = Provider()
-    loadData()
+    loadData(forLocale: locale)
+
+    if locale != Config.defaultLocale {
+      loadData(forLocale: Config.defaultLocale)
+    }
   }
 
   // MARK: - Parsing
@@ -45,25 +49,13 @@ public final class Parser {
   }
 
   public func fetchRaw(_ key: String) -> Any? {
-    let parts = key.components(separatedBy: ".")
+    let result = fetchRaw(key, forLocale: locale)
 
-    guard let localeData = data[locale] as? [String: Any],
-      var parsed = localeData["faker"] as? [String: Any],
-      !parts.isEmpty else { return nil }
-
-    var result: Any?
-
-    for part in parts {
-      guard let parsedPart = parsed[part] as? [String: Any] else {
-        result = parsed[part]
-        continue
-      }
-
-      parsed = parsedPart
-      result = parsedPart
+    guard locale != Config.defaultLocale else {
+      return result
     }
 
-    return result
+    return result ?? fetchRaw(key, forLocale: Config.defaultLocale)
   }
 
   func parse(_ template: String, forSubject subject: String) -> String {
@@ -116,6 +108,28 @@ public final class Parser {
     return text
   }
 
+  private func fetchRaw(_ key: String, forLocale locale: String) -> Any? {
+    let parts = key.components(separatedBy: ".")
+
+    guard let localeData = data[locale] as? [String: Any],
+      var parsed = localeData["faker"] as? [String: Any],
+      !parts.isEmpty else { return nil }
+
+    var result: Any?
+
+    for part in parts {
+      guard let parsedPart = parsed[part] as? [String: Any] else {
+        result = parsed[part]
+        continue
+      }
+
+      parsed = parsedPart
+      result = parsedPart
+    }
+
+    return result
+  }
+
   private func getSubject(_ key: String) -> String {
     var subject: String = ""
     var parts = key.components(separatedBy: ".")
@@ -129,18 +143,15 @@ public final class Parser {
 
   // MARK: - Data loading
 
-  private func loadData() {
+  private func loadData(forLocale locale: String) {
     guard let localeData = provider.dataForLocale(locale),
       let parsedData = try? JSONSerialization.jsonObject(with: localeData, options: .allowFragments),
-      let json = parsedData as? [String: Any] else {
-        if locale != Config.defaultLocale {
-          locale = Config.defaultLocale
-        } else {
-          fatalError("JSON file for '\(locale)' locale was not found.")
-        }
+      let json = parsedData as? [String: Any],
+      let localeJson = json[locale] else {
+        print("JSON file for '\(locale)' locale was not found.")
         return
     }
 
-    data = json
+    data[locale] = localeJson
   }
 }
