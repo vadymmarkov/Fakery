@@ -31,3 +31,6 @@ DerivedData
 
 # CocoaPods
 Pods
+
+Packages
+.build
