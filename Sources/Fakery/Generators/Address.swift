@@ -1,9 +1,5 @@
 import Foundation
-
-public struct FakeryCoordinates {
-  public var latitude:  Double
-  public var longitude: Double
-}
+import MapKit
 
 public final class Address: Generator {
   public func city() -> String {
@@ -84,29 +80,29 @@ public final class Address: Generator {
     return drand48() * 360.0 - 180.0
   }
   
-  public func coordinate(latitude: Double, longitude: Double, inRadius radius: Double = 1000) -> FakeryCoordinates {
-    let y0              = latitude
-    let x0              = longitude
+  public func coordinate(inRadius radius: Double, fromCenter center:CLLocationCoordinate2D) -> CLLocationCoordinate2D {
+    let y0 = center.latitude
+    let x0 = center.longitude
     
-    // Convert meters to degrees for raduis
+    // Convert meters to degrees for radius
     let radiusInDegrees = radius / 111300.0
     
-    // Random distance in circle
-    let u               = Double(arc4random()) / 0xFFFFFFFF
-    let v               = Double(arc4random()) / 0xFFFFFFFF
-    let w               = radiusInDegrees * sqrt(u)
-    let t               = 2 * .pi * v
-    let x               = w * cos(t)
-    let y               = w * sin(t)
+    // Random point in circle
+    let u = Double(arc4random()) / 0xFFFFFFFF
+    let v = Double(arc4random()) / 0xFFFFFFFF
+    let w = radiusInDegrees * sqrt(u)
+    let t = 2 * .pi * v
+    let x = w * cos(t)
+    let y = w * sin(t)
     
     // Adjust longitude (x) to adjust for east-west shrinking in distance
-    let latRadians      = y0 * .pi / 180
-    let newx            = x / cos(latRadians)
+    let latRadians = y0 * .pi / 180
+    let newx = x / cos(latRadians)
     
     // Set found random point
-    let foundLatitude   = y + y0
-    let foundLongitude  = newx + x0
+    let foundLatitude = y + y0
+    let foundLongitude = newx + x0
     
-    return FakeryCoordinates.init(latitude: foundLatitude, longitude: foundLongitude)
+    return CLLocationCoordinate2D.init(latitude: foundLatitude, longitude: foundLongitude)
   }
 }
