@@ -77,6 +77,7 @@ faker.address.country() //=> "United States of America"
 faker.address.countryCode() //=> "US"
 faker.address.latitude() //=> -58.17256227443719
 faker.address.longitude() //=> -156.65548382095133
+faker.address.coordinate() //=> CLLocationCoordinate2D(latitude: 40.97868, longitude: 29.09306)
 ```
 
 ### App
