@@ -1,5 +1,5 @@
 import Foundation
-import MapKit
+import CoreLocation
 
 public final class Address: Generator {
   public func city() -> String {
