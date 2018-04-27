@@ -79,10 +79,10 @@ public final class Parser {
           continue
         }
 
-        let prefixRange = match.range(at: 1)
-        let subjectRange = match.range(at: 2)
-        let methodRange = match.range(at: 3)
-        let otherRange = match.range(at: 4)
+        let prefixRange = match.rangeAt(at: 1)
+        let subjectRange = match.rangeAt(at: 2)
+        let methodRange = match.rangeAt(at: 3)
+        let otherRange = match.rangeAt(at: 4)
 
         if prefixRange.length > 0 {
           text += string.substring(with: prefixRange)
