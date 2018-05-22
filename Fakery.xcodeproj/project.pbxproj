@@ -173,6 +173,9 @@
 		D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */; };
 		D59B6D3A1D99C82E007CB072 /* PhoneNumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */; };
 		D59B6D3B1D99C82E007CB072 /* TeamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */; };
+		E460B80520B47858004ABCAE /* en.swift in Sources */ = {isa = PBXBuildFile; fileRef = E460B80420B47853004ABCAE /* en.swift */; };
+		E460B80620B47858004ABCAE /* en.swift in Sources */ = {isa = PBXBuildFile; fileRef = E460B80420B47853004ABCAE /* en.swift */; };
+		E460B80720B47859004ABCAE /* en.swift in Sources */ = {isa = PBXBuildFile; fileRef = E460B80420B47853004ABCAE /* en.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +268,7 @@
 		D59B6D131D99C6C7007CB072 /* Info-Tests-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-Mac.plist"; sourceTree = "<group>"; };
 		D59B6D141D99C6C7007CB072 /* Info-Tests-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-tvOS.plist"; sourceTree = "<group>"; };
 		D59B6D151D99C6C7007CB072 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		E460B80420B47853004ABCAE /* en.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = en.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,6 +434,7 @@
 		D535B6521F954FC20023F851 /* Fakery */ = {
 			isa = PBXGroup;
 			children = (
+				E460B80320B4783E004ABCAE /* Locales */,
 				BCFFA1621BF9F912005A3BC1 /* Config.swift */,
 				BCFFA1681BF9F912005A3BC1 /* Faker.swift */,
 				BCFFA1631BF9F912005A3BC1 /* Data */,
@@ -490,6 +495,14 @@
 				D59B6D151D99C6C7007CB072 /* Info-tvOS.plist */,
 			);
 			path = Project;
+			sourceTree = "<group>";
+		};
+		E460B80320B4783E004ABCAE /* Locales */ = {
+			isa = PBXGroup;
+			children = (
+				E460B80420B47853004ABCAE /* en.swift */,
+			);
+			path = Locales;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -863,6 +876,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E460B80620B47858004ABCAE /* en.swift in Sources */,
 				BC44779C1BFA452E00E8FB15 /* Team.swift in Sources */,
 				BC44779B1BFA452C00E8FB15 /* PhoneNumber.swift in Sources */,
 				BC4477931BFA451600E8FB15 /* App.swift in Sources */,
@@ -912,6 +926,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E460B80520B47858004ABCAE /* en.swift in Sources */,
 				BCFFA1961BF9F912005A3BC1 /* Address.swift in Sources */,
 				BCFFA19D1BF9F912005A3BC1 /* Lorem.swift in Sources */,
 				BCFFA1951BF9F912005A3BC1 /* Faker.swift in Sources */,
@@ -961,6 +976,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E460B80720B47859004ABCAE /* en.swift in Sources */,
 				D59B6CA51D99C46C007CB072 /* Address.swift in Sources */,
 				D59B6CAC1D99C46C007CB072 /* Lorem.swift in Sources */,
 				D59B6CA41D99C467007CB072 /* Faker.swift in Sources */,
