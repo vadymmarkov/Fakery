@@ -8,22 +8,6 @@
 import Foundation
 import Foundation
 
-public enum LoremPixelImageCategory : String {
-	case abstract = "abstract"
-	case animals = "animals"
-	case business = "business"
-	case cats = "cats"
-	case city = "city"
-	case food = "food"
-	case nightlife = "nightlife"
-	case fashion = "fashion"
-	case people = "people"
-	case nature = "nature"
-	case sports = "sports"
-	case technics = "technics"
-	case transport = "transport"
-}
-
 public enum LoremFlickrKeywordStrategy{
 	case all, any
 }
@@ -35,33 +19,6 @@ public final class Image: Generator {
 		self.lorem = Lorem(parser: parser)
 		super.init(parser: parser)
 	}
-	
-	/// Returns an image url string from lorempixel.com based on size and category parameters.
-	///
-	/// - Parameters:
-	///   - width: The width of the image to create.
-	///   - height: The height of the image to create.
-	///   - category: The category of picture to return.
-	/// - Returns: An image url string
-	public func random(width: Int = 640, height: Int = 480, category: LoremPixelImageCategory? = nil) -> String {
-		var url = "http://lorempixel.com/\(width)/\(height)/"
-		if (category != nil) {
-			url += "\(category!.rawValue)"
-		}
-		return url
-	}
-
-	/// Returns an image url from lorempixel.com based on size and category parameters.
-	///
-	/// - Parameters:
-	///   - width: The width of the image to create.
-	///   - height: The height of the image to create.
-	///   - category: The category of picture to return.
-	/// - Returns: An image url
-	public func randomURL(width: Int = 640, height: Int = 480, category: LoremPixelImageCategory? = nil) -> URL {
-		return random(width: width, height: height, category: category).toURL()
-	}
-
 
 
 	/// Returns an image url string from loremflickr.com based on size and search keyword parameters.
