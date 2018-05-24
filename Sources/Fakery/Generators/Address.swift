@@ -6,7 +6,7 @@ public final class Address: Generator {
     return generate("address.city")
   }
 
-  public func city() -> String {
+  public func neighborhood() -> String {
 	return generate("address.neighborhood")
   }
 

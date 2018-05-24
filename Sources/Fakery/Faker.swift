@@ -13,6 +13,7 @@ public final class Faker {
   public let company: Company
   public let commerce: Commerce
   public let internet: Internet
+  public let image: Image
   public let lorem: Lorem
   public let name: Name
   public let phoneNumber: PhoneNumber
@@ -39,5 +40,6 @@ public final class Faker {
     team = Team(parser: parser)
     number = Number()
     bank = Bank(parser: parser)
+	image = Image(parser: parser)
   }
 }

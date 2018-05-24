@@ -114,5 +114,4 @@ public final class Internet: Generator {
     return generate("internet.hashtag")
   }
 
-  // @ToDo - slug
 }
