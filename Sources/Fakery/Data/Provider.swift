@@ -11,6 +11,7 @@ public final class Provider {
     if let translationData = translations[locale] {
       translation = translationData
     } else {
+		
 			if let data = Locale.en.data(using: .utf8){
 				translation = data
 				translations[locale] = data

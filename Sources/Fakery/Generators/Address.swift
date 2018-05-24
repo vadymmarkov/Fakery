@@ -6,6 +6,10 @@ public final class Address: Generator {
     return generate("address.city")
   }
 
+  public func city() -> String {
+	return generate("address.neighborhood")
+  }
+
   public func streetName() -> String {
     return generate("address.street_name")
   }
