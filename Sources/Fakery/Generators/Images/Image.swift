@@ -6,11 +6,16 @@
 //
 
 import Foundation
-import Foundation
 
-public enum LoremFlickrKeywordStrategy{
-	case all, any
+
+public enum PlaceholderImageService{
+	case adorableAvatars
+	case loremFlickr
+	case loremPixel
+	case placeImg(urlBuilder: PlaceImgURLBuilder)
 }
+
+//MARK: LoremPixel
 
 public final class Image: Generator {
 	private let lorem: Lorem
@@ -19,6 +24,40 @@ public final class Image: Generator {
 		self.lorem = Lorem(parser: parser)
 		super.init(parser: parser)
 	}
+	
+	/// Returns an image url string from lorempixel.com based on size and category parameters.
+	///
+	/// - Parameters:
+	///   - width: The width of the image to create.
+	///   - height: The height of the image to create.
+	///   - category: The category of picture to return.
+	/// - Returns: An image url string
+	public func random(width: Int = 640, height: Int = 480, category: PlaceIMGImageCategory? = nil, effect: PlaceIMGImageEffect? = nil) -> String {
+		var url = "http://lorempixel.com/\(width)/\(height)"
+		if let category = category{
+			url += "/\(category)"
+		}
+		if (category != nil) {
+			url += "/any"
+		}
+
+		if let effect = effect{
+			url += "/\(effect)"
+		}
+		return url
+	}
+
+	/// Returns an image url from lorempixel.com based on size and category parameters.
+	///
+	/// - Parameters:
+	///   - width: The width of the image to create.
+	///   - height: The height of the image to create.
+	///   - category: The category of picture to return.
+	/// - Returns: An image url
+	public func randomURL(width: Int = 640, height: Int = 480, category: PlaceIMGImageCategory? = nil, effect: PlaceIMGImageEffect? = nil) -> URL {
+		return random(width: width, height: height, category: category, effect: effect).toURL()
+	}
+
 
 
 	/// Returns an image url string from loremflickr.com based on size and search keyword parameters.
