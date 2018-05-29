@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Fakery"
-  s.version          = "3.3.3"
+  s.version          = "3.3.4"
   s.summary          = "Swift fake data generator"
   s.homepage         = "https://github.com/vadymmarkov/Fakery"
   s.license          = {
