@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4665E0E20B7303100FD577A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665E0D20B7303100FD577A /* Image.swift */; };
-		E4665E3420B7B76800FD577A /* PlaceImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665E3320B7B76800FD577A /* PlaceImg.swift */; };
-		E4665E3620B7B7BB00FD577A /* ImageProviderURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665E3520B7B7BB00FD577A /* ImageProviderURLBuilder.swift */; };
-		E4665E3820B7B80000FD577A /* LoremFlickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665E3720B7B80000FD577A /* LoremFlickr.swift */; };
-		E4665E3A20B7B81D00FD577A /* Unsplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665E3920B7B81D00FD577A /* Unsplash.swift */; };
-		E4665E3C20B7B89A00FD577A /* AdorableAvatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665E3B20B7B89A00FD577A /* AdorableAvatars.swift */; };
-		E4665E3E20B7BFA700FD577A /* LoremPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665E3D20B7BFA700FD577A /* LoremPixel.swift */; };
 		OBJ_43 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Config.swift */; };
 		OBJ_44 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Parser.swift */; };
 		OBJ_45 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Provider.swift */; };
@@ -37,13 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E4665E0D20B7303100FD577A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		E4665E3320B7B76800FD577A /* PlaceImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceImg.swift; sourceTree = "<group>"; };
-		E4665E3520B7B7BB00FD577A /* ImageProviderURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderURLBuilder.swift; sourceTree = "<group>"; };
-		E4665E3720B7B80000FD577A /* LoremFlickr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremFlickr.swift; sourceTree = "<group>"; };
-		E4665E3920B7B81D00FD577A /* Unsplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unsplash.swift; sourceTree = "<group>"; };
-		E4665E3B20B7B89A00FD577A /* AdorableAvatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdorableAvatars.swift; sourceTree = "<group>"; };
-		E4665E3D20B7BFA700FD577A /* LoremPixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremPixel.swift; sourceTree = "<group>"; };
 		"Fakery::Fakery::Product" /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
@@ -81,28 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E4665E3120B7B70400FD577A /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				E4665E3220B7B71500FD577A /* Providers */,
-				E4665E0D20B7303100FD577A /* Image.swift */,
-				E4665E3520B7B7BB00FD577A /* ImageProviderURLBuilder.swift */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		E4665E3220B7B71500FD577A /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				E4665E3320B7B76800FD577A /* PlaceImg.swift */,
-				E4665E3720B7B80000FD577A /* LoremFlickr.swift */,
-				E4665E3920B7B81D00FD577A /* Unsplash.swift */,
-				E4665E3B20B7B89A00FD577A /* AdorableAvatars.swift */,
-				E4665E3D20B7BFA700FD577A /* LoremPixel.swift */,
-			);
-			path = Providers;
-			sourceTree = "<group>";
-		};
 		OBJ_10 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +100,6 @@
 				OBJ_27 /* Number.swift */,
 				OBJ_28 /* PhoneNumber.swift */,
 				OBJ_29 /* Team.swift */,
-				E4665E3120B7B70400FD577A /* Images */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -164,7 +127,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -175,7 +138,6 @@
 				OBJ_35 /* Project */,
 				OBJ_36 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -248,7 +210,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,27 +228,20 @@
 			files = (
 				OBJ_43 /* Config.swift in Sources */,
 				OBJ_44 /* Parser.swift in Sources */,
-				E4665E3620B7B7BB00FD577A /* ImageProviderURLBuilder.swift in Sources */,
 				OBJ_45 /* Provider.swift in Sources */,
-				E4665E3E20B7BFA700FD577A /* LoremPixel.swift in Sources */,
 				OBJ_46 /* ArrayExtension.swift in Sources */,
 				OBJ_47 /* Faker.swift in Sources */,
 				OBJ_48 /* Address.swift in Sources */,
 				OBJ_49 /* App.swift in Sources */,
-				E4665E3420B7B76800FD577A /* PlaceImg.swift in Sources */,
 				OBJ_50 /* Bank.swift in Sources */,
 				OBJ_51 /* Business.swift in Sources */,
-				E4665E0E20B7303100FD577A /* Image.swift in Sources */,
-				E4665E3820B7B80000FD577A /* LoremFlickr.swift in Sources */,
 				OBJ_52 /* Commerce.swift in Sources */,
 				OBJ_53 /* Company.swift in Sources */,
 				OBJ_54 /* Generator.swift in Sources */,
 				OBJ_55 /* Internet.swift in Sources */,
 				OBJ_56 /* Lorem.swift in Sources */,
-				E4665E3C20B7B89A00FD577A /* AdorableAvatars.swift in Sources */,
 				OBJ_57 /* Name.swift in Sources */,
 				OBJ_58 /* Number.swift in Sources */,
-				E4665E3A20B7B81D00FD577A /* Unsplash.swift in Sources */,
 				OBJ_59 /* PhoneNumber.swift in Sources */,
 				OBJ_60 /* Team.swift in Sources */,
 				OBJ_61 /* en.swift in Sources */,
