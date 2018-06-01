@@ -1,5 +1,7 @@
 import Foundation
+#if !os(Linux)
 import CoreLocation
+#endif
 
 public final class Address: Generator {
   public func city() -> String {
@@ -83,7 +85,7 @@ public final class Address: Generator {
   public func longitude() -> Double {
     return drand48() * 360.0 - 180.0
   }
-  
+  #if !os(Linux)
   public func coordinate(inRadius radius: Double, fromCenter center:CLLocationCoordinate2D) -> CLLocationCoordinate2D {
     let y0 = center.latitude
     let x0 = center.longitude
@@ -109,4 +111,5 @@ public final class Address: Generator {
     
     return CLLocationCoordinate2D.init(latitude: foundLatitude, longitude: foundLongitude)
   }
+	#endif
 }
