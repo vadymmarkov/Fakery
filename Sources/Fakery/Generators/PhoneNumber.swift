@@ -1,3 +1,5 @@
+import Foundation
+
 public final class PhoneNumber: Generator {
   public func phoneNumber() -> String {
     return numerify(generate("phone_number.formats"))

@@ -1,3 +1,5 @@
+import Foundation
+
 public final class Faker {
   public var locale: String {
     didSet {

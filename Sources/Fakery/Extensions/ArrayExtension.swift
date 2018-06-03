@@ -15,6 +15,6 @@ extension Array {
       return nil
     }
 
-    return self[Int(arc4random_uniform(UInt32(count)))]
+    return self[Random.int(max: count)]
   }
 }

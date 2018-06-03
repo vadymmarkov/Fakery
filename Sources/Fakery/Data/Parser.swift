@@ -1,5 +1,6 @@
 import Foundation
 
+
 public final class Parser {
   public var locale: String {
     didSet {
@@ -60,15 +61,15 @@ public final class Parser {
 
   func parse(_ template: String, forSubject subject: String) -> String {
     var text = ""
-    let string = template as NSString
+    let string = template
     var regex: NSRegularExpression
 
     do {
       try regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?",
                                       options: .caseInsensitive)
-      let matches = regex.matches(in: string as String,
+		let matches = regex.matches(in: string as String,
         options: .reportCompletion,
-        range: NSRange(location: 0, length: string.length))
+        range: NSRange(location: 0, length: string.count))
 
       guard !matches.isEmpty else {
         return template
@@ -85,22 +86,22 @@ public final class Parser {
         let otherRange = match.range(at: 4)
 
         if prefixRange.length > 0 {
-          text += string.substring(with: prefixRange)
+          text += string[string.rangeFromNSRange(nsRange: prefixRange)!]
         }
 
         var subjectWithDot = subject + "."
 
         if subjectRange.length > 0 {
-          subjectWithDot = string.substring(with: subjectRange)
+			subjectWithDot = String(string[string.rangeFromNSRange(nsRange: subjectRange)!])
         }
 
         if methodRange.length > 0 {
-          let key = subjectWithDot.lowercased() + string.substring(with: methodRange)
+          let key = subjectWithDot.lowercased() + string[string.rangeFromNSRange(nsRange: methodRange)!]
           text += fetch(key)
         }
 
         if otherRange.length > 0 {
-          text += string.substring(with: otherRange)
+          text += string[string.rangeFromNSRange(nsRange: otherRange)!]
         }
       }
     } catch {}
@@ -154,4 +155,10 @@ public final class Parser {
 
     data[locale] = localeJson
   }
+}
+
+extension String {
+	func rangeFromNSRange(nsRange : NSRange) -> Range<String.Index>? {
+		return Range(nsRange, in: self)
+	}
 }

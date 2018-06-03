@@ -7,7 +7,11 @@ let package = Package(
     products: [
       .library(name: "Fakery", targets: ["Fakery"])
     ],
+	dependencies: [
+		.package(url: "https://github.com/Appsaurus/SwiftTestUtils", from: "0.1.0")
+	],
     targets: [
-      .target(name: "Fakery")
+      .target(name: "Fakery"),
+	  .testTarget(name: "FakeryTests", dependencies: ["Fakery", "SwiftTestUtils"])
     ]
 )
