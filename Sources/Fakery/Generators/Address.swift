@@ -94,8 +94,8 @@ public final class Address: Generator {
     let radiusInDegrees = radius / 111300.0
     
     // Random point in circle
-    let u = Double(arc4random()) / 0xFFFFFFFF
-    let v = Double(arc4random()) / 0xFFFFFFFF
+    let u = Double(Random.int()) / 0xFFFFFFFF
+    let v = Double(Random.int()) / 0xFFFFFFFF
     let w = radiusInDegrees * sqrt(u)
     let t = 2 * .pi * v
     let x = w * cos(t)
