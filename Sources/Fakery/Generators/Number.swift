@@ -25,11 +25,20 @@ public final class Number {
 	#endif
 
 	public func randomDouble(min: Double = 0, max: Double = 1000) -> Double {
-		return (Double(Random.int()) / Double(UInt32.max)) * (max - min) + min
+		let double = (Double(Random.int()) / Double(UInt32.max)) * (max - min) + min
+		return double.rounded(toPlaces: 10)
 	}
 
 	public func increasingUniqueId() -> Int {
 		lastUsedId += 1
 		return lastUsedId
+	}
+}
+
+fileprivate extension Double {
+	/// Rounds the double to decimal places value
+	fileprivate func rounded(toPlaces places:Int) -> Double {
+		let divisor = pow(10.0, Double(places))
+		return (self * divisor).rounded() / divisor
 	}
 }
