@@ -8,7 +8,7 @@ let package = Package(
       .library(name: "Fakery", targets: ["Fakery"])
     ],
 	dependencies: [
-		.package(url: "https://github.com/Appsaurus/SwiftTestUtils", from: "0.1.0")
+		.package(url: "https://github.com/Appsaurus/SwiftTestUtils", .upToNextMajor(from: "1.0.0"))
 	],
     targets: [
       .target(name: "Fakery"),

@@ -1,753 +1,1011 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXAggregateTarget section */
-		"Fakery::FakeryPackageTests::ProductTarget" /* FakeryPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_82 /* Build configuration list for PBXAggregateTarget "FakeryPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_85 /* PBXTargetDependency */,
-			);
-			name = FakeryPackageTests;
-			productName = FakeryPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		OBJ_102 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* BaseTestCase.swift */; };
-		OBJ_103 /* LinuxTestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* LinuxTestable.swift */; };
-		OBJ_104 /* XCAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* XCAssertions.swift */; };
-		OBJ_111 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Package.swift */; };
-		OBJ_54 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Config.swift */; };
-		OBJ_55 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Parser.swift */; };
-		OBJ_56 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Provider.swift */; };
-		OBJ_57 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ArrayExtension.swift */; };
-		OBJ_58 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Faker.swift */; };
-		OBJ_59 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Address.swift */; };
-		OBJ_60 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* App.swift */; };
-		OBJ_61 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Bank.swift */; };
-		OBJ_62 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Business.swift */; };
-		OBJ_63 /* Commerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Commerce.swift */; };
-		OBJ_64 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Company.swift */; };
-		OBJ_65 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Generator.swift */; };
-		OBJ_66 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Internet.swift */; };
-		OBJ_67 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Lorem.swift */; };
-		OBJ_68 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Name.swift */; };
-		OBJ_69 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Number.swift */; };
-		OBJ_70 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* PhoneNumber.swift */; };
-		OBJ_71 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Team.swift */; };
-		OBJ_72 /* LinuxRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* LinuxRandom.swift */; };
-		OBJ_73 /* en.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* en.swift */; };
-		OBJ_80 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_91 /* LinuxRandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* LinuxRandomTests.swift */; };
-		OBJ_93 /* SwiftTestUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftTestUtils::SwiftTestUtils::Product" /* SwiftTestUtils.framework */; };
-		OBJ_94 /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fakery::Fakery::Product" /* Fakery.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E405CBB820C48C620020D47E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SwiftTestUtils::SwiftTestUtils";
-			remoteInfo = SwiftTestUtils;
-		};
-		E405CBB920C48C620020D47E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Fakery::Fakery";
-			remoteInfo = Fakery;
-		};
-		E405CBBA20C48C620020D47E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Fakery::FakeryTests";
-			remoteInfo = FakeryTests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		"Fakery::Fakery::Product" /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Fakery::FakeryTests::Product" /* FakeryTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = FakeryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_11 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		OBJ_12 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		OBJ_14 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
-		OBJ_15 /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
-		OBJ_17 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		OBJ_18 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
-		OBJ_20 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
-		OBJ_21 /* Commerce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commerce.swift; sourceTree = "<group>"; };
-		OBJ_22 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
-		OBJ_24 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
-		OBJ_25 /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
-		OBJ_27 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
-		OBJ_28 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
-		OBJ_29 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		OBJ_30 /* LinuxRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxRandom.swift; sourceTree = "<group>"; };
-		OBJ_32 /* en.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = en.swift; sourceTree = "<group>"; };
-		OBJ_35 /* LinuxRandomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxRandomTests.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = SOURCE_ROOT; };
-		OBJ_37 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
-		OBJ_38 /* Project */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Project; sourceTree = SOURCE_ROOT; };
-		OBJ_41 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/brianstrobach/Appsaurus/CompanyProjects/OpenSource/swift/Fakery/.build/checkouts/SwiftTestUtils-3371106396395558887/Package.swift"; sourceTree = "<group>"; };
-		OBJ_42 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
-		OBJ_43 /* LinuxTestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxTestable.swift; sourceTree = "<group>"; };
-		OBJ_44 /* XCAssertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAssertions.swift; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		"SwiftTestUtils::SwiftTestUtils::Product" /* SwiftTestUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftTestUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		OBJ_105 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_74 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_92 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_93 /* SwiftTestUtils.framework in Frameworks */,
-				OBJ_94 /* Fakery.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		OBJ_10 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_11 /* Parser.swift */,
-				OBJ_12 /* Provider.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		OBJ_13 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_14 /* ArrayExtension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		OBJ_16 /* Generators */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_17 /* Address.swift */,
-				OBJ_18 /* App.swift */,
-				OBJ_19 /* Bank.swift */,
-				OBJ_20 /* Business.swift */,
-				OBJ_21 /* Commerce.swift */,
-				OBJ_22 /* Company.swift */,
-				OBJ_23 /* Generator.swift */,
-				OBJ_24 /* Internet.swift */,
-				OBJ_25 /* Lorem.swift */,
-				OBJ_26 /* Name.swift */,
-				OBJ_27 /* Number.swift */,
-				OBJ_28 /* PhoneNumber.swift */,
-				OBJ_29 /* Team.swift */,
-			);
-			path = Generators;
-			sourceTree = "<group>";
-		};
-		OBJ_31 /* Locales */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_32 /* en.swift */,
-			);
-			path = Locales;
-			sourceTree = "<group>";
-		};
-		OBJ_33 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_34 /* FakeryTests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_34 /* FakeryTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_35 /* LinuxRandomTests.swift */,
-			);
-			name = FakeryTests;
-			path = Tests/FakeryTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_39 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_40 /* SwiftTestUtils 0.1.1 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_40 /* SwiftTestUtils 0.1.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_41 /* Package.swift */,
-				OBJ_42 /* BaseTestCase.swift */,
-				OBJ_43 /* LinuxTestable.swift */,
-				OBJ_44 /* XCAssertions.swift */,
-			);
-			name = "SwiftTestUtils 0.1.1";
-			path = ".build/checkouts/SwiftTestUtils-3371106396395558887/Sources/Shared";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_45 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Fakery::FakeryTests::Product" /* FakeryTests.xctest */,
-				"SwiftTestUtils::SwiftTestUtils::Product" /* SwiftTestUtils.framework */,
-				"Fakery::Fakery::Product" /* Fakery.framework */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_5 /*  */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_33 /* Tests */,
-				OBJ_36 /* Images */,
-				OBJ_37 /* Resources */,
-				OBJ_38 /* Project */,
-				OBJ_39 /* Dependencies */,
-				OBJ_45 /* Products */,
-			);
-			name = "";
-			sourceTree = "<group>";
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* Fakery */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* Fakery */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* Config.swift */,
-				OBJ_10 /* Data */,
-				OBJ_13 /* Extensions */,
-				OBJ_15 /* Faker.swift */,
-				OBJ_16 /* Generators */,
-				OBJ_30 /* LinuxRandom.swift */,
-				OBJ_31 /* Locales */,
-			);
-			name = Fakery;
-			path = Sources/Fakery;
-			sourceTree = SOURCE_ROOT;
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		"Fakery::Fakery" /* Fakery */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "Fakery" */;
-			buildPhases = (
-				OBJ_53 /* Sources */,
-				OBJ_74 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Fakery;
-			productName = Fakery;
-			productReference = "Fakery::Fakery::Product" /* Fakery.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Fakery::FakeryTests" /* FakeryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "FakeryTests" */;
-			buildPhases = (
-				OBJ_90 /* Sources */,
-				OBJ_92 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_95 /* PBXTargetDependency */,
-				OBJ_97 /* PBXTargetDependency */,
-			);
-			name = FakeryTests;
-			productName = FakeryTests;
-			productReference = "Fakery::FakeryTests::Product" /* FakeryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"Fakery::SwiftPMPackageDescription" /* FakeryPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_76 /* Build configuration list for PBXNativeTarget "FakeryPackageDescription" */;
-			buildPhases = (
-				OBJ_79 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FakeryPackageDescription;
-			productName = FakeryPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"SwiftTestUtils::SwiftPMPackageDescription" /* SwiftTestUtilsPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_107 /* Build configuration list for PBXNativeTarget "SwiftTestUtilsPackageDescription" */;
-			buildPhases = (
-				OBJ_110 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftTestUtilsPackageDescription;
-			productName = SwiftTestUtilsPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"SwiftTestUtils::SwiftTestUtils" /* SwiftTestUtils */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_98 /* Build configuration list for PBXNativeTarget "SwiftTestUtils" */;
-			buildPhases = (
-				OBJ_101 /* Sources */,
-				OBJ_105 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftTestUtils;
-			productName = SwiftTestUtils;
-			productReference = "SwiftTestUtils::SwiftTestUtils::Product" /* SwiftTestUtils.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 9999;
-			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Fakery" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_45 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				"Fakery::Fakery" /* Fakery */,
-				"Fakery::SwiftPMPackageDescription" /* FakeryPackageDescription */,
-				"Fakery::FakeryPackageTests::ProductTarget" /* FakeryPackageTests */,
-				"Fakery::FakeryTests" /* FakeryTests */,
-				"SwiftTestUtils::SwiftTestUtils" /* SwiftTestUtils */,
-				"SwiftTestUtils::SwiftPMPackageDescription" /* SwiftTestUtilsPackageDescription */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		OBJ_101 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_102 /* BaseTestCase.swift in Sources */,
-				OBJ_103 /* LinuxTestable.swift in Sources */,
-				OBJ_104 /* XCAssertions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_110 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_111 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_54 /* Config.swift in Sources */,
-				OBJ_55 /* Parser.swift in Sources */,
-				OBJ_56 /* Provider.swift in Sources */,
-				OBJ_57 /* ArrayExtension.swift in Sources */,
-				OBJ_58 /* Faker.swift in Sources */,
-				OBJ_59 /* Address.swift in Sources */,
-				OBJ_60 /* App.swift in Sources */,
-				OBJ_61 /* Bank.swift in Sources */,
-				OBJ_62 /* Business.swift in Sources */,
-				OBJ_63 /* Commerce.swift in Sources */,
-				OBJ_64 /* Company.swift in Sources */,
-				OBJ_65 /* Generator.swift in Sources */,
-				OBJ_66 /* Internet.swift in Sources */,
-				OBJ_67 /* Lorem.swift in Sources */,
-				OBJ_68 /* Name.swift in Sources */,
-				OBJ_69 /* Number.swift in Sources */,
-				OBJ_70 /* PhoneNumber.swift in Sources */,
-				OBJ_71 /* Team.swift in Sources */,
-				OBJ_72 /* LinuxRandom.swift in Sources */,
-				OBJ_73 /* en.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_80 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_90 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_91 /* LinuxRandomTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Fakery::FakeryTests" /* FakeryTests */;
-			targetProxy = E405CBBA20C48C620020D47E /* PBXContainerItemProxy */;
-		};
-		OBJ_95 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SwiftTestUtils::SwiftTestUtils" /* SwiftTestUtils */;
-			targetProxy = E405CBB820C48C620020D47E /* PBXContainerItemProxy */;
-		};
-		OBJ_97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Fakery::Fakery" /* Fakery */;
-			targetProxy = E405CBB920C48C620020D47E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		OBJ_100 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fakery.xcodeproj/SwiftTestUtils_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftTestUtils;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftTestUtils;
-			};
-			name = Release;
-		};
-		OBJ_108 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_109 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-		OBJ_51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fakery.xcodeproj/Fakery_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Fakery;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Fakery;
-			};
-			name = Debug;
-		};
-		OBJ_52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fakery.xcodeproj/Fakery_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Fakery;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Fakery;
-			};
-			name = Release;
-		};
-		OBJ_77 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_78 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fakery.xcodeproj/FakeryTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = FakeryTests;
-			};
-			name = Debug;
-		};
-		OBJ_89 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fakery.xcodeproj/FakeryTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = FakeryTests;
-			};
-			name = Release;
-		};
-		OBJ_99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fakery.xcodeproj/SwiftTestUtils_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftTestUtils;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftTestUtils;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		OBJ_107 /* Build configuration list for PBXNativeTarget "SwiftTestUtilsPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_108 /* Debug */,
-				OBJ_109 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_2 /* Build configuration list for PBXProject "Fakery" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_50 /* Build configuration list for PBXNativeTarget "Fakery" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_51 /* Debug */,
-				OBJ_52 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_76 /* Build configuration list for PBXNativeTarget "FakeryPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_77 /* Debug */,
-				OBJ_78 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_82 /* Build configuration list for PBXAggregateTarget "FakeryPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_83 /* Debug */,
-				OBJ_84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_87 /* Build configuration list for PBXNativeTarget "FakeryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_88 /* Debug */,
-				OBJ_89 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_98 /* Build configuration list for PBXNativeTarget "SwiftTestUtils" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_99 /* Debug */,
-				OBJ_100 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = OBJ_1 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "Fakery::Fakery" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_50";
+         buildPhases = (
+            "OBJ_53",
+            "OBJ_74",
+         );
+         dependencies = (
+         );
+         name = "Fakery";
+         productName = "Fakery";
+         productReference = "Fakery::Fakery::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Fakery::Fakery::Product" = {
+         isa = "PBXFileReference";
+         path = "Fakery.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Fakery::FakeryPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_82";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_85",
+         );
+         name = "FakeryPackageTests";
+         productName = "FakeryPackageTests";
+      };
+      "Fakery::FakeryTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_87";
+         buildPhases = (
+            "OBJ_90",
+            "OBJ_92",
+         );
+         dependencies = (
+            "OBJ_95",
+            "OBJ_97",
+         );
+         name = "FakeryTests";
+         productName = "FakeryTests";
+         productReference = "Fakery::FakeryTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "Fakery::FakeryTests::Product" = {
+         isa = "PBXFileReference";
+         path = "FakeryTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Fakery::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_76";
+         buildPhases = (
+            "OBJ_79",
+         );
+         dependencies = (
+         );
+         name = "FakeryPackageDescription";
+         productName = "FakeryPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en",
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_45";
+         projectDirPath = ".";
+         targets = (
+            "Fakery::Fakery",
+            "Fakery::SwiftPMPackageDescription",
+            "Fakery::FakeryPackageTests::ProductTarget",
+            "Fakery::FakeryTests",
+            "SwiftTestUtils::SwiftTestUtils",
+            "SwiftTestUtils::SwiftPMPackageDescription",
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_11",
+            "OBJ_12",
+         );
+         name = "Data";
+         path = "Data";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "Fakery.xcodeproj/SwiftTestUtils_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "SwiftTestUtils";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "SwiftTestUtils";
+         };
+         name = "Release";
+      };
+      "OBJ_101" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_102",
+            "OBJ_103",
+            "OBJ_104",
+         );
+      };
+      "OBJ_102" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_42";
+      };
+      "OBJ_103" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_43";
+      };
+      "OBJ_104" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_44";
+      };
+      "OBJ_105" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_107" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_108",
+            "OBJ_109",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_108" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_109" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Release";
+      };
+      "OBJ_11" = {
+         isa = "PBXFileReference";
+         path = "Parser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_110" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_111",
+         );
+      };
+      "OBJ_111" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_41";
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "Provider.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_13" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_14",
+         );
+         name = "Extensions";
+         path = "Extensions";
+         sourceTree = "<group>";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "ArrayExtension.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXFileReference";
+         path = "Faker.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_16" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_17",
+            "OBJ_18",
+            "OBJ_19",
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_22",
+            "OBJ_23",
+            "OBJ_24",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+         );
+         name = "Generators";
+         path = "Generators";
+         sourceTree = "<group>";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         path = "Address.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "App.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "Bank.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "Business.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "Commerce.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "Company.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "Generator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "Internet.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_25" = {
+         isa = "PBXFileReference";
+         path = "Lorem.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_26" = {
+         isa = "PBXFileReference";
+         path = "Name.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_27" = {
+         isa = "PBXFileReference";
+         path = "Number.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "PhoneNumber.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXFileReference";
+         path = "Team.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         path = "LinuxRandom.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_31" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_32",
+         );
+         name = "Locales";
+         path = "Locales";
+         sourceTree = "<group>";
+      };
+      "OBJ_32" = {
+         isa = "PBXFileReference";
+         path = "en.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_33" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_34",
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_34" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_35",
+         );
+         name = "FakeryTests";
+         path = "Tests/FakeryTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "LinuxRandomTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_36" = {
+         isa = "PBXFileReference";
+         path = "Images";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
+         path = "Resources";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_38" = {
+         isa = "PBXFileReference";
+         path = "Project";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_39" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_40",
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_41",
+            "OBJ_42",
+            "OBJ_43",
+            "OBJ_44",
+         );
+         name = "SwiftTestUtils 1.0.0";
+         path = ".build/checkouts/SwiftTestUtils-3371106396395558887/Sources/Shared";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_41" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/brianstrobach/Appsaurus/CompanyProjects/OpenSource/swift/Fakery/.build/checkouts/SwiftTestUtils-3371106396395558887/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_42" = {
+         isa = "PBXFileReference";
+         path = "BaseTestCase.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_43" = {
+         isa = "PBXFileReference";
+         path = "LinuxTestable.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_44" = {
+         isa = "PBXFileReference";
+         path = "XCAssertions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_45" = {
+         isa = "PBXGroup";
+         children = (
+            "Fakery::FakeryTests::Product",
+            "SwiftTestUtils::SwiftTestUtils::Product",
+            "Fakery::Fakery::Product",
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_33",
+            "OBJ_36",
+            "OBJ_37",
+            "OBJ_38",
+            "OBJ_39",
+            "OBJ_45",
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_51",
+            "OBJ_52",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_51" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "Fakery.xcodeproj/Fakery_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Fakery";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Fakery";
+         };
+         name = "Debug";
+      };
+      "OBJ_52" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "Fakery.xcodeproj/Fakery_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Fakery";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Fakery";
+         };
+         name = "Release";
+      };
+      "OBJ_53" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_54",
+            "OBJ_55",
+            "OBJ_56",
+            "OBJ_57",
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60",
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65",
+            "OBJ_66",
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+            "OBJ_72",
+            "OBJ_73",
+         );
+      };
+      "OBJ_54" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_55" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_11";
+      };
+      "OBJ_56" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_57" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_58" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_15";
+      };
+      "OBJ_59" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_61" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_62" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_63" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_64" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_65" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_23";
+      };
+      "OBJ_66" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_67" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_25";
+      };
+      "OBJ_68" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_26";
+      };
+      "OBJ_69" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_27";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8",
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_71" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_72" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_73" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+      };
+      "OBJ_74" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_76" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_77",
+            "OBJ_78",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_77" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_78" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Release";
+      };
+      "OBJ_79" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_80",
+         );
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10",
+            "OBJ_13",
+            "OBJ_15",
+            "OBJ_16",
+            "OBJ_30",
+            "OBJ_31",
+         );
+         name = "Fakery";
+         path = "Sources/Fakery";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_80" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_82" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_83",
+            "OBJ_84",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_83" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_84" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_85" = {
+         isa = "PBXTargetDependency";
+         target = "Fakery::FakeryTests";
+      };
+      "OBJ_87" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_88",
+            "OBJ_89",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_88" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "Fakery.xcodeproj/FakeryTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "FakeryTests";
+         };
+         name = "Debug";
+      };
+      "OBJ_89" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "Fakery.xcodeproj/FakeryTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "FakeryTests";
+         };
+         name = "Release";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Config.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_91",
+         );
+      };
+      "OBJ_91" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_92" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_93",
+            "OBJ_94",
+         );
+      };
+      "OBJ_93" = {
+         isa = "PBXBuildFile";
+         fileRef = "SwiftTestUtils::SwiftTestUtils::Product";
+      };
+      "OBJ_94" = {
+         isa = "PBXBuildFile";
+         fileRef = "Fakery::Fakery::Product";
+      };
+      "OBJ_95" = {
+         isa = "PBXTargetDependency";
+         target = "SwiftTestUtils::SwiftTestUtils";
+      };
+      "OBJ_97" = {
+         isa = "PBXTargetDependency";
+         target = "Fakery::Fakery";
+      };
+      "OBJ_98" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_99",
+            "OBJ_100",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_99" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "Fakery.xcodeproj/SwiftTestUtils_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "SwiftTestUtils";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "SwiftTestUtils";
+         };
+         name = "Debug";
+      };
+      "SwiftTestUtils::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_107";
+         buildPhases = (
+            "OBJ_110",
+         );
+         dependencies = (
+         );
+         name = "SwiftTestUtilsPackageDescription";
+         productName = "SwiftTestUtilsPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "SwiftTestUtils::SwiftTestUtils" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_98";
+         buildPhases = (
+            "OBJ_101",
+            "OBJ_105",
+         );
+         dependencies = (
+         );
+         name = "SwiftTestUtils";
+         productName = "SwiftTestUtils";
+         productReference = "SwiftTestUtils::SwiftTestUtils::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "SwiftTestUtils::SwiftTestUtils::Product" = {
+         isa = "PBXFileReference";
+         path = "SwiftTestUtils.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+   };
+   rootObject = "OBJ_1";
 }
