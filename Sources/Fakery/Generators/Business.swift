@@ -9,7 +9,7 @@ public final class Business: Generator {
     return generate("business.credit_card_types")
   }
 
-  public func creditCardExpiryDate() -> Date? {
+  public func creditCardExpiryDate() -> Foundation.Date? {
     let dateString = generate("business.credit_card_expiry_dates")
     return dateFormatter.date(from: dateString)
   }
