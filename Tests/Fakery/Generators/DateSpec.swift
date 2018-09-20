@@ -15,7 +15,7 @@ final class DateSpec: QuickSpec {
         context("two dates") {
           let from = Date(timeIntervalSince1970: 0)
           let to = Date(timeIntervalSince1970: 60*60*24*365)
-          it("returns always a date between that two dates") {
+          it("returns always a date between those two dates") {
             for _ in 1...100 {
               let randomDate = date.between(from, to)
               expect(randomDate).to(beLessThan(to))
@@ -56,8 +56,8 @@ final class DateSpec: QuickSpec {
       }
 
       describe("#birthday") {
-        context("called with 30 and 50") {
-          it("returns a date for a person whos age is between 30 and 50") {
+        context("called with ages 30 and 50") {
+          it("returns a date for a person whose age is between 30 and 50") {
             let minAge = 30
             let maxAge = 50
 

@@ -40,5 +40,4 @@ public final class Date {
     let todayDate = Foundation.Date()
     return calendar.date(byAdding: dateComponents, to: todayDate)!
   }
-
 }

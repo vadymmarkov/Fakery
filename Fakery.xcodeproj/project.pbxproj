@@ -18,6 +18,8 @@
 		105747A21F6FFB9F00154ECB /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 105747A01F6FFB9F00154ECB /* nl.json */; };
 		105747A31F6FFB9F00154ECB /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 105747A01F6FFB9F00154ECB /* nl.json */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
+		AC8156A92153C27E00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
+		AC8156AA2153C27F00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC88DC0B21531E2E007198E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC88DC0E215330A4007198E6 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0C215330A3007198E6 /* DateSpec.swift */; };
 		AC88DC0F215330A4007198E6 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0C215330A3007198E6 /* DateSpec.swift */; };
@@ -887,6 +889,7 @@
 				BC4477961BFA451F00E8FB15 /* Company.swift in Sources */,
 				BC4477A01BFA454400E8FB15 /* Config.swift in Sources */,
 				1057479E1F6FBF7100154ECB /* Bank.swift in Sources */,
+				AC8156A92153C27E00D779EF /* Date.swift in Sources */,
 				BC44779F1BFA453F00E8FB15 /* Provider.swift in Sources */,
 				BC44779D1BFA453800E8FB15 /* ArrayExtension.swift in Sources */,
 			);
@@ -988,6 +991,7 @@
 				D59B6CA31D99C464007CB072 /* ArrayExtension.swift in Sources */,
 				D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */,
 				1057479F1F6FBF7100154ECB /* Bank.swift in Sources */,
+				AC8156AA2153C27F00D779EF /* Date.swift in Sources */,
 				D59B6CA81D99C46C007CB072 /* Commerce.swift in Sources */,
 				D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */,
 			);
