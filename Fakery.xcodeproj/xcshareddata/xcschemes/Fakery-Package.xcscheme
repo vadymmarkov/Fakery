@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftTestUtils::SwiftTestUtils"
-               BuildableName = "SwiftTestUtils.framework"
-               BlueprintName = "SwiftTestUtils"
-               ReferencedContainer = "container:Fakery.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Fakery::Fakery"
                BuildableName = "Fakery.framework"
                BlueprintName = "Fakery"
@@ -69,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "SwiftTestUtils::SwiftTestUtils"
-            BuildableName = "SwiftTestUtils.framework"
-            BlueprintName = "SwiftTestUtils"
+            BlueprintIdentifier = "Fakery::Fakery"
+            BuildableName = "Fakery.framework"
+            BlueprintName = "Fakery"
             ReferencedContainer = "container:Fakery.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
