@@ -1,20 +1,20 @@
 import Foundation
 import CoreLocation
 
-public final class Address: Generator {
-  public func city() -> String {
+@objc public final class Address: Generator {
+  @objc public func city() -> String {
     return generate("address.city")
   }
 
-  public func streetName() -> String {
+  @objc public func streetName() -> String {
     return generate("address.street_name")
   }
 
-  public func secondaryAddress() -> String {
+  @objc public func secondaryAddress() -> String {
     return numerify(generate("address.secondary_address"))
   }
 
-  public func streetAddress(includeSecondary: Bool = false) -> String {
+  @objc public func streetAddress(includeSecondary: Bool = false) -> String {
     var streetAddress = numerify(generate("address.street_address"))
 
     if includeSecondary {
@@ -24,11 +24,11 @@ public final class Address: Generator {
     return streetAddress
   }
 
-  public func buildingNumber() -> String {
+  @objc public func buildingNumber() -> String {
     return bothify(generate("address.building_number"))
   }
 
-  public func postcode(stateAbbreviation: String = "") -> String {
+  @objc public func postcode(stateAbbreviation: String = "") -> String {
     if stateAbbreviation.isEmpty {
       return bothify(generate("address.postcode"))
     }
@@ -36,51 +36,51 @@ public final class Address: Generator {
     return bothify(generate("address.postcode_by_state.\(stateAbbreviation)"))
   }
 
-  public func timeZone() -> String {
+  @objc public func timeZone() -> String {
     return generate("address.time_zone")
   }
 
-  public func streetSuffix() -> String {
+  @objc public func streetSuffix() -> String {
     return generate("address.street_suffix")
   }
 
-  public func citySuffix() -> String {
+  @objc public func citySuffix() -> String {
     return generate("address.city_suffix")
   }
 
-  public func cityPrefix() -> String {
+  @objc public func cityPrefix() -> String {
     return generate("address.city_prefix")
   }
 
-  public func stateAbbreviation() -> String {
+  @objc public func stateAbbreviation() -> String {
     return generate("address.state_abbr")
   }
 
-  public func state() -> String {
+  @objc public func state() -> String {
     return generate("address.state")
   }
 
-  public func county() -> String {
+  @objc public func county() -> String {
     return generate("address.county")
   }
 
-  public func country() -> String {
+  @objc public func country() -> String {
     return generate("address.country")
   }
 
-  public func countryCode() -> String {
+  @objc public func countryCode() -> String {
     return generate("address.country_code")
   }
 
-  public func latitude() -> Double {
+  @objc public func latitude() -> Double {
     return drand48() * 180.0 - 90.0
   }
 
-  public func longitude() -> Double {
+  @objc public func longitude() -> Double {
     return drand48() * 360.0 - 180.0
   }
   
-  public func coordinate(inRadius radius: Double, fromCenter center:CLLocationCoordinate2D) -> CLLocationCoordinate2D {
+  @objc public func coordinate(inRadius radius: Double, fromCenter center: CLLocationCoordinate2D) -> CLLocationCoordinate2D {
     let y0 = center.latitude
     let x0 = center.longitude
     

@@ -1,22 +1,22 @@
 import Foundation
 
-public final class Date {
-  public func backward(days: Int) -> Foundation.Date {
+@objc public final class FakerDate: NSObject {
+  @objc public func backward(days: Int) -> Foundation.Date {
     return todayAddingDays(-days)
   }
 
-  public func forward(_ days: Int) -> Foundation.Date {
+  @objc public func forward(_ days: Int) -> Foundation.Date {
     return todayAddingDays(days)
   }
 
-  public func between(_ from: Foundation.Date, _ to: Foundation.Date) -> Foundation.Date {
+  @objc public func between(_ from: Foundation.Date, _ to: Foundation.Date) -> Foundation.Date {
     let fromInSeconds = from.timeIntervalSince1970
     let toInSeconds = to.timeIntervalSince1970
-    let targetInSeconds = Number().randomDouble(min: fromInSeconds, max: toInSeconds)
+    let targetInSeconds = FakerNumber().randomDouble(min: fromInSeconds, max: toInSeconds)
     return Foundation.Date(timeIntervalSince1970: targetInSeconds)
   }
 
-  public func birthday(_ minAge: Int, _ maxAge: Int) -> Foundation.Date {
+  @objc public func birthday(_ minAge: Int, _ maxAge: Int) -> Foundation.Date {
     let olderAgeBirthDate = todayAddingYears(-maxAge)
     let earlierAgeBirthDate = todayAddingYears(-minAge)
     return between(earlierAgeBirthDate, olderAgeBirthDate)

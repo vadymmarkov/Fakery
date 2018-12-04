@@ -1,4 +1,6 @@
-public final class Faker {
+import Foundation
+
+@objc public final class Faker: NSObject {
   public var locale: String {
     didSet {
       if locale != oldValue {
@@ -7,25 +9,25 @@ public final class Faker {
     }
   }
 
-  public let address: Address
-  public let app: App
-  public let business: Business
-  public let company: Company
-  public let commerce: Commerce
-  public let internet: Internet
-  public let lorem: Lorem
-  public let name: Name
-  public let phoneNumber: PhoneNumber
-  public let team: Team
-  public let number: Number
-  public let bank: Bank
-  public let date: Date
+  @objc public let address: Address
+  @objc public let app: App
+  @objc public let business: Business
+  @objc public let company: Company
+  @objc public let commerce: Commerce
+  @objc public let internet: Internet
+  @objc public let lorem: Lorem
+  @objc public let name: Name
+  @objc public let phoneNumber: PhoneNumber
+  @objc public let team: Team
+  @objc public let number: FakerNumber
+  @objc public let bank: Bank
+  @objc public let date: FakerDate
 
   let parser: Parser
 
   // MARK: - Initialization
 
-  public init(locale: String = Config.defaultLocale) {
+  @objc public init(locale: String = Config.defaultLocale) {
     self.locale = locale
     parser = Parser(locale: self.locale)
     address = Address(parser: parser)
@@ -38,8 +40,8 @@ public final class Faker {
     name = Name(parser: parser)
     phoneNumber = PhoneNumber(parser: parser)
     team = Team(parser: parser)
-    number = Number()
+    number = FakerNumber()
     bank = Bank(parser: parser)
-    date = Date()
+    date = FakerDate()
   }
 }

@@ -1,13 +1,15 @@
-public final class Team: Generator {
-  public func name() -> String {
+import Foundation
+
+@objc public final class Team: Generator {
+  @objc public func name() -> String {
     return generate("team.name")
   }
 
-  public func creature() -> String {
+  @objc public func creature() -> String {
     return generate("team.creature")
   }
 
-  public func state() -> String {
+  @objc public func state() -> String {
     return generate("address.state").capitalized
   }
 }

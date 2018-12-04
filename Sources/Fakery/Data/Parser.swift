@@ -1,7 +1,7 @@
 import Foundation
 
-public final class Parser {
-  public var locale: String {
+@objc public final class Parser: NSObject {
+  @objc public var locale: String {
     didSet {
       if locale != oldValue {
         loadData(forLocale: locale)
@@ -14,9 +14,10 @@ public final class Parser {
 
   // MARK: - Initialization
 
-  public init(locale: String = Config.defaultLocale) {
+  @objc public init(locale: String = Config.defaultLocale) {
     self.locale = locale
-    provider = Provider()
+    self.provider = Provider()
+    super.init()
     loadData(forLocale: locale)
 
     if locale != Config.defaultLocale {
@@ -26,7 +27,7 @@ public final class Parser {
 
   // MARK: - Parsing
 
-  public func fetch(_ key: String) -> String {
+  @objc public func fetch(_ key: String) -> String {
     var parsed = ""
 
     guard let keyData = fetchRaw(key) else {
@@ -48,7 +49,7 @@ public final class Parser {
     return parsed
   }
 
-  public func fetchRaw(_ key: String) -> Any? {
+  @objc public func fetchRaw(_ key: String) -> Any? {
     let result = fetchRaw(key, forLocale: locale)
 
     guard locale != Config.defaultLocale else {
@@ -143,7 +144,7 @@ public final class Parser {
 
   // MARK: - Data loading
 
-  private func loadData(forLocale locale: String) {
+  @objc private func loadData(forLocale locale: String) {
     guard let localeData = provider.dataForLocale(locale),
       let parsedData = try? JSONSerialization.jsonObject(with: localeData, options: .allowFragments),
       let json = parsedData as? [String: Any],

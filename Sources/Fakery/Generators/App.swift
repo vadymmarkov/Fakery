@@ -1,13 +1,15 @@
-public final class App: Generator {
-  public func name() -> String {
+import Foundation
+
+@objc public final class App: Generator {
+  @objc public func name() -> String {
     return generate("app.name")
   }
 
-  public func version() -> String {
+  @objc public func version() -> String {
     return numerify(generate("app.version"))
   }
 
-  public func author() -> String {
+  @objc public func author() -> String {
     return generate("app.author")
   }
 }

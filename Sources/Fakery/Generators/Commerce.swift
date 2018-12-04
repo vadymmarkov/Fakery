@@ -1,11 +1,11 @@
 import Foundation
 
-public final class Commerce: Generator {
-  public func color() -> String {
+@objc public final class Commerce: Generator {
+  @objc public func color() -> String {
     return generate("commerce.color")
   }
 
-  public func department(maximum: Int = 3, fixedAmount: Bool = false) -> String {
+  @objc public func department(maximum: Int = 3, fixedAmount: Bool = false) -> String {
     let amount = fixedAmount ? maximum : 1 + Int(arc4random_uniform(UInt32(maximum)))
 
     let fetchedCategories = categories(amount)
@@ -22,20 +22,20 @@ public final class Commerce: Generator {
     return department
   }
 
-  public func productName() -> String {
+  @objc public func productName() -> String {
     return generate("commerce.product_name.adjective") + " "
       + generate("commerce.product_name.material") + " "
       + generate("commerce.product_name.product")
   }
 
-  public func price() -> Double {
+  @objc public func price() -> Double {
     let arc4randoMax: Double = 0x100000000
     return floor(Double((Double(arc4random()) / arc4randoMax) * 100.0) * 100) / 100.0
   }
 
   // MARK: - Helpers
 
-  public func categories(_ amount: Int) -> [String] {
+  @objc public func categories(_ amount: Int) -> [String] {
     var categories: [String] = []
 
     while categories.count < amount {
@@ -49,7 +49,7 @@ public final class Commerce: Generator {
     return categories
   }
 
-  public func merge(categories: [String]) -> String {
+  @objc public func merge(categories: [String]) -> String {
     let separator = generate("separator")
     let commaSeparated = categories[0..<categories.count - 1].joined(separator: ", ")
 

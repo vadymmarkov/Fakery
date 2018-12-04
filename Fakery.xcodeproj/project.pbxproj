@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09F65D6F1CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
-		09F65D701CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		1057479A1F6FBAA500154ECB /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747991F6FBAA500154ECB /* BankSpec.swift */; };
 		1057479B1F6FBAAA00154ECB /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747991F6FBAA500154ECB /* BankSpec.swift */; };
 		1057479D1F6FBF6C00154ECB /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057479C1F6FBF6C00154ECB /* Bank.swift */; };
@@ -18,9 +16,16 @@
 		105747A21F6FFB9F00154ECB /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 105747A01F6FFB9F00154ECB /* nl.json */; };
 		105747A31F6FFB9F00154ECB /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 105747A01F6FFB9F00154ECB /* nl.json */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
-		AC8156A92153C27E00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
-		AC8156AA2153C27F00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
-		AC88DC0B21531E2E007198E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
+		4FDD9EA821B6CD9100FB03CE /* FakerDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA621B6CD9100FB03CE /* FakerDate.swift */; };
+		4FDD9EA921B6CD9100FB03CE /* FakerDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA621B6CD9100FB03CE /* FakerDate.swift */; };
+		4FDD9EAA21B6CD9100FB03CE /* FakerDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA621B6CD9100FB03CE /* FakerDate.swift */; };
+		4FDD9EAB21B6CD9100FB03CE /* FakerDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA621B6CD9100FB03CE /* FakerDate.swift */; };
+		4FDD9EAC21B6CD9100FB03CE /* FakerDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA621B6CD9100FB03CE /* FakerDate.swift */; };
+		4FDD9EAD21B6CD9100FB03CE /* FakerNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA721B6CD9100FB03CE /* FakerNumber.swift */; };
+		4FDD9EAE21B6CD9100FB03CE /* FakerNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA721B6CD9100FB03CE /* FakerNumber.swift */; };
+		4FDD9EAF21B6CD9100FB03CE /* FakerNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA721B6CD9100FB03CE /* FakerNumber.swift */; };
+		4FDD9EB021B6CD9100FB03CE /* FakerNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA721B6CD9100FB03CE /* FakerNumber.swift */; };
+		4FDD9EB121B6CD9100FB03CE /* FakerNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD9EA721B6CD9100FB03CE /* FakerNumber.swift */; };
 		AC88DC0E215330A4007198E6 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0C215330A3007198E6 /* DateSpec.swift */; };
 		AC88DC0F215330A4007198E6 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0C215330A3007198E6 /* DateSpec.swift */; };
 		BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1681BF9F912005A3BC1 /* Faker.swift */; };
@@ -119,7 +124,6 @@
 		D59B6CAB1D99C46C007CB072 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1701BF9F912005A3BC1 /* Internet.swift */; };
 		D59B6CAC1D99C46C007CB072 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1711BF9F912005A3BC1 /* Lorem.swift */; };
 		D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1721BF9F912005A3BC1 /* Name.swift */; };
-		D59B6CAE1D99C46C007CB072 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */; };
 		D59B6CB01D99C46C007CB072 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1741BF9F912005A3BC1 /* Team.swift */; };
 		D59B6CB11D99C485007CB072 /* de-AT.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA1491BF9F912005A3BC1 /* de-AT.json */; };
@@ -198,12 +202,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09F65D6E1CA30351006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		105747991F6FBAA500154ECB /* BankSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSpec.swift; sourceTree = "<group>"; };
 		1057479C1F6FBF6C00154ECB /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		105747A01F6FFB9F00154ECB /* nl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nl.json; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
-		AC88DC0A21531E2E007198E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		4FDD9EA621B6CD9100FB03CE /* FakerDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakerDate.swift; sourceTree = "<group>"; };
+		4FDD9EA721B6CD9100FB03CE /* FakerNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakerNumber.swift; sourceTree = "<group>"; };
 		AC88DC0C215330A3007198E6 /* DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSpec.swift; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC827FB11BFA3CE1005F09A4 /* Fakery-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -418,11 +422,11 @@
 				BCFFA1701BF9F912005A3BC1 /* Internet.swift */,
 				BCFFA1711BF9F912005A3BC1 /* Lorem.swift */,
 				BCFFA1721BF9F912005A3BC1 /* Name.swift */,
-				09F65D6E1CA30351006C87C5 /* Number.swift */,
 				BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */,
 				BCFFA1741BF9F912005A3BC1 /* Team.swift */,
 				1057479C1F6FBF6C00154ECB /* Bank.swift */,
-				AC88DC0A21531E2E007198E6 /* Date.swift */,
+				4FDD9EA621B6CD9100FB03CE /* FakerDate.swift */,
+				4FDD9EA721B6CD9100FB03CE /* FakerNumber.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -880,16 +884,16 @@
 				BC4477981BFA452400E8FB15 /* Internet.swift in Sources */,
 				BC4477951BFA451C00E8FB15 /* Commerce.swift in Sources */,
 				BC44779E1BFA453C00E8FB15 /* Parser.swift in Sources */,
+				4FDD9EAE21B6CD9100FB03CE /* FakerNumber.swift in Sources */,
 				BC44779A1BFA452900E8FB15 /* Name.swift in Sources */,
-				09F65D701CA30351006C87C5 /* Number.swift in Sources */,
 				BC4477921BFA451400E8FB15 /* Address.swift in Sources */,
+				4FDD9EA921B6CD9100FB03CE /* FakerDate.swift in Sources */,
 				BC4477971BFA452100E8FB15 /* Generator.swift in Sources */,
 				BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */,
 				BC4477991BFA452700E8FB15 /* Lorem.swift in Sources */,
 				BC4477961BFA451F00E8FB15 /* Company.swift in Sources */,
 				BC4477A01BFA454400E8FB15 /* Config.swift in Sources */,
 				1057479E1F6FBF7100154ECB /* Bank.swift in Sources */,
-				AC8156A92153C27E00D779EF /* Date.swift in Sources */,
 				BC44779F1BFA453F00E8FB15 /* Provider.swift in Sources */,
 				BC44779D1BFA453800E8FB15 /* ArrayExtension.swift in Sources */,
 			);
@@ -901,6 +905,7 @@
 			files = (
 				D59B6D361D99C82E007CB072 /* InternetSpec.swift in Sources */,
 				D59B6D351D99C82E007CB072 /* GeneratorSpec.swift in Sources */,
+				4FDD9EB121B6CD9100FB03CE /* FakerNumber.swift in Sources */,
 				D59B6D2D1D99C82E007CB072 /* FakerSpec.swift in Sources */,
 				D59B6D301D99C82E007CB072 /* AddressSpec.swift in Sources */,
 				AC88DC0F215330A4007198E6 /* DateSpec.swift in Sources */,
@@ -917,6 +922,7 @@
 				D59B6D2C1D99C82E007CB072 /* ConfigSpec.swift in Sources */,
 				D59B6D381D99C82E007CB072 /* NameSpec.swift in Sources */,
 				D59B6D2F1D99C82E007CB072 /* ProviderSpec.swift in Sources */,
+				4FDD9EAC21B6CD9100FB03CE /* FakerDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,16 +937,16 @@
 				BCFFA19A1BF9F912005A3BC1 /* Company.swift in Sources */,
 				BCFFA1931BF9F912005A3BC1 /* Provider.swift in Sources */,
 				BCFFA1911BF9F912005A3BC1 /* Config.swift in Sources */,
+				4FDD9EAD21B6CD9100FB03CE /* FakerNumber.swift in Sources */,
 				BCFFA19C1BF9F912005A3BC1 /* Internet.swift in Sources */,
-				09F65D6F1CA30351006C87C5 /* Number.swift in Sources */,
 				BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */,
+				4FDD9EA821B6CD9100FB03CE /* FakerDate.swift in Sources */,
 				BCFFA19B1BF9F912005A3BC1 /* Generator.swift in Sources */,
 				BCFFA1981BF9F912005A3BC1 /* Business.swift in Sources */,
 				BCFFA1971BF9F912005A3BC1 /* App.swift in Sources */,
 				BCFFA1A01BF9F912005A3BC1 /* Team.swift in Sources */,
 				BCFFA1941BF9F912005A3BC1 /* ArrayExtension.swift in Sources */,
 				1057479D1F6FBF6C00154ECB /* Bank.swift in Sources */,
-				AC88DC0B21531E2E007198E6 /* Date.swift in Sources */,
 				BCFFA19E1BF9F912005A3BC1 /* Name.swift in Sources */,
 				BCFFA1991BF9F912005A3BC1 /* Commerce.swift in Sources */,
 			);
@@ -952,6 +958,7 @@
 			files = (
 				D59B6D261D99C82D007CB072 /* InternetSpec.swift in Sources */,
 				D59B6D251D99C82D007CB072 /* GeneratorSpec.swift in Sources */,
+				4FDD9EB021B6CD9100FB03CE /* FakerNumber.swift in Sources */,
 				D59B6D1D1D99C82D007CB072 /* FakerSpec.swift in Sources */,
 				D59B6D201D99C82D007CB072 /* AddressSpec.swift in Sources */,
 				AC88DC0E215330A4007198E6 /* DateSpec.swift in Sources */,
@@ -968,6 +975,7 @@
 				D59B6D1C1D99C82D007CB072 /* ConfigSpec.swift in Sources */,
 				D59B6D281D99C82D007CB072 /* NameSpec.swift in Sources */,
 				D59B6D1F1D99C82D007CB072 /* ProviderSpec.swift in Sources */,
+				4FDD9EAB21B6CD9100FB03CE /* FakerDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,18 +988,18 @@
 				D59B6CA41D99C467007CB072 /* Faker.swift in Sources */,
 				D59B6CA11D99C45D007CB072 /* Parser.swift in Sources */,
 				D59B6CA91D99C46C007CB072 /* Company.swift in Sources */,
-				D59B6CAE1D99C46C007CB072 /* Number.swift in Sources */,
 				D59B6CA21D99C460007CB072 /* Provider.swift in Sources */,
 				D59B6CA01D99C45A007CB072 /* Config.swift in Sources */,
+				4FDD9EAF21B6CD9100FB03CE /* FakerNumber.swift in Sources */,
 				D59B6CB01D99C46C007CB072 /* Team.swift in Sources */,
 				D59B6CAB1D99C46C007CB072 /* Internet.swift in Sources */,
+				4FDD9EAA21B6CD9100FB03CE /* FakerDate.swift in Sources */,
 				D59B6CAA1D99C46C007CB072 /* Generator.swift in Sources */,
 				D59B6CA71D99C46C007CB072 /* Business.swift in Sources */,
 				D59B6CA61D99C46C007CB072 /* App.swift in Sources */,
 				D59B6CA31D99C464007CB072 /* ArrayExtension.swift in Sources */,
 				D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */,
 				1057479F1F6FBF7100154ECB /* Bank.swift in Sources */,
-				AC8156AA2153C27F00D779EF /* Date.swift in Sources */,
 				D59B6CA81D99C46C007CB072 /* Commerce.swift in Sources */,
 				D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */,
 			);
