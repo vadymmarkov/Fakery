@@ -12,15 +12,16 @@ public final class Provider {
       translation = translationData
     } else {
       let bundle = Bundle(for: Provider.self)
+      
       var path = bundle.path(forResource: locale,
                              ofType: Config.pathExtension,
-                             inDirectory: Config.dirPath)
-
-      if path == nil {
-        path = bundle.path(forResource: locale,
-                           ofType: Config.pathExtension,
-                           inDirectory: Config.dirFrameworkPath)
-      }
+                             inDirectory: Config.dirPath) ??
+                 bundle.path(forResource: locale,
+                             ofType: Config.pathExtension,
+                             inDirectory: Config.dirFrameworkPath) ??
+                 bundle.path(forResource: locale,
+                             ofType: Config.pathExtension,
+                             inDirectory: Config.dirResourcePath)
 
       if let resourcePath = Bundle(for: Provider.self).resourcePath {
         let bundlePath = resourcePath + "/Faker.bundle"
