@@ -15,13 +15,14 @@ public final class Provider {
       
       var path = bundle.path(forResource: locale,
                              ofType: Config.pathExtension,
-                             inDirectory: Config.dirResourcePath) ??
-                 bundle.path(forResource: locale,
-                             ofType: Config.pathExtension,
                              inDirectory: Config.dirPath) ??
                  bundle.path(forResource: locale,
                              ofType: Config.pathExtension,
                              inDirectory: Config.dirFrameworkPath)
+
+      if !Config.dirResourcePath.isEmpty {
+        path = "\(Config.dirResourcePath)/\(locale).\(Config.pathExtension)"
+      }
 
       if let resourcePath = Bundle(for: Provider.self).resourcePath {
         let bundlePath = resourcePath + "/Faker.bundle"
