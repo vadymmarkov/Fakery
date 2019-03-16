@@ -49,6 +49,7 @@ final class NumberSpec: QuickSpec {
         expect(number.randomFloat(min:5, max:7)) >= 5
       }
 
+      #if !os(Linux)
       it("creates random CGFloats") {
         expect(number.randomCGFloat()) <= 1000
         expect(number.randomCGFloat()) >= 0
@@ -59,6 +60,7 @@ final class NumberSpec: QuickSpec {
         expect(number.randomCGFloat(min:5, max:7)) <= 7
         expect(number.randomCGFloat(min:5, max:7)) >= 5
       }
+      #endif
 
       it("creates random Doubles") {
         expect(number.randomDouble()) <= 1000
