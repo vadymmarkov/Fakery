@@ -60,13 +60,14 @@ public final class Parser {
 
   func parse(_ template: String, forSubject subject: String) -> String {
     var text = ""
-    let string = template as NSString
+    let string = NSString(string: template)
     var regex: NSRegularExpression
 
     do {
       try regex = NSRegularExpression(pattern: "(\\(?)#\\{([A-Za-z]+\\.)?([^\\}]+)\\}([^#]+)?",
                                       options: .caseInsensitive)
-      let matches = regex.matches(in: string as String,
+
+      let matches = regex.matches(in: template,
         options: .reportCompletion,
         range: NSRange(location: 0, length: string.length))
 
