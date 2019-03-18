@@ -26,8 +26,11 @@ public class Generator {
     let count = UInt32(Constants.numbers.count)
 
     return String(string.enumerated().map { (index, item) in
-      let numberIndex = index == 0 ? arc4random_uniform(count - 1) :
-        arc4random_uniform(count)
+      #if swift(>=4.2)
+      let numberIndex = index == 0 ? UInt32.random(in: 0..<(count - 1)) : UInt32.random(in: 0..<count)
+      #else
+      let numberIndex = index == 0 ? arc4random_uniform(count - 1) : arc4random_uniform(count)
+      #endif
       let char = Constants.numbers[Int(numberIndex)]
       return String(item) == "#" ? char : item
       })
@@ -35,8 +38,12 @@ public class Generator {
 
   public func letterify(_ string: String) -> String {
     return String(string.enumerated().map { _, item in
+      #if swift(>=4.2)
+      let char = Constants.uppercaseLetters.randomElement() ?? Character("")
+      #else
       let count = UInt32(Constants.uppercaseLetters.count)
       let char = Constants.uppercaseLetters[Int(arc4random_uniform(count))]
+      #endif
       return String(item) == "?" ? char : item
       })
   }

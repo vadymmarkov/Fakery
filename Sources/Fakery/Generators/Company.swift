@@ -18,7 +18,11 @@ public final class Company: Generator {
   }
 
   public func logo() -> String {
-    let number = Int(arc4random_uniform(13)) + 1
+    #if swift(>=4.2)
+     let number = Int.random(in: 0..<13) + 1
+    #else
+     let number = Int(arc4random_uniform(13)) + 1
+    #endif
     return "https://pigment.github.io/fake-logos/logos/medium/color/\(number).png"
   }
 }

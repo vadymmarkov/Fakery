@@ -9,14 +9,23 @@ public final class Internet: Generator {
   }
 
   public func username(separator: String? = nil) -> String {
+    #if swift(>=4.2)
+    let lastRandomComponent = Int.random(in: 0..<10000)
+    #else
+    let lastRandomComponent = arc4random_uniform(10000)
+    #endif
     var components: [String] = [
       generate("name.first_name"),
       generate("name.last_name"),
-      "\(arc4random_uniform(10000))"
+      "\(lastRandomComponent)"
     ]
 
-    let randomCount = UInt32(components.count) - 1
-    let count = Int(arc4random_uniform(randomCount) + randomCount)
+    let randomCount = components.count - 1
+    #if swift(>=4.2)
+    let count = Int.random(in: 0..<randomCount) + randomCount
+    #else
+    let count = Int(arc4random_uniform(UInt32(randomCount)) + UInt32(randomCount))
+    #endif
 
     var gap = ""
     if let sep = separator {
@@ -61,8 +70,12 @@ public final class Internet: Generator {
 
   public func safeEmail() -> String {
     let topLevelDomains = ["org", "com", "net"]
+    #if swift(>=4.2)
+    let topLevelDomain = topLevelDomains.randomElement() ?? ""
+    #else
     let count = UInt32(topLevelDomains.count)
     let topLevelDomain = topLevelDomains[Int(arc4random_uniform(count))]
+    #endif
 
     return [username(), "example." + topLevelDomain].joined(separator: "@")
   }
@@ -72,7 +85,11 @@ public final class Internet: Generator {
     let diffLength = maximumLength - minimumLength
 
     if diffLength > 0 {
+      #if swift(>=4.2)
+      let diffRandom = Int.random(in: 0..<diffLength + 1)
+      #else
       let diffRandom = Int(arc4random_uniform(UInt32(diffLength + 1)))
+      #endif
       temp += lorem.characters(amount: diffRandom)
     }
 
@@ -80,18 +97,29 @@ public final class Internet: Generator {
   }
 
   public func ipV4Address() -> String {
+    #if swift(>=4.2)
+    let randomNumber = UInt32.random(in: 0..<UInt32.max) % 253
+    #else
+    let randomNumber = arc4random() % 253
+    #endif
     let ipRand = {
-      2 + arc4random() % 253
+      2 + randomNumber
     }
 
     return String(format: "%d.%d.%d.%d", ipRand(), ipRand(), ipRand(), ipRand())
   }
 
   public func ipV6Address() -> String {
+    #if swift(>=4.2)
+    let randomNumber = UInt32.random(in: 0..<UInt32.max) % 65536
+    #else
+    let randomNumber = arc4random() % 65536
+    #endif
+
     var components: [String] = []
 
     for _ in 0..<8 {
-      components.append(String(format: "%X", arc4random() % 65536))
+      components.append(String(format: "%X", randomNumber))
     }
 
     return components.joined(separator: ":")
