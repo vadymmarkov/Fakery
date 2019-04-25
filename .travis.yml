@@ -1,4 +1,4 @@
-osx_image: xcode9
+osx_image: xcode10.2
 language: objective-c
 xcode_sdk: iphonesimulator10.0
 
