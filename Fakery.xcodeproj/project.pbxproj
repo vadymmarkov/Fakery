@@ -178,6 +178,8 @@
 		D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */; };
 		D59B6D3A1D99C82E007CB072 /* PhoneNumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */; };
 		D59B6D3B1D99C82E007CB072 /* TeamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */; };
+		F7A019902283206600B92D39 /* HamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0198F22831FCB00B92D39 /* HamSpec.swift */; };
+		F7A019912283206600B92D39 /* HamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0198F22831FCB00B92D39 /* HamSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +274,7 @@
 		D59B6D131D99C6C7007CB072 /* Info-Tests-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-Mac.plist"; sourceTree = "<group>"; };
 		D59B6D141D99C6C7007CB072 /* Info-Tests-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-tvOS.plist"; sourceTree = "<group>"; };
 		D59B6D151D99C6C7007CB072 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		F7A0198F22831FCB00B92D39 /* HamSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,6 +485,7 @@
 				D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */,
 				D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */,
 				D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */,
+				F7A0198F22831FCB00B92D39 /* HamSpec.swift */,
 				105747991F6FBAA500154ECB /* BankSpec.swift */,
 				AC88DC0C215330A3007198E6 /* DateSpec.swift */,
 			);
@@ -913,6 +917,7 @@
 				D59B6D2E1D99C82E007CB072 /* ParserSpec.swift in Sources */,
 				D59B6D321D99C82E007CB072 /* BusinessSpec.swift in Sources */,
 				D59B6D3B1D99C82E007CB072 /* TeamSpec.swift in Sources */,
+				F7A019912283206600B92D39 /* HamSpec.swift in Sources */,
 				D59B6D3A1D99C82E007CB072 /* PhoneNumberSpec.swift in Sources */,
 				D59B6D2C1D99C82E007CB072 /* ConfigSpec.swift in Sources */,
 				D59B6D381D99C82E007CB072 /* NameSpec.swift in Sources */,
@@ -964,6 +969,7 @@
 				D59B6D1E1D99C82D007CB072 /* ParserSpec.swift in Sources */,
 				D59B6D221D99C82D007CB072 /* BusinessSpec.swift in Sources */,
 				D59B6D2B1D99C82D007CB072 /* TeamSpec.swift in Sources */,
+				F7A019902283206600B92D39 /* HamSpec.swift in Sources */,
 				D59B6D2A1D99C82D007CB072 /* PhoneNumberSpec.swift in Sources */,
 				D59B6D1C1D99C82D007CB072 /* ConfigSpec.swift in Sources */,
 				D59B6D281D99C82D007CB072 /* NameSpec.swift in Sources */,
