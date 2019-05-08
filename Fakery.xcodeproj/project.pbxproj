@@ -178,6 +178,11 @@
 		D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFC1D99C5FD007CB072 /* NumberSpec.swift */; };
 		D59B6D3A1D99C82E007CB072 /* PhoneNumberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFD1D99C5FD007CB072 /* PhoneNumberSpec.swift */; };
 		D59B6D3B1D99C82E007CB072 /* TeamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */; };
+		E1128FFA2283207B008F7FD1 /* GenderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1128FF822831FAC008F7FD1 /* GenderSpec.swift */; };
+		E1128FFB22832080008F7FD1 /* GenderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1128FF822831FAC008F7FD1 /* GenderSpec.swift */; };
+		E1128FFD22832235008F7FD1 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1128FFC22832235008F7FD1 /* Gender.swift */; };
+		E1128FFE22832248008F7FD1 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1128FFC22832235008F7FD1 /* Gender.swift */; };
+		E1128FFF22832248008F7FD1 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1128FFC22832235008F7FD1 /* Gender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +277,8 @@
 		D59B6D131D99C6C7007CB072 /* Info-Tests-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-Mac.plist"; sourceTree = "<group>"; };
 		D59B6D141D99C6C7007CB072 /* Info-Tests-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-tvOS.plist"; sourceTree = "<group>"; };
 		D59B6D151D99C6C7007CB072 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		E1128FF822831FAC008F7FD1 /* GenderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSpec.swift; sourceTree = "<group>"; };
+		E1128FFC22832235008F7FD1 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +421,7 @@
 				BCFFA16C1BF9F912005A3BC1 /* Business.swift */,
 				BCFFA16D1BF9F912005A3BC1 /* Commerce.swift */,
 				BCFFA16E1BF9F912005A3BC1 /* Company.swift */,
+				E1128FFC22832235008F7FD1 /* Gender.swift */,
 				BCFFA16F1BF9F912005A3BC1 /* Generator.swift */,
 				BCFFA1701BF9F912005A3BC1 /* Internet.swift */,
 				BCFFA1711BF9F912005A3BC1 /* Lorem.swift */,
@@ -475,6 +483,7 @@
 				D59B6CF51D99C5FD007CB072 /* BusinessSpec.swift */,
 				D59B6CF61D99C5FD007CB072 /* CommerceSpec.swift */,
 				D59B6CF71D99C5FD007CB072 /* CompanySpec.swift */,
+				E1128FF822831FAC008F7FD1 /* GenderSpec.swift */,
 				D59B6CF81D99C5FD007CB072 /* GeneratorSpec.swift */,
 				D59B6CF91D99C5FD007CB072 /* InternetSpec.swift */,
 				D59B6CFA1D99C5FD007CB072 /* LoremSpec.swift */,
@@ -889,6 +898,7 @@
 				BC4477961BFA451F00E8FB15 /* Company.swift in Sources */,
 				BC4477A01BFA454400E8FB15 /* Config.swift in Sources */,
 				1057479E1F6FBF7100154ECB /* Bank.swift in Sources */,
+				E1128FFE22832248008F7FD1 /* Gender.swift in Sources */,
 				AC8156A92153C27E00D779EF /* Date.swift in Sources */,
 				BC44779F1BFA453F00E8FB15 /* Provider.swift in Sources */,
 				BC44779D1BFA453800E8FB15 /* ArrayExtension.swift in Sources */,
@@ -903,6 +913,7 @@
 				D59B6D351D99C82E007CB072 /* GeneratorSpec.swift in Sources */,
 				D59B6D2D1D99C82E007CB072 /* FakerSpec.swift in Sources */,
 				D59B6D301D99C82E007CB072 /* AddressSpec.swift in Sources */,
+				E1128FFB22832080008F7FD1 /* GenderSpec.swift in Sources */,
 				AC88DC0F215330A4007198E6 /* DateSpec.swift in Sources */,
 				D59B6D371D99C82E007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */,
@@ -940,6 +951,7 @@
 				BCFFA1A01BF9F912005A3BC1 /* Team.swift in Sources */,
 				BCFFA1941BF9F912005A3BC1 /* ArrayExtension.swift in Sources */,
 				1057479D1F6FBF6C00154ECB /* Bank.swift in Sources */,
+				E1128FFD22832235008F7FD1 /* Gender.swift in Sources */,
 				AC88DC0B21531E2E007198E6 /* Date.swift in Sources */,
 				BCFFA19E1BF9F912005A3BC1 /* Name.swift in Sources */,
 				BCFFA1991BF9F912005A3BC1 /* Commerce.swift in Sources */,
@@ -954,6 +966,7 @@
 				D59B6D251D99C82D007CB072 /* GeneratorSpec.swift in Sources */,
 				D59B6D1D1D99C82D007CB072 /* FakerSpec.swift in Sources */,
 				D59B6D201D99C82D007CB072 /* AddressSpec.swift in Sources */,
+				E1128FFA2283207B008F7FD1 /* GenderSpec.swift in Sources */,
 				AC88DC0E215330A4007198E6 /* DateSpec.swift in Sources */,
 				D59B6D271D99C82D007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D291D99C82D007CB072 /* NumberSpec.swift in Sources */,
@@ -991,6 +1004,7 @@
 				D59B6CA31D99C464007CB072 /* ArrayExtension.swift in Sources */,
 				D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */,
 				1057479F1F6FBF7100154ECB /* Bank.swift in Sources */,
+				E1128FFF22832248008F7FD1 /* Gender.swift in Sources */,
 				AC8156AA2153C27F00D779EF /* Date.swift in Sources */,
 				D59B6CA81D99C46C007CB072 /* Commerce.swift in Sources */,
 				D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */,

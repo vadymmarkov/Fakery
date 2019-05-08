@@ -118,6 +118,10 @@
           "ibanLetterCode": ["????"],
           "ibanDigits": ["############"],
         }
+      },
+      "gender": {
+        "type": ["Non-binary"],
+        "binary_type": ["Male"],
       }
     }
   }
