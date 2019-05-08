@@ -18,6 +18,12 @@
 		105747A21F6FFB9F00154ECB /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 105747A01F6FFB9F00154ECB /* nl.json */; };
 		105747A31F6FFB9F00154ECB /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 105747A01F6FFB9F00154ECB /* nl.json */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
+		90D66FB322833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
+		90D66FB422833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
+		90D66FB522833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
+		90D66FB622833A5200545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FAF22833A1F00545C90 /* Hobbit.swift */; };
+		90D66FB722833A5200545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FAF22833A1F00545C90 /* Hobbit.swift */; };
+		90D66FB822833A5300545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FAF22833A1F00545C90 /* Hobbit.swift */; };
 		AC8156A92153C27E00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC8156AA2153C27F00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC88DC0B21531E2E007198E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
@@ -203,6 +209,8 @@
 		1057479C1F6FBF6C00154ECB /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		105747A01F6FFB9F00154ECB /* nl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nl.json; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
+		90D66FAF22833A1F00545C90 /* Hobbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hobbit.swift; sourceTree = "<group>"; };
+		90D66FB222833A3100545C90 /* Hobbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hobbit.swift; sourceTree = "<group>"; };
 		AC88DC0A21531E2E007198E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AC88DC0C215330A3007198E6 /* DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSpec.swift; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -423,6 +431,7 @@
 				BCFFA1741BF9F912005A3BC1 /* Team.swift */,
 				1057479C1F6FBF6C00154ECB /* Bank.swift */,
 				AC88DC0A21531E2E007198E6 /* Date.swift */,
+				90D66FB222833A3100545C90 /* Hobbit.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -484,6 +493,7 @@
 				D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */,
 				105747991F6FBAA500154ECB /* BankSpec.swift */,
 				AC88DC0C215330A3007198E6 /* DateSpec.swift */,
+				90D66FAF22833A1F00545C90 /* Hobbit.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -888,8 +898,10 @@
 				BC4477991BFA452700E8FB15 /* Lorem.swift in Sources */,
 				BC4477961BFA451F00E8FB15 /* Company.swift in Sources */,
 				BC4477A01BFA454400E8FB15 /* Config.swift in Sources */,
+				90D66FB422833A3100545C90 /* Hobbit.swift in Sources */,
 				1057479E1F6FBF7100154ECB /* Bank.swift in Sources */,
 				AC8156A92153C27E00D779EF /* Date.swift in Sources */,
+				90D66FB722833A5200545C90 /* Hobbit.swift in Sources */,
 				BC44779F1BFA453F00E8FB15 /* Provider.swift in Sources */,
 				BC44779D1BFA453800E8FB15 /* ArrayExtension.swift in Sources */,
 			);
@@ -939,8 +951,10 @@
 				BCFFA1971BF9F912005A3BC1 /* App.swift in Sources */,
 				BCFFA1A01BF9F912005A3BC1 /* Team.swift in Sources */,
 				BCFFA1941BF9F912005A3BC1 /* ArrayExtension.swift in Sources */,
+				90D66FB322833A3100545C90 /* Hobbit.swift in Sources */,
 				1057479D1F6FBF6C00154ECB /* Bank.swift in Sources */,
 				AC88DC0B21531E2E007198E6 /* Date.swift in Sources */,
+				90D66FB822833A5300545C90 /* Hobbit.swift in Sources */,
 				BCFFA19E1BF9F912005A3BC1 /* Name.swift in Sources */,
 				BCFFA1991BF9F912005A3BC1 /* Commerce.swift in Sources */,
 			);
@@ -990,8 +1004,10 @@
 				D59B6CA61D99C46C007CB072 /* App.swift in Sources */,
 				D59B6CA31D99C464007CB072 /* ArrayExtension.swift in Sources */,
 				D59B6CAD1D99C46C007CB072 /* Name.swift in Sources */,
+				90D66FB522833A3100545C90 /* Hobbit.swift in Sources */,
 				1057479F1F6FBF7100154ECB /* Bank.swift in Sources */,
 				AC8156AA2153C27F00D779EF /* Date.swift in Sources */,
+				90D66FB622833A5200545C90 /* Hobbit.swift in Sources */,
 				D59B6CA81D99C46C007CB072 /* Commerce.swift in Sources */,
 				D59B6CAF1D99C46C007CB072 /* PhoneNumber.swift in Sources */,
 			);
