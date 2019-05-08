@@ -217,6 +217,7 @@ faker.bank.bban() //=> ABNA0136468471
 
 ```swift
 faker.programming_language.name() //=> "Elixir"         
+faker.programming_language.creator() //=> "José Valim"         
 ```
 
 ## Installation
