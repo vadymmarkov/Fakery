@@ -118,6 +118,9 @@
           "ibanLetterCode": ["????"],
           "ibanDigits": ["############"],
         }
+      },
+      "programming_language": {
+        "name": ["Elixir"]
       }
     }
   }
