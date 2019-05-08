@@ -12,10 +12,10 @@ final class VehicleSpec: QuickSpec {
         vehicle = Vehicle(parser: parser)
       }
 
-      describe("#brand") {
-        it("returns the correct brand") {
-          let brand = vehicle.brand()
-          expect(brand).to(equal("Volkswagen"))
+      describe("#manufacture") {
+        it("returns the correct manufacture") {
+          let manufacture = vehicle.manufacture()
+          expect(manufacture).to(equal("Volkswagen"))
         }
       }
     }
