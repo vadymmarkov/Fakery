@@ -9855,6 +9855,22 @@
           "#{Name.name}",
           "#{Company.name}"
         ]
+      },
+      "gender": {
+        "type": [
+          "Male",
+          "Female",
+          "Non-binary",
+          "Agender",
+          "Genderfluid",
+          "Genderqueer",
+          "Bigender",
+          "Polygender"
+        ],
+        "binary_type": [
+          "Male",
+          "Female"
+        ]
       }
     }
   }
