@@ -120,7 +120,8 @@
         }
       },
       "programming_language": {
-        "name": ["Elixir"]
+        "name": ["Elixir"],
+        "creator": ["José Valim"]
       }
     }
   }
