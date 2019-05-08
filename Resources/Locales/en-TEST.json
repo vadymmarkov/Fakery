@@ -98,9 +98,6 @@
         "creature": ["owls"],
         "name": ["#{Address.state} #{creature}"]
       },
-      "ham": {
-        "name": ["Smithfield Ham"]
-      },
       "hacker": {
         "abbreviation": ["TCP"],
         "adjective": ["open-source"],
@@ -121,6 +118,9 @@
           "ibanLetterCode": ["????"],
           "ibanDigits": ["############"],
         }
+      },
+      "ham": {
+        "name": ["Smithfield Ham"]
       }
     }
   }
