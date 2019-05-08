@@ -28,7 +28,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Phone number](#phone-number)
   * [Team](#team)
   * [Bank](#bank)
-  * [Programming language](#programming_language)
+  * [Programming language](#programming-language)
 * [Installation](#installation)
 * [Contributing](#contributing)
 * [Author](#author)
