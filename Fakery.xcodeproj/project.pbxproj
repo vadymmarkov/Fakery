@@ -180,6 +180,9 @@
 		D59B6D3B1D99C82E007CB072 /* TeamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B6CFE1D99C5FD007CB072 /* TeamSpec.swift */; };
 		F7A019902283206600B92D39 /* HamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0198F22831FCB00B92D39 /* HamSpec.swift */; };
 		F7A019912283206600B92D39 /* HamSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0198F22831FCB00B92D39 /* HamSpec.swift */; };
+		F7A019932283212900B92D39 /* Ham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A019922283212000B92D39 /* Ham.swift */; };
+		F7A019942283212A00B92D39 /* Ham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A019922283212000B92D39 /* Ham.swift */; };
+		F7A019952283212B00B92D39 /* Ham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A019922283212000B92D39 /* Ham.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,6 +278,7 @@
 		D59B6D141D99C6C7007CB072 /* Info-Tests-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-tvOS.plist"; sourceTree = "<group>"; };
 		D59B6D151D99C6C7007CB072 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		F7A0198F22831FCB00B92D39 /* HamSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamSpec.swift; sourceTree = "<group>"; };
+		F7A019922283212000B92D39 /* Ham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ham.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +428,7 @@
 				09F65D6E1CA30351006C87C5 /* Number.swift */,
 				BCFFA1731BF9F912005A3BC1 /* PhoneNumber.swift */,
 				BCFFA1741BF9F912005A3BC1 /* Team.swift */,
+				F7A019922283212000B92D39 /* Ham.swift */,
 				1057479C1F6FBF6C00154ECB /* Bank.swift */,
 				AC88DC0A21531E2E007198E6 /* Date.swift */,
 			);
@@ -883,6 +888,7 @@
 				BC4477941BFA451900E8FB15 /* Business.swift in Sources */,
 				BC4477981BFA452400E8FB15 /* Internet.swift in Sources */,
 				BC4477951BFA451C00E8FB15 /* Commerce.swift in Sources */,
+				F7A019942283212A00B92D39 /* Ham.swift in Sources */,
 				BC44779E1BFA453C00E8FB15 /* Parser.swift in Sources */,
 				BC44779A1BFA452900E8FB15 /* Name.swift in Sources */,
 				09F65D701CA30351006C87C5 /* Number.swift in Sources */,
@@ -935,6 +941,7 @@
 				BCFFA1921BF9F912005A3BC1 /* Parser.swift in Sources */,
 				BCFFA19A1BF9F912005A3BC1 /* Company.swift in Sources */,
 				BCFFA1931BF9F912005A3BC1 /* Provider.swift in Sources */,
+				F7A019952283212B00B92D39 /* Ham.swift in Sources */,
 				BCFFA1911BF9F912005A3BC1 /* Config.swift in Sources */,
 				BCFFA19C1BF9F912005A3BC1 /* Internet.swift in Sources */,
 				09F65D6F1CA30351006C87C5 /* Number.swift in Sources */,
@@ -987,6 +994,7 @@
 				D59B6CA11D99C45D007CB072 /* Parser.swift in Sources */,
 				D59B6CA91D99C46C007CB072 /* Company.swift in Sources */,
 				D59B6CAE1D99C46C007CB072 /* Number.swift in Sources */,
+				F7A019932283212900B92D39 /* Ham.swift in Sources */,
 				D59B6CA21D99C460007CB072 /* Provider.swift in Sources */,
 				D59B6CA01D99C45A007CB072 /* Config.swift in Sources */,
 				D59B6CB01D99C46C007CB072 /* Team.swift in Sources */,
