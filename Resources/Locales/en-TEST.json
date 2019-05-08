@@ -120,7 +120,7 @@
         }
       },
       "vehicle": {
-        "brand": ["Volkswagen"],
+        "manufacture": ["Volkswagen"],
       }
     }
   }
