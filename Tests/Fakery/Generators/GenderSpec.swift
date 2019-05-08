@@ -19,7 +19,7 @@ final class GenderSpec: QuickSpec {
         }
       }
       
-      describe("binary_type") {
+      describe("#binary_type") {
         it("returns the correct text") {
           let binaryType = gender.binaryType()
           expect(binaryType).to(equal("Male"))
