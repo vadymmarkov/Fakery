@@ -9855,6 +9855,9 @@
           "#{Name.name}",
           "#{Company.name}"
         ]
+      },
+      "vehicle": {
+        "brand": ["Volkswagen"],
       }
     }
   }
