@@ -29,6 +29,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Team](#team)
   * [Bank](#bank)
   * [Vehicle](#vehicle)
+  * [Hobbit](#hobbit)
 * [Installation](#installation)
 * [Contributing](#contributing)
 * [Author](#author)
@@ -219,6 +220,15 @@ faker.bank.bban() //=> ABNA0136468471
 faker.vehicle.manufacture() //=> "Volkswagen" 
 faker.vehicle.make() //=> "BMW"
 faker.vehicle.colors() //=> "Red"
+```
+
+### Hobbit
+
+```swift
+faker.hobbit.character() //=> "Bilbo Baggins"         
+faker.hobbit.thorinsCompany() //=> "Thorin Oakenshield"
+faker.hobbit.quote() // => "Do you wish me a good morning, or mean that it is a good morning whether I want it or not; or that you feel good this morning; or that it is a morning to be good on?"
+faker.hobbit.location() //=> "Bree"
 ```
 
 ## Installation
