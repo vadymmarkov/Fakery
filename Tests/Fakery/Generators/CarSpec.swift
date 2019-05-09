@@ -18,7 +18,6 @@ final class CarSpec: QuickSpec {
           expect(name).to(equal("BMW"))
         }
       }
-      
     }
   }
 }
