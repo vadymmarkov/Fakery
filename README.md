@@ -119,6 +119,14 @@ faker.company.bs() //=> "implement innovative methodologies"
 faker.company.logo() // "http://pigment.github.io/fake-logos/logos/medium/color/1.png"
 ```
 
+### Gender
+
+```swift
+
+faker.gender.type() //=> "Agender"
+faker.gender.binaryType() //=> "Male"
+```
+
 ### Internet
 
 ```swift
