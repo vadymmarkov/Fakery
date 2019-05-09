@@ -21,6 +21,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Business](#business)
   * [Commerce](#commerce)
   * [Company](#company)
+  * [Gender](#gender)
   * [Internet](#internet)
   * [Lorem](#lorem)
   * [Name](#name)
