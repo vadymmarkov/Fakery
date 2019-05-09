@@ -12,6 +12,7 @@ public final class Faker {
   public let business: Business
   public let company: Company
   public let commerce: Commerce
+  public let gender: Gender
   public let internet: Internet
   public let lorem: Lorem
   public let name: Name
@@ -33,6 +34,7 @@ public final class Faker {
     business = Business(parser: parser)
     company = Company(parser: parser)
     commerce = Commerce(parser: parser)
+    gender = Gender(parser: parser)
     internet = Internet(parser: parser)
     lorem = Lorem(parser: parser)
     name = Name(parser: parser)
