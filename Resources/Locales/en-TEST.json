@@ -13,7 +13,7 @@
         "secondary_address": ["Apt. ###"],
         "postcode": ["#####-####"],
         "postcode_by_state": {
-            "CA": "900##"
+          "CA": "900##"
         },
         "state": ["California"],
         "state_abbr": ["CA"],
@@ -118,6 +118,46 @@
           "ibanLetterCode": ["????"],
           "ibanDigits": ["############"],
         }
+      },
+      "vehicle": {
+        "manufacture": [
+          "Volkswagen"
+        ],
+        "makes": [
+          "BMW"
+        ],
+        "models_by_make": {
+          "BMW": [
+            "328i"
+          ]
+        },
+        "colors": [
+          "Red"
+        ],
+        "transmissions": [
+          "Automanual"
+        ],
+        "drive_types": [
+          "4x2/2-wheel drive"
+        ],
+        "fuel_types": [
+          "Compressed Natural Gas"
+        ],
+        "styles": [
+          "XL"
+        ],
+        "car_types": [
+          "Cargo Van"
+        ],
+        "car_options": [
+          "A/C: Front"
+        ],
+        "doors": [
+          1
+        ],
+        "engine_sizes": [
+          4
+        ]
       },
       "ham": {
         "name": ["Smithfield Ham"]
