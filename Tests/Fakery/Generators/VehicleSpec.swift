@@ -25,6 +25,13 @@ final class VehicleSpec: QuickSpec {
           expect(make).to(equal("BMW"))
         }
       }
+
+      describe("#colors") {
+        it("returns the correct color") {
+          let color = vehicle.colors()
+          expect(color).to(equal("Red"))
+        }
+      }
     }
   }
 }
