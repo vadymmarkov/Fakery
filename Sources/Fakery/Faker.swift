@@ -22,6 +22,7 @@ public final class Faker {
   public let date: Date
   public let programmingLanguage: ProgrammingLanguage
   public let vehicle: Vehicle
+  public let ham: Ham
 
   let parser: Parser
 
@@ -45,5 +46,6 @@ public final class Faker {
     date = Date()
     programmingLanguage = ProgrammingLanguage(parser: parser)
     vehicle = Vehicle(parser: parser)
+    ham = Ham(parser: parser)
   }
 }

@@ -30,6 +30,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Bank](#bank)
   * [Programming language](#programming-language)
   * [Vehicle](#vehicle)
+  * [Ham](#ham)
 * [Installation](#installation)
 * [Contributing](#contributing)
 * [Author](#author)
@@ -227,6 +228,12 @@ faker.programming_language.creator() //=> "José Valim"
 faker.vehicle.manufacture() //=> "Volkswagen" 
 faker.vehicle.make() //=> "BMW"
 faker.vehicle.colors() //=> "Red"
+```
+
+### Ham
+
+```swift
+faker.ham.name() //=> "Taylor Ham"         
 ```
 
 ## Installation

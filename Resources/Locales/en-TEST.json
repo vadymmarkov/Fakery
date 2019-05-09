@@ -162,6 +162,9 @@
 				"engine_sizes": [
 					4
 				]
+			},
+			"ham": {
+				"name": ["Smithfield Ham"]
 			}
 		}
 	}

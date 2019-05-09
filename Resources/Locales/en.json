@@ -10905,6 +10905,20 @@
 					6,
 					8
 				]
+			},
+			"ham": {
+				"name": [
+					"Country Ham",
+					"Virginia Ham",
+					"Smithfield Ham",
+					"Taylor Ham",
+					"City Ham",
+					"Ham Steak",
+					"Spiral-Cut Ham",
+					"Black Forest Ham",
+					"Canned Ham",
+					"Pressed Ham"
+				]
 			}
 		}
 	}
