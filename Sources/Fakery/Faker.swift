@@ -21,7 +21,8 @@ public final class Faker {
   public let bank: Bank
   public let date: Date
   public let car: Car
-
+  public let vehicle: Vehicle
+  
   let parser: Parser
 
   // MARK: - Initialization
@@ -43,5 +44,6 @@ public final class Faker {
     bank = Bank(parser: parser)
     date = Date()
     car = Car(parser: parser)
+    vehicle = Vehicle(parser: parser)
   }
 }
