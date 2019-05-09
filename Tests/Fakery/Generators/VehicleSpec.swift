@@ -18,6 +18,13 @@ final class VehicleSpec: QuickSpec {
           expect(manufacture).to(equal("Volkswagen"))
         }
       }
+
+      describe("#make") {
+        it("returns the correct make") {
+          let make = vehicle.make()
+          expect(make).to(equal("BMW"))
+        }
+      }
     }
   }
 }
