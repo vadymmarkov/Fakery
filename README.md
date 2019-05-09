@@ -216,7 +216,9 @@ faker.bank.bban() //=> ABNA0136468471
 ### Vehicle
 
 ```swift
-faker.vehicle.manufacture() //=> "Volkswagen"         
+faker.vehicle.manufacture() //=> "Volkswagen" 
+faker.vehicle.make() //=> "BMW"
+faker.vehicle.colors() //=> "Red"
 ```
 
 ## Installation
