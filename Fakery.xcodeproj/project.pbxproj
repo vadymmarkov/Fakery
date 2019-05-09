@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F367C922831FF100AB2165 /* ProgrammingLanguageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367C722831FE900AB2165 /* ProgrammingLanguageSpec.swift */; };
+		05F367CA22831FF200AB2165 /* ProgrammingLanguageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367C722831FE900AB2165 /* ProgrammingLanguageSpec.swift */; };
+		05F367CC2283222B00AB2165 /* ProgrammingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367CB2283222B00AB2165 /* ProgrammingLanguage.swift */; };
+		05F367CD2283228100AB2165 /* ProgrammingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367CB2283222B00AB2165 /* ProgrammingLanguage.swift */; };
+		05F367CE2283228100AB2165 /* ProgrammingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367CB2283222B00AB2165 /* ProgrammingLanguage.swift */; };
 		09F65D6F1CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		09F65D701CA30351006C87C5 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F65D6E1CA30351006C87C5 /* Number.swift */; };
 		1057479A1F6FBAA500154ECB /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747991F6FBAA500154ECB /* BankSpec.swift */; };
@@ -208,6 +213,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F367C722831FE900AB2165 /* ProgrammingLanguageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguageSpec.swift; sourceTree = "<group>"; };
+		05F367CB2283222B00AB2165 /* ProgrammingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguage.swift; sourceTree = "<group>"; };
 		09F65D6E1CA30351006C87C5 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		105747991F6FBAA500154ECB /* BankSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSpec.swift; sourceTree = "<group>"; };
 		1057479C1F6FBF6C00154ECB /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
@@ -438,7 +445,8 @@
 				F7A019922283212000B92D39 /* Ham.swift */,
 				1057479C1F6FBF6C00154ECB /* Bank.swift */,
 				AC88DC0A21531E2E007198E6 /* Date.swift */,
-				F178E8892283212B00A166DC /* Vehicle.swift */,
+				05F367CB2283222B00AB2165 /* ProgrammingLanguage.swift */,
+				F178E8892283212B00A166DC /* Vehicle.swift */
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -501,7 +509,8 @@
 				F7A0198F22831FCB00B92D39 /* HamSpec.swift */,
 				105747991F6FBAA500154ECB /* BankSpec.swift */,
 				AC88DC0C215330A3007198E6 /* DateSpec.swift */,
-				F178E88522831FA600A166DC /* VehicleSpec.swift */,
+				05F367C722831FE900AB2165 /* ProgrammingLanguageSpec.swift */,
+				F178E88522831FA600A166DC /* VehicleSpec.swift */
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -882,7 +891,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -899,6 +908,7 @@
 				BC4477951BFA451C00E8FB15 /* Commerce.swift in Sources */,
 				F7A019942283212A00B92D39 /* Ham.swift in Sources */,
 				BC44779E1BFA453C00E8FB15 /* Parser.swift in Sources */,
+				05F367CD2283228100AB2165 /* ProgrammingLanguage.swift in Sources */,
 				BC44779A1BFA452900E8FB15 /* Name.swift in Sources */,
 				F178E88B2283227C00A166DC /* Vehicle.swift in Sources */,
 				09F65D701CA30351006C87C5 /* Number.swift in Sources */,
@@ -926,6 +936,7 @@
 				AC88DC0F215330A4007198E6 /* DateSpec.swift in Sources */,
 				D59B6D371D99C82E007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */,
+				05F367CA22831FF200AB2165 /* ProgrammingLanguageSpec.swift in Sources */,
 				D59B6D341D99C82E007CB072 /* CompanySpec.swift in Sources */,
 				1057479B1F6FBAAA00154ECB /* BankSpec.swift in Sources */,
 				F178E88822831FC400A166DC /* VehicleSpec.swift in Sources */,
@@ -954,6 +965,7 @@
 				BCFFA1931BF9F912005A3BC1 /* Provider.swift in Sources */,
 				F7A019952283212B00B92D39 /* Ham.swift in Sources */,
 				BCFFA1911BF9F912005A3BC1 /* Config.swift in Sources */,
+				05F367CC2283222B00AB2165 /* ProgrammingLanguage.swift in Sources */,
 				BCFFA19C1BF9F912005A3BC1 /* Internet.swift in Sources */,
 				F178E88A2283212B00A166DC /* Vehicle.swift in Sources */,
 				09F65D6F1CA30351006C87C5 /* Number.swift in Sources */,
@@ -981,6 +993,7 @@
 				AC88DC0E215330A4007198E6 /* DateSpec.swift in Sources */,
 				D59B6D271D99C82D007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D291D99C82D007CB072 /* NumberSpec.swift in Sources */,
+				05F367C922831FF100AB2165 /* ProgrammingLanguageSpec.swift in Sources */,
 				D59B6D241D99C82D007CB072 /* CompanySpec.swift in Sources */,
 				1057479A1F6FBAA500154ECB /* BankSpec.swift in Sources */,
 				F178E88722831FC400A166DC /* VehicleSpec.swift in Sources */,
@@ -1009,6 +1022,7 @@
 				D59B6CAE1D99C46C007CB072 /* Number.swift in Sources */,
 				F7A019932283212900B92D39 /* Ham.swift in Sources */,
 				D59B6CA21D99C460007CB072 /* Provider.swift in Sources */,
+				05F367CE2283228100AB2165 /* ProgrammingLanguage.swift in Sources */,
 				D59B6CA01D99C45A007CB072 /* Config.swift in Sources */,
 				F178E88C2283227D00A166DC /* Vehicle.swift in Sources */,
 				D59B6CB01D99C46C007CB072 /* Team.swift in Sources */,
