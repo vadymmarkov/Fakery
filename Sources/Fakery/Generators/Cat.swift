@@ -1,11 +1,3 @@
-//
-//  Cat.swift
-//  Fakery
-//
-//  Created by Sida Nakrosyte on 08/05/2019.
-//  Copyright © 2019 Vadym Markov. All rights reserved.
-//
-
 import Foundation
 
 public final class Cat: Generator {
