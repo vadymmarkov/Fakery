@@ -29,6 +29,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Team](#team)
   * [Bank](#bank)
   * [Programming language](#programming-language)
+  * [Vehicle](#vehicle)
 * [Installation](#installation)
 * [Contributing](#contributing)
 * [Author](#author)
@@ -218,6 +219,14 @@ faker.bank.bban() //=> ABNA0136468471
 ```swift
 faker.programming_language.name() //=> "Elixir"         
 faker.programming_language.creator() //=> "José Valim"         
+```
+
+### Vehicle
+
+```swift
+faker.vehicle.manufacture() //=> "Volkswagen" 
+faker.vehicle.make() //=> "BMW"
+faker.vehicle.colors() //=> "Red"
 ```
 
 ## Installation

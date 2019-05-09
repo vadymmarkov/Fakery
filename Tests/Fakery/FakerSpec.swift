@@ -27,6 +27,7 @@ final class FakerSpec: QuickSpec {
           expect(faker.team.parser).to(beIdenticalTo(faker.parser))
           expect(faker.bank.parser).to(beIdenticalTo(faker.parser))
           expect(faker.programmingLanguage.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.vehicle.parser).to(beIdenticalTo(faker.parser))
         }
       }
 
