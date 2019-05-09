@@ -1,10 +1,3 @@
-//
-//  HobbitSpec.swift
-//  Fakery-iOS
-//
-//  Created by Jeroen de Vrind on 08/05/2019.
-//  Copyright © 2019 Vadym Markov. All rights reserved.
-//
 
 import Quick
 import Nimble
