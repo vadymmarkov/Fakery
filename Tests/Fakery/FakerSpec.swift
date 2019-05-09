@@ -26,6 +26,7 @@ final class FakerSpec: QuickSpec {
           expect(faker.phoneNumber.parser).to(beIdenticalTo(faker.parser))
           expect(faker.team.parser).to(beIdenticalTo(faker.parser))
           expect(faker.bank.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.programmingLanguage.parser).to(beIdenticalTo(faker.parser))
         }
       }
 
@@ -86,6 +87,12 @@ final class FakerSpec: QuickSpec {
       describe("#bank") {
         it("should be accessible") {
           expect(faker.bank).to(beAKindOf(Bank.self))
+        }
+      }
+
+      describe("#programmingLanguage") {
+        it("should be accessible") {
+          expect(faker.programmingLanguage).to(beAKindOf(ProgrammingLanguage.self))
         }
       }
     }
