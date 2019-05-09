@@ -28,6 +28,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Phone number](#phone-number)
   * [Team](#team)
   * [Bank](#bank)
+  * [Programming language](#programming-language)
   * [Vehicle](#vehicle)
 * [Installation](#installation)
 * [Contributing](#contributing)
@@ -211,6 +212,13 @@ faker.bank.name() //=> "ABN AMRO CORPORATE FINANCE LIMITED"
 faker.bank.swiftBic() //=> "AAFMGB21"
 faker.bank.iban() // => "NL45BUNQ2209931378"
 faker.bank.bban() //=> ABNA0136468471
+```
+
+### Programming language
+
+```swift
+faker.programming_language.name() //=> "Elixir"         
+faker.programming_language.creator() //=> "José Valim"         
 ```
 
 ### Vehicle
