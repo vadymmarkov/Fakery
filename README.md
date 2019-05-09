@@ -212,6 +212,15 @@ faker.bank.iban() // => "NL45BUNQ2209931378"
 faker.bank.bban() //=> ABNA0136468471
 ```
 
+### Hobbit
+
+```swift
+faker.hobbit.character() //=> "Bilbo Baggins"         
+faker.hobbit.thorinsCompany() //=> "Thorin Oakenshield"
+faker.hobbit.quote() // => "Do you wish me a good morning, or mean that it is a good morning whether I want it or not; or that you feel good this morning; or that it is a morning to be good on?"
+faker.hobbit.location() //=> "Bree"
+```
+
 ## Installation
 
 **Fakery** is available through [CocoaPods](http://cocoapods.org). To install
