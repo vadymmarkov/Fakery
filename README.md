@@ -19,8 +19,10 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Address](#address)
   * [App](#app)
   * [Business](#business)
+  * [Cat](#cat)
   * [Commerce](#commerce)
   * [Company](#company)
+  * [Gender](#gender)
   * [Internet](#internet)
   * [Lorem](#lorem)
   * [Name](#name)
@@ -29,7 +31,9 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Team](#team)
   * [Bank](#bank)
   * [Car](#car)
+  * [Programming language](#programming-language)
   * [Vehicle](#vehicle)
+  * [Ham](#ham)
 * [Installation](#installation)
 * [Contributing](#contributing)
 * [Author](#author)
@@ -100,6 +104,15 @@ faker.business.creditCardType() //=> "visa"
 faker.business.creditCardExpiryDate() //=> "2020-10-12"
 ```
 
+### Cat
+
+```swift
+
+faker.cat.name() //=> "Shadow"        
+faker.cat.breed() //=> "British Semipi-longhair"
+faker.cat.registry() //=> "American Cat Fanciers Association"
+```
+
 ### Commerce
 
 ```swift
@@ -119,6 +132,14 @@ faker.company.suffix() //=> "Inc"
 faker.company.catchPhrase() //=> "Universal software"        
 faker.company.bs() //=> "implement innovative methodologies"
 faker.company.logo() // "http://pigment.github.io/fake-logos/logos/medium/color/1.png"
+```
+
+### Gender
+
+```swift
+
+faker.gender.type() //=> "Agender"
+faker.gender.binaryType() //=> "Male"
 ```
 
 ### Internet
@@ -219,12 +240,26 @@ faker.bank.bban() //=> ABNA0136468471
 ```swift
 faker.car.brand() //=> "BMW"
 ```
+
+### Programming language
+
+```swift
+faker.programming_language.name() //=> "Elixir"         
+faker.programming_language.creator() //=> "José Valim"         
+```
+
 ### Vehicle
 
 ```swift
 faker.vehicle.manufacture() //=> "Volkswagen" 
 faker.vehicle.make() //=> "BMW"
 faker.vehicle.colors() //=> "Red"
+```
+
+### Ham
+
+```swift
+faker.ham.name() //=> "Taylor Ham"         
 ```
 
 ## Installation

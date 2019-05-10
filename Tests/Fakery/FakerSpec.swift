@@ -20,13 +20,16 @@ final class FakerSpec: QuickSpec {
           expect(faker.app.parser).to(beIdenticalTo(faker.parser))
           expect(faker.business.parser).to(beIdenticalTo(faker.parser))
           expect(faker.commerce.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.gender.parser).to(beIdenticalTo(faker.parser))
           expect(faker.internet.parser).to(beIdenticalTo(faker.parser))
           expect(faker.lorem.parser).to(beIdenticalTo(faker.parser))
           expect(faker.name.parser).to(beIdenticalTo(faker.parser))
           expect(faker.phoneNumber.parser).to(beIdenticalTo(faker.parser))
           expect(faker.team.parser).to(beIdenticalTo(faker.parser))
           expect(faker.bank.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.programmingLanguage.parser).to(beIdenticalTo(faker.parser))
           expect(faker.vehicle.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.ham.parser).to(beIdenticalTo(faker.parser))
         }
       }
 
@@ -51,6 +54,12 @@ final class FakerSpec: QuickSpec {
       describe("#commerce") {
         it("should be accessible") {
           expect(faker.commerce).to(beAKindOf(Commerce.self))
+        }
+      }
+      
+      describe("#gender") {
+        it("should be accessible") {
+          expect(faker.gender).to(beAKindOf(Gender.self))
         }
       }
 
@@ -87,6 +96,12 @@ final class FakerSpec: QuickSpec {
       describe("#bank") {
         it("should be accessible") {
           expect(faker.bank).to(beAKindOf(Bank.self))
+        }
+      }
+
+      describe("#programmingLanguage") {
+        it("should be accessible") {
+          expect(faker.programmingLanguage).to(beAKindOf(ProgrammingLanguage.self))
         }
       }
     }
