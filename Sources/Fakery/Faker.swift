@@ -10,6 +10,7 @@ public final class Faker {
   public let address: Address
   public let app: App
   public let business: Business
+  public let cat: Cat
   public let company: Company
   public let commerce: Commerce
   public let gender: Gender
@@ -35,6 +36,7 @@ public final class Faker {
     address = Address(parser: parser)
     app = App(parser: parser)
     business = Business(parser: parser)
+    cat = Cat(parser: parser)
     company = Company(parser: parser)
     commerce = Commerce(parser: parser)
     gender = Gender(parser: parser)

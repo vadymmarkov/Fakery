@@ -19,6 +19,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Address](#address)
   * [App](#app)
   * [Business](#business)
+  * [Cat](#cat)
   * [Commerce](#commerce)
   * [Company](#company)
   * [Gender](#gender)
@@ -100,6 +101,15 @@ faker.app.author() //=> "Ida Adams"
 faker.business.creditCardNumber() //=> "1234-2121-1221-1211"
 faker.business.creditCardType() //=> "visa"
 faker.business.creditCardExpiryDate() //=> "2020-10-12"
+```
+
+### Cat
+
+```swift
+
+faker.cat.name() //=> "Shadow"        
+faker.cat.breed() //=> "British Semipi-longhair"
+faker.cat.registry() //=> "American Cat Fanciers Association"
 ```
 
 ### Commerce

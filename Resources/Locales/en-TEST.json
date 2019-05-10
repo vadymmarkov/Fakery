@@ -1,5 +1,5 @@
-{
-	"en-TEST": {
+{	
+"en-TEST": {
 		"faker": {
 			"separator": " & ",
 			"address": {
@@ -23,6 +23,11 @@
 				"street_address": ["#{building_number} #{street_name}"],
 				"default_country": ["United States of America"]
 			},
+      "cat": {
+        "name": ["Shadow"],
+        "breed": ["British Semipi-longhair"],
+        "registry": ["American Cat Fanciers Association"]
+      },
 			"credit_card": {
 				"visa": ["/4###########L/"],
 				"mastercard": ["/5[1-5]##-####-####-###L/"],
