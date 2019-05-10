@@ -193,6 +193,12 @@
         "name": [
           "#{last_name} #{first_name}"
         ]
+      },
+      "gender": {
+        "binary_type": [
+          "女性",
+          "男性"
+        ]
       }
     }
   }
