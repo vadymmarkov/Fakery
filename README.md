@@ -30,6 +30,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Phone number](#phone-number)
   * [Team](#team)
   * [Bank](#bank)
+  * [Car](#car)
   * [Programming language](#programming-language)
   * [Vehicle](#vehicle)
   * [Ham](#ham)
@@ -232,6 +233,12 @@ faker.bank.name() //=> "ABN AMRO CORPORATE FINANCE LIMITED"
 faker.bank.swiftBic() //=> "AAFMGB21"
 faker.bank.iban() // => "NL45BUNQ2209931378"
 faker.bank.bban() //=> ABNA0136468471
+```
+
+### Car
+
+```swift
+faker.car.brand() //=> "BMW"
 ```
 
 ### Programming language
