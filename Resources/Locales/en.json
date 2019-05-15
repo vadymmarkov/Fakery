@@ -9855,6 +9855,9 @@
           "#{Name.name}",
           "#{Company.name}"
         ]
+      },
+      "zelda": {
+        "game": [ "A Link to the Past", "Breath of the Wild", "Four Swords", "Link's Awakening", "Majora's Mask", "Ocarina of Time", "Oracle of Seasons - Oracle of Ages", "Phantom Hourglass", "The Legend of Zelda", "The Minish Cap", "The Wind Waker", "Twilight Princess", "Zelda II: Adventure of Link" ]
       }
     }
   }
