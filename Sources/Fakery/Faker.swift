@@ -9,6 +9,7 @@ public final class Faker {
 
   public let address: Address
   public let app: App
+  public let zelda: Zelda
   public let business: Business
   public let company: Company
   public let commerce: Commerce
@@ -30,6 +31,7 @@ public final class Faker {
     parser = Parser(locale: self.locale)
     address = Address(parser: parser)
     app = App(parser: parser)
+    zelda = Zelda(parser: parser)
     business = Business(parser: parser)
     company = Company(parser: parser)
     commerce = Commerce(parser: parser)
