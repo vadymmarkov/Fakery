@@ -21,6 +21,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Business](#business)
   * [Commerce](#commerce)
   * [Company](#company)
+  * [Zelda](#zelda)
   * [Internet](#internet)
   * [Lorem](#lorem)
   * [Name](#name)
@@ -117,6 +118,13 @@ faker.company.suffix() //=> "Inc"
 faker.company.catchPhrase() //=> "Universal software"        
 faker.company.bs() //=> "implement innovative methodologies"
 faker.company.logo() // "http://pigment.github.io/fake-logos/logos/medium/color/1.png"
+```
+
+### Zelda
+
+```swift
+
+faker.zelda.game() //=> "Ocarina of Time"       
 ```
 
 ### Internet
