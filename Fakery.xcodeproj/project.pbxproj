@@ -20,6 +20,9 @@
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
 		6ED4CE5B228C2EBB0026E55A /* ZeldaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */; };
 		6ED4CE5C228C2EBB0026E55A /* ZeldaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */; };
+		6ED4CE5E228C30250026E55A /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5D228C30250026E55A /* Zelda.swift */; };
+		6ED4CE5F228C30250026E55A /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5D228C30250026E55A /* Zelda.swift */; };
+		6ED4CE60228C30250026E55A /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5D228C30250026E55A /* Zelda.swift */; };
 		AC8156A92153C27E00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC8156AA2153C27F00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC88DC0B21531E2E007198E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
@@ -206,6 +209,7 @@
 		105747A01F6FFB9F00154ECB /* nl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nl.json; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
 		6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaSpec.swift; sourceTree = "<group>"; };
+		6ED4CE5D228C30250026E55A /* Zelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zelda.swift; sourceTree = "<group>"; };
 		AC88DC0A21531E2E007198E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AC88DC0C215330A3007198E6 /* DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSpec.swift; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -414,6 +418,7 @@
 			children = (
 				BCFFA16A1BF9F912005A3BC1 /* Address.swift */,
 				BCFFA16B1BF9F912005A3BC1 /* App.swift */,
+				6ED4CE5D228C30250026E55A /* Zelda.swift */,
 				BCFFA16C1BF9F912005A3BC1 /* Business.swift */,
 				BCFFA16D1BF9F912005A3BC1 /* Commerce.swift */,
 				BCFFA16E1BF9F912005A3BC1 /* Company.swift */,
@@ -887,6 +892,7 @@
 				BC44779A1BFA452900E8FB15 /* Name.swift in Sources */,
 				09F65D701CA30351006C87C5 /* Number.swift in Sources */,
 				BC4477921BFA451400E8FB15 /* Address.swift in Sources */,
+				6ED4CE5F228C30250026E55A /* Zelda.swift in Sources */,
 				BC4477971BFA452100E8FB15 /* Generator.swift in Sources */,
 				BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */,
 				BC4477991BFA452700E8FB15 /* Lorem.swift in Sources */,
@@ -939,6 +945,7 @@
 				BCFFA19C1BF9F912005A3BC1 /* Internet.swift in Sources */,
 				09F65D6F1CA30351006C87C5 /* Number.swift in Sources */,
 				BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */,
+				6ED4CE5E228C30250026E55A /* Zelda.swift in Sources */,
 				BCFFA19B1BF9F912005A3BC1 /* Generator.swift in Sources */,
 				BCFFA1981BF9F912005A3BC1 /* Business.swift in Sources */,
 				BCFFA1971BF9F912005A3BC1 /* App.swift in Sources */,
@@ -991,6 +998,7 @@
 				D59B6CA01D99C45A007CB072 /* Config.swift in Sources */,
 				D59B6CB01D99C46C007CB072 /* Team.swift in Sources */,
 				D59B6CAB1D99C46C007CB072 /* Internet.swift in Sources */,
+				6ED4CE60228C30250026E55A /* Zelda.swift in Sources */,
 				D59B6CAA1D99C46C007CB072 /* Generator.swift in Sources */,
 				D59B6CA71D99C46C007CB072 /* Business.swift in Sources */,
 				D59B6CA61D99C46C007CB072 /* App.swift in Sources */,

@@ -118,6 +118,9 @@
           "ibanLetterCode": ["????"],
           "ibanDigits": ["############"],
         }
+      },
+      "zelda": {
+        "game": ["Ocarina of Time"]
       }
     }
   }
