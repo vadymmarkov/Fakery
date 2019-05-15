@@ -28,6 +28,11 @@
 		20580DE22283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		20580DE32283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
+		6ED4CE5B228C2EBB0026E55A /* ZeldaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */; };
+		6ED4CE5C228C2EBB0026E55A /* ZeldaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */; };
+		6ED4CE5E228C30250026E55A /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5D228C30250026E55A /* Zelda.swift */; };
+		6ED4CE5F228C30250026E55A /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5D228C30250026E55A /* Zelda.swift */; };
+		6ED4CE60228C30250026E55A /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5D228C30250026E55A /* Zelda.swift */; };
 		8C12478822832171009400B4 /* CarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12478722832171009400B4 /* CarSpec.swift */; };
 		8C12478922832171009400B4 /* CarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12478722832171009400B4 /* CarSpec.swift */; };
 		8C12478D2283226E009400B4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12478A228321C4009400B4 /* Car.swift */; };
@@ -237,6 +242,8 @@
 		20580DDD2283205E00D46446 /* CatSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatSpec.swift; sourceTree = "<group>"; };
 		20580DE02283222C00D46446 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
+		6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaSpec.swift; sourceTree = "<group>"; };
+		6ED4CE5D228C30250026E55A /* Zelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zelda.swift; sourceTree = "<group>"; };
 		8C12478722832171009400B4 /* CarSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSpec.swift; sourceTree = "<group>"; };
 		8C12478A228321C4009400B4 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		AC88DC0A21531E2E007198E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -453,6 +460,7 @@
 			children = (
 				BCFFA16A1BF9F912005A3BC1 /* Address.swift */,
 				BCFFA16B1BF9F912005A3BC1 /* App.swift */,
+				6ED4CE5D228C30250026E55A /* Zelda.swift */,
 				BCFFA16C1BF9F912005A3BC1 /* Business.swift */,
 				20580DE02283222C00D46446 /* Cat.swift */,
 				BCFFA16D1BF9F912005A3BC1 /* Commerce.swift */,
@@ -523,6 +531,7 @@
 				D59B6CF51D99C5FD007CB072 /* BusinessSpec.swift */,
 				20580DDD2283205E00D46446 /* CatSpec.swift */,
 				D59B6CF61D99C5FD007CB072 /* CommerceSpec.swift */,
+				6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */,
 				D59B6CF71D99C5FD007CB072 /* CompanySpec.swift */,
 				E1128FF822831FAC008F7FD1 /* GenderSpec.swift */,
 				D59B6CF81D99C5FD007CB072 /* GeneratorSpec.swift */,
@@ -941,6 +950,7 @@
 				F178E88B2283227C00A166DC /* Vehicle.swift in Sources */,
 				09F65D701CA30351006C87C5 /* Number.swift in Sources */,
 				BC4477921BFA451400E8FB15 /* Address.swift in Sources */,
+				6ED4CE5F228C30250026E55A /* Zelda.swift in Sources */,
 				BC4477971BFA452100E8FB15 /* Generator.swift in Sources */,
 				BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */,
 				20580DE22283222C00D46446 /* Cat.swift in Sources */,
@@ -965,6 +975,7 @@
 				D59B6D301D99C82E007CB072 /* AddressSpec.swift in Sources */,
 				E1128FFB22832080008F7FD1 /* GenderSpec.swift in Sources */,
 				AC88DC0F215330A4007198E6 /* DateSpec.swift in Sources */,
+				6ED4CE5C228C2EBB0026E55A /* ZeldaSpec.swift in Sources */,
 				D59B6D371D99C82E007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D391D99C82E007CB072 /* NumberSpec.swift in Sources */,
 				05F367CA22831FF200AB2165 /* ProgrammingLanguageSpec.swift in Sources */,
@@ -1004,6 +1015,7 @@
 				F178E88A2283212B00A166DC /* Vehicle.swift in Sources */,
 				09F65D6F1CA30351006C87C5 /* Number.swift in Sources */,
 				BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */,
+				6ED4CE5E228C30250026E55A /* Zelda.swift in Sources */,
 				BCFFA19B1BF9F912005A3BC1 /* Generator.swift in Sources */,
 				BCFFA1981BF9F912005A3BC1 /* Business.swift in Sources */,
 				20580DE12283222C00D46446 /* Cat.swift in Sources */,
@@ -1028,6 +1040,7 @@
 				D59B6D201D99C82D007CB072 /* AddressSpec.swift in Sources */,
 				E1128FFA2283207B008F7FD1 /* GenderSpec.swift in Sources */,
 				AC88DC0E215330A4007198E6 /* DateSpec.swift in Sources */,
+				6ED4CE5B228C2EBB0026E55A /* ZeldaSpec.swift in Sources */,
 				D59B6D271D99C82D007CB072 /* LoremSpec.swift in Sources */,
 				D59B6D291D99C82D007CB072 /* NumberSpec.swift in Sources */,
 				05F367C922831FF100AB2165 /* ProgrammingLanguageSpec.swift in Sources */,
@@ -1067,6 +1080,7 @@
 				F178E88C2283227D00A166DC /* Vehicle.swift in Sources */,
 				D59B6CB01D99C46C007CB072 /* Team.swift in Sources */,
 				D59B6CAB1D99C46C007CB072 /* Internet.swift in Sources */,
+				6ED4CE60228C30250026E55A /* Zelda.swift in Sources */,
 				D59B6CAA1D99C46C007CB072 /* Generator.swift in Sources */,
 				D59B6CA71D99C46C007CB072 /* Business.swift in Sources */,
 				20580DE32283222C00D46446 /* Cat.swift in Sources */,

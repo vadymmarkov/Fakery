@@ -18,6 +18,7 @@ final class FakerSpec: QuickSpec {
 
           expect(faker.address.parser).to(beIdenticalTo(faker.parser))
           expect(faker.app.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.zelda.parser).to(beIdenticalTo(faker.parser))
           expect(faker.business.parser).to(beIdenticalTo(faker.parser))
           expect(faker.commerce.parser).to(beIdenticalTo(faker.parser))
           expect(faker.gender.parser).to(beIdenticalTo(faker.parser))
@@ -42,6 +43,12 @@ final class FakerSpec: QuickSpec {
       describe("#app") {
         it("should be accessible") {
           expect(faker.app).to(beAKindOf(App.self))
+        }
+      }
+
+      describe("#zelda") {
+        it("should be accessible") {
+          expect(faker.zelda).to(beAKindOf(Zelda.self))
         }
       }
 
