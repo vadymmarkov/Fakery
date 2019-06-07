@@ -5,11 +5,11 @@ import Nimble
 final class ZeldaSpec: QuickSpec {
   override func spec() {
     describe("Zelda") {
-      var zelda: Zelda!
+      var zelda: Faker.Zelda!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        zelda = Zelda(parser: parser)
+        zelda = Faker.Zelda(parser: parser)
       }
 
       describe("#game") {

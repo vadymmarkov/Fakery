@@ -5,10 +5,10 @@ import Nimble
 final class NumberSpec: QuickSpec {
   override func spec() {
     describe("Number") {
-      var number: Number!
+      var number: Faker.Number!
 
       beforeEach {
-        number = Number()
+        number = Faker.Number()
       }
 
       it("creates contionusly increasing ids") {

@@ -5,11 +5,11 @@ import Nimble
 final class GeneratorSpec: QuickSpec {
   override func spec() {
     describe("Generator") {
-      var generator: Generator!
+      var generator: Faker.Generator!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        generator = Generator(parser: parser)
+        generator = Faker.Generator(parser: parser)
       }
 
       it("has parser") {

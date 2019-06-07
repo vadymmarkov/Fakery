@@ -6,10 +6,10 @@ import Foundation
 final class DateSpec: QuickSpec {
   override func spec() {
     describe("Date") {
-      var date: Fakery.Date!
+      var date: Faker.Date!
 
       beforeEach {
-        date = Date()
+        date = Faker.Date()
       }
 
       describe("#between") {

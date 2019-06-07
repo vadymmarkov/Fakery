@@ -5,11 +5,11 @@ import Nimble
 final class GenderSpec: QuickSpec {
   override func spec() {
     describe("Gender") {
-      var gender: Gender!
+      var gender: Faker.Gender!
       
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        gender = Gender(parser: parser)
+        gender = Faker.Gender(parser: parser)
       }
       
       describe("#type") {

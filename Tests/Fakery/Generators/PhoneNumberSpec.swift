@@ -5,11 +5,11 @@ import Nimble
 final class PhoneNumberSpec: QuickSpec {
   override func spec() {
     describe("PhoneNumber") {
-      var phoneNumber: PhoneNumber!
+      var phoneNumber: Faker.PhoneNumber!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        phoneNumber = PhoneNumber(parser: parser)
+        phoneNumber = Faker.PhoneNumber(parser: parser)
       }
 
       describe("#phoneNumber") {

@@ -5,11 +5,11 @@ import Nimble
 final class ProgrammingLanguageSpec: QuickSpec {
   override func spec() {
     describe("Programming Language") {
-      var language: ProgrammingLanguage!
+      var language: Faker.ProgrammingLanguage!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        language = ProgrammingLanguage(parser: parser)
+        language = Faker.ProgrammingLanguage(parser: parser)
       }
 
       describe("#name") {

@@ -5,11 +5,11 @@ import Nimble
 final class TeamSpec: QuickSpec {
   override func spec() {
     describe("Team") {
-      var team: Team!
+      var team: Faker.Team!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        team = Team(parser: parser)
+        team = Faker.Team(parser: parser)
       }
 
       describe("#name") {
