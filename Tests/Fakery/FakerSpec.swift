@@ -31,6 +31,7 @@ final class FakerSpec: QuickSpec {
           expect(faker.programmingLanguage.parser).to(beIdenticalTo(faker.parser))
           expect(faker.vehicle.parser).to(beIdenticalTo(faker.parser))
           expect(faker.ham.parser).to(beIdenticalTo(faker.parser))
+          expect(faker.house.parser).to(beIdenticalTo(faker.parser))
         }
       }
 
@@ -109,6 +110,12 @@ final class FakerSpec: QuickSpec {
       describe("#programmingLanguage") {
         it("should be accessible") {
           expect(faker.programmingLanguage).to(beAKindOf(ProgrammingLanguage.self))
+        }
+      }
+      
+      describe("#house") {
+        it("should be accessible") {
+          expect(faker.house).to(beAKindOf(House.self))
         }
       }
     }

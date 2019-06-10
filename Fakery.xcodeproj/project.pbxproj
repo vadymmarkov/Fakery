@@ -28,12 +28,11 @@
 		20580DE22283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		20580DE32283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
-		504F66DC22AE32A500F9CDB3 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DB22AE32A500F9CDB3 /* HouseSpec.swift */; };
-		504F66DD22AE32A500F9CDB3 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DB22AE32A500F9CDB3 /* HouseSpec.swift */; };
-		504F66DE22AE32A500F9CDB3 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DB22AE32A500F9CDB3 /* HouseSpec.swift */; };
 		504F66E022AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
 		504F66E122AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
 		504F66E222AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
+		504F66EC22AE523A00F9CDB3 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DB22AE32A500F9CDB3 /* HouseSpec.swift */; };
+		504F66ED22AE523A00F9CDB3 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DB22AE32A500F9CDB3 /* HouseSpec.swift */; };
 		6ED4CE5B228C2EBB0026E55A /* ZeldaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */; };
 		6ED4CE5C228C2EBB0026E55A /* ZeldaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */; };
 		6ED4CE5E228C30250026E55A /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4CE5D228C30250026E55A /* Zelda.swift */; };
@@ -958,7 +957,6 @@
 				05F367CD2283228100AB2165 /* ProgrammingLanguage.swift in Sources */,
 				BC44779A1BFA452900E8FB15 /* Name.swift in Sources */,
 				F178E88B2283227C00A166DC /* Vehicle.swift in Sources */,
-				504F66DD22AE32A500F9CDB3 /* HouseSpec.swift in Sources */,
 				09F65D701CA30351006C87C5 /* Number.swift in Sources */,
 				504F66E122AE32CB00F9CDB3 /* House.swift in Sources */,
 				BC4477921BFA451400E8FB15 /* Address.swift in Sources */,
@@ -1006,6 +1004,7 @@
 				8C12478922832171009400B4 /* CarSpec.swift in Sources */,
 				D59B6D381D99C82E007CB072 /* NameSpec.swift in Sources */,
 				D59B6D2F1D99C82E007CB072 /* ProviderSpec.swift in Sources */,
+				504F66ED22AE523A00F9CDB3 /* HouseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,7 +1024,6 @@
 				05F367CC2283222B00AB2165 /* ProgrammingLanguage.swift in Sources */,
 				BCFFA19C1BF9F912005A3BC1 /* Internet.swift in Sources */,
 				F178E88A2283212B00A166DC /* Vehicle.swift in Sources */,
-				504F66DC22AE32A500F9CDB3 /* HouseSpec.swift in Sources */,
 				09F65D6F1CA30351006C87C5 /* Number.swift in Sources */,
 				504F66E022AE32CB00F9CDB3 /* House.swift in Sources */,
 				BCFFA19F1BF9F912005A3BC1 /* PhoneNumber.swift in Sources */,
@@ -1073,6 +1071,7 @@
 				8C12478822832171009400B4 /* CarSpec.swift in Sources */,
 				D59B6D281D99C82D007CB072 /* NameSpec.swift in Sources */,
 				D59B6D1F1D99C82D007CB072 /* ProviderSpec.swift in Sources */,
+				504F66EC22AE523A00F9CDB3 /* HouseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1092,7 +1091,6 @@
 				05F367CE2283228100AB2165 /* ProgrammingLanguage.swift in Sources */,
 				D59B6CA01D99C45A007CB072 /* Config.swift in Sources */,
 				F178E88C2283227D00A166DC /* Vehicle.swift in Sources */,
-				504F66DE22AE32A500F9CDB3 /* HouseSpec.swift in Sources */,
 				D59B6CB01D99C46C007CB072 /* Team.swift in Sources */,
 				504F66E222AE32CB00F9CDB3 /* House.swift in Sources */,
 				D59B6CAB1D99C46C007CB072 /* Internet.swift in Sources */,
