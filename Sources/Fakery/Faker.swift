@@ -27,6 +27,7 @@ public final class Faker {
   public let programmingLanguage: ProgrammingLanguage
   public let vehicle: Vehicle
   public let ham: Ham
+  public let house: House
 
   let parser: Parser
 
@@ -55,5 +56,6 @@ public final class Faker {
     programmingLanguage = ProgrammingLanguage(parser: parser)
     vehicle = Vehicle(parser: parser)
     ham = Ham(parser: parser)
+    house = House(parser: parser)
   }
 }
