@@ -5,11 +5,11 @@ import Nimble
 final class HamSpec: QuickSpec {
   override func spec() {
     describe("Ham") {
-      var ham: Ham!
+      var ham: Faker.Ham!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        ham = Ham(parser: parser)
+        ham = Faker.Ham(parser: parser)
       }
 
       describe("#name") {

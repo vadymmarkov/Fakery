@@ -5,11 +5,11 @@ import Nimble
 final class AddressSpec: QuickSpec {
   override func spec() {
     describe("Address") {
-      var address: Address!
+      var address: Faker.Address!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        address = Address(parser: parser)
+        address = Faker.Address(parser: parser)
       }
 
       describe("#city") {

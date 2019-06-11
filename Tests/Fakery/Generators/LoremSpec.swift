@@ -5,11 +5,11 @@ import Nimble
 final class LoremSpec: QuickSpec {
   override func spec() {
     describe("Lorem") {
-      var lorem: Lorem!
+      var lorem: Faker.Lorem!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        lorem = Lorem(parser: parser)
+        lorem = Faker.Lorem(parser: parser)
       }
 
       describe("#word") {
