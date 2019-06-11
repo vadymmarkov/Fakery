@@ -12,7 +12,7 @@ public final class Provider {
       translation = translationData
     } else {
       let bundle = Bundle(for: Provider.self)
-      
+
       var path = bundle.path(forResource: locale,
                              ofType: Config.pathExtension,
                              inDirectory: Config.dirPath) ??

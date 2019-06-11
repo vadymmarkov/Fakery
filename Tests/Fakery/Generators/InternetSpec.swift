@@ -6,11 +6,11 @@ final class InternetSpec: QuickSpec {
   override func spec() {
     describe("Internet") {
       let emailFormat = "[\\w._%+-]+@[\\w.-]+\\.\\w{2,}"
-      var internet: Internet!
+      var internet: Faker.Internet!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        internet = Internet(parser: parser)
+        internet = Faker.Internet(parser: parser)
       }
 
       describe("#username") {

@@ -5,11 +5,11 @@ import Nimble
 final class BankSpec: QuickSpec {
   override func spec() {
     describe("Bank") {
-      var bank: Bank!
+      var bank: Faker.Bank!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        bank = Bank(parser: parser)
+        bank = Faker.Bank(parser: parser)
       }
 
       describe("#name") {
