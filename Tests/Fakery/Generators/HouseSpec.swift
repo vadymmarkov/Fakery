@@ -5,11 +5,11 @@ import Nimble
 final class HouseSpec: QuickSpec {
   override func spec() {
     describe("House") {
-      var house: House!
+      var house: Faker.House!
       
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        house = House(parser: parser)
+        house = Faker.House(parser: parser)
       }
       
       describe("#furniture") {
@@ -18,7 +18,7 @@ final class HouseSpec: QuickSpec {
           expect(furniture).to(equal("chair"))
         }
       }
-      
+
       describe("#room") {
         it("returns the correct text") {
           let room = house.room()
@@ -28,4 +28,3 @@ final class HouseSpec: QuickSpec {
     }
   }
 }
-
