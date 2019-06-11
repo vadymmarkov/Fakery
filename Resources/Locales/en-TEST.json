@@ -180,7 +180,11 @@
 			},
 			"zelda": {
 				"game": ["Ocarina of Time"]
-			}
+      },
+      "house": {
+        "furniture": ["chair"],
+        "room": ["bedroom"]
+      }
 		}
 	}
 }

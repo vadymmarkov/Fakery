@@ -35,6 +35,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Programming language](#programming-language)
   * [Vehicle](#vehicle)
   * [Ham](#ham)
+  * [House](#house)
 * [Installation](#installation)
 * [Contributing](#contributing)
 * [Author](#author)
@@ -268,6 +269,13 @@ faker.vehicle.colors() //=> "Red"
 
 ```swift
 faker.ham.name() //=> "Taylor Ham"         
+```
+
+### House
+
+```swift
+faker.house.furniture() //=> "chair"
+faker.house.room() //=> "living room" 
 ```
 
 ## Installation
