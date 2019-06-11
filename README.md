@@ -19,8 +19,11 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Address](#address)
   * [App](#app)
   * [Business](#business)
+  * [Cat](#cat)
   * [Commerce](#commerce)
   * [Company](#company)
+  * [Zelda](#zelda)
+  * [Gender](#gender)
   * [Internet](#internet)
   * [Lorem](#lorem)
   * [Name](#name)
@@ -28,6 +31,8 @@ It's useful in all the cases when you need to use some dummy data for testing, p
   * [Phone number](#phone-number)
   * [Team](#team)
   * [Bank](#bank)
+  * [Car](#car)
+  * [Programming language](#programming-language)
   * [Vehicle](#vehicle)
   * [Hobbit](#hobbit)
 * [Installation](#installation)
@@ -100,6 +105,15 @@ faker.business.creditCardType() //=> "visa"
 faker.business.creditCardExpiryDate() //=> "2020-10-12"
 ```
 
+### Cat
+
+```swift
+
+faker.cat.name() //=> "Shadow"        
+faker.cat.breed() //=> "British Semipi-longhair"
+faker.cat.registry() //=> "American Cat Fanciers Association"
+```
+
 ### Commerce
 
 ```swift
@@ -119,6 +133,21 @@ faker.company.suffix() //=> "Inc"
 faker.company.catchPhrase() //=> "Universal software"        
 faker.company.bs() //=> "implement innovative methodologies"
 faker.company.logo() // "http://pigment.github.io/fake-logos/logos/medium/color/1.png"
+```
+
+### Zelda
+
+```swift
+
+faker.zelda.game() //=> "Ocarina of Time"   
+```
+
+### Gender
+
+```swift
+
+faker.gender.type() //=> "Agender"
+faker.gender.binaryType() //=> "Male"
 ```
 
 ### Internet
@@ -214,6 +243,28 @@ faker.bank.iban() // => "NL45BUNQ2209931378"
 faker.bank.bban() //=> ABNA0136468471
 ```
 
+### Hobbit
+
+```swift
+faker.hobbit.character() //=> "Bilbo Baggins"         
+faker.hobbit.thorinsCompany() //=> "Thorin Oakenshield"
+faker.hobbit.quote() // => "Do you wish me a good morning, or mean that it is a good morning whether I want it or not; or that you feel good this morning; or that it is a morning to be good on?"
+faker.hobbit.location() //=> "Bree"
+```
+
+### Car
+
+```swift
+faker.car.brand() //=> "BMW"
+```
+
+### Programming language
+
+```swift
+faker.programming_language.name() //=> "Elixir"         
+faker.programming_language.creator() //=> "José Valim"         
+```
+
 ### Vehicle
 
 ```swift
@@ -222,13 +273,17 @@ faker.vehicle.make() //=> "BMW"
 faker.vehicle.colors() //=> "Red"
 ```
 
-### Hobbit
+### Ham
 
 ```swift
-faker.hobbit.character() //=> "Bilbo Baggins"         
-faker.hobbit.thorinsCompany() //=> "Thorin Oakenshield"
-faker.hobbit.quote() // => "Do you wish me a good morning, or mean that it is a good morning whether I want it or not; or that you feel good this morning; or that it is a morning to be good on?"
-faker.hobbit.location() //=> "Bree"
+faker.ham.name() //=> "Taylor Ham"         
+```
+
+### House
+
+```swift
+faker.house.furniture() //=> "chair"
+faker.house.room() //=> "living room" 
 ```
 
 ## Installation

@@ -5,11 +5,11 @@ import Nimble
 final class CommerceSpec: QuickSpec {
   override func spec() {
     describe("Commerce") {
-      var commerce: Commerce!
+      var commerce: Faker.Commerce!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        commerce = Commerce(parser: parser)
+        commerce = Faker.Commerce(parser: parser)
       }
 
       describe("#color") {

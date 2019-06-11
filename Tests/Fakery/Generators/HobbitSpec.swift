@@ -6,11 +6,11 @@ import Nimble
 final class HobbitSpec: QuickSpec {
   override func spec() {
     describe("Hobbit") {
-      var hobbit: Hobbit!
+      var hobbit: Faker.Hobbit!
 
       beforeEach {
         let parser = Parser(locale: "en-TEST")
-        hobbit = Hobbit(parser: parser)
+        hobbit = Faker.Hobbit(parser: parser)
       }
 
       describe("#character") {
