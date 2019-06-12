@@ -23,6 +23,7 @@ public final class Faker {
   public let number: Number
   public let bank: Bank
   public let date: Date
+  public let hobbit: Hobbit
   public let car: Car
   public let programmingLanguage: ProgrammingLanguage
   public let vehicle: Vehicle
@@ -52,6 +53,7 @@ public final class Faker {
     number = Number()
     bank = Bank(parser: parser)
     date = Date()
+    hobbit = Hobbit(parser: parser)
     car = Car(parser: parser)
     programmingLanguage = ProgrammingLanguage(parser: parser)
     vehicle = Vehicle(parser: parser)

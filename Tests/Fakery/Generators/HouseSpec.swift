@@ -6,12 +6,12 @@ final class HouseSpec: QuickSpec {
   override func spec() {
     describe("House") {
       var house: Faker.House!
-      
+
       beforeEach {
         let parser = Parser(locale: "en-TEST")
         house = Faker.House(parser: parser)
       }
-      
+
       describe("#furniture") {
         it("returns the correct text") {
           let furniture = house.furniture()

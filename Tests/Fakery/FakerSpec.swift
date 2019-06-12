@@ -64,7 +64,7 @@ final class FakerSpec: QuickSpec {
           expect(faker.commerce).to(beAKindOf(Faker.Commerce.self))
         }
       }
-      
+
       describe("#gender") {
         it("should be accessible") {
           expect(faker.gender).to(beAKindOf(Faker.Gender.self))
@@ -112,10 +112,10 @@ final class FakerSpec: QuickSpec {
           expect(faker.programmingLanguage).to(beAKindOf(Faker.ProgrammingLanguage.self))
         }
       }
-      
+
       describe("#house") {
         it("should be accessible") {
-          expect(faker.house).to(beAKindOf(House.self))
+          expect(faker.house).to(beAKindOf(Faker.House.self))
         }
       }
     }
