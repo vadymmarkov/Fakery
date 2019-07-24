@@ -1,4 +1,3 @@
-
 import Quick
 import Nimble
 @testable import Fakery
@@ -30,7 +29,8 @@ final class HobbitSpec: QuickSpec {
       describe("#quote") {
         it("returns the correct text") {
           let quote = hobbit.quote()
-          expect(quote).to(equal("Do you wish me a good morning, or mean that it is a good morning whether I want it or not; or that you feel good this morning; or that it is a morning to be good on?"))
+          expect(quote).to(equal("Do you wish me a good morning, or mean that it is a good morning whether I want it or"
+            + " not; or that you feel good this morning; or that it is a morning to be good on?"))
         }
       }
 
