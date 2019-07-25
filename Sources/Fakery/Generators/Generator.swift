@@ -2,6 +2,7 @@ import Foundation
 
 extension Faker {
   public class Generator {
+    // swiftlint:disable nesting
     public struct Constants {
       public static let uppercaseLetters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
       public static let letters = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")

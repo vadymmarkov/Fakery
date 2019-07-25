@@ -133,7 +133,7 @@ public final class Parser {
 
   private func getSubject(_ key: String) -> String {
     var subject: String = ""
-    var parts = key.components(separatedBy: ".")
+    let parts = key.components(separatedBy: ".")
 
     if !parts.isEmpty {
       subject = parts[0]

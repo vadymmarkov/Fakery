@@ -15,7 +15,7 @@ extension Faker {
       #else
       let lastRandomComponent = arc4random_uniform(10000)
       #endif
-      var components: [String] = [
+      let components: [String] = [
         generate("name.first_name"),
         generate("name.last_name"),
         "\(lastRandomComponent)"

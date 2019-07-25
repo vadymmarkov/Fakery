@@ -28,11 +28,14 @@
 		20580DE22283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		20580DE32283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
-		90D66FB322833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
-		90D66FB422833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
-		90D66FB522833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
-		90D66FBA22835EAA00545C90 /* HobbitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FAF22833A1F00545C90 /* HobbitSpec.swift */; };
-		90D66FBB22835EAB00545C90 /* HobbitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FAF22833A1F00545C90 /* HobbitSpec.swift */; };
+		301387E722E8EB20001313B6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E622E8EB03001313B6 /* Nimble.framework */; };
+		301387E822E8EB20001313B6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E522E8EB02001313B6 /* Quick.framework */; };
+		301387E922E8EB23001313B6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E622E8EB03001313B6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		301387EA22E8EB23001313B6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E522E8EB02001313B6 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		301387EB22E8EB2E001313B6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E322E8EA89001313B6 /* Nimble.framework */; };
+		301387EC22E8EB2E001313B6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E422E8EAA5001313B6 /* Quick.framework */; };
+		301387ED22E8EB36001313B6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E322E8EA89001313B6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		301387EE22E8EB36001313B6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E422E8EAA5001313B6 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		504F66E022AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
 		504F66E122AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
 		504F66E222AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
@@ -48,6 +51,11 @@
 		8C12478D2283226E009400B4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12478A228321C4009400B4 /* Car.swift */; };
 		8C12478E2283226F009400B4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12478A228321C4009400B4 /* Car.swift */; };
 		8C12478F2283226F009400B4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12478A228321C4009400B4 /* Car.swift */; };
+		90D66FB322833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
+		90D66FB422833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
+		90D66FB522833A3100545C90 /* Hobbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FB222833A3100545C90 /* Hobbit.swift */; };
+		90D66FBA22835EAA00545C90 /* HobbitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FAF22833A1F00545C90 /* HobbitSpec.swift */; };
+		90D66FBB22835EAB00545C90 /* HobbitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66FAF22833A1F00545C90 /* HobbitSpec.swift */; };
 		AC8156A92153C27E00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC8156AA2153C27F00D779EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC88DC0B21531E2E007198E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
@@ -242,6 +250,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		301387DD22E8E95A001313B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				301387ED22E8EB36001313B6 /* Nimble.framework in CopyFiles */,
+				301387EE22E8EB36001313B6 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301387E022E8E9F2001313B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				301387E922E8EB23001313B6 /* Nimble.framework in CopyFiles */,
+				301387EA22E8EB23001313B6 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		05F367C722831FE900AB2165 /* ProgrammingLanguageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguageSpec.swift; sourceTree = "<group>"; };
 		05F367CB2283222B00AB2165 /* ProgrammingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguage.swift; sourceTree = "<group>"; };
@@ -252,14 +285,18 @@
 		20580DDD2283205E00D46446 /* CatSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatSpec.swift; sourceTree = "<group>"; };
 		20580DE02283222C00D46446 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
-		90D66FAF22833A1F00545C90 /* HobbitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbitSpec.swift; sourceTree = "<group>"; };
-		90D66FB222833A3100545C90 /* Hobbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hobbit.swift; sourceTree = "<group>"; };
+		301387E322E8EA89001313B6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		301387E422E8EAA5001313B6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		301387E522E8EB02001313B6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		301387E622E8EB03001313B6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		504F66DB22AE32A500F9CDB3 /* HouseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseSpec.swift; sourceTree = "<group>"; };
 		504F66DF22AE32CB00F9CDB3 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaSpec.swift; sourceTree = "<group>"; };
 		6ED4CE5D228C30250026E55A /* Zelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zelda.swift; sourceTree = "<group>"; };
 		8C12478722832171009400B4 /* CarSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSpec.swift; sourceTree = "<group>"; };
 		8C12478A228321C4009400B4 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		90D66FAF22833A1F00545C90 /* HobbitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbitSpec.swift; sourceTree = "<group>"; };
+		90D66FB222833A3100545C90 /* Hobbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hobbit.swift; sourceTree = "<group>"; };
 		AC88DC0A21531E2E007198E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AC88DC0C215330A3007198E6 /* DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSpec.swift; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -350,6 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC827FB21BFA3CE1005F09A4 /* Fakery.framework in Frameworks */,
+				301387E722E8EB20001313B6 /* Nimble.framework in Frameworks */,
+				301387E822E8EB20001313B6 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +404,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF0DF451BF9F77E00427DB4 /* Fakery.framework in Frameworks */,
+				301387EB22E8EB2E001313B6 /* Nimble.framework in Frameworks */,
+				301387EC22E8EB2E001313B6 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +419,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301387C722E8E3EC001313B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				301387E622E8EB03001313B6 /* Nimble.framework */,
+				301387E522E8EB02001313B6 /* Quick.framework */,
+				301387E322E8EA89001313B6 /* Nimble.framework */,
+				301387E422E8EAA5001313B6 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCF0DF301BF9F77E00427DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +438,7 @@
 				BCFFA1611BF9F912005A3BC1 /* Sources */,
 				BCFFA1761BF9F912005A3BC1 /* Tests */,
 				BCF0DF3B1BF9F77E00427DB4 /* Products */,
+				301387C722E8E3EC001313B6 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -635,7 +688,7 @@
 				BC827FAD1BFA3CE1005F09A4 /* Sources */,
 				BC827FAE1BFA3CE1005F09A4 /* Frameworks */,
 				BC827FAF1BFA3CE1005F09A4 /* Resources */,
-				D5197A871D9A5E0C00029A9D /* Copy frameworks with Carthage */,
+				301387E022E8E9F2001313B6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -673,7 +726,7 @@
 				BCF0DF401BF9F77E00427DB4 /* Sources */,
 				BCF0DF411BF9F77E00427DB4 /* Frameworks */,
 				BCF0DF421BF9F77E00427DB4 /* Resources */,
-				D5BA6B7F1D99D429000D5F46 /* Copy frameworks with Carthage */,
+				301387DD22E8E95A001313B6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -873,22 +926,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D5197A871D9A5E0C00029A9D /* Copy frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Nimble.framework",
-			);
-			name = "Copy frameworks with Carthage";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		D51B4F361D9AE2A0009FE24D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -901,7 +938,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		D51B4F371D9AE2BE009FE24D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -930,22 +967,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		D5BA6B7F1D99D429000D5F46 /* Copy frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-			);
-			name = "Copy frameworks with Carthage";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -12,19 +12,19 @@ extension Faker {
     }
 
     public func randomInt(min: Int = 0, max: Int = 1000) -> Int {
-      var i: Int = 0
+      var rand: Int = 0
       #if swift(>=4.2)
-      i = Int.random(in: i..<Int.max)
+      rand = Int.random(in: rand..<Int.max)
       #else
-      arc4random_buf(&i, MemoryLayout.size(ofValue: i))
-      i = i & Int.max // Make the number positive
+      arc4random_buf(&rand, MemoryLayout.size(ofValue: rand))
+      rand = rand & Int.max // Make the number positive
       #endif
 
       if max >= 0 && max - Int.max >= min {
-        return min + i
+        return min + rand
       }
 
-      return min + (i % (max - min))
+      return min + (rand % (max - min))
     }
 
     public func randomFloat(min: Float = 0, max: Float = 1000) -> Float {
@@ -43,7 +43,8 @@ extension Faker {
 
     public func randomDouble(min: Double = 0, max: Double = 1000) -> Double {
       #if swift(>=4.2)
-      return (Double.random(in: 0..<Double.greatestFiniteMagnitude) / Double.greatestFiniteMagnitude) * (max - min) + min
+      return (Double.random(in: 0..<Double.greatestFiniteMagnitude) / Double.greatestFiniteMagnitude)
+        * (max - min) + min
       #else
       return (Double(arc4random()) / Double(UInt32.max)) * (max - min) + min
       #endif

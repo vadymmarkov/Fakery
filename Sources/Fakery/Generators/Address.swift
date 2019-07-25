@@ -98,23 +98,23 @@ extension Faker {
 
       // Random point in circle
       #if swift(>=4.2)
-      let u = Double.random(in: 0..<Double.greatestFiniteMagnitude) / 0xFFFFFFFF
-      let v = Double.random(in: 0..<Double.greatestFiniteMagnitude) / 0xFFFFFFFF
+      let rhoRandom = Double.random(in: 0..<Double.greatestFiniteMagnitude) / 0xFFFFFFFF
+      let phiRandom = Double.random(in: 0..<Double.greatestFiniteMagnitude) / 0xFFFFFFFF
       #else
-      let u = Double(arc4random()) / 0xFFFFFFFF
-      let v = Double(arc4random()) / 0xFFFFFFFF
+      let rhoRandom = Double(arc4random()) / 0xFFFFFFFF
+      let phiRandom = Double(arc4random()) / 0xFFFFFFFF
       #endif
-      let w = radiusInDegrees * sqrt(u)
-      let t = 2 * .pi * v
-      let x = w * cos(t)
-      let y = w * sin(t)
+      let rho = radiusInDegrees * sqrt(rhoRandom)
+      let phi = 2 * .pi * phiRandom
+      let xPos = rho * cos(phi)
+      let yPos = rho * sin(phi)
 
       // Adjust longitude (x) to adjust for east-west shrinking in distance
       let latRadians = y0 * .pi / 180
-      let newx = x / cos(latRadians)
+      let newx = xPos / cos(latRadians)
 
       // Set found random point
-      let foundLatitude = y + y0
+      let foundLatitude = yPos + y0
       let foundLongitude = newx + x0
 
       return Location(latitude: foundLatitude, longitude: foundLongitude)
