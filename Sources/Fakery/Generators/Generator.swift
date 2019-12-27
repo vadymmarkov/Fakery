@@ -12,7 +12,7 @@ extension Faker {
     let parser: Parser
     let dateFormatter: DateFormatter
 
-    public required init(parser: Parser) {
+    public required init(parser: Parser = Parser()) {
       self.parser = parser
       dateFormatter = DateFormatter()
       dateFormatter.dateFormat = "yyyy-MM-dd"

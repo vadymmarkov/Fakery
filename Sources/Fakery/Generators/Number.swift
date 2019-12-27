@@ -4,7 +4,7 @@ import CoreGraphics
 #endif
 
 extension Faker {
-  public final class Number {
+  public final class Number: Generator {
     fileprivate var lastUsedId: Int64 = 0
 
     public func randomBool() -> Bool {
