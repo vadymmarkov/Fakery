@@ -1,7 +1,7 @@
 import Foundation
 
 extension Faker {
-  public final class Date {
+  public final class Date: Generator {
     public func backward(days: Int) -> Foundation.Date {
       return todayAddingDays(-days)
     }
