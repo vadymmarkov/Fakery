@@ -2,10 +2,7 @@ import Foundation
 
 extension Faker {
   public final class Internet: Generator {
-    private let lorem: Lorem
-
     public required init(parser: Parser) {
-      self.lorem = Lorem(parser: parser)
       super.init(parser: parser)
     }
 
@@ -82,7 +79,7 @@ extension Faker {
     }
 
     public func password(minimumLength: Int = 8, maximumLength: Int = 16) -> String {
-      var temp = lorem.characters(amount: minimumLength)
+      var temp = String.characters(amount: minimumLength)
       let diffLength = maximumLength - minimumLength
 
       if diffLength > 0 {
@@ -91,7 +88,7 @@ extension Faker {
         #else
         let diffRandom = Int(arc4random_uniform(UInt32(diffLength + 1)))
         #endif
-        temp += lorem.characters(amount: diffRandom)
+        temp += String.characters(amount: diffRandom)
       }
 
       return temp
