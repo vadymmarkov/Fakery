@@ -32,16 +32,35 @@ public final class Provider {
         }
       }
 
-      if let path = path {
-        let fileURL = URL(fileURLWithPath: path)
-
-        if let data = try? Data(contentsOf: fileURL) {
-          translation = data
-          translations[locale] = data
-        }
+      if let data = dataAtPath(path: path) {
+        translation = data
+        translations[locale] = data
       }
     }
 
     return translation
+  }
+  
+  public func dataForLocale(_ locale: String, path: String) -> Data? {
+    var translation: Data?
+
+    if let translationData = translations[locale] {
+      translation = translationData
+    }
+    else {
+      if let data = dataAtPath(path: path) {
+        translation = data
+        translations[locale] = data
+      }
+    }
+    return translation
+  }
+  
+  private func dataAtPath(path: String?) -> Data? {
+    if let path = path {
+      let fileURL = URL(fileURLWithPath: path)
+      return try? Data(contentsOf: fileURL)
+    }
+    return nil
   }
 }
