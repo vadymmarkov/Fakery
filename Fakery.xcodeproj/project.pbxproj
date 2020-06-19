@@ -61,6 +61,10 @@
 		AC88DC0B21531E2E007198E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0A21531E2E007198E6 /* Date.swift */; };
 		AC88DC0E215330A4007198E6 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0C215330A3007198E6 /* DateSpec.swift */; };
 		AC88DC0F215330A4007198E6 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88DC0C215330A3007198E6 /* DateSpec.swift */; };
+		BA095628249CFAB8000DDFF4 /* FakerFromPathSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA095626249CFA9A000DDFF4 /* FakerFromPathSpec.swift */; };
+		BA095629249CFAB8000DDFF4 /* FakerFromPathSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA095626249CFA9A000DDFF4 /* FakerFromPathSpec.swift */; };
+		BA09562A249CFB39000DDFF4 /* en-GB.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14E1BF9F912005A3BC1 /* en-GB.json */; };
+		BA09562B249CFB3A000DDFF4 /* en-GB.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFFA14E1BF9F912005A3BC1 /* en-GB.json */; };
 		BC4477911BFA450D00E8FB15 /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1681BF9F912005A3BC1 /* Faker.swift */; };
 		BC4477921BFA451400E8FB15 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16A1BF9F912005A3BC1 /* Address.swift */; };
 		BC4477931BFA451600E8FB15 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA16B1BF9F912005A3BC1 /* App.swift */; };
@@ -302,6 +306,7 @@
 		90D66FB222833A3100545C90 /* Hobbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hobbit.swift; sourceTree = "<group>"; };
 		AC88DC0A21531E2E007198E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AC88DC0C215330A3007198E6 /* DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSpec.swift; sourceTree = "<group>"; };
+		BA095626249CFA9A000DDFF4 /* FakerFromPathSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakerFromPathSpec.swift; sourceTree = "<group>"; };
 		BC827FA81BFA3CE1005F09A4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC827FB11BFA3CE1005F09A4 /* Fakery-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fakery-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF0DF3A1BF9F77E00427DB4 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -582,6 +587,7 @@
 			children = (
 				D59B6CED1D99C5FD007CB072 /* ConfigSpec.swift */,
 				D59B6CF11D99C5FD007CB072 /* FakerSpec.swift */,
+				BA095626249CFA9A000DDFF4 /* FakerFromPathSpec.swift */,
 				D59B6CEE1D99C5FD007CB072 /* Data */,
 				D59B6CF21D99C5FD007CB072 /* Generators */,
 			);
@@ -853,6 +859,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA09562B249CFB3A000DDFF4 /* en-GB.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -893,6 +900,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA09562A249CFB39000DDFF4 /* en-GB.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1051,7 @@
 				D59B6D381D99C82E007CB072 /* NameSpec.swift in Sources */,
 				D59B6D2F1D99C82E007CB072 /* ProviderSpec.swift in Sources */,
 				504F66ED22AE523A00F9CDB3 /* HouseSpec.swift in Sources */,
+				BA095629249CFAB8000DDFF4 /* FakerFromPathSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1113,6 +1122,7 @@
 				D59B6D281D99C82D007CB072 /* NameSpec.swift in Sources */,
 				D59B6D1F1D99C82D007CB072 /* ProviderSpec.swift in Sources */,
 				504F66EC22AE523A00F9CDB3 /* HouseSpec.swift in Sources */,
+				BA095628249CFAB8000DDFF4 /* FakerFromPathSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

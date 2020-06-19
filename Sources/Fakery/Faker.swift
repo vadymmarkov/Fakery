@@ -60,4 +60,31 @@ public final class Faker {
     ham = Ham(parser: parser)
     house = House(parser: parser)
   }
+  
+  public init(locale: String = Config.defaultLocale, path: String) {
+    self.locale = locale
+    parser = Parser(locale: self.locale, path: path)
+    address = Address(parser: parser)
+    app = App(parser: parser)
+    zelda = Zelda(parser: parser)
+    business = Business(parser: parser)
+    cat = Cat(parser: parser)
+    company = Company(parser: parser)
+    commerce = Commerce(parser: parser)
+    gender = Gender(parser: parser)
+    internet = Internet(parser: parser)
+    lorem = Lorem(parser: parser)
+    name = Name(parser: parser)
+    phoneNumber = PhoneNumber(parser: parser)
+    team = Team(parser: parser)
+    number = Number()
+    bank = Bank(parser: parser)
+    date = Date()
+    hobbit = Hobbit(parser: parser)
+    car = Car(parser: parser)
+    programmingLanguage = ProgrammingLanguage(parser: parser)
+    vehicle = Vehicle(parser: parser)
+    ham = Ham(parser: parser)
+    house = House(parser: parser)
+  }
 }

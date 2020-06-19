@@ -23,6 +23,16 @@ public final class Parser {
       loadData(forLocale: Config.defaultLocale)
     }
   }
+  
+  public init(locale: String = Config.defaultLocale, path: String) {
+    self.locale = locale
+    provider = Provider()
+    loadData(forLocale: locale, path: path)
+
+    if locale != Config.defaultLocale {
+      loadData(forLocale: Config.defaultLocale, path: path)
+    }
+  }
 
   // MARK: - Parsing
 
@@ -146,6 +156,18 @@ public final class Parser {
 
   private func loadData(forLocale locale: String) {
     guard let localeData = provider.dataForLocale(locale),
+      let parsedData = try? JSONSerialization.jsonObject(with: localeData, options: .allowFragments),
+      let json = parsedData as? [String: Any],
+      let localeJson = json[locale] else {
+        print("JSON file for '\(locale)' locale was not found.")
+        return
+    }
+
+    data[locale] = localeJson
+  }
+  
+  private func loadData(forLocale locale: String, path: String) {
+    guard let localeData = provider.dataForLocale(locale, path: path),
       let parsedData = try? JSONSerialization.jsonObject(with: localeData, options: .allowFragments),
       let json = parsedData as? [String: Any],
       let localeJson = json[locale] else {
