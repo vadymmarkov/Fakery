@@ -7,8 +7,8 @@ final class ConfigSpec: QuickSpec {
     describe("Config") {
       it("has default values") {
         expect(Config.defaultLocale).to(equal("en"))
-        expect(Config.dirPath).to(equal("Resources/Locales"))
         expect(Config.pathExtension).to(equal("json"))
+        expect(Config.localesDirectory).to(equal("Locales"))
       }
     }
   }
