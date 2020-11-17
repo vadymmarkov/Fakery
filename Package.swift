@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -14,7 +14,7 @@ let package = Package(
 
     ],
     targets: [
-      .target(name: "Fakery"),
+      .target(name: "Fakery", resources: [.copy("Resources")]),
       .testTarget(name: "FakeryTests", dependencies: ["Fakery","Quick", "Nimble"], path: "Tests/Fakery")
     ]
 )

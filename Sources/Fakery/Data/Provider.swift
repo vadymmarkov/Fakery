@@ -11,7 +11,11 @@ public final class Provider {
     if let translationData = translations[locale] {
       translation = translationData
     } else {
+      #if SWIFT_PACKAGE
+      let bundle = Bundle.module
+      #else
       let bundle = Bundle(for: Provider.self)
+      #endif
 
       var path = bundle.path(forResource: locale,
                              ofType: Config.pathExtension,
