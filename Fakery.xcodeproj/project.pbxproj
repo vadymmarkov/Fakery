@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,14 +31,10 @@
 		20580DE22283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		20580DE32283222C00D46446 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20580DE02283222C00D46446 /* Cat.swift */; };
 		2A17AB0A1E4E45A600011BC6 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A17AB091E4E45A600011BC6 /* tr-TR.json */; };
-		301387E722E8EB20001313B6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E622E8EB03001313B6 /* Nimble.framework */; };
-		301387E822E8EB20001313B6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E522E8EB02001313B6 /* Quick.framework */; };
-		301387E922E8EB23001313B6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E622E8EB03001313B6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		301387EA22E8EB23001313B6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E522E8EB02001313B6 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		301387EB22E8EB2E001313B6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E322E8EA89001313B6 /* Nimble.framework */; };
-		301387EC22E8EB2E001313B6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301387E422E8EAA5001313B6 /* Quick.framework */; };
-		301387ED22E8EB36001313B6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E322E8EA89001313B6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		301387EE22E8EB36001313B6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301387E422E8EAA5001313B6 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4771F53B25643832004ABB7A /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 4771F53A25643832004ABB7A /* Quick */; };
+		4771F541256438DE004ABB7A /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 4771F540256438DE004ABB7A /* Nimble */; };
+		4771F54C2564391B004ABB7A /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 4771F54B2564391B004ABB7A /* Quick */; };
+		4771F54E2564391B004ABB7A /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 4771F54D2564391B004ABB7A /* Nimble */; };
 		504F66E022AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
 		504F66E122AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
 		504F66E222AE32CB00F9CDB3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F66DF22AE32CB00F9CDB3 /* House.swift */; };
@@ -263,8 +259,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				301387ED22E8EB36001313B6 /* Nimble.framework in CopyFiles */,
-				301387EE22E8EB36001313B6 /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +268,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				301387E922E8EB23001313B6 /* Nimble.framework in CopyFiles */,
-				301387EA22E8EB23001313B6 /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +284,6 @@
 		20580DDD2283205E00D46446 /* CatSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatSpec.swift; sourceTree = "<group>"; };
 		20580DE02283222C00D46446 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		2A17AB091E4E45A600011BC6 /* tr-TR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tr-TR.json"; sourceTree = "<group>"; };
-		301387E322E8EA89001313B6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		301387E422E8EAA5001313B6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		301387E522E8EB02001313B6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		301387E622E8EB03001313B6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		504F66DB22AE32A500F9CDB3 /* HouseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseSpec.swift; sourceTree = "<group>"; };
 		504F66DF22AE32CB00F9CDB3 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		6ED4CE5A228C2EBB0026E55A /* ZeldaSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaSpec.swift; sourceTree = "<group>"; };
@@ -395,8 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC827FB21BFA3CE1005F09A4 /* Fakery.framework in Frameworks */,
-				301387E722E8EB20001313B6 /* Nimble.framework in Frameworks */,
-				301387E822E8EB20001313B6 /* Quick.framework in Frameworks */,
+				4771F54E2564391B004ABB7A /* Nimble in Frameworks */,
+				4771F54C2564391B004ABB7A /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,8 +400,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF0DF451BF9F77E00427DB4 /* Fakery.framework in Frameworks */,
-				301387EB22E8EB2E001313B6 /* Nimble.framework in Frameworks */,
-				301387EC22E8EB2E001313B6 /* Quick.framework in Frameworks */,
+				4771F541256438DE004ABB7A /* Nimble in Frameworks */,
+				4771F53B25643832004ABB7A /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,17 +415,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		301387C722E8E3EC001313B6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				301387E622E8EB03001313B6 /* Nimble.framework */,
-				301387E522E8EB02001313B6 /* Quick.framework */,
-				301387E322E8EA89001313B6 /* Nimble.framework */,
-				301387E422E8EAA5001313B6 /* Quick.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BCF0DF301BF9F77E00427DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -446,7 +423,6 @@
 				BCFFA1611BF9F912005A3BC1 /* Sources */,
 				BCFFA1761BF9F912005A3BC1 /* Tests */,
 				BCF0DF3B1BF9F77E00427DB4 /* Products */,
-				301387C722E8E3EC001313B6 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -706,6 +682,10 @@
 				BC827FB41BFA3CE1005F09A4 /* PBXTargetDependency */,
 			);
 			name = "Fakery-macOS-Tests";
+			packageProductDependencies = (
+				4771F54B2564391B004ABB7A /* Quick */,
+				4771F54D2564391B004ABB7A /* Nimble */,
+			);
 			productName = "Fakery OSXTests";
 			productReference = BC827FB11BFA3CE1005F09A4 /* Fakery-macOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -744,6 +724,10 @@
 				BCF0DF471BF9F77E00427DB4 /* PBXTargetDependency */,
 			);
 			name = "Fakery-iOS-Tests";
+			packageProductDependencies = (
+				4771F53A25643832004ABB7A /* Quick */,
+				4771F540256438DE004ABB7A /* Nimble */,
+			);
 			productName = FakeryTests;
 			productReference = BCF0DF441BF9F77E00427DB4 /* Fakery-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -808,6 +792,10 @@
 				Base,
 			);
 			mainGroup = BCF0DF301BF9F77E00427DB4;
+			packageReferences = (
+				4771F53925643832004ABB7A /* XCRemoteSwiftPackageReference "Quick" */,
+				4771F53F256438DE004ABB7A /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = BCF0DF3B1BF9F77E00427DB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1189,7 +1177,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-macOS";
 				PRODUCT_NAME = Fakery;
@@ -1213,7 +1205,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-macOS";
 				PRODUCT_NAME = Fakery;
@@ -1229,9 +1225,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-Mac.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1246,9 +1245,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-Mac.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1362,7 +1364,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1381,7 +1384,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
@@ -1401,7 +1408,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.Fakery";
 				PRODUCT_NAME = Fakery;
 				SKIP_INSTALL = YES;
@@ -1413,9 +1424,12 @@
 		BCF0DF521BF9F77E00427DB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-iOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -1426,9 +1440,12 @@
 		BCF0DF531BF9F77E00427DB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-Tests-iOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadym-markov.FakeryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -1448,7 +1465,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOS";
 				PRODUCT_NAME = Fakery;
 				SDKROOT = appletvos;
@@ -1472,7 +1493,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Project/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zenangst.Fakery-tvOS";
 				PRODUCT_NAME = Fakery;
 				SDKROOT = appletvos;
@@ -1542,6 +1567,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4771F53925643832004ABB7A /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		4771F53F256438DE004ABB7A /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4771F53A25643832004ABB7A /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4771F53925643832004ABB7A /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		4771F540256438DE004ABB7A /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4771F53F256438DE004ABB7A /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		4771F54B2564391B004ABB7A /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4771F53925643832004ABB7A /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		4771F54D2564391B004ABB7A /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4771F53F256438DE004ABB7A /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCF0DF311BF9F77E00427DB4 /* Project object */;
 }
