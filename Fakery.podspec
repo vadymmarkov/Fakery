@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.resource_bundles = {
-    'Faker' => ['Sources/Resources/Locales/*.{json}']
+    'Faker' => ['Sources/Fakery/Resources/Locales/*.{json}']
   }
 
   s.source_files = 'Sources/**/*'
