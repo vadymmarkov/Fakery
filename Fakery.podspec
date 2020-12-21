@@ -28,5 +28,6 @@ Pod::Spec.new do |s|
   }
 
   s.source_files = 'Sources/**/*'
+  s.exclude_files = 'Sources/**/*.{json}'
   s.frameworks = 'Foundation'
 end
