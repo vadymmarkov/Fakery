@@ -1,9 +1,0 @@
-language: objective-c
-osx_image: xcode12.2
-xcode_sdk: iphonesimulator14.2
-
-script:
-- set -o pipefail
-- travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-iOS" -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=14.2" build-for-testing test | xcpretty
-- travis_retry xcodebuild -project Fakery.xcodeproj -scheme "Fakery-macOS" build-for-testing test | xcpretty
-- travis_retry xcodebuild clean build -project Fakery.xcodeproj -scheme "Fakery-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=14.2' | xcpretty
