@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         run-config:
-          - { scheme: 'Fakery-iOS', destination: 'platform=iOS Simulator,OS=14.4,name=iPhone 12 Pro' }
+          - { scheme: 'Fakery-iOS', destination: 'platform=iOS Simulator,OS=14.3,name=iPhone 12 Pro' }
           - { scheme: 'Fakery-macOS', destination: 'platform=macOS' }
 
     steps:
