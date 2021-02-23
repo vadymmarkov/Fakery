@@ -296,6 +296,22 @@ it, simply add the following line to your Podfile:
 pod 'Fakery'
 ```
 
+Or alternatively using the Swift Package Manager:
+
+```swift
+let package = Package(
+    //…
+    dependencies[
+        .package(name: "Fakery", url: "https://github.com/vadymmarkov/Fakery", from: "5.0.0"))
+    ],
+    targets: [
+        .target(name: "Foo", dependencies: ["Fakery"]
+    ]
+)
+```
+
+Use of the Swift Package Manager requires Swift >=5.3.
+
 ## Contributing
 
 Please see our [playbook](https://github.com/hyperoslo/playbook/blob/master/GIT_AND_GITHUB.md) for guidelines on contributing.
