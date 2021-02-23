@@ -62,8 +62,6 @@ final class DateSpec: QuickSpec {
             let minAge = 30
             let maxAge = 50
 
-            let calendar = Calendar.current
-
             func yearsBeforeDate(_ years: Int, _ date: Foundation.Date) -> Foundation.Date {
               var dc = DateComponents()
               dc.year = -years
