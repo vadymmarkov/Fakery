@@ -44,6 +44,7 @@ It's useful in all the cases when you need to use some dummy data for testing, p
 ## Usage
 
 ```swift
+import Fakery
 
 let faker = Faker(locale: "nb-NO")
 
