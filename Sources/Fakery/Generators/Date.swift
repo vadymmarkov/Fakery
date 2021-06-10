@@ -13,7 +13,7 @@ extension Faker {
     public func between(_ from: Foundation.Date, _ to: Foundation.Date) -> Foundation.Date {
       let fromInSeconds = from.timeIntervalSince1970
       let toInSeconds = to.timeIntervalSince1970
-      let targetInSeconds = Number().randomDouble(min: fromInSeconds, max: toInSeconds)
+      let targetInSeconds = Number(randomNumberGenerator: randomNumberGenerator).randomDouble(min: fromInSeconds, max: toInSeconds)
       return Foundation.Date(timeIntervalSince1970: targetInSeconds)
     }
 

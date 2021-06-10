@@ -34,30 +34,38 @@ public final class Faker {
 
   // MARK: - Initialization
 
-  public init(locale: String = Config.defaultLocale) {
+  public convenience init(locale: String = Config.defaultLocale) {
+    self.init(locale: locale, randomNumberGenerator: Config.randomNumberGenerator)
+  }
+    
+  public init<T: RandomNumberGenerator>(
+    locale: String = Config.defaultLocale,
+    randomNumberGenerator: T
+  ) {
     self.locale = locale
-    parser = Parser(locale: self.locale)
-    address = Address(parser: parser)
-    app = App(parser: parser)
-    zelda = Zelda(parser: parser)
-    business = Business(parser: parser)
-    cat = Cat(parser: parser)
-    company = Company(parser: parser)
-    commerce = Commerce(parser: parser)
-    gender = Gender(parser: parser)
-    internet = Internet(parser: parser)
-    lorem = Lorem(parser: parser)
-    name = Name(parser: parser)
-    phoneNumber = PhoneNumber(parser: parser)
-    team = Team(parser: parser)
-    number = Number()
-    bank = Bank(parser: parser)
-    date = Date()
-    hobbit = Hobbit(parser: parser)
-    car = Car(parser: parser)
-    programmingLanguage = ProgrammingLanguage(parser: parser)
-    vehicle = Vehicle(parser: parser)
-    ham = Ham(parser: parser)
-    house = House(parser: parser)
+    let typeErasedRandomNumberGenerator = AnyRandomNumberGenerator(randomNumberGenerator)
+    parser = Parser(locale: self.locale, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    address = Address(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    app = App(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    zelda = Zelda(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    business = Business(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    cat = Cat(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    company = Company(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    commerce = Commerce(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    gender = Gender(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    internet = Internet(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    lorem = Lorem(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    name = Name(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    phoneNumber = PhoneNumber(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    team = Team(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    number = Number(randomNumberGenerator: typeErasedRandomNumberGenerator)
+    bank = Bank(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    date = Date(randomNumberGenerator: typeErasedRandomNumberGenerator)
+    hobbit = Hobbit(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    car = Car(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    programmingLanguage = ProgrammingLanguage(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    vehicle = Vehicle(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    ham = Ham(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
+    house = House(parser: parser, randomNumberGenerator: typeErasedRandomNumberGenerator)
   }
 }
