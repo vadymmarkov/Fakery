@@ -23,9 +23,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.requires_arc = true
 
-  s.resource_bundles = {
-    'Faker' => ['Sources/Fakery/Resources/Locales/*.{json}']
-  }
+  s.resources = 'Sources/Fakery/Resources/Locales/*.{json}'
 
   s.source_files = 'Sources/**/*.{swift}'
   s.frameworks = 'Foundation'
