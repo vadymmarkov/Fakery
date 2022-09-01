@@ -11,9 +11,14 @@ extension Faker {
 
     let parser: Parser
     let dateFormatter: DateFormatter
-
-    public required init(parser: Parser = Parser()) {
+    var randomNumberGenerator: AnyRandomNumberGenerator
+    
+    public required init(
+      parser: Parser = Parser(),
+      randomNumberGenerator: AnyRandomNumberGenerator = Config.randomNumberGenerator
+    ) {
       self.parser = parser
+      self.randomNumberGenerator = randomNumberGenerator
       dateFormatter = DateFormatter()
       dateFormatter.dateFormat = "yyyy-MM-dd"
     }
@@ -67,7 +72,7 @@ extension Faker {
       var list = [String]()
       if let wordsList = parser.fetchRaw(key) as? [[String]] {
         for words in wordsList {
-          if let item = words.random() {
+          if let item = words.random(using: &randomNumberGenerator) {
             list.append(item)
           }
         }

@@ -2,8 +2,8 @@ import Foundation
 
 extension Faker {
   public final class Internet: Generator {
-    public required init(parser: Parser) {
-      super.init(parser: parser)
+    public required init(parser: Parser, randomNumberGenerator: AnyRandomNumberGenerator = Config.randomNumberGenerator) {
+      super.init(parser: parser, randomNumberGenerator: randomNumberGenerator)
     }
 
     public func username(separator: String? = nil) -> String {

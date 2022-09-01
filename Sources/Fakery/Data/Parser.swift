@@ -11,11 +11,17 @@ public final class Parser {
 
   private var data = [String: Any]()
   let provider: Provider
-
+  var randomNumberGenerator: AnyRandomNumberGenerator
+  
   // MARK: - Initialization
 
-  public init(locale: String = Config.defaultLocale) {
+  public init(
+    locale: String = Config.defaultLocale,
+    randomNumberGenerator: AnyRandomNumberGenerator = Config.randomNumberGenerator
+  ) {
     self.locale = locale
+    self.randomNumberGenerator = randomNumberGenerator
+    
     provider = Provider()
     loadData(forLocale: locale)
 
@@ -37,7 +43,7 @@ public final class Parser {
 
     if let value = keyData as? String {
       parsed = value
-    } else if let array = keyData as? [String], let item = array.random() {
+    } else if let array = keyData as? [String], let item = array.random(using: &randomNumberGenerator) {
       parsed = item
     }
 
