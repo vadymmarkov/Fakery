@@ -2,6 +2,14 @@ import Foundation
 
 extension Faker {
   public final class Date: Generator {
+
+    private let number: Number
+
+    public required init(parser: Parser) {
+        self.number = Number(parser: parser)
+        super.init(parser: parser)
+    }
+
     public func backward(days: Int) -> Foundation.Date {
       return todayAddingDays(-days)
     }
@@ -13,7 +21,7 @@ extension Faker {
     public func between(_ from: Foundation.Date, _ to: Foundation.Date) -> Foundation.Date {
       let fromInSeconds = from.timeIntervalSince1970
       let toInSeconds = to.timeIntervalSince1970
-      let targetInSeconds = Number().randomDouble(min: fromInSeconds, max: toInSeconds)
+      let targetInSeconds = number.randomDouble(min: fromInSeconds, max: toInSeconds)
       return Foundation.Date(timeIntervalSince1970: targetInSeconds)
     }
 

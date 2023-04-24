@@ -9,7 +9,7 @@ final class DateSpec: QuickSpec {
       var date: Faker.Date!
 
       beforeEach {
-        date = Faker.Date()
+        date = Faker.Date(parser: Parser())
       }
 
       describe("#between") {

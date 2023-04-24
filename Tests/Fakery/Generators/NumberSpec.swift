@@ -8,7 +8,7 @@ final class NumberSpec: QuickSpec {
       var number: Faker.Number!
 
       beforeEach {
-        number = Faker.Number()
+        number = Faker.Number(parser: Parser())
       }
 
       it("creates contionusly increasing ids") {
